@@ -1,0 +1,142 @@
+{
+  "subType" : "customapp",
+  "description" : "alwataneya_development_v2",
+  "version" : "1.0",
+  "intSvcs" : [ {
+    "name" : "fry_collection",
+    "version" : "1.0",
+    "etag" : "815d69bd-d363-46c4-b11b-b504c6ef8821"
+  }, {
+    "name" : "fry_int_accountant",
+    "version" : "1.0",
+    "etag" : "5d49da2e-7867-44ff-b50b-192895ec7920"
+  }, {
+    "name" : "fry_int_admin",
+    "version" : "1.0",
+    "etag" : "118ecdbd-d861-44b4-8b21-6f266ea30e74"
+  }, {
+    "name" : "fry_int_asset",
+    "version" : "1.0",
+    "etag" : "0d619178-ac4c-4b36-983c-b42417a0be1f"
+  }, {
+    "name" : "fry_int_auctions",
+    "version" : "1.0",
+    "etag" : "13c210ad-b152-498a-a17c-4c1e8ede67cd"
+  }, {
+    "name" : "fry_int_buyer",
+    "version" : "1.0",
+    "etag" : "a50abb3a-cd21-4add-9739-c7e581ddd4cb"
+  }, {
+    "name" : "fry_int_common",
+    "version" : "1.0",
+    "etag" : "07c32695-174c-4f95-89a8-c10a74c4bd19"
+  }, {
+    "name" : "fry_int_fleet",
+    "version" : "1.0",
+    "etag" : "c38235b0-6358-4f6a-be8e-104257d8e0a8"
+  }, {
+    "name" : "fry_int_logs",
+    "version" : "1.0",
+    "etag" : "d1dcc63c-8e4c-4fa0-8cf9-ff7e2bb56714"
+  }, {
+    "name" : "fry_int_management",
+    "version" : "1.0",
+    "etag" : "a2eaca89-9fee-4a32-a5ce-6019cd05d3dc"
+  }, {
+    "name" : "fry_int_operation",
+    "version" : "1.0",
+    "etag" : "e741c5b3-6dbe-462b-94c5-60e3147f5f07"
+  }, {
+    "name" : "fry_int_post_auction",
+    "version" : "1.0",
+    "etag" : "578d917c-24ed-4c42-89bf-1699f18e1593"
+  }, {
+    "name" : "fry_int_seller",
+    "version" : "1.0",
+    "etag" : "4090ca52-2a69-40f6-b231-28e5582ab6dc"
+  }, {
+    "name" : "fry_int_user",
+    "version" : "1.0",
+    "etag" : "ecea981a-7fed-4d0f-83fe-e73d3624b5eb"
+  }, {
+    "name" : "fry_wf",
+    "version" : "1.0",
+    "etag" : "8a7ae240-b435-48d5-9c5a-886aac5b9c21"
+  }, {
+    "name" : "ms_admin",
+    "version" : "1.0",
+    "etag" : "bd243b7d-dbc2-42fa-8f4f-721b899a5694"
+  }, {
+    "name" : "ms_auctions",
+    "version" : "1.0",
+    "etag" : "80e6ba94-44d0-4d41-bea0-bb5761295102"
+  }, {
+    "name" : "ms_config",
+    "version" : "1.0",
+    "etag" : "6f5622c0-19f2-4094-8db7-42608ddffb1d"
+  }, {
+    "name" : "ms_fleet",
+    "version" : "1.0",
+    "etag" : "26812cac-7a05-4fcc-a937-5543cdbda5ab"
+  }, {
+    "name" : "ms_management",
+    "version" : "1.0",
+    "etag" : "c669b6de-58e3-45bd-bca8-5c593c347ffb"
+  }, {
+    "name" : "ms_post_auction",
+    "version" : "1.0",
+    "etag" : "b4b39634-9b34-4c28-88f9-79e6379e87e5"
+  }, {
+    "name" : "ms_test",
+    "version" : "1.0",
+    "etag" : "a8b966ba-1c2e-4f17-a823-8dfa5485bbeb"
+  }, {
+    "name" : "ms_user",
+    "version" : "1.0",
+    "etag" : "8f996bd8-139d-4d24-95c4-e2af3e7d85cb"
+  }, {
+    "name" : "ms_user_reg",
+    "version" : "1.0",
+    "etag" : "a93a8711-e0ad-4726-ae31-5a37975494c5"
+  }, {
+    "name" : "ms_user_token",
+    "version" : "1.0",
+    "etag" : "c14a1ec8-965d-416b-93fb-df8084ae4db6"
+  }, {
+    "name" : "proxy",
+    "version" : "1.0",
+    "etag" : "5aaa9e66-4fef-4c1e-ade4-367c17f5da26"
+  } ],
+  "objectSvcs" : [ {
+    "name" : "SQLServerLocal",
+    "version" : "1.0",
+    "etag" : "1a84f73a-d794-4caf-a9d0-b8a9d10d53fe"
+  } ],
+  "workflowSvcs" : [ {
+    "name" : "add_a_dam_item",
+    "version" : "1.0",
+    "etag" : "021302a8-c2bd-44b2-9ea4-600894d3c7f7"
+  }, {
+    "name" : "add_items_dam",
+    "version" : "1.0",
+    "etag" : "186efd15-273d-40fc-97cf-7632e0cb59b7"
+  }, {
+    "name" : "add-fleet-record",
+    "version" : "1.0",
+    "etag" : "69e8fd5f-d2f4-4145-a78c-4de639ddef91"
+  }, {
+    "name" : "auction-bidding",
+    "version" : "1.0",
+    "etag" : "51eabcab-9f96-43d7-9a29-1217471f7ebc"
+  }, {
+    "name" : "test_N_R",
+    "version" : "1.0",
+    "etag" : "eac6cc00-97ee-4325-8d52-8be056cd90d1"
+  }, {
+    "name" : "test1_N_R",
+    "version" : "1.0",
+    "etag" : "17401421-b98c-4e8e-b057-46107bc50c4f"
+  } ],
+  "identity" : [ "CopyCopyDevAzureB2C", "CopyDevAzureB2C", "CustomAzureB2C", "DevAzureB2C" ],
+  "identitySvcConf" : "{\"session_idle_timeout_mins\":2,\"session_max_duration_mins\":360,\"show_security_attributes\":true,\"is_integrity_enabled\":false,\"auto_extend\":true,\"integrity_key_type\":\"custom\",\"integrity_key\":\"\"}"
+}

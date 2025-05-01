@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<service serviceGroup="" cachable="false" cacheduration="" customOperation="false" description="" endpoint="default" groupType="" id="user-fleet-washed-vehicles" passwordencrypted="false" security="public" type="dataAdapterConnector" smscode="" smsenabled="false">
+    <service-config>
+        <config-param api-version="" appid="" name="preprocessorname" value="com.et.ae.tokenUtil.PermissionChecker"/>
+        <config-param api-version="" appid="" name="postprocessorname" value=""/>
+        <config-param api-version="" appid="" name="preprocessorJS" value=""/>
+        <config-param api-version="" appid="" name="postprocessorJS" value=""/>
+        <config-param api-version="" appid="" name="preprocessorRules" value=""/>
+        <config-param api-version="" appid="" name="postprocessorRules" value=""/>
+        <config-param api-version="" appid="" name="kony_http_supported_methods" value="POST"/>
+        <config-param api-version="" appid="" name="frontend_url" value="api/v1/user-fleet-washed-vehicles"/>
+        <config-param api-version="" appid="" name="frontend_supported_method" value="POST"/>
+        <config-param api-version="" appid="" name="endpointUrl" value=""/>
+        <config-param api-version="" appid="" name="opcode" value="service"/>
+        <config-param api-version="" appid="" name="sockettimeout" value=""/>
+        <config-param api-version="" appid="" name="entitymetadata" value="{&quot;dml&quot;:false,&quot;query&quot;:&quot;select * from operations_washing( \n  @lot_no,\n  @title,\n  @chassis_number,\n  @location,\n  @page,\n  @pageSize\n);&quot;,&quot;overloadPosition&quot;:0,&quot;serviceInput&quot;:[{&quot;type&quot;:&quot;STRING&quot;,&quot;name&quot;:&quot;lot_no&quot;,&quot;inoutType&quot;:0,&quot;sqlDataType&quot;:0,&quot;ordinalPosition&quot;:0,&quot;paramClass&quot;:&quot;com.kony.rdbms.metadata.model.ParamTypeData&quot;},{&quot;type&quot;:&quot;STRING&quot;,&quot;name&quot;:&quot;foundrySerivceName&quot;,&quot;inoutType&quot;:0,&quot;sqlDataType&quot;:0,&quot;ordinalPosition&quot;:0,&quot;paramClass&quot;:&quot;com.kony.rdbms.metadata.model.ParamTypeData&quot;},{&quot;type&quot;:&quot;STRING&quot;,&quot;name&quot;:&quot;chassis_number&quot;,&quot;inoutType&quot;:0,&quot;sqlDataType&quot;:0,&quot;ordinalPosition&quot;:0,&quot;paramClass&quot;:&quot;com.kony.rdbms.metadata.model.ParamTypeData&quot;},{&quot;type&quot;:&quot;STRING&quot;,&quot;name&quot;:&quot;serviceAction&quot;,&quot;inoutType&quot;:0,&quot;sqlDataType&quot;:0,&quot;ordinalPosition&quot;:0,&quot;paramClass&quot;:&quot;com.kony.rdbms.metadata.model.ParamTypeData&quot;},{&quot;type&quot;:&quot;STRING&quot;,&quot;name&quot;:&quot;pageSize&quot;,&quot;inoutType&quot;:0,&quot;sqlDataType&quot;:0,&quot;ordinalPosition&quot;:0,&quot;paramClass&quot;:&quot;com.kony.rdbms.metadata.model.ParamTypeData&quot;},{&quot;type&quot;:&quot;STRING&quot;,&quot;name&quot;:&quot;location&quot;,&quot;inoutType&quot;:0,&quot;sqlDataType&quot;:0,&quot;ordinalPosition&quot;:0,&quot;paramClass&quot;:&quot;com.kony.rdbms.metadata.model.ParamTypeData&quot;},{&quot;type&quot;:&quot;STRING&quot;,&quot;name&quot;:&quot;page&quot;,&quot;inoutType&quot;:0,&quot;sqlDataType&quot;:0,&quot;ordinalPosition&quot;:0,&quot;paramClass&quot;:&quot;com.kony.rdbms.metadata.model.ParamTypeData&quot;},{&quot;type&quot;:&quot;STRING&quot;,&quot;name&quot;:&quot;title&quot;,&quot;inoutType&quot;:0,&quot;sqlDataType&quot;:0,&quot;ordinalPosition&quot;:0,&quot;paramClass&quot;:&quot;com.kony.rdbms.metadata.model.ParamTypeData&quot;}],&quot;serviceOutput&quot;:[],&quot;name&quot;:&quot;CustomQuery&quot;,&quot;schemaName&quot;:&quot;dbo&quot;,&quot;serviceType&quot;:&quot;com.kony.rdbms.metadata.model.CustomQueryMetadata&quot;}"/>
+        <config-param api-version="" appid="" name="metadataformatterobject" value="{&quot;overloadPosition&quot;:0,&quot;serviceType&quot;:&quot;com.kony.rdbms.metadata.model.CustomQueryMetadata&quot;,&quot;dml&quot;:false,&quot;serviceOutput&quot;:[],&quot;displayName&quot;:&quot;CustomQuery&quot;,&quot;qualifiedName&quot;:&quot;dbo_CustomQuery&quot;,&quot;pkgName&quot;:&quot;&quot;,&quot;serviceInput&quot;:[],&quot;name&quot;:&quot;CustomQuery&quot;,&quot;schemaName&quot;:&quot;dbo&quot;,&quot;qualifiedNameSuffix&quot;:&quot;&quot;}"/>
+        <config-param api-version="" appid="" name="isCustomQuery" value="true"/>
+        <config-param api-version="" appid="" name="customQuery" value="select * from operations_washing( &#10;  @lot_no,&#10;  @title,&#10;  @chassis_number,&#10;  @location,&#10;  @page,&#10;  @pageSize&#10;);"/>
+        <config-param api-version="" appid="" name="password" value="et_dev@12"/>
+        <config-param api-version="" appid="" name="http_auth_mode" value="none"/>
+        <config-param api-version="" appid="" name="advancedSettings" value=""/>
+        <config-param api-version="" appid="" name="jdbcUrl" value="jdbc:sqlserver://et-az-dev-sqlmi.3ba814f9a3e7.database.windows.net;databaseName=et_dev_awa_tx;encrypt=true"/>
+        <config-param api-version="" appid="" name="jdbcClass" value="com.microsoft.sqlserver.jdbc.SQLServerDriver"/>
+        <config-param api-version="" appid="" name="userId" value="et_dev_awa_tx_user"/>
+        <config-param api-version="" appid="" name="maxPoolSize" value=""/>
+        <config-param api-version="" appid="" name="connectionTimeout" value=""/>
+        <config-param api-version="" appid="" name="authservicetype" value="IdentityProvider"/>
+        <config-param api-version="" appid="" name="adaptertype" value="CUSTOM"/>
+        <config-param api-version="" appid="" name="basepackage" value="com.kony.rdbms"/>
+        <config-param api-version="" appid="" name="identityProviderType" value=""/>
+        <config-param api-version="" appid="" name="identityProvider" value=""/>
+        <config-param api-version="" appid="" name="mapped_to" value="dbo.CustomQuery"/>
+    </service-config>
+    <service-input passthrough="false" isExtended="false">
+        <header datatype="" name="" passthrough="false" isExtended="false">
+            <param datatype="string" defaultvalue="" description="" encode="false" format="None" formatvalue="" name="user_token" order="" paramOrder="0" parentOrder="0" sms-name="" src="request" sourcevalue="" srcformatvalue="" target="" targetdatatype="" testvalue="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiYTJjYTU0ZDUtMjNlNy00NDU5LWIwYTMtYTM3ODBlM2U2YmE5IiwibmFtZSI6InNhaWtlc2Ega3VtYXIiLCJncm91cHMiOlsiT3BlcmF0aW9uIE1vZHVsZSIsIlNhbGVzIE1vZHVsZSIsIkFkbWluIE1vZHVsZSIsIk1hbmFnZW1lbnQgbW9kdWxlIiwiSHlicmlkIE1vZHVsZSIsIkFjY291bnRhbnQgTW9kdWxlIiwiUmVwb3J0IE1vZHVsZSIsIlNlbGxpbmcgTW9kdWxlIiwiRGFzaGJvYXJkIE1vZHVsZSJdLCJpc19jb250cmFjdF9zaWduZWQiOnRydWUsImpvYl90aXRsZSI6ImJ1eWVyO2FkbWluIiwicGVybWlzc2lvbnMiOnsiT3BlcmF0aW9uIE1vZHVsZSI6WyJXYXNoZWQgdmVoaWNsZXMiLCJSZXF1ZXN0IHZlaGljbGVzIiwiVGVjaG5pY2FsIHZlaGljbGVzIiwiV2FzaGVkIHZlaGljbGVzIiwiUGhvdG8gdmVoaWNsZXMiLCJJbmFjdGl2ZSBhdWN0aW9ucyIsIlNvbGQgdmVoaWNsZXMiLCJVbnNvbGQgdmVoaWNsZXMiLCJBd2FyZGVkIHJlcG9ydCIsIlNvbGQgQXJjaGl2ZSIsIlVuc29sZCBhcmNoaXZlIiwiQWN0aXZlIGF1Y3Rpb25zIiwiVG8gRG8gTGlzdCIsIkFkZCBOZXcgQ2FyIiwiQXVjdGlvbiBCdXllciBEYXRhIiwiQXVjdGlvbiBTZWxsZXIgRGF0YSIsIkFkZCBuZXcgY2FyIGZyb20gRVJQIiwiVW5kZXIgYXBwcm92YWwgRGlyZWN0IFNhbGVzIiwiU3VibWl0dGVkIEJ5IFNlbGxlciIsIkFwcHJvdmVkIEF1Y3Rpb24gYnkgc2VsbGVyIiwiTWFya2V0aW5nIiwiQ3VzdG9tZXIgTGlzdCIsIkFyY2hpdmVkIExpc3QiLCJPcGVyYXRpb24gTG9nIiwiVGVjaG5pY2FsIFRlc3QiLCJSZXF1ZXN0cyIsIlJlcXVlc3RlZCBTZXJ2aWNlcyIsIlNlcnZpY2VzIEluIFByb2Nlc3MiLCJDb21wbGV0ZWQgU2VydmljZSBQcm92aWRlciBSZXF1ZXN0cyIsIkh5YnJpZCBVbnNvbGQgVmVoaWNsZXMiLCJSRUFEICYgV1JJVEUiXSwiU2VsbGluZyBNb2R1bGUiOlsiQWRkIGEgbmV3IGNhciIsIllvdXIgdmVoaWNsZXMiLCJSZWNlaXZlZCB2ZWhpY2xlcyIsIkFjdGl2ZSBhdWN0aW9ucyIsIlNvbGQgdmVoaWNsZXMiLCJVbnNvbGQgdmVoaWNsZXMiLCJNeSBpbnZvaWNlcyIsIk15IHBheW1lbnRzIiwiUHJvZmlsZSIsIlVuYXBwcm92ZWQgVmVoaWNsZSIsIkNvbXBsZXRlZCBSZXF1ZXN0cyIsIlJlcXVlc3RlZCBTZXJ2aWNlcyIsIlJFQUQgJiBXUklURSJdLCJNYW5hZ2VtZW50IG1vZHVsZSI6WyJBY3RpdmUgYXVjdGlvbnMiLCJTYWxlcyBJbnZvaWNlIGRldGFpbHMiLCJTZWxsZXJzIHJlcG9ydCIsIlNhbGVzIHJlcG9ydCIsIkF1Y3Rpb24gTGlzdCIsIlByb2ZpdHMgZGV0YWlscyIsIk1vbnRobHkgcHJvZml0cyIsIkN1c3RvbWVyIGxpc3QiLCJBdWN0aW9uIEJhdGNoIGxpc3QiLCJRdWFsaXR5IEFzc3VyYW5jZSIsIkVSUCBJbnRlZ3JhdGlvbiIsIlNlbGxlciBMaXN0IiwiUkVBRCAmIFdSSVRFIl0sIkFkbWluIE1vZHVsZSI6WyJTZXJ2aWNlIGxpc3QiLCJFeHBlbnNlIGxpc3QiLCJVc2VycyBQZXJtaXNzaW9ucyIsIkFkcyBNYW5hZ2VtZW50IiwiRmVhdHVyZXMgTWFuYWdlbWVudCIsIk1ha2VzIGFuZCBtb2RlbHMgTWFuYWdlbWVudCIsIkxvY2F0aW9uIExpc3QiLCJTZXJ2aWNlcyBMaXN0Il0sIkFjY291bnRhbnQgTW9kdWxlIjpbIlNvbGQgdmVoaWNsZSIsIlNlbGxlciBJbnZvaWNlIGxpc3QiLCJCdXllciBpbnZvaWNlIGxpc3QiLCJTZWxsZXIgUGF5bWVudHMiLCJCdXllciBwYXltZW50cyIsIkN1c3RvbWVycyIsIlNlY3VyaXR5IERlcG9zaXQiLCJUTyBETyBMaXN0IiwiQmFuayBTdGF0ZW1lbnQiXSwiUmVwb3J0IE1vZHVsZSI6WyJBdWN0aW9uIEVuZCIsIkFjdGl2ZSBhdWN0aW9ucyIsIlN0YXRpc3RpY2FsIFJlcG9ydCIsIkNhciBQcmljZSBSZXBvcnQiLCJGZWF0dXJlIENhciBQcmljZSBSZXBvcnQiXSwiSHlicmlkIEF1Y3Rpb24iOlsiT2ZmbGluZSBiaWQgUGFnZSAiLCJTaG93c2NyZWVuIFBhZ2UiXSwiRGFzaGJvYXJkIE1vZHVsZSI6WyJTYWxlcyBDaGFydCIsIlB1cmNoYXNlIENoYXJ0IiwiVXNlciBDaGFydCJdfSwiaWF0IjoxNzQ1ODI3Mzk0LCJleHAiOjE3NDU4MzA5OTQsImlzcyI6Imh0dHBzOi8vZXQuYWUifQ.g9Qbout-F3kSP4eFO58rWwlz3J5hON506MXgjmA2wSc" value="" isExtended="false">
+                <accessType></accessType>
+            </param>
+        </header>
+        <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="lot_no" order="" paramOrder="1" parentOrder="-1" passnull="false" sms-name="" src="request" sourcevalue="" srcformatvalue="" target="request" targetdatatype="java.lang.String" testvalue="" value="" isExtended="false">
+            <accessType></accessType>
+        </param>
+        <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="title" order="" paramOrder="2" parentOrder="-1" passnull="false" sms-name="" src="request" sourcevalue="" srcformatvalue="" target="request" targetdatatype="java.lang.String" testvalue="" value="" isExtended="false">
+            <accessType></accessType>
+        </param>
+        <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="chassis_number" order="" paramOrder="3" parentOrder="-1" passnull="false" sms-name="" src="request" sourcevalue="" srcformatvalue="" target="request" targetdatatype="java.lang.String" testvalue="" value="" isExtended="false">
+            <accessType></accessType>
+        </param>
+        <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="location" order="" paramOrder="4" parentOrder="-1" passnull="false" sms-name="" src="request" sourcevalue="" srcformatvalue="" target="request" targetdatatype="java.lang.String" testvalue="" value="" isExtended="false">
+            <accessType></accessType>
+        </param>
+        <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="page" order="" paramOrder="5" parentOrder="-1" passnull="false" sms-name="" src="request" sourcevalue="" srcformatvalue="" target="request" targetdatatype="java.lang.String" testvalue="1" value="" isExtended="false">
+            <accessType></accessType>
+        </param>
+        <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="pageSize" order="" paramOrder="6" parentOrder="-1" passnull="false" sms-name="" src="request" sourcevalue="" srcformatvalue="" target="request" targetdatatype="java.lang.String" testvalue="10" value="" isExtended="false">
+            <accessType></accessType>
+        </param>
+        <param datatype="string" defaultvalue="Washed vehicles" description="" encode="true" format="None" formatvalue="" name="foundrySerivceName" order="" paramOrder="7" parentOrder="-1" passnull="false" sms-name="" src="request" sourcevalue="" srcformatvalue="" target="request" targetdatatype="java.lang.String" testvalue="Washed vehicles" value="Washed vehicles" isExtended="false">
+            <accessType></accessType>
+        </param>
+        <param datatype="string" defaultvalue="list" description="" encode="true" format="None" formatvalue="" name="serviceAction" order="" paramOrder="8" parentOrder="-1" passnull="false" sms-name="" src="request" sourcevalue="" srcformatvalue="" target="request" targetdatatype="java.lang.String" testvalue="list" value="list" isExtended="false">
+            <accessType></accessType>
+        </param>
+        <template-param datatype="" defaultvalue="" description="" encode="false" format="" formatvalue="" name="criteria" order="" paramOrder="0" parentOrder="0" sms-name="" src="" sourcevalue="" srcformatvalue="" target="" targetdatatype="" value="" isExtended="false">
+            <accessType></accessType>
+        </template-param>
+    </service-input>
+    <service-output passthrough="false" isExtended="false"/>
+</service>
