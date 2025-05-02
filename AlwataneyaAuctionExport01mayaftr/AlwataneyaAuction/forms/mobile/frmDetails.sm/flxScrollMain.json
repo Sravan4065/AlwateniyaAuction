@@ -25,7 +25,7 @@
     "_skin_": "sfa3945a479f4c55ba8d9c6d45877e1d",
     "_top_": {
         "type": "string",
-        "value": "0"
+        "value": "-3%"
     },
     "_width_": {
         "type": "string",
@@ -37,7 +37,7 @@
     "bounces": true,
     "canUpdateUI": true,
     "children": [
-        "flxSegCars",
+        "flxCarImagesCarousel",
         "flxCarDetails",
         "flxBasicInformation",
         "flxVehicleNote",

@@ -1,12 +1,8 @@
 {
     "DNDConfig": null,
-    "_bottom_": {
-        "type": "number",
-        "value": "0"
-    },
     "_height_": {
         "type": "string",
-        "value": "50%"
+        "value": "30dp"
     },
     "_left_": {
         "type": "string",
@@ -26,29 +22,36 @@
         0
     ],
     "_percent_": true,
-    "_skin_": "sd75eddac756498881c9d2a71ca25d08",
+    "_skin_": "sd4bfa699e2c41218d4ba81c6632483a",
+    "_top_": {
+        "type": "string",
+        "value": "0"
+    },
     "_width_": {
         "type": "string",
-        "value": "100%"
+        "value": "30dp"
     },
     "allboxes": [],
     "autogrowmode": 0,
     "canUpdateUI": true,
+    "centery": {
+        "type": "string",
+        "value": "50%"
+    },
     "children": [
-        "flxLocation",
-        "lblLotID"
+        "Image0fa36f64965554c"
     ],
     "clipbounds": false,
     "containerweight": 100,
     "enablescrolling": true,
-    "id": "flxHead2",
+    "id": "flxImageBackward",
     "info": null,
     "iscustomlayout": false,
     "isvisible": true,
-    "kuid": "fcd469496d3f446a81b677667fe88666",
+    "kuid": "a614324cf00a451a951a42b058fa1238",
     "layouttype": 2,
     "name": "kony.ui.FlexContainer",
-    "parent": "flxCarDetailsHead",
+    "parent": "flxCarImagesCarousel",
     "pf": "frmDetails",
     "retaincontentalignment": false,
     "retainflexpositionproperties": false,

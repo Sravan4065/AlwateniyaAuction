@@ -654,9 +654,14 @@ selectedFilters: {},
     var parentFlex = widgetRef.parent;
     parentFlex.setVisibility(false);
   },
-  
+
   navTofrmDetails: function(){
-    var x = new voltmx.mvc.Navigation("frmDetails");
-    x.navigate();
+    var selectedItem = this.view.segCurrentAuctionList.selectedRowItems[0];
+    
+    var navigationData = {
+      selectedItem: selectedItem
+    };
+    var nav = new voltmx.mvc.Navigation("frmDetails");
+    nav.navigate(navigationData);
   }
  });

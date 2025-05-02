@@ -1,8 +1,10 @@
 {
+    "@class": "com.kony.gen.viz.model.component.KVizImage2",
     "DNDConfig": null,
+    "_base64_": null,
     "_height_": {
         "type": "string",
-        "value": "220dp"
+        "value": "100%"
     },
     "_left_": {
         "type": "string",
@@ -14,15 +16,14 @@
         0,
         0
     ],
-    "_orientation_": 6,
     "_padding_": [
         0,
         0,
         0,
         0
     ],
-    "_percent_": true,
-    "_skin_": "sd75eddac756498881c9d2a71ca25d08",
+    "_skin_": "s489886ab3c7400b8469bd48d67c4717",
+    "_src_": "imagedrag.png",
     "_top_": {
         "type": "string",
         "value": "0"
@@ -31,28 +32,20 @@
         "type": "string",
         "value": "100%"
     },
-    "allboxes": [],
     "canUpdateUI": true,
-    "children": [
-        "segCar"
-    ],
-    "clipbounds": false,
     "containerweight": 100,
-    "enablescrolling": true,
-    "id": "flxSegCars",
+    "id": "imgCarousel",
+    "imagescalemode": 0,
     "info": null,
     "iscustomlayout": false,
     "isvisible": true,
-    "kuid": "dc3df3284e3041988b9c4608cd041cf7",
-    "layouttype": 2,
-    "name": "kony.ui.FlexContainer",
-    "parent": "flxScrollMain",
+    "kuid": "f4108044e06042d9b25edcaf0f524980",
+    "name": "kony.ui.Image2",
+    "parent": "flxCarImagesCarousel",
     "pf": "frmDetails",
     "retaincontentalignment": false,
     "retainflexpositionproperties": false,
-    "retainflowhorizontalalignment": false,
-    "snapgridsize": 10,
-    "snaptogrid": true,
-    "wType": "FlexContainer",
-    "widgetalignment": 1
+    "srcType": 1,
+    "wType": "Image",
+    "widgetalignment": 5
 }
