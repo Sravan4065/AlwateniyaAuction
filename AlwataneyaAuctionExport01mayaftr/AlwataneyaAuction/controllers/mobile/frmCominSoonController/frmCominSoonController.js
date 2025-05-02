@@ -4,6 +4,7 @@ define({
   {
     this.view.preShow = this.onPreShow.bind(this);
     alert('coming soon');
+alert("welcome");
   },
   
   onPreShow: function(){
