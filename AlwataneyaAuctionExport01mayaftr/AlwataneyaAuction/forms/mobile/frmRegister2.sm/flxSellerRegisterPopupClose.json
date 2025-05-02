@@ -45,7 +45,7 @@
     "kuid": "jb412b2d4f6d47cdba165ca17797465b",
     "layouttype": 2,
     "name": "kony.ui.FlexContainer",
-    "parent": "flxPopupSellerRegistration",
+    "parent": "flxPopupTrade",
     "pf": "frmRegister2",
     "retaincontentalignment": false,
     "retainflexpositionproperties": false,

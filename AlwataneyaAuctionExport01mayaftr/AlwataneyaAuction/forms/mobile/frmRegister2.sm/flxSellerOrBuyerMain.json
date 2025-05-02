@@ -36,7 +36,7 @@
     "canUpdateUI": true,
     "children": [
         "HeaderRegister",
-        "flxBarContainerFullName",
+        "flxBarContainerSellerOrBuyer",
         "flxBody",
         "flxFooter"
     ],
@@ -46,7 +46,7 @@
     "id": "flxSellerOrBuyerMain",
     "info": null,
     "iscustomlayout": false,
-    "isvisible": true,
+    "isvisible": false,
     "kuid": "ecdb30c7e9644a889db389ce94d57036",
     "layouttype": 2,
     "name": "kony.ui.FlexContainer",

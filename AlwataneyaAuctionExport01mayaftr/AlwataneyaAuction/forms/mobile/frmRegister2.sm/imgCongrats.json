@@ -4,7 +4,7 @@
     "_base64_": null,
     "_height_": {
         "type": "string",
-        "value": "60%"
+        "value": "100%"
     },
     "_left_": {
         "type": "string",
@@ -26,11 +26,11 @@
     "_src_": "group_1067_1.png",
     "_top_": {
         "type": "number",
-        "value": "20"
+        "value": "5"
     },
     "_width_": {
         "type": "string",
-        "value": "50%"
+        "value": "70%"
     },
     "canUpdateUI": true,
     "centerx": {

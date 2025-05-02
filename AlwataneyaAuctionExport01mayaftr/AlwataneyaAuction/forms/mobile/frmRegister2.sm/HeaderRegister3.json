@@ -39,7 +39,7 @@
     "clipbounds": false,
     "containerweight": 0,
     "dataDiffs": {
-        "HeaderRegisterNew": {
+        "HeaderRegister1": {
             "__events__": {},
             "__info__": {
                 "isRoot": true,
@@ -66,6 +66,22 @@
                 "kuid": "fd849468eb30494da8172bc3ba4c675b",
                 "srcKUID": "u751eaf063e4411baadbae2df75caad2",
                 "wType": "Button"
+            }
+        },
+        "flxBack": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "f26f4a15650645cdbacacd16592ae4e0",
+                "srcKUID": "b61d12c065d341ff95a00920c327b554",
+                "wType": "FlexContainer"
+            }
+        },
+        "flxLogin": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "d721bcc35e65458780473288f6c96242",
+                "srcKUID": "h89e7b4c5bf24f8698f7c6ce5b3a270a",
+                "wType": "FlexContainer"
             }
         },
         "imgAWA": {
