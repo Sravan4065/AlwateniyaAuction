@@ -35,14 +35,14 @@
     "autogrowmode": 0,
     "canUpdateUI": true,
     "children": [
-        "flxHeader",
+        "flxHeaderNew",
         "flxBody",
         "Footer2",
         "flxVehicleTypeFilter",
         "flxBodyTypeFilter",
         "flxOverLay"
     ],
-    "clipbounds": false,
+    "clipbounds": true,
     "containerweight": 100,
     "enablescrolling": true,
     "id": "flxMain",

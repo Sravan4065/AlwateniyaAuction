@@ -2,7 +2,7 @@
     "DNDConfig": null,
     "_height_": {
         "type": "string",
-        "value": "71%"
+        "value": "28%"
     },
     "_left_": {
         "type": "string",
@@ -25,7 +25,7 @@
     "_skin_": "sdc9e6011c63486b9487a1732597d88e",
     "_top_": {
         "type": "string",
-        "value": "0"
+        "value": "5dp"
     },
     "_width_": {
         "type": "string",
@@ -35,16 +35,18 @@
     "autogrowmode": 0,
     "canUpdateUI": true,
     "children": [
-        "segCurrentAuctionList"
+        "flxAuctionCalendarHeading",
+        "flxCalendarShow",
+        "flxDateAndNumberOfVehicles"
     ],
     "clipbounds": true,
     "containerweight": 100,
     "enablescrolling": true,
-    "id": "flxAuctionsSegmentBody",
+    "id": "flxAuctionCalendarDetails",
     "info": null,
     "iscustomlayout": false,
     "isvisible": true,
-    "kuid": "ccfb66d5043a40b7991db1924c89120e",
+    "kuid": "h0f777d787b6486a9ed2f30dcf1ffe83",
     "layouttype": 4,
     "name": "kony.ui.FlexContainer",
     "parent": "flxBody",

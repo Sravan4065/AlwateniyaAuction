@@ -2,7 +2,7 @@
     "DNDConfig": null,
     "_height_": {
         "type": "string",
-        "value": "71%"
+        "value": "10dp"
     },
     "_left_": {
         "type": "string",
@@ -22,10 +22,10 @@
         0
     ],
     "_percent_": true,
-    "_skin_": "sdc9e6011c63486b9487a1732597d88e",
+    "_skin_": "s40d04a78ff045be90493a9d90ef19c9",
     "_top_": {
         "type": "string",
-        "value": "0"
+        "value": "0dp"
     },
     "_width_": {
         "type": "string",
@@ -35,19 +35,20 @@
     "autogrowmode": 0,
     "canUpdateUI": true,
     "children": [
-        "segCurrentAuctionList"
+        "flxUL1",
+        "flxUL2"
     ],
-    "clipbounds": true,
+    "clipbounds": false,
     "containerweight": 100,
     "enablescrolling": true,
-    "id": "flxAuctionsSegmentBody",
+    "id": "flxUnderLineContainer",
     "info": null,
     "iscustomlayout": false,
     "isvisible": true,
-    "kuid": "ccfb66d5043a40b7991db1924c89120e",
-    "layouttype": 4,
+    "kuid": "a32032712e464f968d61dc3337015331",
+    "layouttype": 3,
     "name": "kony.ui.FlexContainer",
-    "parent": "flxBody",
+    "parent": "flxAuctionCalendarHeading",
     "pf": "frmAuctionCalendar",
     "retaincontentalignment": false,
     "retainflexpositionproperties": false,

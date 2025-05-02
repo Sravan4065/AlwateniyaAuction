@@ -1,74 +1,59 @@
+
+
 define({
-selectedFilters: {},
+
   
  onNavigate: function()
   {
    this.view.preShow = this.onPreshow.bind(this);
-    this.view.Header2WithLatestMenu.flxFilterFromHeader.setVisibility(false);
-   this.view.flxUpcomingAuctionsHeading.onClick = this.showUpcomingAuctions.bind(this);
-   this.view.flxCurrentAuctionHeading.onClick = this.showCurrentAuctions.bind(this);
-    this.view.flxVehicleType.onClick = this.showVehicleTypeFilter.bind(this);
-    this.view.flxBodyType.onClick = this.showBodyTypeFilter.bind(this);
-    this.view.flxRemoveVehicleTypeFilter.onClick = this.hideVehicleTypeFilter.bind(this);
-    this.view.flxRemoveBodyTypeFilter.onClick = this.hideBodyTypeFilter.bind(this);
-    this.view.flxCommercialVehicles.onClick = this.onFilterClick.bind(this,this.view.flxCommercialVehicles);
-    this.view.flxClassicandCollectorCars.onClick = this.onFilterClick.bind(this,this.view.flxClassicandCollectorCars);
-    this.view.flxSalvageVehicles.onClick = this.onFilterClick.bind(this,this.view.flxSalvageVehicles);
-    this.view.flxLightVehicles.onClick = this.onFilterClick.bind(this, this.view.flxLightVehicles);
-    this.view.flxHeavyVehicles.onClick = this.onFilterClick.bind(this, this.view.flxHeavyVehicles);
-    this.view.flxBikes.onClick = this.onFilterClick.bind(this, this.view.flxBikes);
     this.view.segCurrentAuctionList.onRowClick = this.navTofrmDetails.bind(this);
-    
-    this.view.flxRemoveCommercialVehicleFromFilter.onClick = this.removeFromFilterItems.bind(this);
-    this.view.flxRemoveClassicCarsFromFilter.onClick = this.removeFromFilterItems.bind(this);
-    this.view.flxRemoveBikesFromFilter.onClick = this.removeFromFilterItems.bind(this);
-    this.view.flxRemoveSalvageFromFilter.onClick = this.removeFromFilterItems.bind(this);
-    this.view.flxRemoveHeavyVehiclesFromFilter.onClick = this.removeFromFilterItems.bind(this);
-    this.view.flxRemoveLightVehiclesFromFilter.onClick = this.removeFromFilterItems.bind(this);
-    
-    this.view.flxCommercialVehiclesBodyType.onClick = this.onFilterClick.bind(this);
-    this.view.flxClassicCarsBodyType.onClick = this.onFilterClick.bind(this);
-    this.view.flxSalvageVehiclesBodyType.onClick = this.onFilterClick.bind(this);
-    this.view.flxBikesBodyType.onClick = this.onFilterClick.bind(this);
-    this.view.flxHeavyVehiclesBodyType.onClick = this.onFilterClick.bind(this);
-    this.view.flxLightVehiclesBodyType.onClick = this.onFilterClick.bind(this);
-    
-    this.view.flxRemoveCommercialVehicleBTFromFilter.onClick = this.removeFromFilterItems.bind(this);
-    this.view.flxRemoveClassicCarsBTFromFilter.onClick = this.removeFromFilterItems.bind(this);
-    this.view.flxRemoveSalvageBTFromFilter.onClick = this.removeFromFilterItems.bind(this);
-    this.view.flxRemoveBikeBTFromFilter.onClick = this.removeFromFilterItems.bind(this);
-    this.view.flxRemoveHeavyVehiclesBTFromFilter.onClick = this.removeFromFilterItems.bind(this);
-    this.view.flxRemoveLightVehiclesBTFromFilter.onClick = this.removeFromFilterItems.bind(this);
   },
-  
+
   onPreshow: function(){
    
    this.toggleFooterIcons();
-   this.callOnlineAuctionList();
-    
-   
-    
-   this.view.flxCommercialVehiclesSelected.setVisibility(false);
-    this.view.flxClassicCarsSelected.setVisibility(false);
-    this.view.flxSalvageSelected.setVisibility(false);
-     this.view.flxBikesSelected.setVisibility(false);
-    this.view.flxHeavyVehiclesSelected.setVisibility(false);
-    this.view.flxLightVehiclesSelected.setVisibility(false);
-    
-     this.view.flxCommercialVehiclesBodyTypeSelected.setVisibility(false);
-    this.view.flxClassicCarsBodyTypeSelected.setVisibility(false);
-     this.view.flxSalvageBodyTypeSelected.setVisibility(false);
-     this.view.flxBikesBodyTypeSelected.setVisibility(false);
-    this.view.flxHeavyVehiclesBodyTypeSelected.setVisibility(false);
-     this.view.flxLightVehiclesBodyTypeSelected.setVisibility(false);
+   this.invokeOnlineAuctionList();
+   this.updateDates();             
+    this.createCalendarView();   
   },
+updateDates: function() {
+  var monthNames = [
+    "JAN", "FEB", "MAR", "APR", "MAY", "JUN",
+    "JUL", "AUG", "SEP", "OCT", "NOV", "DEC"
+  ];
+
+  var weeks = ["SUN", "MON", "TUE", "WED", "THU", "FRI", "SAT"]; 
+
+  var currentDate = new Date();
+  this.calendar = []; 
+
+  for (var i = 0; i < 8; i++) {
+    var tempDate = new Date(); 
+    tempDate.setDate(currentDate.getDate() + i);
+    
+    var dayIndex = tempDate.getDay(); 
+    var day = weeks[dayIndex]; 
+    var date = tempDate.getDate(); 
+    var hasAuction = (i === 1 || i === 2 || i === 3); 
+
+    this.calendar.push({
+      weekday: day,
+      date: date.toString(),
+      hasAuction: hasAuction
+    });
+  }
+
+
+  voltmx.print("Calendar data: " + JSON.stringify(this.calendar));
+},
   
-  callOnlineAuctionList: function(){
+ invokeOnlineAuctionList: function(){
+    
      var self = this;
 
     function invServiceCallBack(status, online_auction_list) {
-      var records = online_auction_list.records;
-      self.setDataToSeg(records);
+      var records = online_auction_list.auction_list;
+      self.setDataToSegFromService(records);
     }
     if (online_auction_list_inputparam == undefined) {
         var online_auction_list_inputparam = {};
@@ -79,7 +64,81 @@ selectedFilters: {},
     var online_auction_list_httpconfigs = {};
     online_auction_list_inputparam["httpconfig"] = online_auction_list_httpconfigs;
     fry_int_auctions$online_auction_list = mfintegrationsecureinvokerasync(online_auction_list_inputparam, "fry_int_auctions", "online-auction-list", invServiceCallBack);
- 
+  },
+  
+  setDataToSegFromService: function(records)
+  {
+    var self = this;
+    self.view.segCurrentAuctionList.widgetDataMap = {
+      "lblObjID":"lblObjID",
+      "lblAuctionID":"lblAuctionID",
+      "imgCarPIcture":"imgCarPIcture",
+      "lblCarname":"lblCarname",
+      "lblTimerCount":"lblTimerCount",
+      "lblLot":"lblLot",
+      "lblLotNum":"lblLotNum",
+      "lblTotalBids":"lblTotalBids",
+      "lblTotalBidsCount":"lblTotalBidsCount",
+      "lblLocation":"lblLocation",
+      "lblLocationName":"lblLocationName",
+      "flxLikeHeart":"flxLikeHeart",
+      "imgHeart":"imgHeart",
+      "lblCurrentBid":"lblCurrentBid",
+      "lblPrice": "lblPrice",
+      "btnBidNow":"btnBidNow",
+      "flxAutoBid":"flxAutoBid",
+      "imgAutoBidicon":"imgAutoBidicon",
+      "lblAutoBid":"lblAutoBid"
+    }
+    
+    var data = [];
+    for(var i=0; i<records.length; i++){
+      
+      var item = records[i];
+      var carimage = item.thumbnail_url && item.thumbnail_url.trim() !== "" ? item.thumbnail_url : "car3.png";
+      var carname = item.sub_category_name;
+      var timercount = item.time_remaining;
+      var lotnum = item.ID ? item.ID : "N/A";
+      var totalbids = item.bids ? item.bids : "N/A";
+      var location = item.location ? item.location : "N/A";
+      var objid = item.object_id;
+      var aucid = item.auction_id;
+      var price = Number(item.max_bid_amount);
+      
+      data.push(
+      {
+        "imgCarPIcture" : carimage,
+        "lblCarname" : carname,
+        "lblObjID": objid,
+        "lblTimerCount": timercount,
+         "lblLot": "Lot #",
+         "lblLotNum": lotnum,
+         "lblTotalBids": "Total Bids",
+         "lblTotalBidsCount": totalbids,
+         "lblLocation":"Location",
+        "lblLocationName": location,
+        "lblAuctionID":aucid,
+
+        "flxLikeHeart": {
+          "onClick": this.addToWishList.bind(this)
+        },
+        "imgHeart": "imgdislikenew.png",
+        "lblCurrentBid": "CURRENT BID",
+        "lblPrice":  {
+          "text": "AED " + price,
+          "skin": "sknLblDubaid3243720pxbold"
+        },
+        "flxAutoBid": {
+          "onClick": this.enableAutoBid.bind(this,objid,aucid)
+        },
+        "imgAutoBidicon": "autobidnewone.png",
+        "lblAutoBid": "AUTO BID",
+        "btnBidNow": {
+          "onClick": this.openBidAmountContainer.bind(this,objid,aucid,price)
+        }
+      });
+    }
+    self.view.segCurrentAuctionList.setData(data);
   },
   
     toggleFooterIcons: function()
@@ -304,56 +363,10 @@ selectedFilters: {},
      "btnBidNow" : "BID NOW"
   }   
     ]
-    
-    var data1 = [];
-
-    for (var i = 0; i < records.length; i++) {
-  var item = records[i];
-  
-  var carName = item.sub_category_name ? item.sub_category_name + " " + (item.year || "") : "Unknown Car";
-  var price = item.max_bid_amount ? Number(item.max_bid_amount).toLocaleString() : "N/A";
-  var bidCount = item.bids || "0";
-
-  // Timer formatting logic (optional improvement)
-  var timerText = "00:00S";
-//   if (item.time_remaining) {
-//     var endTime = new Date(item.time_remaining);
-//     var now = new Date();
-//     var diffInMs = endTime - now;
-
-//     if (diffInMs > 0) {
-//       var mins = Math.floor((diffInMs / 1000 / 60) % 60);
-//       var secs = Math.floor((diffInMs / 1000) % 60);
-//       timerText = `${mins.toString().padStart(2, '0')}:${secs.toString().padStart(2, '0')}S`;
-//     }
-//   }
-
-  data1.push({
-    imgCarPIcture: "carsample1.png",
-    lblCarname: carName,
-    lblTimerCount: timerText,
-    lblLotNum: item.ID ? "#Lot:" + item.ID : "#Lot:N/A",
-    lblTotalBids: "Total Bids: " + bidCount,
-    flxLikeHeart: {
-      onClick: this.addToWishList.bind(this)
-    },
-    imgHeart: "dislikeheartcurrentauctions.png",
-    lblCurrentBid: "CURRENT BID",
-    lblPrice: price,
-    flxAutoBid: {
-      onClick: this.enableAutoBid.bind(this)
-    },
-    imgAutoBidicon: "autobidicon.png",
-    lblAutoBid: "AUTO BID",
-    btnBidNow: "BID NOW"
-  });
-}
-    
-    
-    
-    this.view.segCurrentAuctionList.setData(data1);
+    this.view.segCurrentAuctionList.setData(data);
   },
   
+
   addToWishList: function(widgetRef, sectionIndex, rowIndex){
     var selectedRow  = this.view.segCurrentAuctionList.selectedRowItems;
     if (!selectedRow || selectedRow.length === 0) {
@@ -363,7 +376,7 @@ selectedFilters: {},
     var rowData = selectedRow[0];
     var rowIndex = this.view.segCurrentAuctionList.selectedRowIndex[1];
 
-    rowData.imgHeart = rowData.imgHeart === "dislikeheartcurrentauctions.png" ? "heartlikexx.png" : "dislikeheartcurrentauctions.png";
+    rowData.imgHeart = rowData.imgHeart === "imgdislikenew.png" ? "heartlikerecommended.png" : "imgdislikenew.png";
 
     // Update only the selected row
     this.view.segCurrentAuctionList.setDataAt(rowData, rowIndex);
@@ -372,112 +385,95 @@ selectedFilters: {},
 
   },
   
-  showCurrentAuctions: function()
+  openBidAmountContainer: function()
   {
-    this.view.flxUALine.setVisibility(false);
-    this.view.flxCALine.setVisibility(true);
-    this.view.lblUpcomingAuctions.skin = "sknLblCronosPro8e8e8e18px49";
-    this.view.lblCurrentAuctions.skin = "sknLblCronosPro231f2018px49";
-    this.view.segCurrentAuctionList.setVisibility(true);
-  },
-  
-  showUpcomingAuctions: function(){
-    this.view.flxUALine.setVisibility(true);
-    this.view.flxCALine.setVisibility(false);
-    this.view.lblUpcomingAuctions.skin = "sknLblCronosPro231f2018px49";
-    this.view.lblCurrentAuctions.skin = "sknLblCronosPro8e8e8e18px49";
-    this.view.segCurrentAuctionList.setVisibility(false);
     
   },
   
-  showVehicleTypeFilter: function(){
-    this.view.flxVehicleTypeFilter.setVisibility(true);
-    this.view.flxOverLay.setVisibility(true);
+  createCalendarView: function()
+  {
+     if (!this.calendar || this.calendar.length === 0) {
+    this.updateDates(); 
+  }
+    var self = this;
+    self.view.flxCalendarShow.removeAll();
+ 
+for (var i = 0; i < this.calendar.length; i++) {
+  var item = this.calendar[i];
+  var leftVal = (i === 0) ? "2%" : "0%";
+ 
+  var flxItem = new voltmx.ui.FlexContainer({
+    id: "flxItem" + i,
+    layoutType: voltmx.flex.FLOW_VERTICAL,
+    width: "12%",
+    height: "100%",
+    left: leftVal,
+    isVisible: true,
+    skin: "slFbox",
+    onClick: this.handleCalendarItemClick.bind(this,i,this.calendar)
+  }, {}, {});
+  flxItem.setDefaultUnit(voltmx.flex.DP);
+
+  var lblWeekDay = new voltmx.ui.Label({
+    id: "lblWeekDay" + i,
+    text: item.weekday,
+    centerX: "50%",
+    top: "5%",
+    skin: "sknLblDubai231f2018pxMedium",
+    width: voltmx.flex.USE_PREFERRED_SIZE,
+    isVisible: true
+  }, {
+    contentAlignment: constants.CONTENT_ALIGN_CENTER
+  }, {});
+
+  var lblDate = new voltmx.ui.Label({
+    id: "lblDate" + i,
+    text: item.date,
+    centerX: "50%",
+    top: "0",
+    height: "33%",
+    skin: "sknLblDubai231f2022pxMedium",
+    width: voltmx.flex.USE_PREFERRED_SIZE,
+    isVisible: true
+  }, {
+    contentAlignment: constants.CONTENT_ALIGN_CENTER
+  }, {});
+
+  var flxActiveDot = new voltmx.ui.FlexContainer({
+    id: "flxActiveItem" + i,
+    width: "22%",
+    height: "13%",
+    top: "1%",
+    centerX: "50%",
+    isVisible: item.hasAuction,
+    skin: "sknFlxd32437bgcustom120pxround",
+    layoutType: voltmx.flex.FREE_FORM
+  }, {}, {});
+  flxActiveDot.setDefaultUnit(voltmx.flex.DP);
+
+  flxItem.add(lblWeekDay, lblDate, flxActiveDot);
+  self.view.flxCalendarShow.add(flxItem);
+}
   },
   
-  showBodyTypeFilter: function(){
-    this.view.flxBodyTypeFilter.setVisibility(true);
-     this.view.flxOverLay.setVisibility(true);
-  },
-  
-  hideVehicleTypeFilter: function(){
-    this.view.flxVehicleTypeFilter.setVisibility(false);
-    this.view.flxOverLay.setVisibility(false);
-  },
-  hideBodyTypeFilter: function(){
-    this.view.flxBodyTypeFilter.setVisibility(false);
-     this.view.flxOverLay.setVisibility(false);
-  },
-  onFilterClick: function(widgetRef){
-    var id = widgetRef.id;
-    
-    if(id === "flxCommercialVehicles"){
-      if(!this.view.flxCommercialVehiclesSelected.isVisible){
-        this.view.flxCommercialVehiclesSelected.setVisibility(true);
-      }
+  handleCalendarItemClick: function(selectedIndex, auctionDates) {
+  for (var i = 0; i < 8; i++) {
+    var itemFlex = this.view["flxItem" + i];
+
+    if (!itemFlex) continue;
+
+    var hasAuction = false;
+    if (auctionDates[i] && auctionDates[i].hasAuction === true) {
+      hasAuction = true;
     }
-     if(id === "flxClassicandCollectorCars"){
-      if(!this.view.flxClassicCarsSelected.isVisible){
-        this.view.flxClassicCarsSelected.setVisibility(true);
-      }
+
+    if (i === selectedIndex && hasAuction) {
+      itemFlex.skin = "sknFlxeae9e9";
+    } else {
+      itemFlex.skin = "slFbox";
     }
-     if(id === "flxSalvageVehicles"){
-      if(!this.view.flxSalvageSelected.isVisible){
-        this.view.flxSalvageSelected.setVisibility(true);
-      }
-    }
-     if(id === "flxBikes"){
-      if(!this.view.flxBikesSelected.isVisible){
-        this.view.flxBikesSelected.setVisibility(true);
-      }
-    }
-     if(id === "flxHeavyVehicles"){
-      if(!this.view.flxHeavyVehiclesSelected.isVisible){
-        this.view.flxHeavyVehiclesSelected.setVisibility(true);
-      }
-    }
-     if(id === "flxLightVehicles"){
-      if(!this.view.flxLightVehiclesSelected.isVisible){
-        this.view.flxLightVehiclesSelected.setVisibility(true);
-      }
-    }
-    if(id === "flxCommercialVehiclesBodyType"){
-      if(!this.view.flxCommercialVehiclesBodyTypeSelected.isVisible){
-        this.view.flxCommercialVehiclesBodyTypeSelected.setVisibility(true);
-      }
-    }
-    if(id === "flxClassicCarsBodyType"){
-      if(!this.view.flxClassicCarsBodyTypeSelected.isVisible){
-        this.view.flxClassicCarsBodyTypeSelected.setVisibility(true);
-      }
-    }
-    if(id === "flxSalvageVehiclesBodyType"){
-      if(!this.view.flxSalvageBodyTypeSelected.isVisible){
-        this.view.flxSalvageBodyTypeSelected.setVisibility(true);
-      }
-    }
-    if(id === "flxBikesBodyType"){
-      if(!this.view.flxBikesBodyTypeSelected.isVisible){
-        this.view.flxBikesBodyTypeSelected.setVisibility(true);
-      }
-    }
-    if(id === "flxHeavyVehiclesBodyType"){
-      if(!this.view.flxHeavyVehiclesBodyTypeSelected.isVisible){
-        this.view.flxHeavyVehiclesBodyTypeSelected.setVisibility(true);
-      }
-    }
-    if(id === "flxLightVehiclesBodyType"){
-      if(!this.view.flxLightVehiclesBodyTypeSelected.isVisible){
-        this.view.flxLightVehiclesBodyTypeSelected.setVisibility(true);
-      }
-    }
-  },
-  
-  removeFromFilterItems: function(widgetRef){
-    var parentFlex = widgetRef.parent;
-    parentFlex.setVisibility(false);
-  },
-  
+  }
+},
   navTofrmDetails: function(){
     var x = new voltmx.mvc.Navigation("frmDetails");
     x.navigate();
