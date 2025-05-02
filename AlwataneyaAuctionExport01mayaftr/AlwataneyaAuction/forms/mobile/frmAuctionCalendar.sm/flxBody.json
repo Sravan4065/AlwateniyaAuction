@@ -2,7 +2,7 @@
     "DNDConfig": null,
     "_height_": {
         "type": "string",
-        "value": "81%"
+        "value": "82%"
     },
     "_left_": {
         "type": "string",
@@ -22,10 +22,10 @@
         0
     ],
     "_percent_": true,
-    "_skin_": "s52efebb1e6941fdaf52560354be1a4e",
+    "_skin_": "sdc9e6011c63486b9487a1732597d88e",
     "_top_": {
         "type": "string",
-        "value": "9%"
+        "value": "8%"
     },
     "_width_": {
         "type": "string",
@@ -35,6 +35,8 @@
     "autogrowmode": 0,
     "canUpdateUI": true,
     "children": [
+        "flxAuctionCalendarDetails",
+        "flxAuctionsSegmentBody",
         "flxFilterBody",
         "flxCurrentandUpcomingAuctionBody"
     ],

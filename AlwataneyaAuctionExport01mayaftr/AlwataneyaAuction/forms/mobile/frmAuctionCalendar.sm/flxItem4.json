@@ -2,11 +2,11 @@
     "DNDConfig": null,
     "_height_": {
         "type": "string",
-        "value": "71%"
+        "value": "100%"
     },
     "_left_": {
         "type": "string",
-        "value": "0"
+        "value": "0%"
     },
     "_margin_": [
         0,
@@ -22,32 +22,34 @@
         0
     ],
     "_percent_": true,
-    "_skin_": "sdc9e6011c63486b9487a1732597d88e",
+    "_skin_": "s5f6044abe194492b5e811af99858a26",
     "_top_": {
         "type": "string",
         "value": "0"
     },
     "_width_": {
         "type": "string",
-        "value": "100%"
+        "value": "12%"
     },
     "allboxes": [],
     "autogrowmode": 0,
     "canUpdateUI": true,
     "children": [
-        "segCurrentAuctionList"
+        "lblWeekDay4",
+        "lblDate4",
+        "flxActiveItem4"
     ],
-    "clipbounds": true,
+    "clipbounds": false,
     "containerweight": 100,
     "enablescrolling": true,
-    "id": "flxAuctionsSegmentBody",
+    "id": "flxItem4",
     "info": null,
     "iscustomlayout": false,
-    "isvisible": true,
-    "kuid": "ccfb66d5043a40b7991db1924c89120e",
+    "isvisible": false,
+    "kuid": "c2aa48e96aae4823a510cf21c045082c",
     "layouttype": 4,
     "name": "kony.ui.FlexContainer",
-    "parent": "flxBody",
+    "parent": "flxCalendarShow",
     "pf": "frmAuctionCalendar",
     "retaincontentalignment": false,
     "retainflexpositionproperties": false,
