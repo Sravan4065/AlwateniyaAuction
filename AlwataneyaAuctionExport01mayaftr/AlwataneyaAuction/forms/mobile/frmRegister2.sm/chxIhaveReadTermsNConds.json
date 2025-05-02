@@ -69,8 +69,8 @@
     "selectedkeyvalue": null,
     "selectedkeyvalues": null,
     "size": 18,
-    "tickedimage": "check_box__2_.png",
-    "untickedimage": "check_box__1_.png",
+    "tickedimage": "checkedcheck.png",
+    "untickedimage": "uncheckedcheck.png",
     "viewtype": 0,
     "wType": "CheckBoxGroup",
     "widgetalignment": 5

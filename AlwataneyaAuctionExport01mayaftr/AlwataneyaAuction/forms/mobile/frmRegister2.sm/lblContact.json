@@ -17,15 +17,15 @@
         0,
         0
     ],
-    "_skin_": "s6491c78689b451babb60ae630c66739",
-    "_text_": "You Will be contacted by our team Shortly",
+    "_skin_": "s6666a722d564abbb6b7a473efe3c209",
+    "_text_": "We’ll notify you via email once your account is approved.",
     "_top_": {
         "type": "string",
         "value": "0"
     },
     "_width_": {
         "type": "string",
-        "value": "90%"
+        "value": "95%"
     },
     "_wrapping_": 2,
     "android": {

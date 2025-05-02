@@ -45,7 +45,8 @@
     "children": [
         "HeaderRegisterForVerificationCode",
         "flxVerificationBody",
-        "flxEmailVerificationFooter"
+        "flxEmailVerificationFooter",
+        "flxEmailVerificationBarContainer"
     ],
     "clipbounds": false,
     "containerweight": 100,

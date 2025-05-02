@@ -1,9 +1,13 @@
 {
     "@class": "com.kony.gen.viz.model.component.KVizLabel",
     "DNDConfig": null,
+    "_bottom_": {
+        "type": "number",
+        "value": "5"
+    },
     "_height_": {
-        "type": "ref",
-        "value": "preferred"
+        "type": "string",
+        "value": "40%"
     },
     "_margin_": [
         1,
@@ -20,8 +24,8 @@
     "_skin_": "sa14cd4ddc294baa908807c5aa96af28",
     "_text_": "+971 (555) 000-0000",
     "_width_": {
-        "type": "ref",
-        "value": "preferred"
+        "type": "string",
+        "value": "80%"
     },
     "_wrapping_": 2,
     "android": {
@@ -34,10 +38,6 @@
     "centerx": {
         "type": "string",
         "value": "50%"
-    },
-    "centery": {
-        "type": "string",
-        "value": "55%"
     },
     "containerweight": 100,
     "contentalignment": 5,

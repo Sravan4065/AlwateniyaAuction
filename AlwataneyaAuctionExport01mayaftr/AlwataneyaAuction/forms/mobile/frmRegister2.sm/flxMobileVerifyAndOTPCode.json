@@ -45,7 +45,8 @@
     "children": [
         "HeaderRegisterMobileOTP",
         "flxOTPCodeBody",
-        "flxOtpVerificationFooter"
+        "flxOtpVerificationFooter",
+        "flxBarContainerMobileOtp"
     ],
     "clipbounds": false,
     "containerweight": 100,
