@@ -3,12 +3,20 @@ define({
   //Type your controller code here 
   onNavigate: function(){
     this.view.preShow = this.onPreShow;
-    this.view.flx2.onClick = this.PopupVisibilityAction;
+    this.view.btnSaveAndContinue.skin = "sknbtnBG61B35CRoundedBorder61B35C1pxFontDubaiRegffffffSize45px";
+   this.view.flxToggle2.skin = "sknflxBGFF7171Opacity50perPlainBorderFF71711px";
+   this.view.flxBarSellerOrBuyer.skin = "sknflxBGDFDFDFRoundedBorderDFDFDF1px";
+    this.view.btnTradeSaveAandContinue.skin = "sknbtnBG61B35CRoundedBorder61B35C1pxFontDubaiRegffffffSize45px";
+   this.view.btnSaveAndContinueForTermsNConditions.skin = "sknbtnBG61B35CRoundedBorder61B35C1pxFontDubaiRegffffffSize45px";
+    this.view.flx2.onClick = this.PopupVisibilityAction; 
     this.view.flxClosePopup.onClick = this.ClosePopupOnClick;
     this.view.btnSaveAndContinue.onClick = this.btnSaveAndContinueSellerOrBuyeronClickAction;
     this.view.flxFooter.onClick = this.nextOnclick;
     this.view.HeaderRegister.imgBack.onTouchEnd = this.BackNavigation.bind(this,"sellerOrBuyer");
     this.view.HeaderRegisterForEmail.imgBack.onTouchEnd = this.BackNavigation.bind(this,"emailBack");
+    this.view.HeaderRegisterForCompany.imgBack.onTouchEnd = this.BackNavigation.bind(this, "companyBack");
+    this.view.HeaderRegisterForTradeLicense.flxBack.onClick = this.BackNavigation.bind(this,"tradeLicense");
+    this.view.HeaderRegisterForTradeLicenseExpiryDate.flxBack.onClick = this.BackNavigation(this,"tradeLicenseExpiryDate");
     this.view.HeaderRegisterForVerificationCode.imgBack.onTouchEnd = this.BackNavigation.bind(this,"emailVerificationCode");
     this.view.HeaderRegisterMobileContainer.imgBack.onTouchEnd = this.BackNavigation.bind(this,"mobileBack");
     this.view.HeaderRegisterMobileOTP.imgBack.onTouchEnd = this.BackNavigation.bind(this,"mobileotpback");
@@ -19,9 +27,15 @@ define({
     this.view.radiobtnBuyer.onSelection = this.radiobtnbuyerOnSelectionAction;
     this.view.radioBtnWithTrade.onSelection = this.radioBtnWithTradeOnSelectionAction;
     this.view.radioBtnWithoutTrade.onSelection = this.radioBtnWithoutTradeOnelectionAction;
-    this.view.btnSellerRegisterSaveAandContinue.onClick=this.btnSellerRegisterSaveAandContinueOnclickAction;
+    this.view.btnTradeSaveAandContinue.onClick=this.btnTradeSaveAandContinueOnclickAction;
     this.view.flxSellerRegisterPopupClose.onClick = this.flxSellerRegisterPopupCloseOnClickAction;
     this.view.flxWithoutUAE.onClick = this.flxWithoutUAEOnClickAction;
+    this.view.flxCompanyFooter.onClick = this.flxCompanyFooterOnClickAction;
+    this.view.flxTradeLicenseFooter.onClick = this.flxTradeLicenseFooterOnClickAction;
+    this.view.tbxCompanyAddress.onTextChange = this.tbxCompanyAddressOnTextChangeAction;
+    this.view.tbxTradeLicenseNumber.onTextChange = this.tbxTradeLicenseNumberOnTextChangeAction;
+    this.view.calendarTradeLicenseExpiryDate.onSelection = this.calendarTradeLicenseExpiryDateOnSelectionAction;
+    this.view.flxTradeLicenseExpiryDateFooter.onClick = this.flxTradeLicenseExpiryDateFooterOnClickAction;
     this.view.tbxEmailAddress.onTextChange = this.tbxEmailAddressOnTextChangeAction;
    this.view.flxEmailFooter.onClick= this.imgNextInEmailonTouchEndAction;
     this.view.imgNextInMobileVerification.onTouchEnd = this.imgNextInMobileVerificationOnTouchEndAction ;
@@ -69,7 +83,7 @@ define({
                                       this.view.flx2.setEnabled(true);
                                      this.view.radiobtnBuyer.selectedKey =null;
                                     this.view.flxFooter.setVisibility(false);
-                                      this.view.flxInnerBarFullName.width="10%";
+                                      this.view.flxInnerBarSellerOrBuyer.width="10%";
                                      this.view.radiobtnSeller.selectedKey = null;
                                      }
                                   }
@@ -77,7 +91,7 @@ define({
       case "emailBack"          : {
                                     if(this.view.tbxEmailAddress.text === ""){
                                        this.view.flxEmailContainer.setVisibility(false);
-//                                     this.view.flxPopupSellerRegistrationForIndividual.setVisibility(true);
+//                                     this.view.flxPopupTradeForIndividual.setVisibility(true);
 //                                     this.view.flxFooterPopupSellerRegistrationForIndividual.bottom = "-5%";
                                     this.view.flxSellerOrBuyerMain.setVisibility(true);
                                     this.view.flxSellerRegIndiFooterBody.setVisibility(true);
@@ -157,6 +171,40 @@ define({
                                      }
                                     }
                                     break;
+      case "companyBack"        : {
+                                   if(this.view.tbxCompanyAddress.text === ""){
+                                     this.view.flxSellerOrBuyerMain.setVisibility(true);
+                                     this.view.flxCompanyName.setVisibility(false);
+                                   }
+                                   else{
+                                     this.view.tbxCompanyAddress.text = "";
+                                     this.view.flxCompanyFooter.setVisibility(false);
+                                     
+                                   }
+                                   }
+                                   break;
+      case "tradeLicense"      : {
+                                   if(this.view.tbxTradeLicenseNumber.text === ""){
+                                      this.view.flxCompanyName.setVisibility(true);
+                                     this.view.flxTradeLicense.setVisibility(false);
+                                   }
+                                   else{
+                                     this.view.tbxTradeLicenseNumber.text = "";
+                                     this.view.flxTradeLicenseFooter.setVisibility(false);
+                                   }
+                                 }
+                                 break;
+      case "tradeLicenseExpiryDate" : {
+                                        if(!this.view.calendarTradeLicenseExpiryDate.date){
+                                        
+                                          alert("select any date!!");
+                                          this.view.flxTradeLicenseExpiryDateFooter.setVisibility(false);
+                                        }
+        else{
+                                                    this.view.flxTradeLicenseExpiryDateFooter.setVisibility(true);
+
+        }
+                                       }
     }
   },
   //Buyer or seller (radio buttons) popup visibility on action!!! 
@@ -176,7 +224,7 @@ btnSaveAndContinueSellerOrBuyeronClickAction: function() {
   var selectedKeyForBuyer = this.view.radiobtnBuyer.selectedKey;
   var selectedKeyValueForBuyer = this.view.radiobtnBuyer.selectedKeyValue;
   
-  var setUserName = voltmx.store.setItem("userName", this.view.lblUserName.text);
+  var setUserName = voltmx.store.setItem("userName", this.view.lblUserFullName.text);
   var gettedUserName = voltmx.store.getItem("userName");
 
   // Hiding the Popup and Footer
@@ -187,13 +235,13 @@ btnSaveAndContinueSellerOrBuyeronClickAction: function() {
   // Handling cases when no selection is made
   if (!selectedKerForSeller && !selectedKeyForBuyer) {
     this.view.btnSaveAndContinue.setEnabled(false);
-      this.view.flxInnerBarFullName.width="10%";
+      this.view.flxInnerBarSellerOrBuyer.width="10%";
     alert("Select Any Type!!");
     return;
   } else {
     // Re-enable button if a valid selection is made
     this.view.btnSaveAndContinue.setEnabled(true);
-    this.view.flxInnerBarFullName.width="21%";
+    this.view.flxInnerBarSellerOrBuyer.width="21%";
     // Updating labels based on selected value
     if (!selectedKerForSeller) {
       this.view.lblSellerOrBuyer.text = selectedKeyForBuyer;
@@ -219,7 +267,7 @@ btnSaveAndContinueSellerOrBuyeronClickAction: function() {
 
   //next onclick action after selecting seller or buyer!!!!
   nextOnclick: function(){
-    this.view.flxPopupSellerRegistration.setVisibility(true);
+    this.view.flxPopupTrade.setVisibility(true);
     this.view.flxPopupRegister.bottom="-3%";
     this.view.flxPopupSellerOrBuyer.setVisibility(false);
     if(this.view.lblSellerRegister.text ===this.view.lblSellerOrBuyer.text ){
@@ -231,11 +279,9 @@ btnSaveAndContinueSellerOrBuyeronClickAction: function() {
   //radio button buyer on Selection Action !!!!!!!!
   radiobtnbuyerOnSelectionAction: function(){
     if(this.view.radiobtnBuyer.selectedKey === null){
-//       this.view.btnSaveAndContinue.skin ="sknbtnCPReg767676CstmBorder5pxFont70px";
       this.view.radiobtnSeller.selectedKey = "Seller";
     }
     else{
-//       this.view.btnSaveAndContinue.skin ="sknbtnCstmBorder5pxCPRegffffffFont70px";
       this.view.radiobtnSeller.selectedKey = null;
        this.view.btnSaveAndContinue.setEnabled(true); 
     }
@@ -243,11 +289,9 @@ btnSaveAndContinueSellerOrBuyeronClickAction: function() {
   //radio button seller on Selection Action!!!!!!!
   radiobtnSellerOnSelectionAction: function(){
     if(this.view.radiobtnSeller.selectedKey === null){
-//       this.view.btnSaveAndContinue.skin ="sknbtnCPReg767676CstmBorder5pxFont70px";
       this.view.radiobtnBuyer.selectedKey = "Buyer";
     }
     else{
-//       this.view.btnSaveAndContinue.skin ="sknbtnCstmBorder5pxCPRegffffffFont70px";
       this.view.radiobtnBuyer.selectedKey =null;
        this.view.btnSaveAndContinue.setEnabled(true); 
     }
@@ -255,34 +299,28 @@ btnSaveAndContinueSellerOrBuyeronClickAction: function() {
   //radio button Without Trade OnSelection Action!!!!!!
   radioBtnWithoutTradeOnelectionAction: function(){
     if(this.view.radioBtnWithoutTrade.selectedKey === null){
-//       this.view.btnSellerRegisterSaveAandContinue.skin ="sknbtnCPReg767676CstmBorder5pxFont70px";
       this.view.radioBtnWithTrade.selectedKey = "WithTrade";
     }
     else{
-//       this.view.btnSellerRegisterSaveAandContinue.skin ="sknbtnCstmBorder5pxCPRegffffffFont70px";
       this.view.radioBtnWithTrade.selectedKey =null;
     }
   },
   //radio button With Trade OnSelection Action!!!!!!!!
   radioBtnWithTradeOnSelectionAction: function(){
     if( this.view.radioBtnWithTrade.selectedKey === null){
-//       this.view.btnSellerRegisterSaveAandContinue.skin ="sknbtnCPReg767676CstmBorder5pxFont70px";
-      this.view.btnSellerRegisterSaveAandContinue.setEnabled(false);
+      this.view.btnTradeSaveAandContinue.setEnabled(false);
       this.view.radioBtnWithoutTrade.selectedKey = "WithoutTrade";
     }
     else{
-//       this.view.btnSellerRegisterSaveAandContinue.skin ="sknbtnCstmBorder5pxCPRegffffffFont70px";
-      this.view.btnSellerRegisterSaveAandContinue.setEnabled(true);
+      this.view.btnTradeSaveAandContinue.setEnabled(true);
       this.view.radioBtnWithoutTrade.selectedKey =null;
     }
   },
 
-  btnSellerRegisterSaveAandContinueOnclickAction: function () {
+  btnTradeSaveAandContinueOnclickAction: function () {
   var selectedWithoutTrade = this.view.radioBtnWithoutTrade.selectedKey;
   var selectedWithTrade = this.view.radioBtnWithTrade.selectedKey;
-
-//   this.view.lblSellerRegForIndividual.text = this.view.lblSellerOrBuyer.text + " Registration for individual";
-
+    
   // If neither radio is selected
   if (!selectedWithoutTrade && !selectedWithTrade) {
     alert("Please select a trade type.");
@@ -297,20 +335,31 @@ btnSaveAndContinueSellerOrBuyeronClickAction: function() {
     voltmx.store.setItem("trade", selectedWithoutTrade);
   }
 
+    var trade = voltmx.store.getItem("trade");
+    if(trade === "WithTrade"){
+      //With Trade!!!
+      this.view.flxCompanyName.setVisibility(true);
+        this.view.flxPopupTrade.setVisibility(false);
+         this.view.flxSellerOrBuyerMain.setVisibility(false);
+    }
+    else{
+      //Without Trade!!!!
+         this.view.flxEmailContainer.setVisibility(true);
+         this.view.flxEmailFooter.setVisibility(false);
+         this.view.flxPopupTrade.setVisibility(false);
+         this.view.flxSellerOrBuyerMain.setVisibility(false);
+    }
   // Show next screen
-  this.view.flxEmailContainer.setVisibility(true);
-  this.view.flxEmailFooter.setVisibility(false);
-    this.view.flxPopupSellerRegistration.setVisibility(false);
-    this.view.flxSellerOrBuyerMain.setVisibility(false);
+ 
 },
   //Registration Individual for seller/buyer Pop Up visible onClick action!!!!!
   flxSellerRegIndividualCloseonClickAction: function(){
-    this.view.flxPopupSellerRegistrationForIndividual.setVisibility(false);
+//     this.view.flxPopupTradeForIndividual.setVisibility(false);
     this.view.flxFooterPopupSellerRegistrationForIndividual.bottom="-45%";
   },
   //Registration Individual for seller/buyer Pop Upunvisible onClick action!!!!
   flxSellerRegisterPopupCloseOnClickAction: function(){
-    this.view.flxPopupSellerRegistration.setVisibility(false);
+    this.view.flxPopupTrade.setVisibility(false);
     this.view.flxPopupRegister.bottom= "-45%";
     this.view.flxPopupFromFooter.bottom= "-3%";
     this.view.flxPopupSellerOrBuyer.setVisibility(true);
@@ -330,35 +379,68 @@ btnSaveAndContinueSellerOrBuyeronClickAction: function() {
     this.view.HeaderRegister.imgBack.setVisibility(true);
     this.view.flxSellerRegIndiFooterBody.setVisibility(false);
     this.view.flxFooterPopupSellerRegistrationForIndividual.bottom ="-3";
-    this.view.flxPopupSellerRegistrationForIndividual.setVisibility(false);
+//     this.view.flxPopupTradeForIndividual.setVisibility(false);
     this.view.HeaderRegisterForEmail.setVisibility(true);
     this.view.flxSellerOrBuyerMain.setVisibility(false);
     this.view.flxFooter.setVisibility(false);
     this.view.flxPopupRegister.bottom="=55%";
-    this.view.flxPopupSellerRegistration.setVisibility(false);
+    this.view.flxPopupTrade.setVisibility(false);
   },
   
-//   tbxEmailAddressOnTextChangeAction: function(){
-// //   var pattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
-//   var emailText = this.view.tbxEmailAddress.text;
-//   const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-//      const atIndex = emailText.indexOf("@");
-// //   if (!emailRegex.test(emailText)&& emailText.includes("..")&& emailText.startsWith(".") || emailText.endsWith(".")&& emailText[atIndex - 1] === "." || emailText[atIndex + 1] === ".") {
+   flxCompanyFooterOnClickAction: function(){
+     this.view.flxTradeLicense.setVisibility(true);
+     this.view.flxCompanyName.setVisibility(false);
+     
+   },
+  flxTradeLicenseFooterOnClickAction: function(){
     
-// //   }
- 
-//   if (!emailText || emailText.trim() === "") {
-//     this.view.lblEmailError.text = "Email Required!!";
-//     this.view.flxEmailFooter.setVisibility(false);
-//   } else if (!emailRegex.test(emailText)&& emailText.includes("..")&& emailText.startsWith(".") || emailText.endsWith(".")&& emailText[atIndex - 1] === "." || emailText[atIndex + 1] === ".") {
-//     this.view.lblEmailError.text = "Enter Valid Email";
-//     this.view.flxEmailFooter.setVisibility(false);
-//   } else {
-//     this.view.lblEmailError.text = "";
-//     this.view.flxEmailFooter.setVisibility(true);
-//   }
-// },
+       this.view.flxTradeLicense.setVisibility(false);
+    this.view.flxTradeLicenseExpiryDate.setVisibility(true);
+    
+    
+    
+    
+  },
   
+  tbxCompanyAddressOnTextChangeAction: function(){
+    
+      var pattern =  /^[A-Za-z0-9 ]+$/;
+    var companyName = this.view.tbxCompanyAddress.text;
+    if(!companyName.match(pattern))
+      {
+        this.view.flxCompanyFooter.setVisibility(false);
+        this.view.flxCompanyError.setVisibility(true);
+      this.view.lblCompanyError.text = "Enter valid Company Name"; 
+      }
+    else{
+     this.view.flxCompanyFooter.setVisibility(true);
+    this.view.flxCompanyError.setVisibility(false);
+    }
+  },
+  tbxTradeLicenseNumberOnTextChangeAction: function(){
+    
+      var pattern =  /^[A-Za-z0-9 ]+$/;
+    var TradeLicenseNumber = this.view.tbxTradeLicenseNumber.text;
+    if(!TradeLicenseNumber.match(pattern))
+      {
+       this.view.flxTradeLicenseFooter.setVisibility(false);
+      this.view.flxTradeLicenseError.setVisibility(true);
+      this.view.lblTradeLicenseError.text = "Enter valid Trade License Number"; 
+      }
+    else{
+  this.view.flxTradeLicenseFooter.setVisibility(true);
+    this.view.flxTradeLicenseError.setVisibility(false);
+    }
+    
+  },
+  calendarTradeLicenseExpiryDateOnSelectionAction: function(){
+  
+    this.view.flxTradeLicenseExpiryDateFooter.setVisibility(true);
+  },
+  flxTradeLicenseExpiryDateFooterOnClickAction: function(){
+    this.view.flxTradeLicenseExpiryDate.setVisibility(false);
+    
+  },
   tbxEmailAddressOnTextChangeAction: function() {
     var emailText = this.view.tbxEmailAddress.text;
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
@@ -1380,7 +1462,7 @@ flxEyeIconConfirmPassOnClickAction: function(){
 },
 
   btnUploadYourDocOnClickAction: function(){
-    this.view.flxPopupSellerRegistrationForIndividual.setVisibility(true);
+//     this.view.flxPopupTradeForIndividual.setVisibility(true);
     this.view.flxFooterPopupSellerRegistrationForIndividual.bottom="-3%";
     this.view.flxPopupHowWouldYouUploadYourDoc.setVisibility(false);
     if(this.flagUploaded){
@@ -1405,7 +1487,7 @@ flxEyeIconConfirmPassOnClickAction: function(){
   },
   lblUploadSignedDocsOnTouchEndAction: function(){
     //     this.view.flxTermsAndConditions.bottom="55%";
-    this.view.flxPopupSellerRegistrationForIndividual.setVisibility(false);
+//     this.view.flxPopupTradeForIndividual.setVisibility(false);
     this.view.flxFooterPopupSellerRegistrationForIndividual.bottom="-60%";
     this.view.flxPopupHowWouldYouUploadYourDoc.setVisibility(true);
     this.view.flxFooterPopupHowWouldUpload.bottom = "3%";
@@ -1491,14 +1573,22 @@ flxEyeIconConfirmPassOnClickAction: function(){
   //Disabling Congrats Popup and Navigating to Login Page!!!!
   btnOkayOnClickAction: function(){
     this.view.flxCongratulations.setVisibility(false);
-    var ntf = new voltmx.mvc.Navigation("frmLoginScreen");
-    ntf.navigate();
+    var userType = voltmx.store.getItem("userType");
+    if(userType === "Buyer"){
+        var ntf = new voltmx.mvc.Navigation("frmPaymentMethod");
+       ntf.navigate();
+    }
+    else{
+       var ntf = new voltmx.mvc.Navigation("frmLoginScreen");
+       ntf.navigate();
+    }
+   
   },
  
   flxUploadPopupClose: function(){
     this.view.flxPopupHowWouldYouUploadYourDoc.setVisibility(false);
     this.view.flxFooterPopupHowWouldUpload.bottom="3%";
-    this.view.flxPopupSellerRegistrationForIndividual.setVisibility(true);
+//     this.view.flxPopupTradeForIndividual.setVisibility(true);
     this.view.flxFooterPopupSellerRegistrationForIndividual.bottom="3%";
     this.view.flxTermsAndConditions.setVisibility(true);
   },

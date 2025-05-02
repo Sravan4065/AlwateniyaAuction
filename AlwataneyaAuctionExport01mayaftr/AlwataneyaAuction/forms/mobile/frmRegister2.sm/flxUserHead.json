@@ -40,7 +40,7 @@
     },
     "children": [
         "lblIm",
-        "lblUserName"
+        "lblUserFullName"
     ],
     "clipbounds": false,
     "containerweight": 100,

@@ -3,7 +3,7 @@
     "DNDConfig": null,
     "_height_": {
         "type": "string",
-        "value": "90%"
+        "value": "100%"
     },
     "_margin_": [
         1,
@@ -17,7 +17,7 @@
         0,
         0
     ],
-    "_skin_": "s6666a722d564abbb6b7a473efe3c209",
+    "_skin_": "s034e20935ac4b7c8617b5e563ab2b89",
     "_text_": "We’ll notify you via email once your account is approved.",
     "_top_": {
         "type": "string",

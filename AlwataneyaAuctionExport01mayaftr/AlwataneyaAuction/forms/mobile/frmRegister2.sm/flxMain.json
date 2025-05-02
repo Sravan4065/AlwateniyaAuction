@@ -37,9 +37,11 @@
     "children": [
         "flxSellerOrBuyerMain",
         "flxPopupSellerOrBuyer",
-        "flxPopupSellerRegistration",
-        "flxPopupSellerRegistrationForIndividual",
+        "flxPopupTrade",
         "flxEmailContainer",
+        "flxCompanyName",
+        "flxTradeLicense",
+        "flxTradeLicenseExpiryDate",
         "flxEmailVerificationCode",
         "flxMobileContainer",
         "flxMobileVerifyAndOTPCode",

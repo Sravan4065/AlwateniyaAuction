@@ -39,7 +39,7 @@
         "value": "50%"
     },
     "children": [
-        "CopylblVerifyConfirmation0fb4d6bb6716a47"
+        "lblVerifyConfirmation"
     ],
     "clipbounds": false,
     "containerweight": 100,

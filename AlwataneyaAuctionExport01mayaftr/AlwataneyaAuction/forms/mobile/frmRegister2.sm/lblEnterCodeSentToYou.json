@@ -3,7 +3,7 @@
     "DNDConfig": null,
     "_height_": {
         "type": "string",
-        "value": "80%"
+        "value": "90%"
     },
     "_left_": {
         "type": "string",
@@ -21,7 +21,7 @@
         0,
         0
     ],
-    "_skin_": "s50e6bc1f8dc4522812e66b7695e4d7b",
+    "_skin_": "sfa77ef2828a485fae271295d88d8c65",
     "_text_": "Enter the  code sent to your email address",
     "_width_": {
         "type": "string",

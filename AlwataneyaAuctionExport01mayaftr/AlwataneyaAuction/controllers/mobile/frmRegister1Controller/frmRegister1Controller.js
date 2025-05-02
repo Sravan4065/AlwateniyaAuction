@@ -2,6 +2,7 @@ define({
 
   //Type your controller code here 
   onNavigate: function(){
+    this.view.flxBarFullName.skin = "sknflxBGDFDFDFRoundedBorderDFDFDF1px";
     this.view.flxNext.onClick = this.NextPageOnClickAction;
     this.view.txtFirstNlastName.onTextChange = this.onTextChangeAction;
     this.view.HeaderRegister.imgBack.onTouchEnd = this.HeaderRegisterImgBackOnTouchEndAction;
