@@ -1,0 +1,2766 @@
+[
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/anim_reveal.xml.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/anim/reveal.xml"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_search_3.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/search_3.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_fluent_call_16_regular.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/fluent_call_16_regular.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_person_2.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/person_2.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_ic_cal_icon.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/ic_cal_icon.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_vasitem1_1.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/vasitem1_1.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_badge.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/badge.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_heartdislikerecommended.jpg.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/heartdislikerecommended.jpg"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/xml_searchable.xml.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/xml/searchable.xml"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_air_conditioner_533671_1_2.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/air_conditioner_533671_1_2.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_group_1000004647_2.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/group_1000004647_2.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_dark_lght_toggle.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/dark_lght_toggle.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_ant_design_heart_filled.jpg.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/ant_design_heart_filled.jpg"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_vector__5__1.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/vector__5__1.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_group_2.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/group_2.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_group_13213151761.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/group_13213151761.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_wheel_bg_3d.xml.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/wheel_bg_3d.xml"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_dark_lght_toggle_1.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/dark_lght_toggle_1.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_page_1__1_.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/page_1__1_.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_selectedradio.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/selectedradio.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_group__1__2.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/group__1__2.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_helpmyprofile.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/helpmyprofile.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_vector__5_.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/vector__5_.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_auctioncalendar5.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/auctioncalendar5.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_liveicon2x.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/liveicon2x.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_apple_1.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/apple_1.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_group_1321315125__3__1.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/group_1321315125__3__1.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_auccalitem6.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/auccalitem6.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_ic_map_righticon.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/ic_map_righticon.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_home__1_1_2.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/home__1_1_2.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_help_1.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/help_1.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_voltmx_88.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/voltmx_88.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_group_1321315104__1__1.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/group_1321315104__1__1.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_group_1321315041__1__2.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/group_1321315041__1__2.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_vasitem6_1.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/vasitem6_1.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_vasitem5_1.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/vasitem5_1.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_timer_1.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/timer_1.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_settings_1_1.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/settings_1_1.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_option2.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/option2.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_jewellery_2.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/jewellery_2.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_ic_popup_list_icon.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/ic_popup_list_icon.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_vasitem2_1.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/vasitem2_1.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_vector__3__3.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/vector__3__3.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_judge_2.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/judge_2.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_group_3044_1.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/group_3044_1.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_vector__4__3.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/vector__4__3.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_vasitem3_1.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/vasitem3_1.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_vasitem4_1.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/vasitem4_1.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_group_1321315125__2__1.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/group_1321315125__2__1.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_tabler_arrow_up.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/tabler_arrow_up.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_auctions_2.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/auctions_2.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_carimage_1.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/carimage_1.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_frame__2_.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/frame__2_.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_ic_list_normal_icon.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/ic_list_normal_icon.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_group_1321315041_2.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/group_1321315041_2.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_logo_1_1_1.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/logo_1_1_1.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_image___5.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/image___5.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_dislikeheartcurrentauctions.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/dislikeheartcurrentauctions.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_logo_1_2_1.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/logo_1_2_1.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_image__5__1.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/image__5__1.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_logo_1_3_1.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/logo_1_3_1.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_vector__4__1.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/vector__4__1.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_generalitems_2.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/generalitems_2.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_material_symbols_light_upload.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/material_symbols_light_upload.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/anim_cycle_interpolator.xml.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/anim/cycle_interpolator.xml"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_vector__6__1.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/vector__6__1.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_ic_image_error_icon.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/ic_image_error_icon.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_image_48_2.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/image_48_2.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_segmentpageonimg.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/segmentpageonimg.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_mingcute_lock_line_1.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/mingcute_lock_line_1.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_apple_1_2.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/apple_1_2.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_image_71.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/image_71.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_btn_check_off.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/btn_check_off.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_carouselright.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/carouselright.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_switch_5_1.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/switch_5_1.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_radio_2.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/radio_2.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_extravacor.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/extravacor.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_group_5_1.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/group_5_1.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_auccalitem4.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/auccalitem4.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_vector__1__5.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/vector__1__5.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_group_1067.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/group_1067.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_qlementine_icons_location_16_2.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/qlementine_icons_location_16_2.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_vehicledelnew.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/vehicledelnew.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_bitcoin_icons_cross_filled__1_.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/bitcoin_icons_cross_filled__1_.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_verified_2.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/verified_2.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_equipment.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/equipment.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_frame.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/frame.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_dashboardcarouselnew1.jpg.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/dashboardcarouselnew1.jpg"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_filtericon2.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/filtericon2.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_generalitems.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/generalitems.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_success_icon.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/success_icon.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_bidicon_1_1.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/bidicon_1_1.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_image__8_.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/image__8_.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_car3_3.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/car3_3.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_lucide_upload.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/lucide_upload.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_owntrnew.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/owntrnew.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_group_1321315125__7_.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/group_1321315125__7_.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_licenseplateimg.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/licenseplateimg.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_group_1321315125__8__2.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/group_1321315125__8__2.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_maninspectingvehicle.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/maninspectingvehicle.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_carouselleft.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/carouselleft.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_vector__4__1_1.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/vector__4__1_1.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_myvehiclesprofile.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/myvehiclesprofile.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_vector__7__1.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/vector__7__1.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/anim_still.xml.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/anim/still.xml"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_material_icon_theme_pdf_2.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/material_icon_theme_pdf_2.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_image___2_2.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/image___2_2.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_path_2.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/path_2.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_group_1321315125__5__1.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/group_1321315125__5__1.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_calendar2.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/calendar2.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_group_1000004656__1__1.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/group_1000004656__1__1.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_slider_android.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/slider_android.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_radio_button__3__2.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/radio_button__3__2.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_verify.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/verify.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_plus.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/plus.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_component_52_1.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/component_52_1.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_lsicon_view_outline.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/lsicon_view_outline.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_group_1321315104__2__1.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/group_1321315104__2__1.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_radio.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/radio.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_input_right_section_2.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/input_right_section_2.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_logo_1_3.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/logo_1_3.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_ic_map_marker_icon_trans.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/ic_map_marker_icon_trans.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_valueservice5.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/valueservice5.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_group_1321315125__1__1.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/group_1321315125__1__1.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_image___1.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/image___1.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_propertiesimg_1.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/propertiesimg_1.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_vector__1__3.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/vector__1__3.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_auccalitem2.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/auccalitem2.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_image___3_1_1.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/image___3_1_1.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_carimage.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/carimage.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_vector__2__3.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/vector__2__3.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_moreservicesnew.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/moreservicesnew.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_group_1000004655_2.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/group_1000004655_2.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/anim_shake.xml.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/anim/shake.xml"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_searchicon_1.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/searchicon_1.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_mybidsfooteractive.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/mybidsfooteractive.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_auctionsprofile.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/auctionsprofile.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_search_1.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/search_1.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_bitcoin_icons_cross_filled__1__2.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/bitcoin_icons_cross_filled__1__2.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_logout.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/logout.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_material_symbols_light_download_sharp_2.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/material_symbols_light_download_sharp_2.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_group_1321315125__3_.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/group_1321315125__3_.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_check_box__2__1.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/check_box__2__1.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_logo_1_3_1_1.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/logo_1_3_1_1.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/anim_right_out.xml.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/anim/right_out.xml"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_group_1321315250_2.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/group_1321315250_2.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_group__1_.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/group__1_.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_downarrow_2.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/downarrow_2.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_vasitem5.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/vasitem5.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_round_1.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/round_1.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_solar_user_outline__1_.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/solar_user_outline__1_.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_facebook_1_1.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/facebook_1_1.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_slider_ios7.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/slider_ios7.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_vector__1__2_2.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/vector__1__2_2.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_warn.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/warn.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_group_1321315125__5_.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/group_1321315125__5_.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_auccalendaricon.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/auccalendaricon.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_check_box__2_.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/check_box__2_.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_radio_button_2.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/radio_button_2.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_group_425.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/group_425.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_group1_2.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/group1_2.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_option4.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/option4.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_bidicon.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/bidicon.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_vector__3__1.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/vector__3__1.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_group__3_.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/group__3_.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_facebook_1.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/facebook_1.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_filtericon2_1.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/filtericon2_1.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_image__4__1.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/image__4__1.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_group_550.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/group_550.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/layout_tabview.xml.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/layout/tabview.xml"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_maintenancenew.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/maintenancenew.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_vector__7_.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/vector__7_.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_mask_group_2.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/mask_group_2.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_arrow_up.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/arrow_up.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_radio_button__2__1.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/radio_button__2__1.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_vector__3__1_2.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/vector__3__1_2.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_vehicle_1.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/vehicle_1.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_imgautobidnew.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/imgautobidnew.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_uparrowfromvehicleinsp.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/uparrowfromvehicleinsp.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_radio_button__1_.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/radio_button__1_.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_defvideoposter.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/defvideoposter.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_switch_5.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/switch_5.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_unselectedradio.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/unselectedradio.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_image___title.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/image___title.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_vector__2_.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/vector__2_.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_ic_flexscroll_pull.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/ic_flexscroll_pull.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_vector__3_1.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/vector__3_1.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_valueservice2.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/valueservice2.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_languageglobe_2.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/languageglobe_2.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_custom_map_marker_icon.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/custom_map_marker_icon.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_vector__9__1.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/vector__9__1.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_equipment_1.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/equipment_1.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_vehicle_1_1.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/vehicle_1_1.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_page_indicator_inactive.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/page_indicator_inactive.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_drop_down_arrow.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/drop_down_arrow.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_master.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/master.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_radio_button__1__2.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/radio_button__1__2.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_radio_button__2__2.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/radio_button__2__2.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_vector__1__3_1_1.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/vector__1__3_1_1.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_android.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/android.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_vector_4.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/vector_4.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_autobidnewone.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/autobidnewone.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_valueservice1.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/valueservice1.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_watch_1.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/watch_1.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_mask_group_1.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/mask_group_1.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_group_1321315125_2.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/group_1321315125_2.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_image__6_.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/image__6_.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_x_close.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/x_close.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_vector__2__3_1.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/vector__2__3_1.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_group_1321315125__8_.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/group_1321315125__8_.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_vector_1_2.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/vector_1_2.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_iconoir_calendar.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/iconoir_calendar.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_solar_user_outline__1__1.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/solar_user_outline__1__1.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_languageglobe.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/languageglobe.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_combo_box_focus_skin.9.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/combo_box_focus_skin.9.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_mdi_eye_outline_2.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/mdi_eye_outline_2.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_equipment_2.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/equipment_2.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_fontisto_email.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/fontisto_email.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/anim_split_in.xml.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/anim/split_in.xml"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/anim_slide_in_right.xml.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/anim/slide_in_right.xml"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_ic_cal_next.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/ic_cal_next.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_vehicle_3.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/vehicle_3.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_vector__3_.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/vector__3_.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_image_1.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/image_1.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_facebook_1_2.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/facebook_1_2.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_iconamoon_arrow_down_2.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/iconamoon_arrow_down_2.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_group_1000004742__1_.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/group_1000004742__1_.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_image__7__1.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/image__7__1.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_drop_down_arrow_1_1.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/drop_down_arrow_1_1.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_imagedrag.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/imagedrag.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_voltmx_48.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/voltmx_48.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_radio_button__3_1_1.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/radio_button__3_1_1.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_material_symbols_check_box_rounded.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/material_symbols_check_box_rounded.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_home__1_1.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/home__1_1.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_image__6__2.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/image__6__2.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_material_symbols_light_folder_open_outline.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/material_symbols_light_folder_open_outline.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_mingcute_lock_line.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/mingcute_lock_line.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_image__.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/image__.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_tabler_arrow_up__1_.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/tabler_arrow_up__1_.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_auccalitem1.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/auccalitem1.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_badge_2.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/badge_2.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_vector__1__2.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/vector__1__2.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_vector__2__3_2.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/vector__2__3_2.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_logo_1_1.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/logo_1_1.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_vector__8__1.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/vector__8__1.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_bidicon_2.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/bidicon_2.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_group_13213151761_2.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/group_13213151761_2.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_hugeicons_image_add_02_2.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/hugeicons_image_add_02_2.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_group_1321315041__1_.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/group_1321315041__1_.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_edit.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/edit.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_successpopupgreen.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/successpopupgreen.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_group_1321315041.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/group_1321315041.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_heartlikeauctions.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/heartlikeauctions.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_cradit_caed.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/cradit_caed.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_feedback.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/feedback.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_vector__7__2.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/vector__7__2.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_vector__2__1.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/vector__2__1.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_vector__9__2.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/vector__9__2.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_downarrow_1.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/downarrow_1.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/anim_grow_fade_from_topright.xml.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/anim/grow_fade_from_topright.xml"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_vehicle_1_2.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/vehicle_1_2.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_vector_3.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/vector_3.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_page_1__3_.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/page_1__3_.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_image__1_.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/image__1_.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_home__1_1_1_2.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/home__1_1_1_2.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_watch_2.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/watch_2.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_valueservice3.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/valueservice3.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_material_symbols_check_box_rounded_1.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/material_symbols_check_box_rounded_1.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_group_1000004545.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/group_1000004545.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_image__5_.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/image__5_.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_splash.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/splash.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_vector__1__3_1.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/vector__1__3_1.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_hugeicons_image_add_02_1.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/hugeicons_image_add_02_1.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_group_1321315104__2__2.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/group_1321315104__2__2.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_group_1321315125__4_.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/group_1321315125__4_.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_customer_support__1__1_2.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/customer_support__1__1_2.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_group_1000004656__1__2.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/group_1000004656__1__2.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_heartdislikefeaturedauctions.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/heartdislikefeaturedauctions.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_removeitemfilter.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/removeitemfilter.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_image__6__1.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/image__6__1.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_component_52_2.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/component_52_2.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_untitled_1_2_2.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/untitled_1_2_2.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_fluent_call_16_regular_1.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/fluent_call_16_regular_1.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/anim_slide_from_bottom.xml.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/anim/slide_from_bottom.xml"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_auctionsfooter.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/auctionsfooter.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_image__5__2.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/image__5__2.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_logo_1_3_2.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/logo_1_3_2.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_profileiconfooter.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/profileiconfooter.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_page_indicator_active.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/page_indicator_active.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_calbtn.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/calbtn.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_megaphone_1.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/megaphone_1.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_eyeopen.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/eyeopen.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_companylogo.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/companylogo.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/anim_left_in.xml.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/anim/left_in.xml"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_arrow_up_2.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/arrow_up_2.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_image___1_2.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/image___1_2.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_car3_2.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/car3_2.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_fontisto_email_1.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/fontisto_email_1.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_listboxarw.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/listboxarw.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_ic_round_plus__1_.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/ic_round_plus__1_.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_group_1321315125__4__1.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/group_1321315125__4__1.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_heartlikerecommended.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/heartlikerecommended.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_group_1321315104_2.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/group_1321315104_2.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_vector1.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/vector1.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_image_48.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/image_48.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_group_1000004752_1.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/group_1000004752_1.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/anim_grow_fade_from_bottomright.xml.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/anim/grow_fade_from_bottomright.xml"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_ic_map_cancelicon.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/ic_map_cancelicon.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_vector_1.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/vector_1.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_playicon.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/playicon.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_logo_1_3_3.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/logo_1_3_3.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/anim_accelerate_interpolator.xml.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/anim/accelerate_interpolator.xml"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_right_chevron_2.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/right_chevron_2.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_bidicon_1.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/bidicon_1.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_facebook_3.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/facebook_3.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_settingsmyprofile.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/settingsmyprofile.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_vector__4__1_2.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/vector__4__1_2.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_auctionsfooteractive.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/auctionsfooteractive.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_group_13213151761_1.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/group_13213151761_1.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_group_1321315104_1.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/group_1321315104_1.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_radio_button__1__1.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/radio_button__1__1.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_polishingnew.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/polishingnew.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_megaphone_2.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/megaphone_2.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_home__1_1_3.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/home__1_1_3.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_arrow_up_3.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/arrow_up_3.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_image___1_1.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/image___1_1.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_group_1000004647.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/group_1000004647.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_apple_1_1.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/apple_1_1.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_group_1000004752_2.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/group_1000004752_2.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_material_icon_theme_pdf.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/material_icon_theme_pdf.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_sortarrow.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/sortarrow.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_vector__6_.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/vector__6_.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_untitled_1_2_1.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/untitled_1_2_1.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_group_1321315125__3__2.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/group_1321315125__3__2.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_home__1_1_1_1.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/home__1_1_1_1.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_group_1321315104.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/group_1321315104.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_group_1321315250.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/group_1321315250.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_radio_button__1_1_2.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/radio_button__1_1_2.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_solar_user_outline.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/solar_user_outline.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_round.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/round.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_vector_2.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/vector_2.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_apple_3.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/apple_3.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_carimage_2.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/carimage_2.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_image.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/image.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_whatsappicon.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/whatsappicon.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_radio_button__3_1_2.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/radio_button__3_1_2.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_carsample1.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/carsample1.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_vehicle_2.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/vehicle_2.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_vector__1__3_2.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/vector__1__3_2.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_image___3.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/image___3.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_ic_cal_prev.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/ic_cal_prev.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_material_symbols_light_folder_outline.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/material_symbols_light_folder_outline.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_imgfootericon.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/imgfootericon.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_group_1000004752.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/group_1000004752.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_vector__8__2.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/vector__8__2.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_radio_button.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/radio_button.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_mybidsfooter.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/mybidsfooter.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_vector__1__1.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/vector__1__1.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_group_13213151041_1.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/group_13213151041_1.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_group_1321315125_1.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/group_1321315125_1.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_customer_support__1__1_1.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/customer_support__1__1_1.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_car3_1.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/car3_1.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_apple_2.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/apple_2.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_home__1_1_1.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/home__1_1_1.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_group_1321315041__1__1.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/group_1321315041__1__1.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_radio_button__1_1_1.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/radio_button__1_1_1.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_vector.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/vector.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_round_2.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/round_2.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_auctioncalendar6.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/auctioncalendar6.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_filtericon2x.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/filtericon2x.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_timer.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/timer.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/anim_fade.xml.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/anim/fade.xml"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_group_1321315176_1.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/group_1321315176_1.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_material_symbols_share_outline.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/material_symbols_share_outline.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_option3.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/option3.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_help.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/help.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/anim_slide_in_down.xml.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/anim/slide_in_down.xml"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_material_symbols_light_download_sharp.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/material_symbols_light_download_sharp.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_propertiesimg.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/propertiesimg.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_homefooter.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/homefooter.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_jewellery_1.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/jewellery_1.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_vector__4__2.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/vector__4__2.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_image___4.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/image___4.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_shareiconrecommended.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/shareiconrecommended.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_frame__1_.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/frame__1_.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/anim_right_in.xml.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/anim/right_in.xml"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_auctions_1.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/auctions_1.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_vector__2_1_1.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/vector__2_1_1.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_group_1321315125__2__2.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/group_1321315125__2__2.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_group_1000004655_1.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/group_1000004655_1.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_calendar.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/calendar.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_group_1000004647_1.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/group_1000004647_1.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_ssearchfooter.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/ssearchfooter.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_group_1321315104__2_.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/group_1321315104__2_.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_searchicon_2.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/searchicon_2.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_air_conditioner_533671_1_1.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/air_conditioner_533671_1_1.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_search_2.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/search_2.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_vehinspnew.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/vehinspnew.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_generalitems_1.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/generalitems_1.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_vasitem6.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/vasitem6.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_image__4_.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/image__4_.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_group_13213151762.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/group_13213151762.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_zoomout.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/zoomout.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_radio_button__3_1.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/radio_button__3_1.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_group_37358.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/group_37358.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_vector__1__3_3.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/vector__1__3_3.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_vector__2__4.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/vector__2__4.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/anim_split.xml.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/anim/split.xml"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_group1_1.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/group1_1.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_jewellery.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/jewellery.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_right_chevron_1.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/right_chevron_1.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_radio_button__1_1.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/radio_button__1_1.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_help_2.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/help_2.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_vector__5__2.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/vector__5__2.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_page_1__2_.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/page_1__2_.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_vector__2_1_3.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/vector__2_1_3.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_image__4__2.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/image__4__2.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_group_3044_2.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/group_3044_2.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_vector__3__2.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/vector__3__2.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_checkedcheck.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/checkedcheck.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_timer_2.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/timer_2.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_myaccountprofile.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/myaccountprofile.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_image___2.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/image___2.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_image__2__2.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/image__2__2.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_search_1_2.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/search_1_2.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_alwataneyaauc_icon.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/alwataneyaauc_icon.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_group_3044.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/group_3044.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_judge_3.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/judge_3.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_calcaption.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/calcaption.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_megaphone_3.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/megaphone_3.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_valueservice6.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/valueservice6.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_right_chevron.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/right_chevron.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_person_1.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/person_1.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_vasitem4.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/vasitem4.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_vector__2__3_1_1.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/vector__2__3_1_1.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_group.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/group.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_auctioncalendar4.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/auctioncalendar4.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_vehicletypefiltericon.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/vehicletypefiltericon.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_vector__1__2_1.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/vector__1__2_1.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_basil_user_outline.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/basil_user_outline.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_pageondot.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/pageondot.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_vector__1__4.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/vector__1__4.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_drop_down_arrow_1.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/drop_down_arrow_1.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_calendar1.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/calendar1.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/anim_shrink_fade_out_from_bottom.xml.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/anim/shrink_fade_out_from_bottom.xml"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_image__2_.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/image__2_.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_group_5_2.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/group_5_2.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_auccalitem3.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/auccalitem3.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_facebook_2.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/facebook_2.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_logos_google_pay.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/logos_google_pay.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_path.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/path.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_qlementine_icons_location_16_1.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/qlementine_icons_location_16_1.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_vector__2__2.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/vector__2__2.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_vector__1_.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/vector__1_.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_group_5.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/group_5.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/anim_decelerate_interpolator.xml.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/anim/decelerate_interpolator.xml"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_radio_button_1.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/radio_button_1.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_group_1321315125__4__2.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/group_1321315125__4__2.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_arrow_up_1.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/arrow_up_1.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_liveiconxx.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/liveiconxx.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_group_1321315041_1.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/group_1321315041_1.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_settings_1.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/settings_1.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_material_symbols_check_box_rounded_2.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/material_symbols_check_box_rounded_2.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_profileicon.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/profileicon.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_drop_down_arrow_1_2.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/drop_down_arrow_1_2.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/anim_grow_fade_from_bottomleft.xml.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/anim/grow_fade_from_bottomleft.xml"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_imgcheckblack.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/imgcheckblack.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_filtericon2_2.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/filtericon2_2.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_ic_himagestrip_left.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/ic_himagestrip_left.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_profileicon_1.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/profileicon_1.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_input_right_section.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/input_right_section.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_group_1321315125__1_.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/group_1321315125__1_.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_radio_1.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/radio_1.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_btn_check_on.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/btn_check_on.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_megaphone.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/megaphone.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_create.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/create.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_material_symbols_light_download_sharp_1.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/material_symbols_light_download_sharp_1.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_chckboxblack.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/chckboxblack.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_ic_himagestrip_right.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/ic_himagestrip_right.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_downarrow.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/downarrow.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_vector_5.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/vector_5.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_image___2_1.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/image___2_1.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_material_icon_theme_pdf_1.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/material_icon_theme_pdf_1.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_searchicon.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/searchicon.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_group_1321315104__1__2.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/group_1321315104__1__2.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_group_1321315125__5__2.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/group_1321315125__5__2.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_imgflash.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/imgflash.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_dark_lght_toggle_2.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/dark_lght_toggle_2.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_logo_1.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/logo_1.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_ic_map_marker_icon.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/ic_map_marker_icon.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_group__1__1.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/group__1__1.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_oval.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/oval.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_chevron_right_grey.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/chevron_right_grey.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_combo_box_normal_skin.9.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/combo_box_normal_skin.9.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_settings_1_2.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/settings_1_2.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_valueservice4.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/valueservice4.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_judge.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/judge.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_group_1321315176.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/group_1321315176.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_group_1321315125__1__2.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/group_1321315125__1__2.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_voltmx_150.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/voltmx_150.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_judge_1.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/judge_1.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_vector__9_.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/vector__9_.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_vector_3_1.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/vector_3_1.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_verified_1.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/verified_1.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_auctions.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/auctions.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_search.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/search.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_vector__10_.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/vector__10_.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_lucide_maximize.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/lucide_maximize.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_image_65.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/image_65.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_image_65_1.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/image_65_1.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_image_48_1.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/image_48_1.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_facebook.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/facebook.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_group_1067_1.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/group_1067_1.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_vector_1_1.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/vector_1_1.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_imgfootericon_1.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/imgfootericon_1.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_mdi_eye_outline_1.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/mdi_eye_outline_1.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_vehicle.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/vehicle.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_logo_1_2_2.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/logo_1_2_2.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_image__7__2.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/image__7__2.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_sellcarfooter.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/sellcarfooter.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_vector__6__2.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/vector__6__2.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_round__1_.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/round__1_.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_badge_1.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/badge_1.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_logo_1_2.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/logo_1_2.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_vector__2__3_3.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/vector__2__3_3.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_radio_button__3_.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/radio_button__3_.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_bidicon_3.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/bidicon_3.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_ic_image_loading_icon.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/ic_image_loading_icon.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_radio_button__3__1.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/radio_button__3__1.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_x_close_2.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/x_close_2.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_group_1321315125__6__2.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/group_1321315125__6__2.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_solar_user_outline_1.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/solar_user_outline_1.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_icon.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/icon.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_untitled_1_2.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/untitled_1_2.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_autobidicon.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/autobidicon.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_group_1000004682_2.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/group_1000004682_2.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_mdi_eye_outline.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/mdi_eye_outline.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_group_1321315125.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/group_1321315125.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_check_box__1__1.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/check_box__1__1.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_frame__1__1.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/frame__1__1.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_frame_2.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/frame_2.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/layout_wheel_item.xml.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/layout/wheel_item.xml"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_back.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/back.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_vector__2_1.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/vector__2_1.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_feedback_2.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/feedback_2.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_group_1321315125__2_.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/group_1321315125__2_.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_group_1321315125__7__1.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/group_1321315125__7__1.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_group_1321315125__6__1.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/group_1321315125__6__1.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_header_logo.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/header_logo.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_vector__3__1_1.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/vector__3__1_1.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_vector__1_1.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/vector__1_1.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_watch.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/watch.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_x_close_1.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/x_close_1.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_person.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/person.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_awalogodashboardcarousel.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/awalogodashboardcarousel.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_location.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/location.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_vector__2__1_1.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/vector__2__1_1.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_acme.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/acme.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_vector_3_2.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/vector_3_2.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_group_37358_1.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/group_37358_1.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_vector__2__2_1.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/vector__2__2_1.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_languageglobe_1.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/languageglobe_1.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_imgdislikenew.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/imgdislikenew.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_solar_user_outline_2.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/solar_user_outline_2.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_vector_2_2.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/vector_2_2.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_hugeicons_image_add_02.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/hugeicons_image_add_02.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_group_13213151041.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/group_13213151041.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_frame_1.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/frame_1.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_voltmx_300.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/voltmx_300.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_image_65_2.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/image_65_2.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_removefromauctionlistfilter.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/removefromauctionlistfilter.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_pinb.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/pinb.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/anim_grow_fade_from_center.xml.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/anim/grow_fade_from_center.xml"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_backarrowfromvehicleinspection.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/backarrowfromvehicleinspection.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_vasitem1.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/vasitem1.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_path_1.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/path_1.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_ic_drawer.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/ic_drawer.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_pageoffdot.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/pageoffdot.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_group_1067_2.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/group_1067_2.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_group_1000004656__1_.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/group_1000004656__1_.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_lucide_maximize_1.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/lucide_maximize_1.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_vector__2__1_2.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/vector__2__1_2.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_arrow_up_1_1.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/arrow_up_1_1.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_vector__2__2_2.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/vector__2__2_2.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_imgfootericon_2.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/imgfootericon_2.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_vector1_1.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/vector1_1.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_lucide_upload_1.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/lucide_upload_1.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_bitcoin_icons_cross_filled__1__1.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/bitcoin_icons_cross_filled__1__1.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_mask_group.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/mask_group.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_customer_support__1__1.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/customer_support__1__1.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_location_1.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/location_1.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_qlementine_icons_location_16.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/qlementine_icons_location_16.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_licenseplateimg_1.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/licenseplateimg_1.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_image__1__1.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/image__1__1.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_auctioncalendar1.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/auctioncalendar1.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_group_1000004682_1.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/group_1000004682_1.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_group_1321315250_1.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/group_1321315250_1.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_verified.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/verified.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_ic_flexscroll_push.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/ic_flexscroll_push.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_image___3_3.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/image___3_3.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/anim_slide_in_up.xml.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/anim/slide_in_up.xml"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_material_symbols_share_outline_1.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/material_symbols_share_outline_1.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/anim_fancy_anim.xml.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/anim/fancy_anim.xml"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_homefooteractive.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/homefooteractive.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_dashboardcarouselnew2.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/dashboardcarouselnew2.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_vasitem3.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/vasitem3.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_component_52.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/component_52.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_voltmx_logo.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/voltmx_logo.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_awaheaderlogo.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/awaheaderlogo.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_logo_1_4.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/logo_1_4.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_group1.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/group1.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_login_logo.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/login_logo.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_profileicon_2.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/profileicon_2.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_propertiesimg_2.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/propertiesimg_2.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_input_right_section_1.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/input_right_section_1.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_round__1__2.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/round__1__2.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_auctioncalendar3.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/auctioncalendar3.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_image__1__2.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/image__1__2.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_image___3_2.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/image___3_2.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_backnavigate_chevron.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/backnavigate_chevron.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_group_1321315125__8__1.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/group_1321315125__8__1.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_group_1000004682.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/group_1000004682.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_imagesmultiple.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/imagesmultiple.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_wheel_bg_2d.xml.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/wheel_bg_2d.xml"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/anim_grow_from_center.xml.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/anim/grow_from_center.xml"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_dashboardcarouselimg2.jpg.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/dashboardcarouselimg2.jpg"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_downarrowfromvehicleinsp.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/downarrowfromvehicleinsp.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_segmentpageoffimg.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/segmentpageoffimg.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_vasitem2.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/vasitem2.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_megaphone_1_2.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/megaphone_1_2.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_vector__4_.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/vector__4_.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_heartlikexx.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/heartlikexx.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_filtericon.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/filtericon.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_vector__1_1_1.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/vector__1_1_1.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_auctioncalendar2.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/auctioncalendar2.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_profileicon_1_1.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/profileicon_1_1.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_downarrowgrey.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/downarrowgrey.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_group_1321315104__1_.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/group_1321315104__1_.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_oval_1.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/oval_1.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_drop_down_arrow_2.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/drop_down_arrow_2.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/anim_bounce.xml.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/anim/bounce.xml"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_vector__1__1_1.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/vector__1__1_1.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_eyeclose.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/eyeclose.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_lucide_upload_2.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/lucide_upload_2.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_image___3_1.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/image___3_1.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_apple.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/apple.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_search_1_1.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/search_1_1.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_location_2.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/location_2.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_check_box__1_.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/check_box__1_.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_group_1321315125__7__2.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/group_1321315125__7__2.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_switch_5_2.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/switch_5_2.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_licenseplateimg_2.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/licenseplateimg_2.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_car3.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/car3.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/anim_slide_in_left.xml.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/anim/slide_in_left.xml"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_auccalitem5.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/auccalitem5.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_radio_button__2_.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/radio_button__2_.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_megaphone_1_1.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/megaphone_1_1.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_vector_2_1.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/vector_2_1.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_image__7_.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/image__7_.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_group_1321315125__6_.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/group_1321315125__6_.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/anim_left_out.xml.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/anim/left_out.xml"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_uncheckedcheck.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/uncheckedcheck.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_voltmx_71.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/voltmx_71.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_group_1321315176_2.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/group_1321315176_2.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_slider.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/slider.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_drop_down_arrow_3.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/drop_down_arrow_3.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_option1.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/option1.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/anim_split_out.xml.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/anim/split_out.xml"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_oval_2.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/oval_2.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_vector__2__5.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/vector__2__5.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_group__2_.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/group__2_.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/anim_slide_in_top.xml.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/anim/slide_in_top.xml"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_round__1__1.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/round__1__1.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_vector__1__1_2.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/vector__1__1_2.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_air_conditioner_533671_1.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/air_conditioner_533671_1.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_vector__8_.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/vector__8_.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_logo_1_1_2.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/logo_1_1_2.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_material_symbols_share_outline_2.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/material_symbols_share_outline_2.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_image__2__1.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/image__2__1.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_dashboardcarouselnew3.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/dashboardcarouselnew3.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_feedback_1.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/feedback_1.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_group_1000004655.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/group_1000004655.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_lucide_maximize_2.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/lucide_maximize_2.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_vector__2_1_2.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/vector__2_1_2.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_logo_1_5.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/logo_1_5.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_group_1.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/group_1.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_profileicon_3.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/profileicon_3.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_vector1_2.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/vector1_2.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_frame__1__2.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/frame__1__2.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_arrow_up_1_2.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/arrow_up_1_2.png"
+    },
+    {
+        "merged": "com.orgname.Alwataneya2-debug-4:/drawable_image___title_1.png.flat",
+        "source": "com.orgname.Alwataneya2-AlwataneyaAuc-5:/drawable/image___title_1.png"
+    }
+]
