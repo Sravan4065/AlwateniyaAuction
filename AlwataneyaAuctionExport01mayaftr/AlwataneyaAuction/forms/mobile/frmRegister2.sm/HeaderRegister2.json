@@ -39,7 +39,7 @@
     "clipbounds": false,
     "containerweight": 0,
     "dataDiffs": {
-        "HeaderRegisterCopy": {
+        "HeaderRegisterNew": {
             "__events__": {},
             "__info__": {
                 "isRoot": true,

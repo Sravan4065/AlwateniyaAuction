@@ -69,6 +69,7 @@ define({
                                       this.view.flx2.setEnabled(true);
                                      this.view.radiobtnBuyer.selectedKey =null;
                                     this.view.flxFooter.setVisibility(false);
+                                      this.view.flxInnerBarFullName.width="10%";
                                      this.view.radiobtnSeller.selectedKey = null;
                                      }
                                   }
@@ -88,6 +89,7 @@ define({
                                       this.view.tbxEmailAddress.text = "";
                                        this.view.lblEmailError.text ="";
                                        this.view.flxEmailFooter.setVisibility(false);
+                                      this.view.flxInnerBarEmail.width ="30%";
                                     }
                                    
                                     }
@@ -107,6 +109,7 @@ define({
                                       this.view.tbxPhoneNumber.text = "";
                                        this.view.lblMobileError.text ="";
                                       this.view.flxMobileFooter.setVisibility(false);
+                                      
                                     }
                                   
                                    }
@@ -129,6 +132,7 @@ define({
                                     else{
                                       this.view.tbxUserName.text="";
                                        this.view.lblUserNameError.text ="";
+                                       this.view.flxInnerBarUserName.width = "61%";
                                      }
                                    }
                                     break;
@@ -140,10 +144,16 @@ define({
                                       else if(this.view.tbxPassWordName.text === "" ||this.view.tbxConfirmPassWord.text === ""){
                                         this.view.tbxPassWordName.text = "";
                                         this.view.tbxConfirmPassWord.text = "";
+                                          this.view.chxIhaveReadTermsNConds.selectedKeys === null;
+                                           this.view.flxInnerBarPassConfo.width ="80%";
                                       }
                                      else{
                                          this.view.tbxPassWordName.text = "";
                                         this.view.tbxConfirmPassWord.text = "";
+                                          this.view.flxInnerBarPassConfo.width ="80%";
+                                       this.view.chxIhaveReadTermsNConds.selectedKeys === null;
+                                       
+                                       
                                      }
                                     }
                                     break;
@@ -177,11 +187,13 @@ btnSaveAndContinueSellerOrBuyeronClickAction: function() {
   // Handling cases when no selection is made
   if (!selectedKerForSeller && !selectedKeyForBuyer) {
     this.view.btnSaveAndContinue.setEnabled(false);
+      this.view.flxInnerBarFullName.width="10%";
     alert("Select Any Type!!");
     return;
   } else {
     // Re-enable button if a valid selection is made
     this.view.btnSaveAndContinue.setEnabled(true);
+    this.view.flxInnerBarFullName.width="21%";
     // Updating labels based on selected value
     if (!selectedKerForSeller) {
       this.view.lblSellerOrBuyer.text = selectedKeyForBuyer;
@@ -219,11 +231,11 @@ btnSaveAndContinueSellerOrBuyeronClickAction: function() {
   //radio button buyer on Selection Action !!!!!!!!
   radiobtnbuyerOnSelectionAction: function(){
     if(this.view.radiobtnBuyer.selectedKey === null){
-      this.view.btnSaveAndContinue.skin ="sknbtnCPReg767676CstmBorder5pxFont70px";
+//       this.view.btnSaveAndContinue.skin ="sknbtnCPReg767676CstmBorder5pxFont70px";
       this.view.radiobtnSeller.selectedKey = "Seller";
     }
     else{
-      this.view.btnSaveAndContinue.skin ="sknbtnCstmBorder5pxCPRegffffffFont70px";
+//       this.view.btnSaveAndContinue.skin ="sknbtnCstmBorder5pxCPRegffffffFont70px";
       this.view.radiobtnSeller.selectedKey = null;
        this.view.btnSaveAndContinue.setEnabled(true); 
     }
@@ -231,11 +243,11 @@ btnSaveAndContinueSellerOrBuyeronClickAction: function() {
   //radio button seller on Selection Action!!!!!!!
   radiobtnSellerOnSelectionAction: function(){
     if(this.view.radiobtnSeller.selectedKey === null){
-      this.view.btnSaveAndContinue.skin ="sknbtnCPReg767676CstmBorder5pxFont70px";
+//       this.view.btnSaveAndContinue.skin ="sknbtnCPReg767676CstmBorder5pxFont70px";
       this.view.radiobtnBuyer.selectedKey = "Buyer";
     }
     else{
-      this.view.btnSaveAndContinue.skin ="sknbtnCstmBorder5pxCPRegffffffFont70px";
+//       this.view.btnSaveAndContinue.skin ="sknbtnCstmBorder5pxCPRegffffffFont70px";
       this.view.radiobtnBuyer.selectedKey =null;
        this.view.btnSaveAndContinue.setEnabled(true); 
     }
@@ -243,23 +255,23 @@ btnSaveAndContinueSellerOrBuyeronClickAction: function() {
   //radio button Without Trade OnSelection Action!!!!!!
   radioBtnWithoutTradeOnelectionAction: function(){
     if(this.view.radioBtnWithoutTrade.selectedKey === null){
-      this.view.btnSellerRegisterSaveAandContinue.skin ="sknbtnCPReg767676CstmBorder5pxFont70px";
+//       this.view.btnSellerRegisterSaveAandContinue.skin ="sknbtnCPReg767676CstmBorder5pxFont70px";
       this.view.radioBtnWithTrade.selectedKey = "WithTrade";
     }
     else{
-      this.view.btnSellerRegisterSaveAandContinue.skin ="sknbtnCstmBorder5pxCPRegffffffFont70px";
+//       this.view.btnSellerRegisterSaveAandContinue.skin ="sknbtnCstmBorder5pxCPRegffffffFont70px";
       this.view.radioBtnWithTrade.selectedKey =null;
     }
   },
   //radio button With Trade OnSelection Action!!!!!!!!
   radioBtnWithTradeOnSelectionAction: function(){
     if( this.view.radioBtnWithTrade.selectedKey === null){
-      this.view.btnSellerRegisterSaveAandContinue.skin ="sknbtnCPReg767676CstmBorder5pxFont70px";
+//       this.view.btnSellerRegisterSaveAandContinue.skin ="sknbtnCPReg767676CstmBorder5pxFont70px";
       this.view.btnSellerRegisterSaveAandContinue.setEnabled(false);
       this.view.radioBtnWithoutTrade.selectedKey = "WithoutTrade";
     }
     else{
-      this.view.btnSellerRegisterSaveAandContinue.skin ="sknbtnCstmBorder5pxCPRegffffffFont70px";
+//       this.view.btnSellerRegisterSaveAandContinue.skin ="sknbtnCstmBorder5pxCPRegffffffFont70px";
       this.view.btnSellerRegisterSaveAandContinue.setEnabled(true);
       this.view.radioBtnWithoutTrade.selectedKey =null;
     }
@@ -374,9 +386,11 @@ btnSaveAndContinueSellerOrBuyeronClickAction: function() {
     ) {
         this.view.lblEmailError.text = "Enter Valid Email";
         this.view.flxEmailFooter.setVisibility(false);
+        this.view.flxInnerBarEmail.width= "30%";
     } else {
         this.view.lblEmailError.text = "";
         this.view.flxEmailFooter.setVisibility(true);
+      this.view.flxInnerBarEmail.width= "40%";
     }
 },
 
@@ -511,7 +525,7 @@ btnSaveAndContinueSellerOrBuyeronClickAction: function() {
                 self.view.flxResendCode.setVisibility(true);
                 self.startOTPTimerforEmail();
                 self.emailtbxCode1OnTextChange();
-             
+                self.view.flxInnerBarEmailVerificationCode.width = "42%";
                 resolve(); // Resolve when successful
               } 
               else {
@@ -906,12 +920,13 @@ updateTimerForEmail: function() {
                 self.view.flxMobileVerifyAndOTPCode.setVisibility(true);
                 self.startOTPTimerForMobile();
                 self.tbxOTP1OnTextChangeAction();
+                self.view.flxInnerBarMobileOtp.width = "60%";
                 resolve(); // Resolve when successful
               } 
               else {
                               voltmx.application.dismissLoadingScreen();
-
-                reject(new Error("OTP not sent. Opstatus: " + opstatusRes2)); // Reject if opstatus isn't 0
+  self.view.flxInnerBarMobileOtp.width = "54%";
+//                 reject(new Error("OTP not sent. Opstatus: " + opstatusRes2)); // Reject if opstatus isn't 0
                 reject(new Error("Failed to send email OTP: " + request.status + " - " + request.responseText)); // Reject on failure
               }
             } else {
@@ -1159,8 +1174,8 @@ updateTimerForMobile: function() {
   flxNextUserNameOnTouchEndAction: function(){
     this.view.flxPassWordAndConfirmPassWord.setVisibility(true);
     this.view.flxUserName.setVisibility(false);
-    this.view.btnSaveAndContinueForTermsNConditions.setEnabled(false);
-    this.view.btnSaveAndContinueForTermsNConditions.skin ="sknbtnBGa3a3a3CstmBorder5pxFontCPReg70px"
+//     this.view.btnSaveAndContinueForTermsNConditions.setEnabled(false);
+//     this.view.btnSaveAndContinueForTermsNConditions.skin ="sknbtnBGa3a3a3CstmBorder5pxFontCPReg70px"
   },
   //Navigation from Password and Confirm Password to terms and conditions page!!!!
   imgNextPasswordOnTouchEnd: function(){
@@ -1212,9 +1227,11 @@ updateTimerForMobile: function() {
     if (!userName.match(pattern)) {
         this.view.flxUserNameFooter.setVisibility(false); // Valid
         this.view.lblUserNameError.text ="Username is Not Valid!!";
+       this.view.flxInnerBarUserName.width = "61%";
     } else {
         this.view.flxUserNameFooter.setVisibility(true);  // Invalid
         this.view.lblUserNameError.text ="";  
+      this.view.flxInnerBarUserName.width = "70%";
     }
 
   },
@@ -1395,7 +1412,7 @@ flxEyeIconConfirmPassOnClickAction: function(){
   },
   //Function to call "create user service" and enabling congratulations popup in this success call!!! 
   btnSaveAndContinueForTermsNConditionsOnClickAction: async function(){ 
-    if(this.view.btnSaveAndContinueForTermsNConditions.skin==="sknlblBGd32437cstmBorderd324375pxFontCPRegffffff45px"){
+//     if(this.view.btnSaveAndContinueForTermsNConditions.skin==="sknlblBGd32437cstmBorderd324375pxFontCPRegffffff45px"){
     voltmx.application.showLoadingScreen();
     var self = this;
     var UserRegister_inputparam = {};
@@ -1464,12 +1481,12 @@ flxEyeIconConfirmPassOnClickAction: function(){
       // Sending Request
       request.send(jsonData);
     });
-    }
-    else{
+//     }
+//     else{
       
-       voltmx.application.dismissLoadingScreen();
-      alert("please accept terms and conditions!!");
-    }
+//        voltmx.application.dismissLoadingScreen();
+//       alert("please accept terms and conditions!!");
+//     }
   },
   //Disabling Congrats Popup and Navigating to Login Page!!!!
   btnOkayOnClickAction: function(){
@@ -1488,12 +1505,16 @@ flxEyeIconConfirmPassOnClickAction: function(){
   //
   chxIhaveReadTermsNCondOnSelectionAction: function(){
     if(this.view.chxIhaveReadTermsNConds.selectedKeys === null){
- this.view.btnSaveAndContinueForTermsNConditions.setEnabled(false);
-    this.view.btnSaveAndContinueForTermsNConditions.skin ="sknbtnBGa3a3a3CstmBorder5pxFontCPReg70px"
+//  this.view.btnSaveAndContinueForTermsNConditions.setEnabled(false);
+         this.view.btnSaveAndContinueForTermsNConditions.setVisibility(false);
+       this.view.flxInnerBarPassConfo.width ="80%";
+//     this.view.btnSaveAndContinueForTermsNConditions.skin ="sknbtnBGa3a3a3CstmBorder5pxFontCPReg70px"
     }
     else{
-       this.view.btnSaveAndContinueForTermsNConditions.setEnabled(true);
-      this.view.btnSaveAndContinueForTermsNConditions.skin="sknlblBGd32437cstmBorderd324375pxFontCPRegffffff45px";
+      this.view.btnSaveAndContinueForTermsNConditions.setVisibility(true);
+//        this.view.btnSaveAndContinueForTermsNConditions.setEnabled(true);
+      this.view.flxInnerBarPassConfo.width ="100%";
+//       this.view.btnSaveAndContinueForTermsNConditions.skin="sknlblBGd32437cstmBorderd324375pxFontCPRegffffff45px";
     }
   },
 });

@@ -39,7 +39,7 @@
     },
     "centery": {
         "type": "string",
-        "value": "50%"
+        "value": "15%"
     },
     "containerweight": 100,
     "id": "imgClose",

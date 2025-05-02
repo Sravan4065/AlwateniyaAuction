@@ -40,6 +40,7 @@
     },
     "children": [
         "HeaderRegister3",
+        "flxBarContainerUserName",
         "flxUserNameBody"
     ],
     "clipbounds": false,

@@ -2,7 +2,7 @@
     "DNDConfig": null,
     "_height_": {
         "type": "string",
-        "value": "20%"
+        "value": "16%"
     },
     "_left_": {
         "type": "string",
@@ -35,7 +35,8 @@
     "autogrowmode": 0,
     "canUpdateUI": true,
     "children": [
-        "lblSellerRegister"
+        "lblSellerRegister",
+        "flxTogglesTrade"
     ],
     "clipbounds": false,
     "containerweight": 100,

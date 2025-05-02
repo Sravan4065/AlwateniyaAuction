@@ -1,9 +1,13 @@
 {
     "@class": "com.kony.gen.viz.model.component.KVizButton",
     "DNDConfig": null,
+    "_bottom_": {
+        "type": "number",
+        "value": "30"
+    },
     "_height_": {
         "type": "string",
-        "value": "50dp"
+        "value": "45dp"
     },
     "_left_": {
         "type": "string",
@@ -22,11 +26,7 @@
         0
     ],
     "_skin_": "sf586fe7b141448085e0ffbfe219d4a1",
-    "_text_": "Okay",
-    "_top_": {
-        "type": "string",
-        "value": "135dp"
-    },
+    "_text_": "CLOSE",
     "_width_": {
         "type": "string",
         "value": "85%"

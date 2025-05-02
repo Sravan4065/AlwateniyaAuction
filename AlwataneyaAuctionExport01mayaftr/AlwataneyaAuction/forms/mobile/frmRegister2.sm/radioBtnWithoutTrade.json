@@ -72,8 +72,8 @@
     "selectedkey": null,
     "selectedkeyvalue": null,
     "size": 18,
-    "tickedimage": "radio_button__3__1.png",
-    "untickedimage": "radio_button__2__1.png",
+    "tickedimage": "selectedradio.png",
+    "untickedimage": "unselectedradio.png",
     "viewconfig": {
         "toggleViewConfig": {
             "viewStyle": 0

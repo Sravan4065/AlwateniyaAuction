@@ -45,7 +45,8 @@
     "children": [
         "HeaderRegisterMobileContainer",
         "flxMobileBody",
-        "flxMobileFooter"
+        "flxMobileFooter",
+        "flxBarContainerMobile"
     ],
     "clipbounds": false,
     "containerweight": 100,

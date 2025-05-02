@@ -35,9 +35,10 @@
     "autogrowmode": 0,
     "canUpdateUI": true,
     "children": [
+        "HeaderRegister",
+        "flxBarContainerFullName",
         "flxBody",
-        "flxFooter",
-        "HeaderRegister"
+        "flxFooter"
     ],
     "clipbounds": false,
     "containerweight": 100,

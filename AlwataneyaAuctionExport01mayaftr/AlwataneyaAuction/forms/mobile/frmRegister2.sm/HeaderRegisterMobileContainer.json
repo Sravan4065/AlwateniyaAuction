@@ -39,7 +39,7 @@
     "clipbounds": false,
     "containerweight": 0,
     "dataDiffs": {
-        "HeaderRegisterCopy": {
+        "HeaderRegisterNew": {
             "__events__": {},
             "__info__": {
                 "isRoot": true,
@@ -62,7 +62,8 @@
                 "kuid": "eaa7a2870b28485790e28c7691a96b99",
                 "srcKUID": "u2bde0a079a04899b0716b3895c4f7b5",
                 "wType": "Image"
-            }
+            },
+            "src": "logo_1_4.png"
         },
         "imgBack": {
             "__events__": {},
@@ -71,7 +72,8 @@
                 "srcKUID": "ub6b4637a2a146edbbf7659a013ab74a",
                 "wType": "Image"
             },
-            "isVisible": true
+            "isVisible": true,
+            "src": "vector__1_1.png"
         }
     },
     "enablescrolling": true,

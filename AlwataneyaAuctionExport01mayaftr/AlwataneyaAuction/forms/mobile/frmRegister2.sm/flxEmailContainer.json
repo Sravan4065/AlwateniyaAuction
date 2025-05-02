@@ -45,7 +45,8 @@
     "children": [
         "flxEmail",
         "flxEmailFooter",
-        "HeaderRegisterForEmail"
+        "HeaderRegisterForEmail",
+        "flxBarContainerEmail"
     ],
     "clipbounds": false,
     "containerweight": 100,

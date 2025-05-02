@@ -21,7 +21,7 @@
         0,
         0
     ],
-    "_skin_": "s0e468c5bd6d433dbc9206c7102d6b66",
+    "_skin_": "s5e8a165840e4b72b2c7b2a2885dc7f6",
     "_text_": "Save and continue",
     "_top_": {
         "type": "string",
@@ -45,7 +45,7 @@
     "id": "btnSaveAndContinueForTermsNConditions",
     "info": null,
     "iscustomlayout": false,
-    "isvisible": true,
+    "isvisible": false,
     "kuid": "c883912db7a44eb893c5d2741d753a4d",
     "name": "kony.ui.Button",
     "parent": "flxPassWordAndConfirmPassWord",
