@@ -1,0 +1,761 @@
+{
+    "@class": "com.kony.gen.viz.model.container.KVizSegment2",
+    "DNDConfig": null,
+    "_data_": [
+        [
+            {
+                "img01": {
+                    "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                    "src": "uil_arrow.png",
+                    "type": "Image"
+                },
+                "img02": {
+                    "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                    "src": "uil_arrow.png",
+                    "type": "Image"
+                },
+                "img03": {
+                    "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                    "src": "uil_arrow.png",
+                    "type": "Image"
+                },
+                "lblAuctionId": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "Auction ID ",
+                    "type": "Label"
+                },
+                "lblLetters": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "Sales Letters",
+                    "type": "Label"
+                },
+                "lblMakeModelyear": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "Make a Model & Year",
+                    "type": "Label"
+                }
+            },
+            [
+                {
+                    "imgDownload": {
+                        "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                        "src": "material_symbols_light_download_sharp_2.png",
+                        "type": "Image"
+                    },
+                    "lblDownload": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "Download",
+                        "type": "Label"
+                    },
+                    "lblauctionValue": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "482916",
+                        "type": "Label"
+                    },
+                    "lblmakeModelValue": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "Nissan 2019",
+                        "type": "Label"
+                    }
+                },
+                {
+                    "imgDownload": {
+                        "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                        "src": "material_symbols_light_download_sharp_2.png",
+                        "type": "Image"
+                    },
+                    "lblDownload": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "Download",
+                        "type": "Label"
+                    },
+                    "lblauctionValue": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "482916",
+                        "type": "Label"
+                    },
+                    "lblmakeModelValue": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "Nissan 2019",
+                        "type": "Label"
+                    }
+                },
+                {
+                    "imgDownload": {
+                        "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                        "src": "material_symbols_light_download_sharp_2.png",
+                        "type": "Image"
+                    },
+                    "lblDownload": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "Download",
+                        "type": "Label"
+                    },
+                    "lblauctionValue": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "482916",
+                        "type": "Label"
+                    },
+                    "lblmakeModelValue": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "Nissan 2019",
+                        "type": "Label"
+                    }
+                },
+                {
+                    "imgDownload": {
+                        "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                        "src": "material_symbols_light_download_sharp_2.png",
+                        "type": "Image"
+                    },
+                    "lblDownload": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "Download",
+                        "type": "Label"
+                    },
+                    "lblauctionValue": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "482916",
+                        "type": "Label"
+                    },
+                    "lblmakeModelValue": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "Nissan 2019",
+                        "type": "Label"
+                    }
+                },
+                {
+                    "imgDownload": {
+                        "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                        "src": "material_symbols_light_download_sharp_2.png",
+                        "type": "Image"
+                    },
+                    "lblDownload": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "Download",
+                        "type": "Label"
+                    },
+                    "lblauctionValue": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "482916",
+                        "type": "Label"
+                    },
+                    "lblmakeModelValue": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "Nissan 2019",
+                        "type": "Label"
+                    }
+                },
+                {
+                    "imgDownload": {
+                        "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                        "src": "material_symbols_light_download_sharp_2.png",
+                        "type": "Image"
+                    },
+                    "lblDownload": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "Download",
+                        "type": "Label"
+                    },
+                    "lblauctionValue": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "482916",
+                        "type": "Label"
+                    },
+                    "lblmakeModelValue": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "Nissan 2019",
+                        "type": "Label"
+                    }
+                }
+            ]
+        ],
+        [
+            {
+                "img01": {
+                    "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                    "src": "uil_arrow.png",
+                    "type": "Image"
+                },
+                "img02": {
+                    "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                    "src": "uil_arrow.png",
+                    "type": "Image"
+                },
+                "img03": {
+                    "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                    "src": "uil_arrow.png",
+                    "type": "Image"
+                },
+                "lblAuctionId": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "Auction ID ",
+                    "type": "Label"
+                },
+                "lblLetters": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "Sales Letters",
+                    "type": "Label"
+                },
+                "lblMakeModelyear": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "Make a Model & Year",
+                    "type": "Label"
+                }
+            },
+            [
+                {
+                    "imgDownload": {
+                        "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                        "src": "material_symbols_light_download_sharp_2.png",
+                        "type": "Image"
+                    },
+                    "lblDownload": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "Download",
+                        "type": "Label"
+                    },
+                    "lblauctionValue": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "Label",
+                        "type": "Label"
+                    },
+                    "lblmakeModelValue": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "Label",
+                        "type": "Label"
+                    }
+                },
+                {
+                    "imgDownload": {
+                        "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                        "src": "material_symbols_light_download_sharp_2.png",
+                        "type": "Image"
+                    },
+                    "lblDownload": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "Download",
+                        "type": "Label"
+                    },
+                    "lblauctionValue": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "Label",
+                        "type": "Label"
+                    },
+                    "lblmakeModelValue": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "Label",
+                        "type": "Label"
+                    }
+                },
+                {
+                    "imgDownload": {
+                        "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                        "src": "material_symbols_light_download_sharp_2.png",
+                        "type": "Image"
+                    },
+                    "lblDownload": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "Download",
+                        "type": "Label"
+                    },
+                    "lblauctionValue": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "Label",
+                        "type": "Label"
+                    },
+                    "lblmakeModelValue": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "Label",
+                        "type": "Label"
+                    }
+                },
+                {
+                    "imgDownload": {
+                        "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                        "src": "material_symbols_light_download_sharp_2.png",
+                        "type": "Image"
+                    },
+                    "lblDownload": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "Download",
+                        "type": "Label"
+                    },
+                    "lblauctionValue": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "Label",
+                        "type": "Label"
+                    },
+                    "lblmakeModelValue": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "Label",
+                        "type": "Label"
+                    }
+                },
+                {
+                    "imgDownload": {
+                        "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                        "src": "material_symbols_light_download_sharp_2.png",
+                        "type": "Image"
+                    },
+                    "lblDownload": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "Download",
+                        "type": "Label"
+                    },
+                    "lblauctionValue": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "Label",
+                        "type": "Label"
+                    },
+                    "lblmakeModelValue": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "Label",
+                        "type": "Label"
+                    }
+                },
+                {
+                    "imgDownload": {
+                        "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                        "src": "material_symbols_light_download_sharp_2.png",
+                        "type": "Image"
+                    },
+                    "lblDownload": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "Download",
+                        "type": "Label"
+                    },
+                    "lblauctionValue": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "Label",
+                        "type": "Label"
+                    },
+                    "lblmakeModelValue": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "Label",
+                        "type": "Label"
+                    }
+                },
+                {
+                    "imgDownload": {
+                        "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                        "src": "material_symbols_light_download_sharp_2.png",
+                        "type": "Image"
+                    },
+                    "lblDownload": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "Download",
+                        "type": "Label"
+                    },
+                    "lblauctionValue": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "Label",
+                        "type": "Label"
+                    },
+                    "lblmakeModelValue": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "Label",
+                        "type": "Label"
+                    }
+                },
+                {
+                    "imgDownload": {
+                        "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                        "src": "material_symbols_light_download_sharp_2.png",
+                        "type": "Image"
+                    },
+                    "lblDownload": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "Download",
+                        "type": "Label"
+                    },
+                    "lblauctionValue": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "Label",
+                        "type": "Label"
+                    },
+                    "lblmakeModelValue": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "Label",
+                        "type": "Label"
+                    }
+                },
+                {
+                    "imgDownload": {
+                        "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                        "src": "material_symbols_light_download_sharp_2.png",
+                        "type": "Image"
+                    },
+                    "lblDownload": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "Download",
+                        "type": "Label"
+                    },
+                    "lblauctionValue": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "Label",
+                        "type": "Label"
+                    },
+                    "lblmakeModelValue": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "Label",
+                        "type": "Label"
+                    }
+                },
+                {
+                    "imgDownload": {
+                        "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                        "src": "material_symbols_light_download_sharp_2.png",
+                        "type": "Image"
+                    },
+                    "lblDownload": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "Download",
+                        "type": "Label"
+                    },
+                    "lblauctionValue": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "Label",
+                        "type": "Label"
+                    },
+                    "lblmakeModelValue": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "Label",
+                        "type": "Label"
+                    }
+                },
+                {
+                    "imgDownload": {
+                        "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                        "src": "material_symbols_light_download_sharp_2.png",
+                        "type": "Image"
+                    },
+                    "lblDownload": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "Download",
+                        "type": "Label"
+                    },
+                    "lblauctionValue": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "Label",
+                        "type": "Label"
+                    },
+                    "lblmakeModelValue": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "Label",
+                        "type": "Label"
+                    }
+                },
+                {
+                    "imgDownload": {
+                        "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                        "src": "material_symbols_light_download_sharp_2.png",
+                        "type": "Image"
+                    },
+                    "lblDownload": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "Download",
+                        "type": "Label"
+                    },
+                    "lblauctionValue": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "Label",
+                        "type": "Label"
+                    },
+                    "lblmakeModelValue": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "Label",
+                        "type": "Label"
+                    }
+                },
+                {
+                    "imgDownload": {
+                        "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                        "src": "material_symbols_light_download_sharp_2.png",
+                        "type": "Image"
+                    },
+                    "lblDownload": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "Download",
+                        "type": "Label"
+                    },
+                    "lblauctionValue": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "Label",
+                        "type": "Label"
+                    },
+                    "lblmakeModelValue": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "Label",
+                        "type": "Label"
+                    }
+                },
+                {
+                    "imgDownload": {
+                        "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                        "src": "material_symbols_light_download_sharp_2.png",
+                        "type": "Image"
+                    },
+                    "lblDownload": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "Download",
+                        "type": "Label"
+                    },
+                    "lblauctionValue": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "Label",
+                        "type": "Label"
+                    },
+                    "lblmakeModelValue": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "Label",
+                        "type": "Label"
+                    }
+                },
+                {
+                    "imgDownload": {
+                        "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                        "src": "material_symbols_light_download_sharp_2.png",
+                        "type": "Image"
+                    },
+                    "lblDownload": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "Download",
+                        "type": "Label"
+                    },
+                    "lblauctionValue": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "Label",
+                        "type": "Label"
+                    },
+                    "lblmakeModelValue": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "Label",
+                        "type": "Label"
+                    }
+                },
+                {
+                    "imgDownload": {
+                        "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                        "src": "material_symbols_light_download_sharp_2.png",
+                        "type": "Image"
+                    },
+                    "lblDownload": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "Download",
+                        "type": "Label"
+                    },
+                    "lblauctionValue": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "Label",
+                        "type": "Label"
+                    },
+                    "lblmakeModelValue": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "Label",
+                        "type": "Label"
+                    }
+                },
+                {
+                    "imgDownload": {
+                        "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                        "src": "material_symbols_light_download_sharp_2.png",
+                        "type": "Image"
+                    },
+                    "lblDownload": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "Download",
+                        "type": "Label"
+                    },
+                    "lblauctionValue": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "Label",
+                        "type": "Label"
+                    },
+                    "lblmakeModelValue": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "Label",
+                        "type": "Label"
+                    }
+                },
+                {
+                    "imgDownload": {
+                        "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                        "src": "material_symbols_light_download_sharp_2.png",
+                        "type": "Image"
+                    },
+                    "lblDownload": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "Download",
+                        "type": "Label"
+                    },
+                    "lblauctionValue": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "Label",
+                        "type": "Label"
+                    },
+                    "lblmakeModelValue": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "Label",
+                        "type": "Label"
+                    }
+                },
+                {
+                    "imgDownload": {
+                        "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                        "src": "material_symbols_light_download_sharp_2.png",
+                        "type": "Image"
+                    },
+                    "lblDownload": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "Download",
+                        "type": "Label"
+                    },
+                    "lblauctionValue": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "Label",
+                        "type": "Label"
+                    },
+                    "lblmakeModelValue": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "Label",
+                        "type": "Label"
+                    }
+                },
+                {
+                    "imgDownload": {
+                        "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                        "src": "material_symbols_light_download_sharp_2.png",
+                        "type": "Image"
+                    },
+                    "lblDownload": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "Download",
+                        "type": "Label"
+                    },
+                    "lblauctionValue": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "Label",
+                        "type": "Label"
+                    },
+                    "lblmakeModelValue": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "Label",
+                        "type": "Label"
+                    }
+                }
+            ]
+        ]
+    ],
+    "_height_": {
+        "type": "string",
+        "value": "100%"
+    },
+    "_indicator_": "none",
+    "_left_": {
+        "type": "string",
+        "value": "0"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_orientation_": 2,
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_top_": {
+        "type": "string",
+        "value": "0"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "160%"
+    },
+    "autogrowmode": 0,
+    "canUpdateUI": true,
+    "containerweight": 100,
+    "counter": "119",
+    "focusedindex": null,
+    "focuseditem": null,
+    "groupcells": false,
+    "hasSections": true,
+    "id": "segSalesTable",
+    "info": null,
+    "ipad": {
+        "psp": {
+            "indicator": "rowselect"
+        }
+    },
+    "iphone": {
+        "psp": {
+            "indicator": "rowselect"
+        }
+    },
+    "iscustomlayout": false,
+    "isvisible": true,
+    "kuid": "fd1ca42102314b978fda1860a7ea3836",
+    "masterdata": {},
+    "name": "kony.ui.SegmentedUI2",
+    "needpageindicator": true,
+    "pageoffdotimage": "pageoffdot.png",
+    "pageondotimage": "pageondot.png",
+    "paginationconfig": {
+        "position": "bottom"
+    },
+    "parent": "flxtable",
+    "pf": "frmSaleLetters",
+    "retaincontentalignment": false,
+    "retainflexpositionproperties": false,
+    "retainselection": false,
+    "rowTemplateId": "cf4a034ab9b64102afc925086b6b98a3",
+    "rowcounter": 19,
+    "rowfocusskin": "s961e586fe794e498e31c111fe40ef67",
+    "rowskin": "s2d1a440627e4c3eb337995bf3931fdd",
+    "rowtemplate": "flxRowSummary",
+    "screenlevelwidget": false,
+    "seccounter": 1,
+    "sectionHeaderTemplateId": "f84f427cbaf141c682dc66f9d1e7f3b0",
+    "sectionheaderskin": "s394e25221a84c198a12829462d278f1",
+    "sectionheadertemplate": "flxSummaryHeader",
+    "selectedRows": null,
+    "selectedState": false,
+    "selectedindex": null,
+    "selectedindices": null,
+    "selecteditems": null,
+    "selectedsectionindex": 0,
+    "selectionbehavior": "default",
+    "separatorcolor": "aaaaaa00",
+    "separatorrequired": true,
+    "separatorthickness": 1,
+    "showscrollbars": false,
+    "viewtype": "tableview",
+    "vizProps": {},
+    "wType": "Segment",
+    "widgetalignment": 5,
+    "widgetdatamap": {
+        "flx01": "flx01",
+        "flx02": "flx02",
+        "flx03": "flx03",
+        "flxContent": "flxContent",
+        "flxContentheader": "flxContentheader",
+        "flxDownload": "flxDownload",
+        "flxRowSummary": "flxRowSummary",
+        "flxSummaryHeader": "flxSummaryHeader",
+        "img01": "img01",
+        "img02": "img02",
+        "img03": "img03",
+        "imgDownload": "imgDownload",
+        "lblAuctionId": "lblAuctionId",
+        "lblDownload": "lblDownload",
+        "lblLetters": "lblLetters",
+        "lblMakeModelyear": "lblMakeModelyear",
+        "lblauctionValue": "lblauctionValue",
+        "lblmakeModelValue": "lblmakeModelValue"
+    }
+}
