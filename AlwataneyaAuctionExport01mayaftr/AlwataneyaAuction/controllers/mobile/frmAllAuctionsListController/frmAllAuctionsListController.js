@@ -133,6 +133,10 @@ selectedFilters: {},
      var self = this;
 
     function invServiceCallBack(status, online_auction_list) {
+      if (!online_auction_list || !online_auction_list.auction_list) {
+        voltmx.print("Error: Response is null or missing auction_list");
+        return;
+      }
       var records = online_auction_list.auction_list;
       self.setDataToSegFromService(records);
     }

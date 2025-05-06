@@ -70,7 +70,7 @@
             },
             "lblRowDocs": {
                 "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
-                "text": "Possession Leters",
+                "text": "Possession Letters",
                 "type": "Label"
             }
         },
@@ -170,7 +170,7 @@
     "selectedindex": null,
     "selectedindices": null,
     "selecteditems": null,
-    "selectedsectionindex": 0,
+    "selectedsectionindex": null,
     "selectionbehavior": "default",
     "separatorcolor": "cfcfcf00",
     "separatorrequired": true,

@@ -2,7 +2,7 @@ define({
 
   //Type your controller code here 
   onNavigate: function(){
-    this.view.flxFooter.onClick = this.NavigateToSignUpForm;
+    this.view.flxSignUpContainer.onClick = this.NavigateToSignUpForm.bind(this);
     this.view.btnSubmit.onClick = this.login.bind(this);
     this.view.preShow = this.onPreShow.bind(this);
 //   this.view.btnSubmit.onClick = this.submitOnclickAction;

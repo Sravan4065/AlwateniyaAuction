@@ -35,8 +35,8 @@
     "autogrowmode": 0,
     "canUpdateUI": true,
     "children": [
-        "imgArrow",
-        "lblPossesionLetter"
+        "lblPossesionLetter",
+        "flxBack"
     ],
     "clipbounds": false,
     "containerweight": 100,

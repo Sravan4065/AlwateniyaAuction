@@ -168,7 +168,7 @@ define({
             "btnAction": { "text": "VIEW ALL"}
         },
       {
-             "imgCarousel":"dashboardcarouselnew3.png",
+             "imgCarousel":"dashboardcarouselimg2.jpg",   //dashboardcarouselnew3.png
             "lblCarouselSlideHeading": "PHYSICAL AUCTIONS",
             "lblCarouselSlideSubheading": "From the Floor to Your Hands - Secure Your Asset",
             "btnAction": { "text": "VIEW ALL"}
@@ -191,15 +191,17 @@ define({
         var parentFlex = this.view.flxScrollFilteredItems;
 //           parentFlex.removeAll();
         var records = this.isRecords ? this.records : this.getStaticCarRecords();
-
+        
         for (var i = 0; i < 5; i++) {
+          var leftval = (i === 0) ? "20dp" : "10dp";
             // Creating the main flex container for each widget
-
+            
             var flexFeaturedAuctionsItem = new voltmx.ui.FlexContainer({
                 id: "flexFeaturedAuctionsItem" + i,
-                left: "20dp",
-                width: "280dp", 
-                height: "92%",
+                left: leftval,
+               right: (i === 4) ? "15dp" : "", 
+                width: "275dp", 
+                height: "95%",
                 zIndex: 1,
                 isVisible: true,
 //                 skin: "flxContainer45",
@@ -214,11 +216,11 @@ define({
               
              id: "flxFeaturedAuctionsItemTop" + i,
              centerX: "50%",
-             height: "50%",
-             width: "90%",
+             height: "45%",
+             width: "100%",
              zIndex:1,
              isVisible: true,
-             top: "5%",
+             top: "0%",
              skin: "sknFlxWhiteRoundedCorner",
              clipBounds: true  
             },{},{});
@@ -238,207 +240,381 @@ define({
             
               id: "flxFeaturedAuctionsItemBottom" + i,
              centerX: "50%",
-             height: "45%",
+             height: "55%",
              width: "100%",
              zIndex: 2,
              isVisible: true,
-             top: "55%",
+             top: "45%",
              skin: "sknFlxBasic",
              clipBounds: true,
-             layoutType: voltmx.flex.FREE_FORM
+             layoutType: voltmx.flex.FLOW_VERTICAL
             
             
           },{},{});
           
-          var lblCarname = new voltmx.ui.Label(
-           {
-                id: "lblCarname" + i,
-                text: records[i].sub_category_name ? records[i].sub_category_name : "N/A", 
-                isVisible: true,
-                width: "preferred",
-                left: "5%",
-                top: "10%",
-                height: "15%",
-                skin: "sknLblCronosPro231f2022pxbold"
-          }
-          );
+//           var lblCarname = new voltmx.ui.Label(
+//            {
+//                 id: "lblCarname" + i,
+//                 text: records[i].sub_category_name ? records[i].sub_category_name : "N/A", 
+//                 isVisible: true,
+//                 width: "preferred",
+//                 left: "5%",
+//                 top: "10%",
+//                 height: "15%",
+//                 skin: "sknLblCronosPro231f2022pxbold"
+//           }
+//           );
           
-          var lblLot = new voltmx.ui.Label({
-            
-                id: "lblLot" + i,
-                text: "Lot #:"+(records[i].ID ? records[i].ID : "N/A"),
-                isVisible: true,
-                width: "preferred",
-                left: "5%",
-                top: "30%",
-                height: "15%",
-                skin: "sknLblCronosPro231f2016px"
-            
-          });
+          var lblCarname = new voltmx.ui.Label({
+    id: "lblCarname" + i,
+    isVisible: true,
+    left: "4%",
+    top: "2%",
+    height: "14%",
+    width: voltmx.flex.USE_PREFERRED_SIZE,
+    skin: "sknLblDubai00000020pxBold",
+    text: records[i].sub_category_name ? records[i].sub_category_name : "N/A",
+}, { contentAlignment: constants.CONTENT_ALIGN_MIDDLE_LEFT }, {});
           
-             var lblTotalBids = new voltmx.ui.Label({
+   var lblCountDown = new voltmx.ui.Label({
+    id: "lblCountDown" + i,
+    isVisible: true,
+    left: "4%",
+    top: "2dp",
+    width: voltmx.flex.USE_PREFERRED_SIZE,
+    skin: "sknLblDubaid3243714px",
+    text: records[i].time_remaining ? records[i].time_remaining : "N/A", 
+}, { contentAlignment: constants.CONTENT_ALIGN_MIDDLE_LEFT }, {});
+          
+  var flxLot = new voltmx.ui.FlexContainer({
+    id: "flxLot" +  i,
+    isVisible: true,
+    top: "2dp",
+    height: "22dp",
+    width: "100%",
+    layoutType: voltmx.flex.FREE_FORM,
+    skin: "slFbox"
+}, {}, {});
+flxLot.setDefaultUnit(voltmx.flex.DP);
+          
+var lblLot = new voltmx.ui.Label({
+    id: "lblLot" + i,
+    isVisible: true,
+    left: "4%",
+    centerY: "50%",
+    skin: "sknLblDubai231f20",
+    text: "Lot #"
+}, { contentAlignment: constants.CONTENT_ALIGN_MIDDLE_LEFT }, {});
+          
+  var lblLotNum = new voltmx.ui.Label({
+    id: "lblLotNum" + i,
+    isVisible: true,
+    right: "8%",
+    centerY: "50%",
+    skin: "sknLblDubai231f20",
+    text: records[i].ID ? records[i].ID : "N/A"
+}, { contentAlignment: constants.CONTENT_ALIGN_MIDDLE_RIGHT }, {});
+          
+//           var lblLot = new voltmx.ui.Label({
             
-                id: "lblTotalBids" + i,
-                text: "Total Bids: "+ (records[i].bids ? records[i].bids: "N/A"),
-                isVisible: true,
-                width: "preferred",
-                left: "5%",
-                top: "50%",
-                height: "15%",
-                skin: "sknLblCronosPro231f2016px"
+//                 id: "lblLot" + i,
+//                 text: "Lot #:"+(records[i].ID ? records[i].ID : "N/A"),
+//                 isVisible: true,
+//                 width: "preferred",
+//                 left: "5%",
+//                 top: "30%",
+//                 height: "15%",
+//                 skin: "sknLblCronosPro231f2016px"
             
-          });
+//           });
+          flxLot.add(lblLot, lblLotNum);
+          
+          var flxTotalBids = new voltmx.ui.FlexContainer({
+    id: "flxTotalBids" + i,
+    isVisible: true,
+    top: "2dp",
+    height: "22dp",
+    width: "100%",
+    layoutType: voltmx.flex.FREE_FORM,
+    skin: "slFbox"
+}, {}, {});
+          
+          
+var lblTotalBidsText = new voltmx.ui.Label({
+    id: "lblTotalBidsText" + i,
+    isVisible: true,
+    left: "4%",
+    centerY: "50%",
+    skin: "sknLblDubai231f20",
+    text: "Total Bids"
+}, {}, {});
+
+var lblTotalBids = new voltmx.ui.Label({
+    id: "lblTotalBids" + i,
+    isVisible: true,
+    right: "8%",
+    centerY: "50%",
+    skin: "sknLblDubai231f20",
+    text: records[i].bids ? records[i].bids: "N/A"
+}, {}, {});
+flxTotalBids.add(lblTotalBidsText,lblTotalBids);
+          
           
         
           
-          var lblCountDown = new voltmx.ui.Label({
-                id: "lblCountDown" + i,
-                text: records[i].time_remaining ? records[i].time_remaining : "N/A", 
-                isVisible: true,
-                width: "preferred",
-                height: "15%",
-                right: "5%",
-                top: "10%",
-                skin: "sknLblCronosProd3243716px"
-          });
+//           var lblCountDown = new voltmx.ui.Label({
+//                 id: "lblCountDown" + i,
+//                 text: records[i].time_remaining ? records[i].time_remaining : "N/A", 
+//                 isVisible: true,
+//                 width: "preferred",
+//                 height: "15%",
+//                 right: "5%",
+//                 top: "10%",
+//                 skin: "sknLblCronosProd3243716px"
+//           });
           
+          var flxLocation = new voltmx.ui.FlexContainer({
+    id: "flxLocation" + i,
+    isVisible: true,
+    top: "2dp",
+    height: "22dp",
+    width: "100%",
+    layoutType: voltmx.flex.FREE_FORM,
+    skin: "slFbox"
+}, {}, {});
+flxLocation.setDefaultUnit(voltmx.flex.DP);
+
+var lblLocation = new voltmx.ui.Label({
+    id: "lblLocation" + i,
+    isVisible: true,
+    left: "4%",
+    centerY: "50%",
+    skin: "sknLblDubai231f20",
+    text: "Location"
+}, {}, {});
+
+var lblLocationName = new voltmx.ui.Label({
+    id: "lblLocationName" + i,
+    isVisible: true,
+    right: "8%",
+    centerY: "50%",
+    skin: "sknLblDubai231f20",
+    text: records[i].location ? records[i].location : "N/A"
+}, {}, {});
+flxLocation.add(lblLocation, lblLocationName);
           
-          var lblLocation = new voltmx.ui.Label({
+//           var lblLocation = new voltmx.ui.Label({
             
             
-                id: "lblLocation" + i,
-                text: records[i].location ? records[i].location : "N/A", 
-                isVisible: true,
-                width: "preferred",
-                height: "15%",
-                right: "5%",
-                top: "30%",
-                skin: "sknLblCronosPro231f2016px"
+//                 id: "lblLocation" + i,
+//                 text: records[i].location ? records[i].location : "N/A", 
+//                 isVisible: true,
+//                 width: "preferred",
+//                 height: "15%",
+//                 right: "5%",
+//                 top: "30%",
+//                 skin: "sknLblCronosPro231f2016px"
             
             
-          });
+//           });
           
           var lblBidRate = new voltmx.ui.Label({
+    id: "lblBidRate" + i,
+    isVisible: true,
+    right: "8%",
+    top: "2dp",
+    skin: "sknLblDubaid3243720pxbold",
+    text: "AED "+ (records[i].max_bid_amount ? records[i].max_bid_amount : "N/A")
+}, { contentAlignment: constants.CONTENT_ALIGN_MIDDLE_RIGHT }, {});
+          
+//           var lblBidRate = new voltmx.ui.Label({
             
-                id: "lblBidRate" + i,
-                text: "AED "+ (records[i].max_bid_amount ? records[i].max_bid_amount : "N/A"), 
-                isVisible: true,
-                width: "preferred",
-                height: "15%",
-                right: "5%",
-                top: "50%",
-                skin: "sknLblCronosProd32437Bold22px"
-          });
+//                 id: "lblBidRate" + i,
+//                 text: "AED "+ (records[i].max_bid_amount ? records[i].max_bid_amount : "N/A"), 
+//                 isVisible: true,
+//                 width: "preferred",
+//                 height: "15%",
+//                 right: "5%",
+//                 top: "50%",
+//                 skin: "sknLblCronosProd32437Bold22px"
+//           });
           
           
-          var flxLikeFromRecommendedFilter = new voltmx.ui.FlexContainer({
-              id: "flxLikeFromRecommendedFilter"+i,
-            isVisible: true,
-            clipBounds: false,
-            left: "5%",
-            bottom: "10%",
-            top: "70%",
-            skin: "sknFlx231f20custom120pxround",
-            width: "25dp",
-            height: "25dp",
-            zIndex: 2,
-            onClick: this.toggleHeartStatusFromRecommended.bind(this,i)
-          },{},{});
+          var flxLikeBid = new voltmx.ui.FlexContainer({
+    id: "flxLikeBid",
+    isVisible: true,
+    top: "2dp",
+    height: "45dp",
+    width: "100%",
+    layoutType: voltmx.flex.FREE_FORM,
+    skin: "slFbox"
+}, {}, {});
+flxLikeBid.setDefaultUnit(voltmx.flex.DP);
           
-              var imgHeartIconFromRecommended = new voltmx.ui.Image2({
-                id: "imgHeartIconFromRecommended" + i,
-                isVisible: true,
-               src : "imgdislikenew.png",
-               centerY: "50%",
-               centerX: "50%",
-              width: "55%", 
-                height: "55%", 
-                imageScaleMode: constants.IMAGE_SCALE_MODE_FIT_TO_DIMENSIONS,
-                clipBounds: true
-            });
+     var flxLikeFromRecommendedFilter = new voltmx.ui.FlexContainer({
+    id: "flxLikeFromRecommendedFilter" + i,
+    isVisible: true,
+    height: "34dp",
+    width: "34dp",
+    left: "4%",
+    centerY: "50%",
+    skin: "sknFlx231f20custom120pxround",
+    onClick: this.toggleHeartStatusFromRecommended.bind(this,i),
+    layoutType: voltmx.flex.FREE_FORM
+}, {}, {});
+          
+         var imgHeartIconFromRecommended = new voltmx.ui.Image2({
+    id: "imgHeartIconFromRecommended" + i,
+    isVisible: true,
+    centerX: "50%",
+    centerY: "50%",
+    height: "55%",
+    width: "55%",
+    src: "imgdislikenew.png"
+}, { imageScaleMode: constants.IMAGE_SCALE_MODE_MAINTAIN_ASPECT_RATIO }, {});
+flxLikeFromRecommendedFilter.add(imgHeartIconFromRecommended); 
+          
+//           var flxLikeFromRecommendedFilter = new voltmx.ui.FlexContainer({
+//               id: "flxLikeFromRecommendedFilter"+i,
+//             isVisible: true,
+//             clipBounds: false,
+//             left: "5%",
+//             bottom: "10%",
+//             top: "70%",
+//             skin: "sknFlx231f20custom120pxround",
+//             width: "25dp",
+//             height: "25dp",
+//             zIndex: 2,
+//             onClick: this.toggleHeartStatusFromRecommended.bind(this,i)
+//           },{},{});
+          
+//               var imgHeartIconFromRecommended = new voltmx.ui.Image2({
+//                 id: "imgHeartIconFromRecommended" + i,
+//                 isVisible: true,
+//                src : "imgdislikenew.png",
+//                centerY: "50%",
+//                centerX: "50%",
+//               width: "55%", 
+//                 height: "55%", 
+//                 imageScaleMode: constants.IMAGE_SCALE_MODE_FIT_TO_DIMENSIONS,
+//                 clipBounds: true
+//             });
+          
           
           var flxBidEnable = new voltmx.ui.FlexContainer({
-              id: "flxBidEnable"+i,
+            id: "flxBidEnable" + i,
             isVisible: true,
-            clipBounds: false,
-            right: "44%",
-            bottom: "10%",
-            top: "70%",
+            height: "35dp",
+            width: "42dp",
+            centerY: "50%",
+            right: "45%",
             skin: "sknFlxBasic",
-            width: "25dp",
-            height: "25dp",
+            layoutType: voltmx.flex.FREE_FORM,
             zIndex: 2,
             onClick: this.enableAutoBid.bind(this,{
               auction_id: records[i].auction_id,
-              object_id: records[i].object_id
-            })
-          },{},{});
-          
-            var imgAutoBid = new voltmx.ui.Image2({
-                id: "imgAutoBid" + i,
-                isVisible: true,
-               src : "imgautobidnew.png",
-               centerY: "50%",
-               centerX: "50%",
-              width: "100%", 
-                height: "100%", 
-                imageScaleMode: constants.IMAGE_SCALE_MODE_FIT_TO_DIMENSIONS,
-                clipBounds: true
-            });
+              object_id: records[i].object_id})
+          }, {}, {});
 
-          var btnBidNow = new voltmx.ui.Button({
-            
-            id: "btnBidNow"+ i,
-            right: "5%",
-            top: "70%",
-            text: "BID NOW",
-            zindex: 3,
-            skin: "sknBtnBidNow",
-            width: "35%",
-            height: "20%", 
-            onClick: this.openBidAmountContainer.bind(this, {
-              auction_id: records[i].auction_id,
-              object_id: records[i].object_id,
-              max_bid_amount: records[i].max_bid_amount,
-              ID: records[i].ID,
-              currentIndex: i
-            })    
-          });
+          var imgAutoBid = new voltmx.ui.Image2({
+            id: "imgAutoBid" + i,
+            isVisible: true,
+            centerX: "50%",
+            centerY: "50%",
+            height: "75%",
+            width: "75%",
+            src: "autobidnewone.png"
+          }, { imageScaleMode: constants.IMAGE_SCALE_MODE_MAINTAIN_ASPECT_RATIO }, {});
+          flxBidEnable.add(imgAutoBid);
+
+//           var flxBidEnable = new voltmx.ui.FlexContainer({
+//               id: "flxBidEnable"+i,
+//             isVisible: true,
+//             clipBounds: false,
+//             right: "44%",
+//             bottom: "10%",
+//             top: "70%",
+//             skin: "sknFlxBasic",
+//             width: "25dp",
+//             height: "25dp",
+//             zIndex: 2,
+//             onClick: this.enableAutoBid.bind(this,{
+//               auction_id: records[i].auction_id,
+//               object_id: records[i].object_id
+//             })
+//           },{},{});
           
-             
-          var btnTest = new voltmx.ui.Button({
-             id: "btnTest"+ i,
-             right: "5%",
-            top: "69%",
-            text: "BID NOW",
-            height: "preferred",
-            width: "30%",
-            skin: "sknBtnBidNow",
-           
-            onClick: this.openBidAmountContainer.bind(this, {
+//             var imgAutoBid = new voltmx.ui.Image2({
+//                 id: "imgAutoBid" + i,
+//                 isVisible: true,
+//                src : "imgautobidnew.png",
+//                centerY: "50%",
+//                centerX: "50%",
+//               width: "100%", 
+//                 height: "100%", 
+//                 imageScaleMode: constants.IMAGE_SCALE_MODE_FIT_TO_DIMENSIONS,
+//                 clipBounds: true
+//             });
+          
+          var btnBidNow = new voltmx.ui.Button({
+    id: "btnBidNow",
+    isVisible: true,
+    height: "38dp",
+    width: "35%",
+    centerY: "50%",
+    right: "8%",
+    skin: "sknBtn61b35c20pxbold",
+    text: "BID NOW",
+     onClick: this.openBidAmountContainer.bind(this, {
               auction_id: records[i].auction_id,
               object_id: records[i].object_id,
               max_bid_amount: records[i].max_bid_amount,
               ID: records[i].ID,
               currentIndex: i
             })  
+}, { contentAlignment: constants.CONTENT_ALIGN_CENTER }, {});
+flxLikeBid.add(flxLikeFromRecommendedFilter, flxBidEnable, btnBidNow);
+
+       
+          
+             
+//           var btnTest = new voltmx.ui.Button({
+//              id: "btnTest"+ i,
+//              right: "5%",
+//             top: "69%",
+//             text: "BID NOW",
+//             height: "preferred",
+//             width: "30%",
+//             skin: "sknBtnBidNow",
+           
+//             onClick: this.openBidAmountContainer.bind(this, {
+//               auction_id: records[i].auction_id,
+//               object_id: records[i].object_id,
+//               max_bid_amount: records[i].max_bid_amount,
+//               ID: records[i].ID,
+//               currentIndex: i
+//             })  
             
-          })
+//           })
+          
+     
 
           flxFeaturedAuctionsItemTop.add(imgFeaturedAuctions);
           flexFeaturedAuctionsItem.add(flxFeaturedAuctionsItemTop); 
           flxFeaturedAuctionsItemBottom.add(lblCarname);
-          flxFeaturedAuctionsItemBottom.add(lblLot);
-          flxFeaturedAuctionsItemBottom.add(lblTotalBids);
-          flxFeaturedAuctionsItemBottom.add(lblCountDown);
-          flxFeaturedAuctionsItemBottom.add(lblLocation);
+          
+           flxFeaturedAuctionsItemBottom.add(lblCountDown);
+          flxFeaturedAuctionsItemBottom.add(flxLot);
+          flxFeaturedAuctionsItemBottom.add(flxTotalBids);
+         
+          flxFeaturedAuctionsItemBottom.add(flxLocation);
           flxFeaturedAuctionsItemBottom.add(lblBidRate);
-          flxLikeFromRecommendedFilter.add(imgHeartIconFromRecommended);
-          flxBidEnable.add(imgAutoBid);
-          flxFeaturedAuctionsItemBottom.add(flxBidEnable);
-          flxFeaturedAuctionsItemBottom.add(flxLikeFromRecommendedFilter);
+          flxFeaturedAuctionsItemBottom.add(flxLikeBid);
+         
+          
+         
 //           flxFeaturedAuctionsItemBottom.add(btnBidNow);
-          flxFeaturedAuctionsItemBottom.add(btnTest);
+          
           flexFeaturedAuctionsItem.add(flxFeaturedAuctionsItemBottom);
           parentFlex.add(flexFeaturedAuctionsItem);
         }

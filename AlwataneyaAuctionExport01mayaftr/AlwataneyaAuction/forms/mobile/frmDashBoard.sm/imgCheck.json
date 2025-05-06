@@ -47,7 +47,7 @@
     "info": null,
     "invokedProperty": "src",
     "iscustomlayout": false,
-    "isvisible": true,
+    "isvisible": false,
     "kuid": "a067fd416ab6447e83a3813bcbc36374",
     "name": "kony.ui.Image2",
     "parent": "flxCheckBox",

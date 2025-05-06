@@ -15,8 +15,6 @@ define({
   },
   onPreShow: function(){
     this.toggleFooterIcons();
-     
-    
   },
   
   toggleFooterIcons: function()
@@ -49,43 +47,38 @@ define({
       this.view.Footer2.flxProfile.setVisibility(false);
     }
   },
-  segDocsOnRowClickAction: function(){
+  segDocsOnRowClickAction: function() {
     var self = this;
     var selectedSegDocs = self.view.segDocs.selectedRowItems;
-//     alert("selected Seg Docs:"+selectedSegDocs);
+    
+    if (!selectedSegDocs || selectedSegDocs.length === 0) return; 
     var selectedValue = selectedSegDocs[0].lblRowDocs;
-    switch(selectedValue){
-        case "Government IDs"      :   {
-                                         var ntf = new voltmx.mvc.Navigation("frmGovtIds");
-                                           ntf.navigate();
-                                       }
-                                       break;
-        case "Trade Licenses"      :   {
-        
-                                       }
-                                       break;
-        case "VAT Certificates"    :   {
-        
-                                       }
-                                       break; 
-        case "Payment Receipt"     : {
-        
-                                      }
-                                      break;
-        case "Sale Letters"        :  {
-        
-                                      }
-                                      break;
-        case "Possession Letters"  : {
-        
-                                      }
-                                      break;
-        case "Inspection Reports"   : {
-        
-                                      }
-                                      break;
+    var x; // Declare x outside switch
+
+    switch (selectedValue) {
+        case "Government IDs":
+        x = new voltmx.mvc.Navigation("frmGovtIds");
+            break;
+        case "Sale Letters":
+        x = new voltmx.mvc.Navigation("frmSaleLetters");
+            break;
+        case "Possession Letters":
+        x = new voltmx.mvc.Navigation("frmPossessionLetter");
+            break;
+        case "Inspection Reports":
+        x = new voltmx.mvc.Navigation("frmInspectionReport");
+            break;
+        case "Trade Licenses":
+        case "VAT Certificates":
+        case "Payment Receipt":
+            // Handle these when ready
+            break;
     }
-  },
+
+    if (x) {
+        x.navigate();
+    }
+},
   flxBackOnClickAction: function(){
     var ntf = new voltmx.mvc.Navigation("frmOpenMyAccount");
     ntf.navigate();

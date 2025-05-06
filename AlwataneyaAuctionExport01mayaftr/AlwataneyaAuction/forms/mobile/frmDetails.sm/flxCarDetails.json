@@ -25,7 +25,7 @@
     "_skin_": "sdc300e88a3a40c8b346fbae125296ee",
     "_top_": {
         "type": "string",
-        "value": "240dp"
+        "value": "0dp"
     },
     "_width_": {
         "type": "string",
@@ -37,7 +37,7 @@
     "children": [
         "flxInnerCarDetails"
     ],
-    "clipbounds": false,
+    "clipbounds": true,
     "containerweight": 100,
     "enablescrolling": true,
     "id": "flxCarDetails",
@@ -45,7 +45,7 @@
     "iscustomlayout": false,
     "isvisible": true,
     "kuid": "fb9ab51e4d204ea08c8238bfa8f71c0d",
-    "layouttype": 2,
+    "layouttype": 4,
     "name": "kony.ui.FlexContainer",
     "parent": "flxScrollMain",
     "pf": "frmDetails",

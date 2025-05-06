@@ -50,7 +50,7 @@
     "isvisible": true,
     "kuid": "dad11eac21e24bb6a9ee129280a478a0",
     "name": "kony.ui.Image2",
-    "parent": "CopyflxBack0da64c5d53cf443",
+    "parent": "flxShowMultipleImages",
     "pf": "frmDetails",
     "retaincontentalignment": false,
     "retainflexpositionproperties": false,

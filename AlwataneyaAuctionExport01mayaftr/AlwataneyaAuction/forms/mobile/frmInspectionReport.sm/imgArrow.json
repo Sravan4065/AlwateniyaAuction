@@ -4,7 +4,7 @@
     "_base64_": null,
     "_height_": {
         "type": "string",
-        "value": "35%"
+        "value": "100%"
     },
     "_left_": {
         "type": "string",
@@ -23,16 +23,20 @@
         0
     ],
     "_skin_": "s489886ab3c7400b8469bd48d67c4717",
-    "_src_": "leftarrow.png",
+    "_src_": "backnavigate_chevron.png",
     "_top_": {
         "type": "string",
         "value": "0"
     },
     "_width_": {
         "type": "string",
-        "value": "11%"
+        "value": "100%"
     },
     "canUpdateUI": true,
+    "centerx": {
+        "type": "string",
+        "value": "50%"
+    },
     "centery": {
         "type": "string",
         "value": "50%"
@@ -41,11 +45,12 @@
     "id": "imgArrow",
     "imagescalemode": 1,
     "info": null,
+    "invokedProperty": "src",
     "iscustomlayout": false,
     "isvisible": true,
     "kuid": "e5cfe253f2bd4a9d9fe2b14d76ebccfb",
     "name": "kony.ui.Image2",
-    "parent": "flxinspectionreport",
+    "parent": "flxBack",
     "pf": "frmInspectionReport",
     "retaincontentalignment": false,
     "retainflexpositionproperties": false,

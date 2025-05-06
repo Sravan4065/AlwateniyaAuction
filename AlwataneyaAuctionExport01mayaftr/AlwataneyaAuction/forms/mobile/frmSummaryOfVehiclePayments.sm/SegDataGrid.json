@@ -1,0 +1,462 @@
+{
+    "@class": "com.kony.gen.viz.model.container.KVizSegment2",
+    "DNDConfig": null,
+    "_data_": [
+        [
+            {
+                "imgTransAmount": {
+                    "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                    "src": "vector__2_2.png"
+                },
+                "imgTransDate": {
+                    "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                    "src": "vector__2_2.png"
+                },
+                "imgTransStatus": {
+                    "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                    "src": "vector__2_2.png"
+                },
+                "imgTransTransactionNo": {
+                    "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                    "src": "vector__2_2.png"
+                },
+                "lblAuctionID": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "Auction ID"
+                },
+                "lblMakeAndModel": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "Make & Model"
+                },
+                "lblTransAmount": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "Amount"
+                },
+                "lblTransStatus": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "Status"
+                }
+            },
+            [
+                {
+                    "CopylblSDAED0h30894b34da34b": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "AED"
+                    },
+                    "imgTransTransactionNo": {
+                        "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                        "src": "lucide_upload_redcolor.png"
+                    },
+                    "lblAmount": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "20,000"
+                    },
+                    "lblRequestRefund": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "Upload Payment Slip"
+                    },
+                    "lblTransDate": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "Date"
+                    },
+                    "lblTransStatus": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "Status"
+                    },
+                    "lblTransTransactionNo": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "482916"
+                    }
+                },
+                {
+                    "CopylblSDAED0h30894b34da34b": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "AED"
+                    },
+                    "imgTransTransactionNo": {
+                        "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                        "src": "lucide_upload_redcolor.png"
+                    },
+                    "lblAmount": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "20,000"
+                    },
+                    "lblRequestRefund": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "Upload Payment Slip"
+                    },
+                    "lblTransDate": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "Date"
+                    },
+                    "lblTransStatus": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "Status"
+                    },
+                    "lblTransTransactionNo": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "482916"
+                    }
+                },
+                {
+                    "CopylblSDAED0h30894b34da34b": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "AED"
+                    },
+                    "imgTransTransactionNo": {
+                        "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                        "src": "lucide_upload_redcolor.png"
+                    },
+                    "lblAmount": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "20,000"
+                    },
+                    "lblRequestRefund": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "Upload Payment Slip"
+                    },
+                    "lblTransDate": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "Date"
+                    },
+                    "lblTransStatus": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "Status"
+                    },
+                    "lblTransTransactionNo": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "482916"
+                    }
+                },
+                {
+                    "CopylblSDAED0h30894b34da34b": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "AED"
+                    },
+                    "imgTransTransactionNo": {
+                        "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                        "src": "lucide_upload_redcolor.png"
+                    },
+                    "lblAmount": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "20,000"
+                    },
+                    "lblRequestRefund": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "Upload Payment Slip"
+                    },
+                    "lblTransDate": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "Date"
+                    },
+                    "lblTransStatus": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "Status"
+                    },
+                    "lblTransTransactionNo": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "482916"
+                    }
+                },
+                {
+                    "CopylblSDAED0h30894b34da34b": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "AED"
+                    },
+                    "imgTransTransactionNo": {
+                        "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                        "src": "lucide_upload_redcolor.png"
+                    },
+                    "lblAmount": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "20,000"
+                    },
+                    "lblRequestRefund": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "Upload Payment Slip"
+                    },
+                    "lblTransDate": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "Date"
+                    },
+                    "lblTransStatus": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "Status"
+                    },
+                    "lblTransTransactionNo": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "482916"
+                    }
+                },
+                {
+                    "CopylblSDAED0h30894b34da34b": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "AED"
+                    },
+                    "imgTransTransactionNo": {
+                        "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                        "src": "lucide_upload_redcolor.png"
+                    },
+                    "lblAmount": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "20,000"
+                    },
+                    "lblRequestRefund": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "Upload Payment Slip"
+                    },
+                    "lblTransDate": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "Date"
+                    },
+                    "lblTransStatus": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "Status"
+                    },
+                    "lblTransTransactionNo": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "482916"
+                    }
+                },
+                {
+                    "CopylblSDAED0h30894b34da34b": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "AED"
+                    },
+                    "imgTransTransactionNo": {
+                        "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                        "src": "lucide_upload_redcolor.png"
+                    },
+                    "lblAmount": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "20,000"
+                    },
+                    "lblRequestRefund": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "Upload Payment Slip"
+                    },
+                    "lblTransDate": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "Date"
+                    },
+                    "lblTransStatus": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "Status"
+                    },
+                    "lblTransTransactionNo": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "482916"
+                    }
+                },
+                {
+                    "CopylblSDAED0h30894b34da34b": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "AED"
+                    },
+                    "imgTransTransactionNo": {
+                        "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                        "src": "lucide_upload_redcolor.png"
+                    },
+                    "lblAmount": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "20,000"
+                    },
+                    "lblRequestRefund": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "Upload Payment Slip"
+                    },
+                    "lblTransDate": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "Date"
+                    },
+                    "lblTransStatus": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "Status"
+                    },
+                    "lblTransTransactionNo": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "482916"
+                    }
+                },
+                {
+                    "CopylblSDAED0h30894b34da34b": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "AED"
+                    },
+                    "imgTransTransactionNo": {
+                        "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                        "src": "lucide_upload_redcolor.png"
+                    },
+                    "lblAmount": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "20,000"
+                    },
+                    "lblRequestRefund": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "Upload Payment Slip"
+                    },
+                    "lblTransDate": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "Date"
+                    },
+                    "lblTransStatus": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "Status"
+                    },
+                    "lblTransTransactionNo": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "482916"
+                    }
+                },
+                {
+                    "CopylblSDAED0h30894b34da34b": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "AED"
+                    },
+                    "imgTransTransactionNo": {
+                        "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                        "src": "lucide_upload_redcolor.png"
+                    },
+                    "lblAmount": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "20,000"
+                    },
+                    "lblRequestRefund": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "Upload Payment Slip"
+                    },
+                    "lblTransDate": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "Date"
+                    },
+                    "lblTransStatus": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "Status"
+                    },
+                    "lblTransTransactionNo": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "482916"
+                    }
+                }
+            ]
+        ]
+    ],
+    "_height_": {
+        "type": "string",
+        "value": "210dp"
+    },
+    "_indicator_": "none",
+    "_left_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_orientation_": 2,
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_top_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "100%"
+    },
+    "autogrowmode": 0,
+    "canUpdateUI": true,
+    "containerweight": 100,
+    "counter": "09",
+    "focusedindex": null,
+    "focuseditem": null,
+    "generatedtemplate": "da1fb971c3714dafa12280a8ab60d136",
+    "groupcells": false,
+    "hasSections": true,
+    "id": "SegDataGrid",
+    "info": null,
+    "ipad": {
+        "psp": {
+            "indicator": "rowselect"
+        }
+    },
+    "iphone": {
+        "psp": {
+            "indicator": "rowselect"
+        }
+    },
+    "iscustomlayout": false,
+    "isvisible": true,
+    "kuid": "ae70290c7aaa4c07b3e9762f2a21a8b4",
+    "masterdata": {},
+    "name": "kony.ui.SegmentedUI2",
+    "needpageindicator": true,
+    "pageoffdotimage": "pageoffdot.png",
+    "pageondotimage": "pageondot.png",
+    "paginationconfig": {
+        "position": "bottom"
+    },
+    "parent": "flxDataGrid",
+    "pf": "frmSummaryOfVehiclePayments",
+    "retaincontentalignment": false,
+    "retainflexpositionproperties": false,
+    "retainselection": false,
+    "rowTemplateId": "b3fba192a06b4c0b9ee3d6941bda13bb",
+    "rowcounter": 9,
+    "rowfocusskin": "s961e586fe794e498e31c111fe40ef67",
+    "rowskin": "s2d1a440627e4c3eb337995bf3931fdd",
+    "rowtemplate": "CopyflxSegMainData0h4ee64f0aaed44",
+    "screenlevelwidget": false,
+    "seccounter": 0,
+    "sectionHeaderTemplateId": "d876739158b242f1a8bbea8118110a22",
+    "sectionheaderskin": "s394e25221a84c198a12829462d278f1",
+    "sectionheadertemplate": "Flex0a116030912a249",
+    "selectedRows": null,
+    "selectedState": false,
+    "selectedindex": null,
+    "selectedindices": null,
+    "selecteditems": null,
+    "selectedsectionindex": 0,
+    "selectionbehavior": "default",
+    "separatorcolor": "aaaaaa00",
+    "separatorrequired": true,
+    "separatorthickness": 0,
+    "showscrollbars": false,
+    "viewtype": "tableview",
+    "vizProps": {},
+    "wType": "Segment",
+    "widgetalignment": 5,
+    "widgetdatamap": {
+        "CopyflxSegMainData0h4ee64f0aaed44": "CopyflxSegMainData0h4ee64f0aaed44",
+        "CopylblSDAED0h30894b34da34b": "CopylblSDAED0h30894b34da34b",
+        "Flex0a116030912a249": "Flex0a116030912a249",
+        "FlexContainer0ddbb6d6536cb4e": "FlexContainer0ddbb6d6536cb4e",
+        "flxAuctionID": "flxAuctionID",
+        "flxBtnRequestRefund": "flxBtnRequestRefund",
+        "flxData": "flxData",
+        "flxMakeAndModel": "flxMakeAndModel",
+        "flxRequestRefund": "flxRequestRefund",
+        "flxVehicleAmount": "flxVehicleAmount",
+        "flxVehicleStatus": "flxVehicleStatus",
+        "imgTransAmount": "imgTransAmount",
+        "imgTransDate": "imgTransDate",
+        "imgTransStatus": "imgTransStatus",
+        "imgTransTransactionNo": "imgTransTransactionNo",
+        "lblAmount": "lblAmount",
+        "lblAuctionID": "lblAuctionID",
+        "lblMakeAndModel": "lblMakeAndModel",
+        "lblRequestRefund": "lblRequestRefund",
+        "lblTransAmount": "lblTransAmount",
+        "lblTransDate": "lblTransDate",
+        "lblTransStatus": "lblTransStatus",
+        "lblTransTransactionNo": "lblTransTransactionNo"
+    },
+    "zindex": 1
+}

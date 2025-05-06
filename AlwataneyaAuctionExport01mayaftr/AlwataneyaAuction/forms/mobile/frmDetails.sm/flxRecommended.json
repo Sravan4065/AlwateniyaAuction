@@ -27,6 +27,10 @@
     ],
     "_percent_": true,
     "_skin_": "sd7df1a1073c42a3bf5a5389a4586148",
+    "_top_": {
+        "type": "string",
+        "value": "10dp"
+    },
     "_width_": {
         "type": "string",
         "value": "100%"

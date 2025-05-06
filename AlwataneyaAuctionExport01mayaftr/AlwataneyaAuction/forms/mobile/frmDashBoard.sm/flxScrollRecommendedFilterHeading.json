@@ -6,7 +6,7 @@
     },
     "_left_": {
         "type": "string",
-        "value": "0"
+        "value": "-3%"
     },
     "_margin_": [
         0,
@@ -25,11 +25,11 @@
     "_skin_": "sb62ee7868e942229cfc1ddf8493f47e",
     "_top_": {
         "type": "string",
-        "value": "15dp"
+        "value": "10dp"
     },
     "_width_": {
         "type": "string",
-        "value": "100%"
+        "value": "105%"
     },
     "allboxes": [],
     "allowhorizontalbounce": false,

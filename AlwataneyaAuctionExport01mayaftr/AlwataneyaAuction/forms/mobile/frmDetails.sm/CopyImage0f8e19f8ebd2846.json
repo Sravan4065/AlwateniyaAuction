@@ -45,6 +45,7 @@
     "id": "CopyImage0f8e19f8ebd2846",
     "imagescalemode": 1,
     "info": null,
+    "invokedProperty": "src",
     "iscustomlayout": false,
     "isvisible": true,
     "kuid": "ba3afafd8fb84b1c826ef27a3decff38",

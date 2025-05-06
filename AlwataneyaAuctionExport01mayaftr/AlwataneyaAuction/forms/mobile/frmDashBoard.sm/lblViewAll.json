@@ -19,14 +19,10 @@
     ],
     "_right_": {
         "type": "string",
-        "value": "10dp"
+        "value": "7dp"
     },
     "_skin_": "s93db92e17fe4e77850b8b3a9fe54375",
     "_text_": "VIEW ALL",
-    "_top_": {
-        "type": "string",
-        "value": "0dp"
-    },
     "_width_": {
         "type": "ref",
         "value": "preferred"
@@ -39,6 +35,10 @@
         }
     },
     "canUpdateUI": true,
+    "centery": {
+        "type": "string",
+        "value": "50%"
+    },
     "containerweight": 100,
     "contentalignment": 4,
     "id": "lblViewAll",

@@ -2,7 +2,7 @@
     "DNDConfig": null,
     "_height_": {
         "type": "string",
-        "value": "320dp"
+        "value": "400dp"
     },
     "_left_": {
         "type": "string",
@@ -29,7 +29,7 @@
     "_skin_": "sb62ee7868e942229cfc1ddf8493f47e",
     "_top_": {
         "type": "string",
-        "value": "15dp"
+        "value": "10dp"
     },
     "_width_": {
         "type": "string",
@@ -45,7 +45,7 @@
         "value": "50%"
     },
     "children": [],
-    "clipbounds": false,
+    "clipbounds": true,
     "containerweight": 100,
     "decelerat": false,
     "dragg": false,

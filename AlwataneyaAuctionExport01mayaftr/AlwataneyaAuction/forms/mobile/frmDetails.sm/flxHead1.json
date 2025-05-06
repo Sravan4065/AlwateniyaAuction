@@ -2,7 +2,7 @@
     "DNDConfig": null,
     "_height_": {
         "type": "string",
-        "value": "50%"
+        "value": "65%"
     },
     "_left_": {
         "type": "string",
@@ -29,16 +29,20 @@
     },
     "_width_": {
         "type": "string",
-        "value": "100%"
+        "value": "65%"
     },
     "allboxes": [],
     "autogrowmode": 0,
     "canUpdateUI": true,
+    "centery": {
+        "type": "string",
+        "value": "50%"
+    },
     "children": [
         "lblCarName",
-        "lbllotNumber"
+        "flxLocation"
     ],
-    "clipbounds": false,
+    "clipbounds": true,
     "containerweight": 100,
     "enablescrolling": true,
     "id": "flxHead1",
@@ -46,7 +50,7 @@
     "iscustomlayout": false,
     "isvisible": true,
     "kuid": "jce5a719c7e0421ca7de9fae8103a295",
-    "layouttype": 2,
+    "layouttype": 4,
     "name": "kony.ui.FlexContainer",
     "parent": "flxCarDetailsHead",
     "pf": "frmDetails",

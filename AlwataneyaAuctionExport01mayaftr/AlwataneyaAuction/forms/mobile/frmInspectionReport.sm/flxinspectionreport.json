@@ -35,8 +35,8 @@
     "autogrowmode": 0,
     "canUpdateUI": true,
     "children": [
-        "imgArrow",
-        "lblInspectionReport"
+        "lblInspectionReport",
+        "flxBack"
     ],
     "clipbounds": false,
     "containerweight": 100,
