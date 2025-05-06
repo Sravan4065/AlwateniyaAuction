@@ -1,0 +1,506 @@
+{
+    "@class": "com.kony.gen.viz.model.container.KVizSegment2",
+    "DNDConfig": null,
+    "_data_": [
+        [
+            {
+                "imgTransAmount": {
+                    "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                    "src": "vector__2_2.png"
+                },
+                "imgTransDate": {
+                    "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                    "src": "vector__2_2.png"
+                },
+                "imgTransStatus": {
+                    "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                    "src": "vector__2_2.png"
+                },
+                "imgTransTransactionNo": {
+                    "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                    "src": "vector__2_2.png"
+                },
+                "lblAuctionID": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "Auction ID"
+                },
+                "lblServices": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "Services"
+                },
+                "lblTransAmount": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "Amount"
+                },
+                "lblTransStatus": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "Status"
+                }
+            },
+            [
+                {
+                    "CopylblSDAED0h30894b34da34b": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "AED"
+                    },
+                    "Image0idf9402f6bcd48": {
+                        "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                        "src": "vector__2_2.png"
+                    },
+                    "lblAmount": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "20,000"
+                    },
+                    "lblTrackDelivery": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "Track Delivery"
+                    },
+                    "lblTransAmount": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "Amount"
+                    },
+                    "lblTransDate": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "Date"
+                    },
+                    "lblTransStatus": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "Status"
+                    },
+                    "lblTransTransactionNo": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "482916"
+                    }
+                },
+                {
+                    "CopylblSDAED0h30894b34da34b": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "AED"
+                    },
+                    "Image0idf9402f6bcd48": {
+                        "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                        "src": "vector__2_2.png"
+                    },
+                    "lblAmount": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "20,000"
+                    },
+                    "lblTrackDelivery": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "Track Delivery"
+                    },
+                    "lblTransAmount": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "Amount"
+                    },
+                    "lblTransDate": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "Date"
+                    },
+                    "lblTransStatus": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "Status"
+                    },
+                    "lblTransTransactionNo": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "482916"
+                    }
+                },
+                {
+                    "CopylblSDAED0h30894b34da34b": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "AED"
+                    },
+                    "Image0idf9402f6bcd48": {
+                        "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                        "src": "vector__2_2.png"
+                    },
+                    "lblAmount": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "20,000"
+                    },
+                    "lblTrackDelivery": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "Track Delivery"
+                    },
+                    "lblTransAmount": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "Amount"
+                    },
+                    "lblTransDate": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "Date"
+                    },
+                    "lblTransStatus": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "Status"
+                    },
+                    "lblTransTransactionNo": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "482916"
+                    }
+                },
+                {
+                    "CopylblSDAED0h30894b34da34b": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "AED"
+                    },
+                    "Image0idf9402f6bcd48": {
+                        "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                        "src": "vector__2_2.png"
+                    },
+                    "lblAmount": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "20,000"
+                    },
+                    "lblTrackDelivery": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "Track Delivery"
+                    },
+                    "lblTransAmount": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "Amount"
+                    },
+                    "lblTransDate": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "Date"
+                    },
+                    "lblTransStatus": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "Status"
+                    },
+                    "lblTransTransactionNo": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "482916"
+                    }
+                },
+                {
+                    "CopylblSDAED0h30894b34da34b": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "AED"
+                    },
+                    "Image0idf9402f6bcd48": {
+                        "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                        "src": "vector__2_2.png"
+                    },
+                    "lblAmount": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "20,000"
+                    },
+                    "lblTrackDelivery": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "Track Delivery"
+                    },
+                    "lblTransAmount": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "Amount"
+                    },
+                    "lblTransDate": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "Date"
+                    },
+                    "lblTransStatus": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "Status"
+                    },
+                    "lblTransTransactionNo": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "482916"
+                    }
+                },
+                {
+                    "CopylblSDAED0h30894b34da34b": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "AED"
+                    },
+                    "Image0idf9402f6bcd48": {
+                        "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                        "src": "vector__2_2.png"
+                    },
+                    "lblAmount": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "20,000"
+                    },
+                    "lblTrackDelivery": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "Track Delivery"
+                    },
+                    "lblTransAmount": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "Amount"
+                    },
+                    "lblTransDate": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "Date"
+                    },
+                    "lblTransStatus": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "Status"
+                    },
+                    "lblTransTransactionNo": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "482916"
+                    }
+                },
+                {
+                    "CopylblSDAED0h30894b34da34b": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "AED"
+                    },
+                    "Image0idf9402f6bcd48": {
+                        "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                        "src": "vector__2_2.png"
+                    },
+                    "lblAmount": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "20,000"
+                    },
+                    "lblTrackDelivery": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "Track Delivery"
+                    },
+                    "lblTransAmount": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "Amount"
+                    },
+                    "lblTransDate": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "Date"
+                    },
+                    "lblTransStatus": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "Status"
+                    },
+                    "lblTransTransactionNo": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "482916"
+                    }
+                },
+                {
+                    "CopylblSDAED0h30894b34da34b": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "AED"
+                    },
+                    "Image0idf9402f6bcd48": {
+                        "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                        "src": "vector__2_2.png"
+                    },
+                    "lblAmount": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "20,000"
+                    },
+                    "lblTrackDelivery": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "Track Delivery"
+                    },
+                    "lblTransAmount": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "Amount"
+                    },
+                    "lblTransDate": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "Date"
+                    },
+                    "lblTransStatus": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "Status"
+                    },
+                    "lblTransTransactionNo": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "482916"
+                    }
+                },
+                {
+                    "CopylblSDAED0h30894b34da34b": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "AED"
+                    },
+                    "Image0idf9402f6bcd48": {
+                        "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                        "src": "vector__2_2.png"
+                    },
+                    "lblAmount": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "20,000"
+                    },
+                    "lblTrackDelivery": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "Track Delivery"
+                    },
+                    "lblTransAmount": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "Amount"
+                    },
+                    "lblTransDate": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "Date"
+                    },
+                    "lblTransStatus": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "Status"
+                    },
+                    "lblTransTransactionNo": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "482916"
+                    }
+                },
+                {
+                    "CopylblSDAED0h30894b34da34b": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "AED"
+                    },
+                    "Image0idf9402f6bcd48": {
+                        "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                        "src": "vector__2_2.png"
+                    },
+                    "lblAmount": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "20,000"
+                    },
+                    "lblTrackDelivery": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "Track Delivery"
+                    },
+                    "lblTransAmount": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "Amount"
+                    },
+                    "lblTransDate": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "Date"
+                    },
+                    "lblTransStatus": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "Status"
+                    },
+                    "lblTransTransactionNo": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "482916"
+                    }
+                }
+            ]
+        ]
+    ],
+    "_height_": {
+        "type": "string",
+        "value": "210dp"
+    },
+    "_indicator_": "none",
+    "_left_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_orientation_": 2,
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_top_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "100%"
+    },
+    "autogrowmode": 0,
+    "canUpdateUI": true,
+    "containerweight": 100,
+    "counter": "09",
+    "focusedindex": null,
+    "focuseditem": null,
+    "generatedtemplate": "fbe0285fd8e745dcbb4b06f568546512",
+    "groupcells": false,
+    "hasSections": true,
+    "id": "SegDataGrid",
+    "info": null,
+    "ipad": {
+        "psp": {
+            "indicator": "rowselect"
+        }
+    },
+    "iphone": {
+        "psp": {
+            "indicator": "rowselect"
+        }
+    },
+    "iscustomlayout": false,
+    "isvisible": true,
+    "kuid": "b2d9fd98accc4b9f8d69713fb010b924",
+    "masterdata": {},
+    "name": "kony.ui.SegmentedUI2",
+    "needpageindicator": true,
+    "pageoffdotimage": "pageoffdot.png",
+    "pageondotimage": "pageondot.png",
+    "paginationconfig": {
+        "position": "bottom"
+    },
+    "parent": "flxDataGrid",
+    "pf": "frmSummaryOfOtherServicePayments",
+    "retaincontentalignment": false,
+    "retainflexpositionproperties": false,
+    "retainselection": false,
+    "rowTemplateId": "e0aeb2f012d04302b5a2d257666bec29",
+    "rowcounter": 9,
+    "rowfocusskin": "s961e586fe794e498e31c111fe40ef67",
+    "rowskin": "s2d1a440627e4c3eb337995bf3931fdd",
+    "rowtemplate": "CopyflxSegMainData0f0c371f8e0b144",
+    "screenlevelwidget": false,
+    "seccounter": 0,
+    "sectionHeaderTemplateId": "d7dd2ac174c647dd88fdef7b42c75b89",
+    "sectionheaderskin": "s394e25221a84c198a12829462d278f1",
+    "sectionheadertemplate": "CopyFlex0bae737534d9542",
+    "selectedRows": null,
+    "selectedState": false,
+    "selectedindex": null,
+    "selectedindices": null,
+    "selecteditems": null,
+    "selectedsectionindex": 0,
+    "selectionbehavior": "default",
+    "separatorcolor": "aaaaaa00",
+    "separatorrequired": true,
+    "separatorthickness": 0,
+    "showscrollbars": false,
+    "viewtype": "tableview",
+    "vizProps": {},
+    "wType": "Segment",
+    "widgetalignment": 5,
+    "widgetdatamap": {
+        "CopyFlex0bae737534d9542": "CopyFlex0bae737534d9542",
+        "CopyflxSegMainData0f0c371f8e0b144": "CopyflxSegMainData0f0c371f8e0b144",
+        "CopylblSDAED0h30894b34da34b": "CopylblSDAED0h30894b34da34b",
+        "FlexContainer0ddbb6d6536cb4e": "FlexContainer0ddbb6d6536cb4e",
+        "Image0idf9402f6bcd48": "Image0idf9402f6bcd48",
+        "flxAuctionID": "flxAuctionID",
+        "flxBtnRequestRefund": "flxBtnRequestRefund",
+        "flxCurrentAmount": "flxCurrentAmount",
+        "flxData": "flxData",
+        "flxRequestRefund": "flxRequestRefund",
+        "flxServices": "flxServices",
+        "flxTransAmount": "flxTransAmount",
+        "flxTransDate": "flxTransDate",
+        "flxTransStatus": "flxTransStatus",
+        "flxTransTransactionNo": "flxTransTransactionNo",
+        "imgTransAmount": "imgTransAmount",
+        "imgTransDate": "imgTransDate",
+        "imgTransStatus": "imgTransStatus",
+        "imgTransTransactionNo": "imgTransTransactionNo",
+        "lblAmount": "lblAmount",
+        "lblAuctionID": "lblAuctionID",
+        "lblServices": "lblServices",
+        "lblTrackDelivery": "lblTrackDelivery",
+        "lblTransAmount": "lblTransAmount",
+        "lblTransDate": "lblTransDate",
+        "lblTransStatus": "lblTransStatus",
+        "lblTransTransactionNo": "lblTransTransactionNo"
+    },
+    "zindex": 1
+}

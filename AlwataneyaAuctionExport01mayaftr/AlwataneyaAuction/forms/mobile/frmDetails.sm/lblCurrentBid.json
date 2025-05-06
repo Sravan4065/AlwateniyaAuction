@@ -21,8 +21,8 @@
         0,
         0
     ],
-    "_skin_": "sfeda17f6c1e4893841dea6962e0851c",
-    "_text_": "Current Bid",
+    "_skin_": "s57d23881e394efb9e3a94b62cd41375",
+    "_text_": "Highest Bid",
     "_top_": {
         "type": "string",
         "value": "60dp"
@@ -44,7 +44,7 @@
         "value": "50%"
     },
     "containerweight": 100,
-    "contentalignment": 4,
+    "contentalignment": 5,
     "id": "lblCurrentBid",
     "info": null,
     "ipad": {

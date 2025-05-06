@@ -2,8 +2,8 @@
     "@class": "com.kony.gen.viz.model.component.KVizLabel",
     "DNDConfig": null,
     "_height_": {
-        "type": "string",
-        "value": "25%"
+        "type": "ref",
+        "value": "preferred"
     },
     "_left_": {
         "type": "string",
@@ -21,7 +21,7 @@
         0,
         0
     ],
-    "_skin_": "s927a076a232421c826984ea08461835",
+    "_skin_": "s57d23881e394efb9e3a94b62cd41375",
     "_text_": "Jewellery & Watches",
     "_top_": {
         "type": "string",
@@ -35,6 +35,7 @@
     "android": {
         "textStyle": {
             "letterSpacing": 0,
+            "lineSpacing": 0,
             "strikeThrough": false
         }
     },

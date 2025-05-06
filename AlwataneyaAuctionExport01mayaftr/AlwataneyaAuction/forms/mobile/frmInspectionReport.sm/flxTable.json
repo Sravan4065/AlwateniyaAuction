@@ -39,7 +39,7 @@
     "children": [
         "segInspectionReport"
     ],
-    "clipbounds": false,
+    "clipbounds": true,
     "containerweight": 100,
     "decelerat": false,
     "dragg": false,

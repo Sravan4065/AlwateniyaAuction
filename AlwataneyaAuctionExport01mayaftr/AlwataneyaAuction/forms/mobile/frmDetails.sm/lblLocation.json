@@ -5,6 +5,10 @@
         "type": "ref",
         "value": "preferred"
     },
+    "_left_": {
+        "type": "string",
+        "value": "0"
+    },
     "_margin_": [
         1,
         1,
@@ -17,10 +21,6 @@
         0,
         0
     ],
-    "_right_": {
-        "type": "number",
-        "value": "0"
-    },
     "_skin_": "s6237efc29b34e899e34e7e90f4d4bde",
     "_text_": "Arabian Gulf Road",
     "_top_": {

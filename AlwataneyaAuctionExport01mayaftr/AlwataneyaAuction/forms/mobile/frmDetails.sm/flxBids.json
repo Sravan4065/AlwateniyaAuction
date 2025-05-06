@@ -25,7 +25,7 @@
     "_skin_": "sd7df1a1073c42a3bf5a5389a4586148",
     "_top_": {
         "type": "string",
-        "value": "160dp"
+        "value": "10dp"
     },
     "_width_": {
         "type": "string",
@@ -38,7 +38,7 @@
         "flxCurrentBid",
         "flxTotalBids"
     ],
-    "clipbounds": false,
+    "clipbounds": true,
     "containerweight": 100,
     "enablescrolling": true,
     "id": "flxBids",

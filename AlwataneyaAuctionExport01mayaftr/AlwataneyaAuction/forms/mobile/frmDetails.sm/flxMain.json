@@ -35,8 +35,9 @@
     "canUpdateUI": true,
     "children": [
         "flxScrollMain",
-        "flxBidNowButton",
-        "flxWhatsappcomponent"
+        "flxMultipleImages",
+        "flxWhatsappcomponent",
+        "flxBidNowButton"
     ],
     "clipbounds": false,
     "containerweight": 100,

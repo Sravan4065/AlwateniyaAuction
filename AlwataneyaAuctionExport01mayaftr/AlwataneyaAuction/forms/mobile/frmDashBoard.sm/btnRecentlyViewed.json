@@ -3,7 +3,7 @@
     "DNDConfig": null,
     "_height_": {
         "type": "string",
-        "value": "45dp"
+        "value": "43dp"
     },
     "_left_": {
         "type": "number",
@@ -32,6 +32,10 @@
         "value": "preferred"
     },
     "canUpdateUI": true,
+    "centery": {
+        "type": "string",
+        "value": "50%"
+    },
     "containerweight": 100,
     "contentalignment": 5,
     "displaytext": true,

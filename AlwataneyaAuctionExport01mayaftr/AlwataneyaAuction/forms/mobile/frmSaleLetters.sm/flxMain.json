@@ -35,7 +35,8 @@
     "autogrowmode": 0,
     "canUpdateUI": true,
     "children": [
-        "flxBody"
+        "flxBody",
+        "Footer2"
     ],
     "clipbounds": false,
     "containerweight": 100,

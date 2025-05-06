@@ -15,33 +15,32 @@ define({
   segProfileItemsOnRowClickAction: function(){
     var selectedProfileItems = this.view.segProfileItems.selectedRowItems;
       var selectedValue = selectedProfileItems[0].lblItemName;
+    var x;
     switch(selectedValue){
         case "My Documents"      :   {
-                                         var ntf = new voltmx.mvc.Navigation("frmMyDocuments");
-                                           ntf.navigate();
+                                         x = new voltmx.mvc.Navigation("frmMyDocuments");
+                                           
                                        }
                                        break;
         case "WatchList"      :   {
         
                                        }
                                        break;
-        case "Saved Searches"    :   {
-        
+        case "Security Deposits"    :   {
+                                     x = new voltmx.mvc.Navigation("frmSecurityDeposits");
                                        }
                                        break; 
-        case "Payments"     : {
-        
+        case "Vehicle Payments"     : {
+                                  x = new voltmx.mvc.Navigation("frmSummaryOfVehiclePayments");
                                       }
                                       break;
-        case "Payment History"        :  {
-        
+        case "Other Services Payments"        :  {
+                                  x = new voltmx.mvc.Navigation("frmSummaryOfOtherServicePayments");
                                       }
                                       break;
-        case "Deposits"  : {
-        
-                                      }
-                                      break;
-       
+    }
+    if(x){
+         x.navigate();
     }
   }
   

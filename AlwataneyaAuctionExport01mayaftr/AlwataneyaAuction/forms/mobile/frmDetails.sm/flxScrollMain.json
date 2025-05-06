@@ -56,7 +56,7 @@
     "iscustomlayout": false,
     "isvisible": true,
     "kuid": "c04ce910e8ac403f9f1ef2c025fc7f8b",
-    "layouttype": 2,
+    "layouttype": 4,
     "name": "kony.ui.FlexScrollContainer",
     "pagingenabled": false,
     "parent": "flxMain",

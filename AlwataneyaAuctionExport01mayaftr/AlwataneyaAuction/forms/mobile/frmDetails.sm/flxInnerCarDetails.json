@@ -25,7 +25,7 @@
     "_skin_": "s26bf496f50e492cbfc4cd1e6982da36",
     "_top_": {
         "type": "string",
-        "value": "0"
+        "value": "0dp"
     },
     "_width_": {
         "type": "string",
@@ -38,13 +38,9 @@
         "type": "string",
         "value": "50%"
     },
-    "centery": {
-        "type": "string",
-        "value": "50%"
-    },
     "children": [
         "flxCarDetailsHead",
-        "flxDist",
+        "flxBlue",
         "flxBids",
         "flxRecommended"
     ],
@@ -56,7 +52,7 @@
     "iscustomlayout": false,
     "isvisible": true,
     "kuid": "d586a70d490744c09cd55d823a969b35",
-    "layouttype": 2,
+    "layouttype": 4,
     "name": "kony.ui.FlexContainer",
     "parent": "flxCarDetails",
     "pf": "frmDetails",

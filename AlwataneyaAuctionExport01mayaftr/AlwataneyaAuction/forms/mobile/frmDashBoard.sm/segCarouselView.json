@@ -23,7 +23,7 @@
     ],
     "_height_": {
         "type": "string",
-        "value": "220dp"
+        "value": "240dp"
     },
     "_indicator_": "none",
     "_left_": {
@@ -54,6 +54,10 @@
     "autogrowmode": 0,
     "canUpdateUI": true,
     "centerx": {
+        "type": "string",
+        "value": "50%"
+    },
+    "centery": {
         "type": "string",
         "value": "50%"
     },

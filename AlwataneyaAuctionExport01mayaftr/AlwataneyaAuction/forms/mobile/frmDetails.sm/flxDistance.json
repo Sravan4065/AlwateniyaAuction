@@ -22,7 +22,7 @@
         0
     ],
     "_percent_": true,
-    "_skin_": "sc4dee188f8543719482f0a9dee5307a",
+    "_skin_": "s5f6044abe194492b5e811af99858a26",
     "_top_": {
         "type": "string",
         "value": "0"
@@ -38,7 +38,7 @@
         "imgDistance",
         "lblDistance"
     ],
-    "clipbounds": false,
+    "clipbounds": true,
     "containerweight": 100,
     "enablescrolling": true,
     "id": "flxDistance",

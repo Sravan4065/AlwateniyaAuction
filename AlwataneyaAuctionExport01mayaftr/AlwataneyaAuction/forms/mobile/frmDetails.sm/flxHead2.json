@@ -6,11 +6,11 @@
     },
     "_height_": {
         "type": "string",
-        "value": "50%"
+        "value": "65%"
     },
     "_left_": {
         "type": "string",
-        "value": "0"
+        "value": "60%"
     },
     "_margin_": [
         0,
@@ -29,16 +29,20 @@
     "_skin_": "sd75eddac756498881c9d2a71ca25d08",
     "_width_": {
         "type": "string",
-        "value": "100%"
+        "value": "34%"
     },
     "allboxes": [],
     "autogrowmode": 0,
     "canUpdateUI": true,
+    "centery": {
+        "type": "string",
+        "value": "50%"
+    },
     "children": [
-        "flxLocation",
+        "lbllotNumber",
         "lblLotID"
     ],
-    "clipbounds": false,
+    "clipbounds": true,
     "containerweight": 100,
     "enablescrolling": true,
     "id": "flxHead2",
@@ -46,7 +50,7 @@
     "iscustomlayout": false,
     "isvisible": true,
     "kuid": "fcd469496d3f446a81b677667fe88666",
-    "layouttype": 2,
+    "layouttype": 4,
     "name": "kony.ui.FlexContainer",
     "parent": "flxCarDetailsHead",
     "pf": "frmDetails",

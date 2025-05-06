@@ -2,13 +2,16 @@ define({
 
  onNavigate: function(context)
   {
+    if(context){
    this.context = context;
-   
+    }
     this.view.preShow = this.onPreShow.bind(this);
     this.view.flxBack.onClick = () => {
       var x = new voltmx.mvc.Navigation(voltmx.application.getPreviousForm().id);
       x.navigate();
     }
+    this.view.flxBackFromMultipleImages.onClick = this.hideMutlipleImagesflex.bind(this);
+    this.view.flxShowMultipleImages.onClick = this.showMultipleImagesflex.bind(this);
    
   },
   
@@ -52,6 +55,21 @@ define({
     get_images_files_by_id_inputparam["httpconfig"] = get_images_files_by_id_httpconfigs;
     fry_int_fleet$get_images_files_by_id = mfintegrationsecureinvokerasync(get_images_files_by_id_inputparam, "fry_int_fleet", "get-images-files-by-id", invokeFilesByIdCallback);
 
+  },
+  
+  hideMutlipleImagesflex: function()
+  {
+    this.view.flxScrollMain.setVisibility(true);
+    this.view.flxMultipleImages.setVisibility(false);
+    this.view.flxWhatsappcomponent.setVisibility(true);
+    this.view.flxBidNowButton.setVisibility(true);
+  },
+  showMultipleImagesflex: function()
+  {
+    this.view.flxScrollMain.setVisibility(false);
+    this.view.flxMultipleImages.setVisibility(true);
+    this.view.flxWhatsappcomponent.setVisibility(false);
+    this.view.flxBidNowButton.setVisibility(false);
   }
 
  });

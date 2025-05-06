@@ -78,10 +78,11 @@
         "imgWhatsapp": {
             "__events__": {},
             "__info__": {
-                "kuid": "bcbd9708c671436b8af52cd5b6f3aa4d",
+                "kuid": "dfd5c55582e743c88888d2303bdb152a",
                 "srcKUID": "i2a60dc49b0e401091f4352c71c1b670",
                 "wType": "Image"
-            }
+            },
+            "src": "whatsappicon.png"
         }
     },
     "enablescrolling": true,

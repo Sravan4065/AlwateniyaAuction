@@ -3,7 +3,7 @@
     "DNDConfig": null,
     "_height_": {
         "type": "string",
-        "value": "45dp"
+        "value": "43dp"
     },
     "_left_": {
         "type": "number",
@@ -21,6 +21,10 @@
         5,
         0
     ],
+    "_right_": {
+        "type": "string",
+        "value": "20dp"
+    },
     "_skin_": "scc2f211d03d456c97da701a5a489608",
     "_text_": "Newly Listed Vehicles",
     "_top_": {
@@ -32,6 +36,10 @@
         "value": "preferred"
     },
     "canUpdateUI": true,
+    "centery": {
+        "type": "string",
+        "value": "50%"
+    },
     "containerweight": 100,
     "contentalignment": 5,
     "displaytext": true,

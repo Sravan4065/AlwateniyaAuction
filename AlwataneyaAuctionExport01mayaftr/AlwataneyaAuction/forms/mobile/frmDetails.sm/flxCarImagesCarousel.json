@@ -35,7 +35,7 @@
     "canUpdateUI": true,
     "children": [
         "flxBack",
-        "CopyflxBack0da64c5d53cf443",
+        "flxShowMultipleImages",
         "imgCarousel",
         "flxImageBackward",
         "flxImageForward"
