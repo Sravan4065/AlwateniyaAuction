@@ -41,7 +41,7 @@
     },
     "containerweight": 100,
     "contentalignment": 4,
-    "id": "CopylblEnterYourCompanyName0d4a4f7167e854b",
+    "id": "EnterYourTradeLicenseNumber",
     "info": null,
     "ipad": {
         "psp": {
@@ -57,7 +57,7 @@
     "isvisible": true,
     "kuid": "aecdcc72eb95479db6a1f7d35fb48561",
     "name": "kony.ui.Label",
-    "parent": "CopyflxEnterYourCompanyName0j0884a9525ea4d",
+    "parent": "flxEnterYourTradeLicenseNumber",
     "pf": "frmRegister2",
     "retaincontentalignment": false,
     "retainflexpositionproperties": false,

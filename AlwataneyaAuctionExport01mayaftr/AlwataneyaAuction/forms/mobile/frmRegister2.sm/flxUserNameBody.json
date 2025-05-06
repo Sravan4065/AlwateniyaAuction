@@ -41,7 +41,6 @@
     "children": [
         "flxUser1",
         "flxUserNameTextBox",
-        "flxUserNameFooter",
         "flxUserNameError"
     ],
     "clipbounds": false,

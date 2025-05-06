@@ -39,7 +39,8 @@
         "value": "50%"
     },
     "children": [
-        "imgBackAarrow"
+        "imgBackAarrow",
+        "btnSkip"
     ],
     "clipbounds": false,
     "containerweight": 100,

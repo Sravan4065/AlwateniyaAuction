@@ -2,7 +2,7 @@
     "DNDConfig": null,
     "_height_": {
         "type": "string",
-        "value": "130dp"
+        "value": "60%"
     },
     "_left_": {
         "type": "string",
@@ -39,8 +39,8 @@
         "value": "50%"
     },
     "children": [
-        "CopyimgCompany0e556c83388d044",
-        "CopyflxEnterYourCompanyName0j0884a9525ea4d"
+        "imgTradeLicenseNumber",
+        "flxEnterYourTradeLicenseNumber"
     ],
     "clipbounds": false,
     "containerweight": 100,

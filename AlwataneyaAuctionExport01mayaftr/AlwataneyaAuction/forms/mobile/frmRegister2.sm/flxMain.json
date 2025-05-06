@@ -42,6 +42,7 @@
         "flxCompanyName",
         "flxTradeLicense",
         "flxTradeLicenseExpiryDate",
+        "flxTaxRegistrationNumber",
         "flxEmailVerificationCode",
         "flxMobileContainer",
         "flxMobileVerifyAndOTPCode",

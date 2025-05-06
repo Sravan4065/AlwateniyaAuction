@@ -41,7 +41,8 @@
     "children": [
         "HeaderRegister3",
         "flxBarContainerUserName",
-        "flxUserNameBody"
+        "flxUserNameBody",
+        "flxUserNameFooter"
     ],
     "clipbounds": false,
     "containerweight": 100,

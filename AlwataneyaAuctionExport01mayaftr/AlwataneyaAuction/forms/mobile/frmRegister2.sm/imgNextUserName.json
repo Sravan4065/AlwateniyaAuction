@@ -33,6 +33,10 @@
         "value": "25%"
     },
     "canUpdateUI": true,
+    "centery": {
+        "type": "string",
+        "value": "50%"
+    },
     "containerweight": 100,
     "id": "imgNextUserName",
     "imagescalemode": 1,
@@ -40,7 +44,7 @@
     "invokedProperty": "src",
     "iscustomlayout": false,
     "isvisible": true,
-    "kuid": "f7565b475b3f4999ab3c702bd0962c20",
+    "kuid": "f20f6a9343fd41a499a37536b0753c09",
     "name": "kony.ui.Image2",
     "parent": "flxUserNameFooter",
     "pf": "frmRegister2",
