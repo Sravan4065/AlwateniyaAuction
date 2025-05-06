@@ -2,15 +2,15 @@
     "DNDConfig": null,
     "_bottom_": {
         "type": "string",
-        "value": "0dp"
+        "value": "70dp"
     },
     "_height_": {
         "type": "string",
-        "value": "60%"
+        "value": "30dp"
     },
     "_left_": {
         "type": "string",
-        "value": "10dp"
+        "value": "25dp"
     },
     "_margin_": [
         0,
@@ -26,28 +26,32 @@
         0
     ],
     "_percent_": true,
-    "_skin_": "s5334d0034584e509ae461f99ca82766",
+    "_skin_": "s52efebb1e6941fdaf52560354be1a4e",
+    "_top_": {
+        "type": "number",
+        "value": "-120"
+    },
     "_width_": {
         "type": "string",
-        "value": "90%"
+        "value": "40%"
     },
     "allboxes": [],
     "autogrowmode": 0,
     "canUpdateUI": true,
     "children": [
-        "CopylblEnterYourCompanyName0d4a4f7167e854b"
+        "lblTaxRegistrationNumberError"
     ],
     "clipbounds": false,
     "containerweight": 100,
     "enablescrolling": true,
-    "id": "CopyflxEnterYourCompanyName0j0884a9525ea4d",
+    "id": "flxTaxRegistrationNumberError",
     "info": null,
     "iscustomlayout": false,
     "isvisible": true,
-    "kuid": "e867231ac61b416899ce595d827ad3f6",
+    "kuid": "j33157e804134872a8932f638de59e63",
     "layouttype": 2,
     "name": "kony.ui.FlexContainer",
-    "parent": "flxTradeLicenseHeading",
+    "parent": "flxTaxRegistrationNumberBody",
     "pf": "frmRegister2",
     "retaincontentalignment": false,
     "retainflexpositionproperties": false,
