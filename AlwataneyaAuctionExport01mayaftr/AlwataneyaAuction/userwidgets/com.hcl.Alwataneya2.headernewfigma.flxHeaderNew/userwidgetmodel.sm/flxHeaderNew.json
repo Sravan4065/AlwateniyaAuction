@@ -2,7 +2,7 @@
     "DNDConfig": null,
     "_height_": {
         "type": "string",
-        "value": "8%"
+        "value": "10%"
     },
     "_left_": {
         "type": "string",
@@ -22,7 +22,7 @@
         0
     ],
     "_percent_": true,
-    "_skin_": "s52efebb1e6941fdaf52560354be1a4e",
+    "_skin_": "s8de28b0fd3940d996d904d3f8d6211e",
     "_top_": {
         "type": "string",
         "value": "0dp"

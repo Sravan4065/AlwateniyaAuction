@@ -26,10 +26,10 @@
         0
     ],
     "_skin_": "s9d4521fb9624e5d9cd6d6ceef8196cc",
-    "_text_": "Browse Other Categories",
+    "_text_": "Browse Other Auction Categories",
     "_width_": {
         "type": "string",
-        "value": "300dp"
+        "value": "90%"
     },
     "canUpdateUI": true,
     "centerx": {

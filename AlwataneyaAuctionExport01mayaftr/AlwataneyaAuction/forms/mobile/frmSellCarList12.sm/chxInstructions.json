@@ -3,7 +3,7 @@
     "DNDConfig": null,
     "_height_": {
         "type": "string",
-        "value": "80dp"
+        "value": "100dp"
     },
     "_left_": {
         "type": "string",
@@ -55,15 +55,11 @@
     "masterdata": [
         [
             "cbg1",
-            "Pick up my vehicle"
-        ],
-        [
-            "cbg2",
-            "I will deliver it to AWA center"
+            "   Pick up my vehicle"
         ],
         [
             "cbg3",
-            "I have read & agreed with"
+            "   I have read & agreed with"
         ]
     ],
     "name": "kony.ui.CheckBoxGroup",
@@ -75,18 +71,18 @@
     "retainflexpositionproperties": false,
     "selectedkey": null,
     "selectedkeys": [
-        "cbg2"
+        "cbg1"
     ],
     "selectedkeyvalue": null,
     "selectedkeyvalues": [
         [
-            "cbg2",
-            "I will deliver it to AWA center"
+            "cbg1",
+            "   Pick up my vehicle"
         ]
     ],
     "size": 18,
-    "tickedimage": "check_box__2__1.png",
-    "untickedimage": "group_550.png",
+    "tickedimage": "checkedcheck.png",
+    "untickedimage": "uncheckedcheck.png",
     "viewtype": 0,
     "wType": "CheckBoxGroup",
     "widgetalignment": 5

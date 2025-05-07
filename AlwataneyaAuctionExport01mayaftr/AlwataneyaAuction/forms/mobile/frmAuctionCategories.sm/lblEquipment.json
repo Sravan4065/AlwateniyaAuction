@@ -7,7 +7,7 @@
     },
     "_height_": {
         "type": "string",
-        "value": "28%"
+        "value": "30%"
     },
     "_left_": {
         "type": "string",
@@ -26,11 +26,7 @@
         0
     ],
     "_skin_": "saad9f72cfa64774bde5810770be1abe",
-    "_text_": "EQUIPMENT & MACHINERY",
-    "_top_": {
-        "type": "string",
-        "value": "0"
-    },
+    "_text_": "Equipment & Machinery",
     "_width_": {
         "type": "string",
         "value": "100%"

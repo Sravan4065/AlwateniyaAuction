@@ -6,7 +6,7 @@
     },
     "_left_": {
         "type": "string",
-        "value": "0"
+        "value": "0dp"
     },
     "_margin_": [
         0,
@@ -25,7 +25,7 @@
     "_skin_": "s5f6044abe194492b5e811af99858a26",
     "_top_": {
         "type": "string",
-        "value": "0"
+        "value": "20dp"
     },
     "_width_": {
         "type": "string",
@@ -35,7 +35,8 @@
     "autogrowmode": 0,
     "canUpdateUI": true,
     "children": [
-        "chxInstructions"
+        "chxInstructions",
+        "lbltermsAndConditions"
     ],
     "clipbounds": false,
     "containerweight": 100,
@@ -47,7 +48,7 @@
     "kuid": "db88bad6cf514c87939e4c552b628d65",
     "layouttype": 4,
     "name": "kony.ui.FlexContainer",
-    "parent": "flxDetail",
+    "parent": "flxSellSingleCar",
     "pf": "frmSellCarList12",
     "retaincontentalignment": false,
     "retainflexpositionproperties": false,

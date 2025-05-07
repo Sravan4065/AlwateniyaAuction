@@ -22,7 +22,7 @@
         0
     ],
     "_percent_": true,
-    "_skin_": "s36821c212ad42889b559e38883bb6c4",
+    "_skin_": "s52efebb1e6941fdaf52560354be1a4e",
     "_top_": {
         "type": "string",
         "value": "0"
@@ -35,9 +35,9 @@
     "autogrowmode": 0,
     "canUpdateUI": true,
     "children": [
-        "flxHeaderNew",
         "flxBody",
-        "Footer2"
+        "Footer2",
+        "flxHeaderNew"
     ],
     "clipbounds": false,
     "containerweight": 100,
