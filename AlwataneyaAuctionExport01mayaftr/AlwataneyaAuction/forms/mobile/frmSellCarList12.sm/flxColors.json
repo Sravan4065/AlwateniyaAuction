@@ -25,7 +25,7 @@
     "_skin_": "s5f6044abe194492b5e811af99858a26",
     "_top_": {
         "type": "number",
-        "value": "10"
+        "value": "15"
     },
     "_width_": {
         "type": "string",
@@ -48,11 +48,11 @@
     "id": "flxColors",
     "info": null,
     "iscustomlayout": false,
-    "isvisible": true,
+    "isvisible": false,
     "kuid": "cb4f739c259b4522bb20cf40a651ca8e",
     "layouttype": 2,
     "name": "kony.ui.FlexContainer",
-    "parent": "flxDetail",
+    "parent": "flxSellSingleCar",
     "pf": "frmSellCarList12",
     "retaincontentalignment": false,
     "retainflexpositionproperties": false,

@@ -57,7 +57,7 @@
     "isvisible": true,
     "kuid": "b87b4c0c9c5f49a2b41f0276f8cc9127",
     "name": "kony.ui.Label",
-    "parent": "flxBody",
+    "parent": "flxHeading",
     "pf": "frmSellCarList12",
     "retaincontentalignment": false,
     "retainflexpositionproperties": false,

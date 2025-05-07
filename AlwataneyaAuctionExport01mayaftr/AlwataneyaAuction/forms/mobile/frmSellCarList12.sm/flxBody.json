@@ -2,7 +2,7 @@
     "DNDConfig": null,
     "_height_": {
         "type": "string",
-        "value": "82%"
+        "value": "78.95%"
     },
     "_left_": {
         "type": "string",
@@ -25,7 +25,7 @@
     "_skin_": "sf6f3060e8f9463283c7b5b3e9e50c3d",
     "_top_": {
         "type": "string",
-        "value": "8%"
+        "value": "11%"
     },
     "_width_": {
         "type": "string",
@@ -37,9 +37,9 @@
     "bounces": true,
     "canUpdateUI": true,
     "children": [
-        "lblcarquotation",
-        "flxDetail",
-        "btnSubmit"
+        "flxHeading",
+        "flxSellSingleCar",
+        "flxSellMultipleCar"
     ],
     "clipbounds": true,
     "containerweight": 100,

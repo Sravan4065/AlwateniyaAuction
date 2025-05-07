@@ -24,7 +24,8 @@ define({
     this.view.tbxCatageory.onTextChange = this.searchJournel.bind(this,"category");
     this.view.tbxSubcatageory.onTextChange = this.searchJournel.bind(this,"subcategory");
     this.view.tbxYearOfMaking.onTextChange = this.searchJournel.bind(this,"year");
-
+    this.view.btnSellCar.onClick = this.btnSellCarOnClick;
+    this.view.btnSellMultiple.onClick = this.btnSellMultipleOnClick;
   },
   onPreShow: function(){
     this.getCategories();
@@ -32,7 +33,19 @@ define({
     this.toggleFooterIcons();
     this.getKeys();
   },
+  btnSellCarOnClick: function(){
+    this.view.btnSellCar.skin = "sknbtnBGD32437FontffffffDubaiReg45px"
+    this.view.flxSellSingleCar.setVisibility(true);
+    this.view.btnSellMultiple.skin = "sknbtnBGffffffFont231F20DubaiReg40px";
+    this.view.flxSellMultipleCar.setVisibility(false);
+  },
+  btnSellMultipleOnClick: function(){
+    this.view.btnSellMultiple.skin = "sknbtnBGD32437FontffffffDubaiReg45px"
+    this.view.btnSellCar.skin ="sknbtnBGffffffFont231F20DubaiReg40px"
+    this.view.flxSellMultipleCar.setVisibility(true);
+    this.view.flxSellSingleCar.setVisibility(false);
 
+  },
   toggleFooterIcons: function()
   {
     this.view.Footer2.flxHL1.setVisibility(false);
@@ -114,7 +127,7 @@ define({
     this.view.flxYearOfMakeDownArrow.setVisibility(true);
   },
   flxkeyUparrowAction: function(){
-  this.view.flxkeyUparrow.setVisibility(false);
+    this.view.flxkeyUparrow.setVisibility(false);
     this.view.flxKeydropdown.setVisibility(false);
     this.view.flxKeyDownArrow.setVisibility(true);
   },
@@ -319,7 +332,7 @@ define({
     FleetSpecMasterValues_inputparam["httpconfig"] = FleetSpecMasterValues_httpconfigs;
     fry_int_fleet$master_fleet_spec_values = mfintegrationsecureinvokerasync(FleetSpecMasterValues_inputparam, "fry_int_fleet", "master-fleet-spec-values", function(status, response){
       //             alert("response : "+response);
-//       alert("Json REesponse for keys:"+JSON.stringify(response));
+      //       alert("Json REesponse for keys:"+JSON.stringify(response));
       var year_of_make_id = response.data[0].keys[0].id;
 
       var keys_array = [];
@@ -391,7 +404,7 @@ define({
     //     alert("Json responmse :"+JSON.stringify(userObj));
     // var UserObjJson = JSON.parse(userObj);
     var UserObjJsonDataAccessToken = userObj.rawResponse.access_token;
-    
+
     var addAFleet_inputParam = addAFleet_inputParam || {};
     addAFleet_inputParam["serviceId"] = "ms_fleet$addfleet";
     addAFleet_inputParam["category_id"] =  voltmx.visualizer.toNumber(category_id);
@@ -403,7 +416,7 @@ define({
     addAFleet_inputParam["chassis_number"] = self.view.tbxChasisofNumber.text;
     addAFleet_inputParam["minimum_selling_price"] = voltmx.visualizer.toNumber(self.view.tbxMinimumSellingPrice.text); 
     addAFleet_inputParam["previous_numberplate"] = self.view.tbxNumberPlate.text;
-    
+
     addAFleet_inputParam["color"] = 37;
     //     alert("UserObjJsonData Access token:"+UserObjJsonDataAccessToken);
     var addAFleet_httpheaders = {

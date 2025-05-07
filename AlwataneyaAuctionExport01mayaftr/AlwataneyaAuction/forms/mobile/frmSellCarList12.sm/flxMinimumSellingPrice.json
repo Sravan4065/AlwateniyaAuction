@@ -48,7 +48,7 @@
     "kuid": "jcc0b762803b4478b85bf9765c90cfa0",
     "layouttype": 2,
     "name": "kony.ui.FlexContainer",
-    "parent": "flxDetail",
+    "parent": "flxSellSingleCar",
     "pf": "frmSellCarList12",
     "retaincontentalignment": false,
     "retainflexpositionproperties": false,

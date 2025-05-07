@@ -4,7 +4,7 @@
     "_children_": [],
     "_height_": {
         "type": "string",
-        "value": "8%"
+        "value": "10%"
     },
     "_left_": {
         "type": "string",
@@ -24,7 +24,7 @@
         0
     ],
     "_percent_": true,
-    "_skin_": "s5f6044abe194492b5e811af99858a26",
+    "_skin_": "s8de28b0fd3940d996d904d3f8d6211e",
     "_top_": {
         "type": "string",
         "value": "0dp"
@@ -42,7 +42,7 @@
         "btnChangeLang": {
             "__events__": {},
             "__info__": {
-                "kuid": "d01d07e7e2824f928dbc3bf85ed43622",
+                "kuid": "b93d55a68b224bd2a0c29d5efd15b381",
                 "srcKUID": "u8a0903286d04e23a6b9c944fa6b1915",
                 "wType": "Button"
             }
@@ -51,7 +51,7 @@
             "__events__": {},
             "__info__": {
                 "isRoot": true,
-                "kuid": "b2f18fed2eb74cc98198fe4494b4ba63",
+                "kuid": "fced817a6f634ec797867c7c8d962c9a",
                 "srcKUID": "u3b52c6266c1464393dd34c4c802b658",
                 "wType": "FlexContainer"
             }
@@ -59,7 +59,7 @@
         "imgLogo": {
             "__events__": {},
             "__info__": {
-                "kuid": "j287d8439de54037ad9d320cfb20b8c5",
+                "kuid": "a9eca184b5ef48a4844b380ba65ea4be",
                 "srcKUID": "u80c87a0e54e4a8eb912c43b9d169007",
                 "wType": "Image"
             }
@@ -71,7 +71,7 @@
     "iscustomlayout": false,
     "isdatareferenced": false,
     "isvisible": true,
-    "kuid": "b2f18fed2eb74cc98198fe4494b4ba63",
+    "kuid": "fced817a6f634ec797867c7c8d962c9a",
     "layouttype": 2,
     "masterType": 0,
     "name": "kony.ui.UserWidgetInstance",

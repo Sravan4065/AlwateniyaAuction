@@ -6,7 +6,7 @@
     },
     "_height_": {
         "type": "string",
-        "value": "180dp"
+        "value": "160dp"
     },
     "_left_": {
         "type": "string",
@@ -29,7 +29,7 @@
     "_skin_": "sa616c889d984758a71a70db3974b83f",
     "_top_": {
         "type": "string",
-        "value": "10dp"
+        "value": "30dp"
     },
     "_width_": {
         "type": "string",

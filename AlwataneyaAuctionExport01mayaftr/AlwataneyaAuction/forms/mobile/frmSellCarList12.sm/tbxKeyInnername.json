@@ -3,7 +3,7 @@
     "DNDConfig": null,
     "_height_": {
         "type": "string",
-        "value": "40dp"
+        "value": "35dp"
     },
     "_left_": {
         "type": "string",
@@ -21,7 +21,7 @@
         0,
         0
     ],
-    "_placeholder_": "Select key",
+    "_placeholder_": "",
     "_skin_": "s5d0031e93b44034a23e84629de6fca3",
     "_text_": "",
     "_top_": {

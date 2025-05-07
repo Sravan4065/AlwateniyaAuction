@@ -12,6 +12,7 @@ define({
     this.view.flxDropDown.onClick = this.flxDropDownOnClickAction;
     this.view.segTypes.onRowClick = this.segTypesOnRowClickAction;
     this.view.btnUploadBackView.onClick = this.btnUploadBackViewOnClickAction;
+    this.view.flxUploadPopup.onClick = this.flxUploadPopupOnClick;
   },
   onPreShow: function(){
     this.toggleFooterIcons();
@@ -284,5 +285,8 @@ function(status,response){
 
     }
     );
+  },
+  flxUploadPopupOnClick: function(){
+    
   }
  });
