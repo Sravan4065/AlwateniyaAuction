@@ -3,8 +3,8 @@ define({
   onNavigate: function()
   {
     this.view.preShow = this.onPreShow.bind(this);
-    alert('coming soon');
-alert("sucess");
+//     alert('coming soon');
+// alert("sucess");
   },
   
   onPreShow: function(){

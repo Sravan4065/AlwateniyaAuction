@@ -3,6 +3,7 @@ selectedFilters: {},
   
  onNavigate: function()
   {
+    this.userid = voltmx.store.getItem("userId");
     this.view.preShow = this.onPreshow.bind(this);
     this.view.postShow = this.onPostShow.bind(this);
     this.view.flxUpcomingAuctionsHeading.onClick = this.showUpcomingAuctions.bind(this);
@@ -92,10 +93,20 @@ selectedFilters: {},
     this.view.btnBidNow.onClick = this.invokeFryWfAuctionBidding.bind(this);
     
     this.view.flxCheckBox.onClick = () => {
-       this.view.imgCheck.setVisibility(!this.view.imgCheck.isVisible);
-    };
-    
-  },
+       
+      if(this.view.imgCheck.isVisible)
+        {
+          this.view.imgCheck.setVisibility(false);
+          this.view.btnBidNow.skin = "sknBtnBidcccccc8pxradius";
+        }
+      else{
+        this.view.imgCheck.setVisibility(true);
+          this.view.btnBidNow.skin = "sknBtnBid61B35C8pxradius";
+        }
+      };
+       
+    },
+
   
   toggleFooterIcons: function()
   {
@@ -325,7 +336,14 @@ selectedFilters: {},
       var objid = item.object_id;
       var aucid = item.auction_id;
       var price = Number(item.max_bid_amount);
-      
+      var highestbidder = item.highest_bidder;
+      var bidrateSkin;
+       if(item.highest_bidder === this.userid){
+             bidrateSkin = "sknLblCronosProd0290512Bold22px";
+          }
+          else{
+              bidrateSkin = "sknLblDubaid3243720pxbold";
+          }
       data.push(
       {
         "imgCarPIcture" : carimage,
@@ -347,7 +365,7 @@ selectedFilters: {},
         "lblCurrentBid": "CURRENT BID",
         "lblPrice":  {
           "text": "AED " + price,
-          "skin": "sknLblDubaid3243720pxbold"
+          "skin": bidrateSkin
         },
         "flxAutoBid": {
           "onClick": this.enableAutoBid.bind(this,objid,aucid)
@@ -355,32 +373,42 @@ selectedFilters: {},
         "imgAutoBidicon": "autobidnewone.png",
         "lblAutoBid": "AUTO BID",
         "btnBidNow": {
-          "onClick": this.openBidAmountContainer.bind(this,objid,aucid,price)
+          "onClick": this.openBidAmountContainer.bind(this,objid,aucid,price,highestbidder)
         }
       });
     }
     self.view.segCurrentAuctionList.setData(data);
   },
   
-  openBidAmountContainer: function(objid,aucid,price){
+  openBidAmountContainer: function(objid,aucid,price,highestbidder){
     var isLogin = voltmx.store.getItem("isLogin");
     if(isLogin)
       {
+        
+        if(highestbidder !== this.userid){
+        
      var selectedData = this.view.segCurrentAuctionList.selectedRowItems[0];
 //     this.currentAmount = price;
     this.objid = objid;
     this.aucid = aucid;
+          
     
     var amountText = selectedData.lblPrice.text;  // "AED 23500.00"
     var amountOnly = amountText.replace("AED", "").trim();
     this.currentAmount = Number(amountOnly);
     this.view.flxBidAmountSelectionContainer.setVisibility(true);
+    this.view.imgCheck.setVisibility(false);
     this.view.btn500AED.skin = "sknBtnCCCCCCBorderDubai75778620px";
     this.view.btn1000AED.skin = "sknBtnCCCCCCBorderDubai75778620px";
     this.view.btn1500AED.skin = "sknBtnCCCCCCBorderDubai75778620px";
     this.view.tbxBidAmount.text = "";
     this.view.flxOverLay.setVisibility(true);
       }
+        else{
+          alert('You are already a highest bidder');
+        }
+      }
+        
     else{
       var x = new voltmx.mvc.Navigation("frmLoginScreen");
       x.navigate();
@@ -443,6 +471,9 @@ selectedFilters: {},
           self.view.flxBidSuccessPopup.setVisibility(true);
           self.updateSegmentWithUpdatedBidRate();
         }
+       else if(auction_bidding && auction_bidding.error_message === "No Security Deposit"){
+        new voltmx.mvc.Navigation("frmPaymentMethod").navigate();
+      }
     }
     if (auction_bidding_inputparam == undefined) {
         var auction_bidding_inputparam = {};
