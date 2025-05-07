@@ -3,7 +3,7 @@ define({
  onNavigate: function() {  
    
     this.view.preShow = this.onPreshow.bind(this);
-   
+   this.userid = voltmx.store.getItem("userId"); 
       if (!this.isUIInitialized) {
         this.createSegmentDynamically();
         this.isUIInitialized = true;
@@ -63,14 +63,27 @@ define({
     this.view.btn1000AED.onClick = this.selectBidAmountAddIntoTextBox.bind(this,"1000");
     this.view.btn1500AED.onClick = this.selectBidAmountAddIntoTextBox.bind(this,"1500");
     this.view.btnBidNow.onClick =  this.invokeFryWfAuctionBidding.bind(this);
-      this.view.flxCheckBox.onClick = () => {
-       this.view.imgCheck.setVisibility(!this.view.imgCheck.isVisible);
-    };
+    
+        this.view.flxCheckBox.onClick = () => {
+       
+      if(this.view.imgCheck.isVisible)
+        {
+          this.view.imgCheck.setVisibility(false);
+          this.view.btnBidNow.skin = "sknBtnBidcccccc8pxradius";
+        }
+      else{
+        this.view.imgCheck.setVisibility(true);
+          this.view.btnBidNow.skin = "sknBtnBid61B35C8pxradius";
+        }
+      };
     
   },
   
   toggleFooterIcons: function()
   {
+    
+   
+    
    this.view.Footer2.flxHL1.setVisibility(true);
   this.view.Footer2.flxHL2.setVisibility(false);
   this.view.Footer2.flxHL3.setVisibility(false);
@@ -168,7 +181,7 @@ define({
             "btnAction": { "text": "VIEW ALL"}
         },
       {
-             "imgCarousel":"dashboardcarouselimg2.jpg",   //dashboardcarouselnew3.png
+             "imgCarousel":"dashboardphysicalauctions.jpg",   //dashboardcarouselnew3.png
             "lblCarouselSlideHeading": "PHYSICAL AUCTIONS",
             "lblCarouselSlideSubheading": "From the Floor to Your Hands - Secure Your Asset",
             "btnAction": { "text": "VIEW ALL"}
@@ -194,6 +207,13 @@ define({
         
         for (var i = 0; i < 5; i++) {
           var leftval = (i === 0) ? "20dp" : "10dp";
+          var bidrateSkin;
+          if(records[i].highest_bidder === this.userid){
+             bidrateSkin = "sknLblCronosProd0290512Bold22px";
+          }
+          else{
+              bidrateSkin = "sknLblDubaid3243720pxbold";
+          }
             // Creating the main flex container for each widget
             
             var flexFeaturedAuctionsItem = new voltmx.ui.FlexContainer({
@@ -423,7 +443,7 @@ flxLocation.add(lblLocation, lblLocationName);
     isVisible: true,
     right: "8%",
     top: "2dp",
-    skin: "sknLblDubaid3243720pxbold",
+    skin: bidrateSkin, // sknLblCronosProd0290512Bold22px
     text: "AED "+ (records[i].max_bid_amount ? records[i].max_bid_amount : "N/A")
 }, { contentAlignment: constants.CONTENT_ALIGN_MIDDLE_RIGHT }, {});
           
@@ -441,7 +461,7 @@ flxLocation.add(lblLocation, lblLocationName);
           
           
           var flxLikeBid = new voltmx.ui.FlexContainer({
-    id: "flxLikeBid",
+    id: "flxLikeBid" + i,
     isVisible: true,
     top: "2dp",
     height: "45dp",
@@ -569,6 +589,7 @@ flxLikeFromRecommendedFilter.add(imgHeartIconFromRecommended);
               auction_id: records[i].auction_id,
               object_id: records[i].object_id,
               max_bid_amount: records[i].max_bid_amount,
+              highest_bidder: records[i].highest_bidder,
               ID: records[i].ID,
               currentIndex: i
             })  
@@ -628,11 +649,14 @@ flxLikeBid.add(flxLikeFromRecommendedFilter, flxBidEnable, btnBidNow);
     
     if(isLogin)
     {
+     if(params.highest_bidder !== this.userid){
      this.aucid = params.auction_id;
     this.objid = params.object_id;
     this.currentAmount = Number(params.max_bid_amount);
     this.selectedID = params.ID;
     this.currentIndex = params.currentIndex;
+     
+     
 
     // amount changes every time when bid,so wrote like this to get amount+hike (updated one) every time.
     var lblId = "lblBidRate" + this.currentIndex;
@@ -643,12 +667,18 @@ flxLikeBid.add(flxLikeFromRecommendedFilter, flxBidEnable, btnBidNow);
     }
 
     this.view.flxBidAmountSelectionContainer.setVisibility(true);
+      this.view.imgCheck.setVisibility(false);
     this.view.btn500AED.skin = "sknBtnCCCCCCBorderDubai75778620px";
     this.view.btn1000AED.skin = "sknBtnCCCCCCBorderDubai75778620px";
     this.view.btn1500AED.skin = "sknBtnCCCCCCBorderDubai75778620px";
     this.view.tbxBidAmount.text = "";
     this.view.flxOverLay.setVisibility(true);
     }
+       else{
+      alert('You are already highest bidder');
+    }
+    }
+   
      else{
       var x = new voltmx.mvc.Navigation("frmLoginScreen");
       x.navigate();
@@ -691,6 +721,9 @@ flxLikeBid.add(flxLikeFromRecommendedFilter, flxBidEnable, btnBidNow);
             voltmx.print("Label not found for ID: " + self.selectedID);
           }
         }
+      else if(auction_bidding && auction_bidding.error_message === "No Security Deposit"){
+        new voltmx.mvc.Navigation("frmPaymentMethod").navigate();
+      }
     }
     if (auction_bidding_inputparam == undefined) {
         var auction_bidding_inputparam = {};

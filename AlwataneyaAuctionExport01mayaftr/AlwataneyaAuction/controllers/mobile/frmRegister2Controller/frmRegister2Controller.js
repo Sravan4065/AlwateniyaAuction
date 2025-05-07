@@ -1573,12 +1573,12 @@ flxEyeIconConfirmPassOnClickAction: function(){
             if( requestJSON && requestJSON.data && requestJSON.data.user_id !== null){
               if(is_org === true &&  requestJSON.statusCode === 200 && requestJSON.message ==="User created successfully."){
                   self.view.flxCongratulations.setVisibility(true);
-              alert("response in create user for with trade :"+JSON.stringify(requestJSON));
+              voltmx.print("response in create user for with trade :"+JSON.stringify(requestJSON));
              voltmx.store.setItem("isUserCreated", true);
               }
               else if(is_org === false &&  requestJSON.statusCode === 200 && requestJSON.message ==="User created successfully."){
                  self.view.flxCongratulations.setVisibility(true);
-              alert("response in create user for without trade :"+JSON.stringify(requestJSON));
+              voltmx.print("response in create user for without trade :"+JSON.stringify(requestJSON));
              voltmx.store.setItem("isUserCreated", true);
               }
            
