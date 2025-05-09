@@ -43,8 +43,8 @@
         "value": "85%"
     },
     "children": [
-        "CopyflxToggle0a25bf5584b4d4d",
-        "CopyflxToggle0ca5e631b1e5b48"
+        "flxToggleTrade1",
+        "flxToggleTrade2"
     ],
     "clipbounds": false,
     "containerweight": 100,

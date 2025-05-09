@@ -52,7 +52,7 @@
     "id": "flxBody",
     "info": null,
     "iscustomlayout": false,
-    "isvisible": true,
+    "isvisible": false,
     "kuid": "bd87c682961148e490a9fc1117f71846",
     "layouttype": 4,
     "name": "kony.ui.FlexContainer",

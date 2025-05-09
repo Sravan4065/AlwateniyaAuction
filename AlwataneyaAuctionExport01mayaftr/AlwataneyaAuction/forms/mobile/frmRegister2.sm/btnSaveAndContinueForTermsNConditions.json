@@ -21,11 +21,11 @@
         0,
         0
     ],
-    "_skin_": "s5e8a165840e4b72b2c7b2a2885dc7f6",
-    "_text_": "Save and continue",
+    "_skin_": "s9019814d96041cfb735558700857540",
+    "_text_": "Save And Continue",
     "_top_": {
-        "type": "string",
-        "value": "50dp"
+        "type": "number",
+        "value": "50"
     },
     "_width_": {
         "type": "string",
@@ -38,15 +38,13 @@
     },
     "containerweight": 100,
     "contentalignment": 5,
-    "disabledSkins": {
-        "focusSkin": "s3d87ba262864995afa373466fd12acb"
-    },
     "displaytext": true,
+    "focusskin": "sa87b3f55ce0476ea4dbfd006e2cf0b6",
     "id": "btnSaveAndContinueForTermsNConditions",
     "info": null,
     "iscustomlayout": false,
     "isvisible": false,
-    "kuid": "c883912db7a44eb893c5d2741d753a4d",
+    "kuid": "de6bfcaab0d44b089db0c2c198f133aa",
     "name": "kony.ui.Button",
     "parent": "flxPassWordAndConfirmPassWord",
     "pf": "frmRegister2",

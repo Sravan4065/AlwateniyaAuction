@@ -1,5 +1,9 @@
 {
   "android": {
+    "background_color": "ffffff00",
+    "bg_type": "one",
+    "border_color": "00000000",
+    "border_type": 0,
     "font_name": "default",
     "isForked": true,
     "shadow": {
@@ -12,7 +16,12 @@
     }
   },
   "androidwearos": {
-    "font_name": "default"
+    "background_color": "ffffff00",
+    "bg_type": "one",
+    "border_color": "00000000",
+    "border_type": 0,
+    "font_name": "default",
+    "isForked": true
   },
   "background_color": "ffffffff",
   "bg_type": "one",
@@ -21,6 +30,8 @@
   "border_type": 0,
   "border_width": 0,
   "desktopweb": {
+    "background_color": "ffffff00",
+    "bg_type": "one",
     "bottom_left_border_color": "000000ff",
     "bottom_left_border_style": "plain",
     "bottom_left_border_width": 0,
@@ -45,6 +56,10 @@
     "top_right_border_width": 0
   },
   "ipad": {
+    "background_color": "ffffff00",
+    "bg_type": "one",
+    "border_color": "00000000",
+    "border_type": 0,
     "font_name": "System",
     "isForked": true,
     "shadow": {
@@ -57,6 +72,10 @@
     }
   },
   "iphone": {
+    "background_color": "ffffff00",
+    "bg_type": "one",
+    "border_color": "00000000",
+    "border_type": 0,
     "font_name": "System",
     "isForked": true,
     "shadow": {
@@ -70,10 +89,17 @@
   },
   "isDefaultSkin": false,
   "kiosk": {
-    "font_name": "Helvetica"
+    "background_color": "ffffff00",
+    "bg_type": "one",
+    "border_color": "00000000",
+    "border_type": 0,
+    "font_name": "Helvetica",
+    "isForked": true
   },
   "kuid": "s52efebb1e6941fdaf52560354be1a4e",
   "nativemac": {
+    "background_color": "ffffff00",
+    "bg_type": "one",
     "bottom_left_border_color": "000000ff",
     "bottom_left_border_style": "plain",
     "bottom_left_border_width": 0,
@@ -98,6 +124,8 @@
     "top_right_border_width": 0
   },
   "nativewin": {
+    "background_color": "ffffff00",
+    "bg_type": "one",
     "bottom_left_border_color": "000000ff",
     "bottom_left_border_style": "plain",
     "bottom_left_border_width": 0,
@@ -122,6 +150,8 @@
     "top_right_border_width": 0
   },
   "spaan": {
+    "background_color": "ffffff00",
+    "bg_type": "one",
     "bottom_left_border_color": "000000ff",
     "bottom_left_border_style": "plain",
     "bottom_left_border_width": 0,
@@ -146,6 +176,8 @@
     "top_right_border_width": 0
   },
   "spaandroidtablet": {
+    "background_color": "ffffff00",
+    "bg_type": "one",
     "bottom_left_border_color": "000000ff",
     "bottom_left_border_style": "plain",
     "bottom_left_border_width": 0,
@@ -170,6 +202,8 @@
     "top_right_border_width": 0
   },
   "spaip": {
+    "background_color": "ffffff00",
+    "bg_type": "one",
     "bottom_left_border_color": "000000ff",
     "bottom_left_border_style": "plain",
     "bottom_left_border_width": 0,
@@ -194,6 +228,8 @@
     "top_right_border_width": 0
   },
   "spaipad": {
+    "background_color": "ffffff00",
+    "bg_type": "one",
     "bottom_left_border_color": "000000ff",
     "bottom_left_border_style": "plain",
     "bottom_left_border_width": 0,
@@ -218,6 +254,8 @@
     "top_right_border_width": 0
   },
   "spawindowstablet": {
+    "background_color": "ffffff00",
+    "bg_type": "one",
     "bottom_left_border_color": "000000ff",
     "bottom_left_border_style": "plain",
     "bottom_left_border_width": 0,
@@ -242,6 +280,8 @@
     "top_right_border_width": 0
   },
   "spawinphone8": {
+    "background_color": "ffffff00",
+    "bg_type": "one",
     "bottom_left_border_color": "000000ff",
     "bottom_left_border_style": "plain",
     "bottom_left_border_width": 0,
@@ -266,6 +306,10 @@
     "top_right_border_width": 0
   },
   "tabrcandroid": {
+    "background_color": "ffffff00",
+    "bg_type": "one",
+    "border_color": "00000000",
+    "border_type": 0,
     "font_name": "default",
     "isForked": true,
     "shadow": {
@@ -282,9 +326,19 @@
     "font_name": "System"
   },
   "windows8": {
-    "font_name": "None"
+    "background_color": "ffffff00",
+    "bg_type": "one",
+    "border_color": "00000000",
+    "border_type": 0,
+    "font_name": "None",
+    "isForked": true
   },
   "winphone8": {
-    "font_name": "None"
+    "background_color": "ffffff00",
+    "bg_type": "one",
+    "border_color": "00000000",
+    "border_type": 0,
+    "font_name": "None",
+    "isForked": true
   }
 }

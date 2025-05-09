@@ -12,8 +12,8 @@ define({
     this.view.flxBarMobileOtp.skin = "sknflxBGDFDFDFRoundedBorderDFDFDF1px";
     this.view.flxBarUserName.skin = "sknflxBGDFDFDFRoundedBorderDFDFDF1px";
     this.view.flxBarPassConfo.skin = "sknflxBGDFDFDFRoundedBorderDFDFDF1px";
-    this.view.btnTradeSaveAandContinue.skin = "sknbtnBG61B35CRoundedBorder61B35C1pxFontDubaiRegffffffSize45px";
-   this.view.btnSaveAndContinueForTermsNConditions.skin = "sknbtnBG61B35CRoundedBorder61B35C1pxFontDubaiRegffffffSize45px";
+//     this.view.btnTradeSaveAndContinue.skin = "sknbtnBG61B35CRoundedBorder61B35C1pxFontDubaiRegffffffSize45px";
+//    this.view.btnSaveAndContinueForTermsNConditions.skin = "sknbtnBG61B35CRoundedBorder61B35C1pxFontDubaiRegffffffSize45px";
     this.view.flx2.onClick = this.PopupVisibilityAction; 
     this.view.flxClosePopup.onClick = this.ClosePopupOnClick;
     this.view.btnSaveAndContinue.onClick = this.btnSaveAndContinueSellerOrBuyeronClickAction;
@@ -34,7 +34,7 @@ define({
     this.view.radiobtnBuyer.onSelection = this.radiobtnbuyerOnSelectionAction;
     this.view.radioBtnWithTrade.onSelection = this.radioBtnWithTradeOnSelectionAction;
     this.view.radioBtnWithoutTrade.onSelection = this.radioBtnWithoutTradeOnelectionAction;
-    this.view.btnTradeSaveAandContinue.onClick=this.btnTradeSaveAandContinueOnclickAction;
+    this.view.btnTradeSaveAndContinue.onClick=this.btnTradeSaveAandContinueOnclickAction;
     this.view.flxSellerRegisterPopupClose.onClick = this.flxSellerRegisterPopupCloseOnClickAction;
 //     this.view.flxWithoutUAE.onClick = this.flxWithoutUAEOnClickAction;
     this.view.flxCompanyFooter.onClick = this.flxCompanyFooterOnClickAction;
@@ -67,6 +67,7 @@ define({
     this.view.btnSaveAndContinueForTermsNConditions.onClick = this.btnSaveAndContinueForTermsNConditionsOnClickAction;
     this.view.imgClose.onTouchEnd = this.btnOkayOnClickAction;
     this.view.btnOkay.onClick=this.btnOkayOnClickAction;
+    this.view.btnSaveAndContinueBuyer.onClick = this.btnSaveAndContinueBuyerOnClick;
     
   },
   onPreShow: function(){
@@ -109,7 +110,7 @@ define({
 //                                     this.view.flxSellerRegIndiFooterBody.setVisibility(true);
                                     this.view.radioBtnWithoutTrade.selectedKey = null;
                                     this.view.radioBtnWithTrade.selectedKey = null;
-                                         voltmx.store.setItem("is_org", null);
+                                         voltmx.store.setItem("is_org", false);
                                         }
                                     }
                                     else{
@@ -336,13 +337,13 @@ btnSaveAndContinueSellerOrBuyeronClickAction: function() {
   //radio button With Trade OnSelection Action!!!!!!!!
   radioBtnWithTradeOnSelectionAction: function(){
     if( this.view.radioBtnWithTrade.selectedKey === null){
-      this.view.btnTradeSaveAandContinue.setEnabled(false);
+      this.view.btnTradeSaveAndContinue.setEnabled(false);
       this.view.radioBtnWithoutTrade.selectedKey = "WithoutTrade";
      
     }
     else{
       
-      this.view.btnTradeSaveAandContinue.setEnabled(true);
+      this.view.btnTradeSaveAndContinue.setEnabled(true);
       this.view.radioBtnWithoutTrade.selectedKey =null;
     }
   },
@@ -1505,7 +1506,7 @@ flxEyeIconConfirmPassOnClickAction: function(){
     this.view.flxPopupHowWouldYouUploadYourDoc.setVisibility(false);
     if(this.flagUploaded){
       this.view.lblUploadSignedDocs.text = "uploadedfile";
-      this.view.flxCongratulations.setVisibility(true);
+      this.view.flxCongratulationsSellerSeller.setVisibility(true);
     }
   },
   //Navigation from Password and Confirm Password to terms and conditions page!!!!
@@ -1572,13 +1573,28 @@ flxEyeIconConfirmPassOnClickAction: function(){
   //             var opstatusRes = requestJSON.opstatus;
             if( requestJSON && requestJSON.data && requestJSON.data.user_id !== null){
               if(is_org === true &&  requestJSON.statusCode === 200 && requestJSON.message ==="User created successfully."){
-                  self.view.flxCongratulations.setVisibility(true);
               voltmx.print("response in create user for with trade :"+JSON.stringify(requestJSON));
+                if(userRole === "Seller"){
+                     self.view.flxCongratulationsSeller.setVisibility(true);
+                     self.view.flxCongratulationsBuyer.setVisibility(false);
+                }
+                else{
+                  self.view.flxCongratulationsBuyer.setVisibility(true);
+                  self.view.flxCongratulationsSeller.setVisibility(false);
+                }
              voltmx.store.setItem("isUserCreated", true);
               }
               else if(is_org === false &&  requestJSON.statusCode === 200 && requestJSON.message ==="User created successfully."){
-                 self.view.flxCongratulations.setVisibility(true);
+                self.view.flxCongratulationsSeller.setVisibility(true);
               voltmx.print("response in create user for without trade :"+JSON.stringify(requestJSON));
+                 if(userRole === "Seller"){
+                     self.view.flxCongratulationsSeller.setVisibility(true);
+                     self.view.flxCongratulationsBuyer.setVisibility(false);
+                }
+                else{
+                  self.view.flxCongratulationsBuyer.setVisibility(true);
+                  self.view.flxCongratulationsSeller.setVisibility(false);
+                }
              voltmx.store.setItem("isUserCreated", true);
               }
            
@@ -1666,19 +1682,16 @@ flxEyeIconConfirmPassOnClickAction: function(){
   },
   //Disabling Congrats Popup and Navigating to Login Page!!!!
   btnOkayOnClickAction: function(){
-    this.view.flxCongratulations.setVisibility(false);
-    var userType = voltmx.store.getItem("userType");
-    if(userType === "Buyer"){
-        var ntf = new voltmx.mvc.Navigation("frmPaymentMethod");
-       ntf.navigate();
-    }
-    else{
+    this.view.flxCongratulationsSeller.setVisibility(false);
+//     var userType = voltmx.store.getItem("userType");
        var ntf = new voltmx.mvc.Navigation("frmLoginScreen");
        ntf.navigate();
-    }
    
   },
- 
+ btnSaveAndContinueBuyerOnClick: function(){
+     var ntf = new voltmx.mvc.Navigation("frmPaymentMethod");
+       ntf.navigate();
+ },
   flxUploadPopupClose: function(){
     this.view.flxPopupHowWouldYouUploadYourDoc.setVisibility(false);
     this.view.flxFooterPopupHowWouldUpload.bottom="3%";

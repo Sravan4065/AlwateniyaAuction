@@ -25,11 +25,11 @@
     "_skin_": "sc65dbd4403044439942bab855ba8186",
     "_top_": {
         "type": "string",
-        "value": "10dp"
+        "value": "0dp"
     },
     "_width_": {
         "type": "string",
-        "value": "90%"
+        "value": "100%"
     },
     "allboxes": [],
     "autogrowmode": 0,
@@ -40,7 +40,7 @@
     },
     "centery": {
         "type": "string",
-        "value": "50%"
+        "value": "40%"
     },
     "children": [
         "btnSellCar",

@@ -55,7 +55,7 @@
     "masterdata": [
         [
             "selectedKeyTerms",
-            "I have read & agreed"
+            "   I have read & agreed"
         ]
     ],
     "name": "kony.ui.CheckBoxGroup",

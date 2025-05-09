@@ -1,0 +1,57 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizButton",
+    "DNDConfig": null,
+    "_bottom_": {
+        "type": "number",
+        "value": "22"
+    },
+    "_height_": {
+        "type": "string",
+        "value": "45dp"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "11dp"
+    },
+    "_margin_": [
+        6,
+        6,
+        6,
+        6
+    ],
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_skin_": "sf586fe7b141448085e0ffbfe219d4a1",
+    "_text_": "Save And Continue",
+    "_width_": {
+        "type": "string",
+        "value": "85%"
+    },
+    "canUpdateUI": true,
+    "centerx": {
+        "type": "string",
+        "value": "50%"
+    },
+    "containerweight": 100,
+    "contentalignment": 5,
+    "disabledSkins": {
+        "focusSkin": "s3d87ba262864995afa373466fd12acb"
+    },
+    "displaytext": true,
+    "id": "btnSaveAndContinueBuyer",
+    "ide_onClick": "AS_Button_f60f0deb52cf4e3b8749c4692ef26308",
+    "info": null,
+    "iscustomlayout": false,
+    "isvisible": true,
+    "kuid": "e482e144e30248268e8ba54fa5964951",
+    "name": "kony.ui.Button",
+    "parent": "flxContentBuyer",
+    "pf": "frmRegister2",
+    "retaincontentalignment": false,
+    "retainflexpositionproperties": false,
+    "wType": "Button"
+}

@@ -11,7 +11,7 @@
   },
   "background_color": "61b35cff",
   "bg_type": "one",
-  "border_color": "61b35c00",
+  "border_color": "ffffffff",
   "border_style": "rc",
   "border_type": 0,
   "border_width": 1,
@@ -42,7 +42,7 @@
     "font_size": 281,
     "isForked": false
   },
-  "kuid": "s9019814d96041cfb735558700857540",
+  "kuid": "s5f75da08d0340cfacbbd9951c3ecbb2",
   "nativemac": {
     "font_name": "Helvetica",
     "font_size": 281,

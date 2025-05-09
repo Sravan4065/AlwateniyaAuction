@@ -53,7 +53,7 @@
     "name": "kony.ui.TextBox2",
     "parent": "flxCompanyTextBox",
     "pf": "frmRegister2",
-    "placeholderskin": "sec23afc076740308478d3dfc7e34a26",
+    "placeholderskin": "sc9f7a12c04340aa9b5b7d936c525140",
     "retaincontentalignment": false,
     "retainflexpositionproperties": false,
     "securetextentry": false,

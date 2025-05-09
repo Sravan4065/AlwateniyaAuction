@@ -25,7 +25,7 @@
     "_skin_": "s7602ba699ff40dc890825c29d6edc59",
     "_top_": {
         "type": "string",
-        "value": "6%"
+        "value": "11%"
     },
     "_width_": {
         "type": "string",
@@ -37,6 +37,7 @@
     "bounces": true,
     "canUpdateUI": true,
     "children": [
+        "flxHeading",
         "flxBody"
     ],
     "clipbounds": true,
