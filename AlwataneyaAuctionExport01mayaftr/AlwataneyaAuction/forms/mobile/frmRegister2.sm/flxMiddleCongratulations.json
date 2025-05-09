@@ -52,7 +52,7 @@
     "kuid": "fa23c0a5a8d7424abebbc9c81324362c",
     "layouttype": 2,
     "name": "kony.ui.FlexContainer",
-    "parent": "flxCongratulations",
+    "parent": "flxCongratulationsSeller",
     "pf": "frmRegister2",
     "retaincontentalignment": false,
     "retainflexpositionproperties": false,

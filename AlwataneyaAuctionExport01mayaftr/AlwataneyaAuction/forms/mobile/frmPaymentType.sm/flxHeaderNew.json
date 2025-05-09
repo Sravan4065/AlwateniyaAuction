@@ -1,0 +1,88 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizUserWidget",
+    "DNDConfig": null,
+    "_children_": [],
+    "_height_": {
+        "type": "string",
+        "value": "8%"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_orientation_": 1,
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_percent_": true,
+    "_skin_": "s52efebb1e6941fdaf52560354be1a4e",
+    "_top_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "100%"
+    },
+    "areflexpropsreferenced": false,
+    "autogrowmode": 0,
+    "canUpdateUI": true,
+    "clipbounds": false,
+    "containerweight": 0,
+    "dataDiffs": {
+        "btnChangeLang": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "e298db1cfe8f4ba4b18b62be0759c451",
+                "srcKUID": "ua72834149174996a35d3a19c4fe8255",
+                "wType": "Button"
+            }
+        },
+        "flxHeaderNew": {
+            "__events__": {},
+            "__info__": {
+                "isRoot": true,
+                "kuid": "d066137ee63e4a4c9036457aa8d1cda9",
+                "srcKUID": "u3b52c6266c1464393dd34c4c802b658",
+                "wType": "FlexContainer"
+            }
+        },
+        "imgLogo": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "i9849f5a83a24ff092bd7406a72c7a85",
+                "srcKUID": "ua8ec8f321a849a0b18ffa4bd9a9bcc1",
+                "wType": "Image"
+            }
+        }
+    },
+    "enablescrolling": true,
+    "id": "flxHeaderNew",
+    "info": null,
+    "iscustomlayout": false,
+    "isdatareferenced": false,
+    "isvisible": true,
+    "kuid": "d066137ee63e4a4c9036457aa8d1cda9",
+    "layouttype": 2,
+    "masterType": 0,
+    "name": "kony.ui.UserWidgetInstance",
+    "parent": "flxMain",
+    "pf": "frmPaymentType",
+    "retaincontentalignment": false,
+    "retainflexpositionproperties": false,
+    "retainflowhorizontalalignment": false,
+    "snapgridsize": 10,
+    "snaptogrid": true,
+    "sourceUserWidget": "u3b52c6266c1464393dd34c4c802b658",
+    "wType": "UserWidgetInstance",
+    "zindex": 1
+}

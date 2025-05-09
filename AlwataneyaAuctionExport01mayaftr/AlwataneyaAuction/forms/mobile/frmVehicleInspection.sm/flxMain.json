@@ -35,10 +35,10 @@
     "autogrowmode": 0,
     "canUpdateUI": true,
     "children": [
-        "flxHeaderNew",
         "flxScrollBody",
         "Footer2",
-        "flxWhatsappcomponent"
+        "flxWhatsappcomponent",
+        "flxHeaderNew"
     ],
     "clipbounds": false,
     "containerweight": 100,

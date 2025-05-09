@@ -22,10 +22,10 @@
         0
     ],
     "_skin_": "s9019814d96041cfb735558700857540",
-    "_text_": "Login",
+    "_text_": "Sign In",
     "_top_": {
         "type": "string",
-        "value": "80dp"
+        "value": "70dp"
     },
     "_width_": {
         "type": "string",
@@ -38,7 +38,7 @@
     },
     "centery": {
         "type": "string",
-        "value": "70%"
+        "value": "65%"
     },
     "containerweight": 100,
     "contentalignment": 5,

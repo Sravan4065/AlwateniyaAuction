@@ -41,6 +41,9 @@
     "containerheightmode": 1,
     "containerweight": 100,
     "contentalignment": 5,
+    "disabledSkins": {
+        "placeholderSkin": "s88f4e3aec6842caab5525b356a3612c"
+    },
     "focusskin": "s61d20a395b64f25adaa12bf4a017d84",
     "id": "tbxCode1",
     "info": null,
@@ -52,7 +55,6 @@
     "name": "kony.ui.TextBox2",
     "parent": "flxCode1",
     "pf": "frmRegister2",
-    "placeholderskin": "s88f4e3aec6842caab5525b356a3612c",
     "retaincontentalignment": false,
     "retainflexpositionproperties": false,
     "securetextentry": false,

@@ -5,6 +5,10 @@
         "type": "string",
         "value": "60%"
     },
+    "_left_": {
+        "type": "string",
+        "value": "0"
+    },
     "_margin_": [
         1,
         1,
@@ -22,7 +26,7 @@
         "value": "0dp"
     },
     "_skin_": "s7b2feee073b40b39e29e08f1c224895",
-    "_text_": "Sign Up Now",
+    "_text_": "Sign Up",
     "_top_": {
         "type": "string",
         "value": "0"
@@ -39,16 +43,12 @@
         }
     },
     "canUpdateUI": true,
-    "centerx": {
+    "centery": {
         "type": "string",
         "value": "50%"
     },
-    "centery": {
-        "type": "string",
-        "value": "49%"
-    },
     "containerweight": 100,
-    "contentalignment": 5,
+    "contentalignment": 4,
     "id": "lblSignUp",
     "info": null,
     "ipad": {
@@ -63,7 +63,7 @@
     },
     "iscustomlayout": false,
     "isvisible": true,
-    "kuid": "e01f996ac89548318118bf282b642bd9",
+    "kuid": "jdd056f8eedb4ce19e709a013c27a1d2",
     "name": "kony.ui.Label",
     "parent": "flxSignUpContainer",
     "pf": "frmLoginScreen",

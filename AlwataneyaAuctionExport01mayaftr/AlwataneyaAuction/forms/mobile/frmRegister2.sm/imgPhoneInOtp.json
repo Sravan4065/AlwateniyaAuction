@@ -7,8 +7,8 @@
         "value": "40%"
     },
     "_left_": {
-        "type": "string",
-        "value": "0"
+        "type": "number",
+        "value": "-11"
     },
     "_margin_": [
         0,
@@ -25,7 +25,7 @@
     "_skin_": "sa05e4f50c3e43ad86fe42c8a2b358a5",
     "_src_": "fluent_call_16_regular.png",
     "_top_": {
-        "type": "string",
+        "type": "number",
         "value": "0"
     },
     "_width_": {

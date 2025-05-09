@@ -5,9 +5,10 @@ define({
     this.view.preShow = this.onPreShow;
     this.view.segDocs.onRowClick = this.segDocsOnRowClickAction.bind(this);
     this.view.flxBack.onClick    = this.flxBackOnClickAction;
-    this.view.flxUploadContainer.onClick = this.flxUploadContainerOnClick;
+    this.view.flxUploadContainer.onClick = this.pdfCheck;
     this.view.btnBack.onClick = this.btnBackOnClickAction;
     this.view.btnSubmit.onClick = this.btnSubmitOnClickAction;
+//         this.view.btnSubmit.onClick = this.pdfCheck;
     this.view.flxPlus.onClick = this.flxPlusOnClickAction;
     this.view.flxDropDown.onClick = this.flxDropDownOnClickAction;
     this.view.segTypes.onRowClick = this.segTypesOnRowClickAction;
@@ -122,6 +123,142 @@ define({
     }
     );
   },
+  
+   pdfCheck: function() {
+    try {
+
+      var VoltMXMain = java.import("com.konylabs.android.KonyMain"); 
+      var TestPdfNfi = java.import("com.example.pdfuploadnfitest.TestPdfNfi");
+      TestPdfNfi.pdfCallback = this.pdfCallback;
+      var activityContext = VoltMXMain.getActivityContext();
+      var Intent  = java.import("android.content.Intent");
+      var intentObj =  new Intent(activityContext, TestPdfNfi.class);
+      activityContext.startActivity(intentObj);
+    } catch (e) {
+      alert("Error: " + e.message);
+    }
+  },
+
+
+  pdfCallback: function ( data) {
+
+    voltmx.print( "selcted pdf callback data:::" + data) ;
+    alert("Filename selected :::"+data);
+
+     this.pdfData = null;
+
+    if (data && typeof data === 'object' && Object.keys(data).length > 0) {
+      try {
+        const dataJsonStr = JSON.stringify(data);
+        this.pdfData = JSON.parse(dataJsonStr);
+//         this.view.Label0j43261d34f8f45.text =   this.pdfData.fileName;
+
+//         this.view.Label0f0e3db454b3148.text =      this.pdfData.pathname;
+
+//       this.view.Label0ie78d6e115164c.text=  this.pdfData.base64pdf;
+        
+       this.view.flxUploadedFrontview.setVisibility(true);
+       this.view.imgFrontView.base64 =this.pdfData.base64pdf;
+       this.view.flxUploadPhotoClickArea.setVisibility(false);
+       this.view.btnUploadBackView.setVisibility(true);
+       this.view.btnSubmit.setEnabled(true);
+       this.view.btnSubmit.skin ="sknbtnBG61B35CDubaiRegFont45pxRoundedBorder1px";
+      } catch (error) {
+        console.error("Failed to clone data:", error);
+           this.pdfData = null;
+      }    
+    }
+//      this.btnSubmitOnClickAction();
+
+
+  },
+  btnSubmitOnClickAction: function(){
+    var self = this;
+    voltmx.application.showLoadingScreen();
+//     self.pdfCheck();
+    alert("Service not called!!");
+//     var filename =     this.pdfData;
+    //     var filename = "image1.png";
+    // var userObj = voltmx.store.getItem("UserObj");
+    // var base64 =  voltmx.store.getItem("base64");
+    var type = voltmx.store.getItem("type");
+
+    // alert("UserObj :"+userObj);
+    // alert("UserObj :"+JSON.stringify(userObj));
+    var moduleName = "CreateItems";
+    var moduleType = "Customers";
+    var is_org = 1;
+    var user_token = voltmx.store.getItem("getUserAccesstoken");
+    var user_id = voltmx.store.getItem("userId");
+    // alert("userId :"+user_id);
+    var fileDetails = 
+        [
+          {"is_thumbnail": "false",  
+           "filename"    : self.pdfData.fileName, 
+           "base64"      : self.pdfData.base64pdf.replaceAll('+','/plus/'),
+           "type"        : "Contract",
+           "sub_type"    : type, 
+          },
+        ];
+    var create_dam_items_inputparam = {};
+    create_dam_items_inputparam["serviceID"] = "fry_collection$create-dam-items";
+    var create_dam_items_httpheaders = {};
+    create_dam_items_inputparam["httpheaders"] = create_dam_items_httpheaders;
+    var create_dam_items_httpconfigs = {};
+    create_dam_items_inputparam["httpconfig"] = create_dam_items_httpconfigs;
+    // create_dam_items_inputparam["type"] = type;
+    create_dam_items_inputparam["collectionId"] = "";
+    create_dam_items_inputparam["moduleType"] = moduleType;
+    create_dam_items_inputparam["user_id"] = user_id;
+    create_dam_items_inputparam["moduleName"] = moduleName;
+    create_dam_items_inputparam["file_details"] = fileDetails;
+    create_dam_items_inputparam["user_token"] = user_token;
+    create_dam_items_inputparam["is_org"] = is_org;
+
+    fry_collection$create_dam_items = 
+      mfintegrationsecureinvokerasync(
+      create_dam_items_inputparam, 
+      "fry_collection", 
+      "create-dam-items", 
+      function(status,response){
+        // alert("create dam items service response :"+JSON.stringify(response));
+        // alert("status: "+status);
+
+        if(response.opstatus === 0){
+
+          if(response.message === "Success"){
+            voltmx.application.dismissLoadingScreen();
+            //     alert("Sucess"+response.message);
+            alert("Uploaded Successfully");
+            //     alert("Response for upload : "+JSON.stringify(response));
+            self.view.flxUploadPopup.setVisibility(false);
+            var ntf = new voltmx.mvc.Navigation("frmGovtIds");
+            ntf.navigate({
+              "variable_base64": self.pdfData.base64pdf,
+              "_meta_": {
+                "eventName": "onClick",
+                "widgetId": "btnSubmit"
+              }
+            });
+            //     alert("request :"+JSON.stringify(create_dam_items_inputparam));
+            //     voltmx.print("request :"+JSON.stringify(create_dam_items_inputparam));
+
+          }
+          else{
+            voltmx.application.dismissLoadingScreen();
+            alert("file upload failed!!")
+          }
+        }
+        else{
+          voltmx.application.dismissLoadingScreen();
+          alert("file upload response: "+JSON.stringify(response));
+          alert("Backend Request Failed, Please try Again!!");
+        }
+        //  var x = new voltmx.mvc.Navigation("frmDashBoard");
+        //   x.navigate();
+      });
+  },
+  
   btnBackOnClickAction: function(){
     
     if(this.view.imgFrontView.base64 ==="" &&  this.view.imgBackView.base64 === ""){
@@ -138,89 +275,123 @@ define({
     }
     
   },
-  btnSubmitOnClickAction: function(){
-      var self = this;
-    if( self.view.btnSubmit.skin === "sknbtnBG61B35CDubaiRegFont45pxRoundedBorder1px"){
-   voltmx.application.showLoadingScreen();
-var filename =  self.filename;
-//     var filename = "image1.png";
-// var userObj = voltmx.store.getItem("UserObj");
-// var base64 =  voltmx.store.getItem("base64");
-var type = voltmx.store.getItem("type");
+//   btnSubmitOnClickAction: function(){
+//       var self = this;
+//     if( self.view.btnSubmit.skin === "sknbtnBG61B35CDubaiRegFont45pxRoundedBorder1px"){
+//    voltmx.application.showLoadingScreen();
+// var filename =  self.filename;
+// //     var filename = "image1.png";
+// // var userObj = voltmx.store.getItem("UserObj");
+// // var base64 =  voltmx.store.getItem("base64");
+// var type = voltmx.store.getItem("type");
 
-// alert("UserObj :"+userObj);
-// alert("UserObj :"+JSON.stringify(userObj));
-var moduleName = "CreateItems";
-var moduleType = "Customers";
-var is_org = 1;
-var user_token = voltmx.store.getItem("getUserAccesstoken");
-var user_id = voltmx.store.getItem("userId");
-// alert("userId :"+user_id);
-var fileDetails = 
-[{"is_thumbnail": "false",  
-  "filename"    : filename, 
-  "base64"      : this.base64MyDocsUpload.replaceAll('+','/plus/'),
-  "type"        : type
- }];
-var create_dam_items_inputparam = {};
-create_dam_items_inputparam["serviceID"] = "fry_collection$create-dam-items";
-var create_dam_items_httpheaders = {};
-create_dam_items_inputparam["httpheaders"] = create_dam_items_httpheaders;
-var create_dam_items_httpconfigs = {};
-create_dam_items_inputparam["httpconfig"] = create_dam_items_httpconfigs;
-// create_dam_items_inputparam["type"] = type;
- create_dam_items_inputparam["collectionId"] = "";
- create_dam_items_inputparam["moduleType"] = moduleType;
- create_dam_items_inputparam["user_id"] = user_id;
- create_dam_items_inputparam["moduleName"] = moduleName;
- create_dam_items_inputparam["file_details"] = fileDetails;
- create_dam_items_inputparam["user_token"] = user_token;
- create_dam_items_inputparam["is_org"] = is_org;
+// // alert("UserObj :"+userObj);
+// // alert("UserObj :"+JSON.stringify(userObj));
+// var moduleName = "CreateItems";
+// var moduleType = "Customers";
+// var is_org = 1;
+// var user_token = voltmx.store.getItem("getUserAccesstoken");
+// var user_id = voltmx.store.getItem("userId");
+// // alert("userId :"+user_id);
+// var fileDetails = 
+// [
+//   {"is_thumbnail": "false",  
+//   "filename"    : filename, 
+//   "base64"      : this.base64MyDocsUpload.replaceAll('+','/plus/'),
+//   "type"        : "Contract",
+//   "sub_type"    : type, 
+//  },
 
-fry_collection$create_dam_items = 
-mfintegrationsecureinvokerasync(
-create_dam_items_inputparam, 
-"fry_collection", 
-"create-dam-items", 
-function(status,response){
-// alert("create dam items service response :"+JSON.stringify(response));
-// alert("status: "+status);
- 
-  if(response.opstatus === 0){
+// ];
+// //       ====================================================
+// //       {
+// //         "collectionId": "",
+// //         "moduleType": "Customers",//customers/fleet
+// //         "user_id": {{user_id}},
+// //           "is_org": "0", 
+// //          "moduleName": "CreateItems", 
+// //          "file_details": 
+// //               [{"type":"Contract",  
+// //                 "sub_type":type,   
+// //                 "is_thumbnail":"false", 
+// //                 "filename": "Image10187.png",   
+// //                 "base64": ""            
+// //                },         
+// //                {  
+// //                  "type":"Contract",   
+// //                  "sub_type":"iban",   
+// //                  "is_thumbnail":"false",   
+// //                  "filename": "iban22.png",  
+// //                  "base64": ""               
+// //                },       
+// //                { "type":"Contract", 
+// //                 "sub_type":"aggrement",  
+// //                 "is_thumbnail":"false",  
+// //                 "filename": "aggrement3.png",
+// //                 "base64": ""                 
+// //                }    ],   
+// //                 "user_token": {{user_token}}} 
    
-     if(response.message === "Success"){
-          voltmx.application.dismissLoadingScreen();
-//     alert("Sucess"+response.message);
-       alert("Uploaded Successfully");
-//     alert("Response for upload : "+JSON.stringify(response));
-       self.view.flxUploadPopup.setVisibility(false);
-       var ntf = new voltmx.mvc.Navigation("frmGovtIds");
-      ntf.navigate({
-        "variable_base64": self.base64MyDocsUpload,
-        "_meta_": {
-            "eventName": "onClick",
-            "widgetId": "btnSubmit"
-        }
-    });
-//     alert("request :"+JSON.stringify(create_dam_items_inputparam));
-//     voltmx.print("request :"+JSON.stringify(create_dam_items_inputparam));
+// //       ===============================
+// var create_dam_items_inputparam = {};
+// create_dam_items_inputparam["serviceID"] = "fry_collection$create-dam-items";
+// var create_dam_items_httpheaders = {};
+// create_dam_items_inputparam["httpheaders"] = create_dam_items_httpheaders;
+// var create_dam_items_httpconfigs = {};
+// create_dam_items_inputparam["httpconfig"] = create_dam_items_httpconfigs;
+// // create_dam_items_inputparam["type"] = type;
+//  create_dam_items_inputparam["collectionId"] = "";
+//  create_dam_items_inputparam["moduleType"] = moduleType;
+//  create_dam_items_inputparam["user_id"] = user_id;
+//  create_dam_items_inputparam["moduleName"] = moduleName;
+//  create_dam_items_inputparam["file_details"] = fileDetails;
+//  create_dam_items_inputparam["user_token"] = user_token;
+//  create_dam_items_inputparam["is_org"] = is_org;
 
-  }
-    else{
-       voltmx.application.dismissLoadingScreen();
-      alert("file upload failed!!")
-    }
-  }
-  else{
-    voltmx.application.dismissLoadingScreen();
-    alert("file upload response: "+JSON.stringify(response));
-    alert("Backend Request Failed, Please try Again!!");
-  }
-//  var x = new voltmx.mvc.Navigation("frmDashBoard");
-//   x.navigate();
-});
-  }
-  },
+// fry_collection$create_dam_items = 
+// mfintegrationsecureinvokerasync(
+// create_dam_items_inputparam, 
+// "fry_collection", 
+// "create-dam-items", 
+// function(status,response){
+// // alert("create dam items service response :"+JSON.stringify(response));
+// // alert("status: "+status);
+ 
+//   if(response.opstatus === 0){
+   
+//      if(response.message === "Success"){
+//           voltmx.application.dismissLoadingScreen();
+// //     alert("Sucess"+response.message);
+//        alert("Uploaded Successfully");
+// //     alert("Response for upload : "+JSON.stringify(response));
+//        self.view.flxUploadPopup.setVisibility(false);
+//        var ntf = new voltmx.mvc.Navigation("frmGovtIds");
+//       ntf.navigate({
+//         "variable_base64": self.base64MyDocsUpload,
+//         "_meta_": {
+//             "eventName": "onClick",
+//             "widgetId": "btnSubmit"
+//         }
+//     });
+// //     alert("request :"+JSON.stringify(create_dam_items_inputparam));
+// //     voltmx.print("request :"+JSON.stringify(create_dam_items_inputparam));
+
+//   }
+//     else{
+//        voltmx.application.dismissLoadingScreen();
+//       alert("file upload failed!!")
+//     }
+//   }
+//   else{
+//     voltmx.application.dismissLoadingScreen();
+//     alert("file upload response: "+JSON.stringify(response));
+//     alert("Backend Request Failed, Please try Again!!");
+//   }
+// //  var x = new voltmx.mvc.Navigation("frmDashBoard");
+// //   x.navigate();
+// });
+//   }
+//   },
   
   flxPlusOnClickAction: function(){
     this.view.flxUploadPopup.setVisibility(true);

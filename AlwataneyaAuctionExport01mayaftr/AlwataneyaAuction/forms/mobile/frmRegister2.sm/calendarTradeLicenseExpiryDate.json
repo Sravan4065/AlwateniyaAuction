@@ -18,7 +18,7 @@
     },
     "_left_": {
         "type": "string",
-        "value": "0"
+        "value": "0dp"
     },
     "_margin_": [
         0,
@@ -40,13 +40,17 @@
     },
     "_width_": {
         "type": "string",
-        "value": "100%"
+        "value": "95%"
     },
     "advview": "default",
     "calendaricon": "iconoir_calendar.png",
     "canUpdateUI": true,
+    "centerx": {
+        "type": "string",
+        "value": "50%"
+    },
     "containerweight": 100,
-    "contentalignment": 5,
+    "contentalignment": 4,
     "datecomponents": [
         2,
         5,
@@ -76,6 +80,7 @@
     "month": 5,
     "name": "kony.ui.Calendar",
     "noofmonths": 1,
+    "paddinginpixel": false,
     "pagedate": "/2025",
     "parent": "flxTradeLicenseExpiryDateTextBox",
     "pf": "frmRegister2",

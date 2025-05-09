@@ -38,7 +38,7 @@
         "flxRegisterTop",
         "flxWithoutTrade",
         "flxWithTrade",
-        "btnTradeSaveAandContinue"
+        "btnTradeSaveAndContinue"
     ],
     "clipbounds": false,
     "containerweight": 100,
