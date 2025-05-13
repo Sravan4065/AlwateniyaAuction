@@ -35,8 +35,8 @@
     "autogrowmode": 0,
     "canUpdateUI": true,
     "children": [
-        "flxH2",
-        "lblWinningBids"
+        "lblWinningBids",
+        "flxH2"
     ],
     "clipbounds": false,
     "containerweight": 100,

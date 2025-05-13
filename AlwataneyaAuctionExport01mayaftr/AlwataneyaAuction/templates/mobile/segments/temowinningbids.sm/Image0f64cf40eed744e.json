@@ -39,7 +39,7 @@
     "imagescalemode": 1,
     "info": null,
     "iscustomlayout": false,
-    "isvisible": true,
+    "isvisible": false,
     "kuid": "ha18b73b50624e7d8484bbdd72f35728",
     "name": "kony.ui.Image2",
     "parent": "flxWinningdetails",

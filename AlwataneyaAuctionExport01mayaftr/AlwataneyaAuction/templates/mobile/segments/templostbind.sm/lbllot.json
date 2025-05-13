@@ -7,7 +7,7 @@
     },
     "_left_": {
         "type": "string",
-        "value": "11dp"
+        "value": "4%"
     },
     "_margin_": [
         1,
@@ -21,11 +21,11 @@
         0,
         0
     ],
-    "_skin_": "s08879b190ac4044895e8ea52afee3f0",
-    "_text_": "Label",
+    "_skin_": "s2ed23433a4647d5a70db07fb56d921f",
+    "_text_": "Lot#",
     "_top_": {
         "type": "string",
-        "value": "188dp"
+        "value": "62%"
     },
     "_width_": {
         "type": "ref",

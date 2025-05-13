@@ -4,7 +4,7 @@
     "_base64_": null,
     "_height_": {
         "type": "string",
-        "value": "30dp"
+        "value": "25dp"
     },
     "_left_": {
         "type": "string",
@@ -23,14 +23,14 @@
         0
     ],
     "_skin_": "sa3f066fe71848a6af199e5c79491a2f",
-    "_src_": "profileicon.png",
+    "_src_": "logoutnew.png",
     "_top_": {
         "type": "string",
         "value": "6dp"
     },
     "_width_": {
         "type": "string",
-        "value": "30dp"
+        "value": "25dp"
     },
     "canUpdateUI": true,
     "centery": {
@@ -41,6 +41,7 @@
     "id": "imgLogoutIcon",
     "imagescalemode": 1,
     "info": null,
+    "invokedProperty": "src",
     "iscustomlayout": false,
     "isvisible": true,
     "kuid": "f980ef1e034c42689bae26393b60e75f",

@@ -5,7 +5,7 @@
         {
             "imgChevronRight": {
                 "@class": "com.viz.ide.model.segment.ImageSegmentData",
-                "src": "",
+                "src": "rightchevronnew.png",
                 "type": "Image"
             },
             "lblItemName": {
@@ -17,31 +17,19 @@
         {
             "imgChevronRight": {
                 "@class": "com.viz.ide.model.segment.ImageSegmentData",
-                "src": "",
+                "src": "rightchevronnew.png",
                 "type": "Image"
             },
             "lblItemName": {
                 "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
-                "text": "Help Center",
+                "text": "FAQs",
                 "type": "Label"
             }
         },
         {
             "imgChevronRight": {
                 "@class": "com.viz.ide.model.segment.ImageSegmentData",
-                "src": "",
-                "type": "Image"
-            },
-            "lblItemName": {
-                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
-                "text": "Sell Your Car",
-                "type": "Label"
-            }
-        },
-        {
-            "imgChevronRight": {
-                "@class": "com.viz.ide.model.segment.ImageSegmentData",
-                "src": "",
+                "src": "rightchevronnew.png",
                 "type": "Image"
             },
             "lblItemName": {
@@ -53,7 +41,7 @@
         {
             "imgChevronRight": {
                 "@class": "com.viz.ide.model.segment.ImageSegmentData",
-                "src": "",
+                "src": "rightchevronnew.png",
                 "type": "Image"
             },
             "lblItemName": {
@@ -65,7 +53,7 @@
         {
             "imgChevronRight": {
                 "@class": "com.viz.ide.model.segment.ImageSegmentData",
-                "src": "",
+                "src": "rightchevronnew.png",
                 "type": "Image"
             },
             "lblItemName": {
@@ -77,7 +65,7 @@
         {
             "imgChevronRight": {
                 "@class": "com.viz.ide.model.segment.ImageSegmentData",
-                "src": "",
+                "src": "rightchevronnew.png",
                 "type": "Image"
             },
             "lblItemName": {
@@ -120,7 +108,7 @@
     "autogrowmode": 1,
     "canUpdateUI": true,
     "containerweight": 100,
-    "counter": "06",
+    "counter": "05",
     "focusedindex": null,
     "focuseditem": null,
     "generatedtemplate": null,
@@ -135,7 +123,7 @@
     },
     "iphone": {
         "psp": {
-            "indicator": "rowselect"
+            "indicator": "none"
         }
     },
     "iscustomlayout": false,
@@ -155,10 +143,10 @@
     "retainflexpositionproperties": false,
     "retainselection": false,
     "rowTemplateId": "c338e217dc7d430fb10b9da866fa240e",
-    "rowcounter": 6,
+    "rowcounter": 5,
     "rowfocusskin": "s961e586fe794e498e31c111fe40ef67",
     "rowskin": "s2d1a440627e4c3eb337995bf3931fdd",
-    "rowtemplate": "Flex0j5bca553a5e142",
+    "rowtemplate": "flxMenuBarItems",
     "screenlevelwidget": false,
     "seccounter": 0,
     "sectionHeaderTemplateId": null,

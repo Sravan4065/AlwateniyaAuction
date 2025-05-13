@@ -39,7 +39,7 @@
     "imagescalemode": 1,
     "info": null,
     "iscustomlayout": false,
-    "isvisible": true,
+    "isvisible": false,
     "kuid": "a7de4e29b96348179a8dd3e13df4fd0e",
     "name": "kony.ui.Image2",
     "parent": "flxMain",

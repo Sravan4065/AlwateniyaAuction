@@ -7,7 +7,7 @@
     },
     "_left_": {
         "type": "string",
-        "value": "257dp"
+        "value": "4%"
     },
     "_margin_": [
         1,
@@ -21,11 +21,11 @@
         0,
         0
     ],
-    "_skin_": "sd234c9f41f44b72ba3223d171c45199",
-    "_text_": "YOUR BID",
+    "_skin_": "s2ed23433a4647d5a70db07fb56d921f",
+    "_text_": "Your Bid",
     "_top_": {
         "type": "string",
-        "value": "232dp"
+        "value": "82%"
     },
     "_width_": {
         "type": "ref",

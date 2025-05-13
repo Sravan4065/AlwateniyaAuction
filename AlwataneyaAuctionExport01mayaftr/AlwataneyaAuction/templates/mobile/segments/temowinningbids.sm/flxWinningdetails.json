@@ -1,8 +1,8 @@
 {
     "DNDConfig": null,
     "_height_": {
-        "type": "ref",
-        "value": "preferred"
+        "type": "string",
+        "value": "100%"
     },
     "_left_": {
         "type": "string",
@@ -22,7 +22,7 @@
         0
     ],
     "_percent_": true,
-    "_skin_": "s5f6044abe194492b5e811af99858a26",
+    "_skin_": "sca51c8884664fdb8297de5ee7390e24",
     "_top_": {
         "type": "string",
         "value": "0"
@@ -32,23 +32,25 @@
         "value": "100%"
     },
     "allboxes": [],
-    "autogrowmode": 1,
+    "autogrowmode": 0,
     "canUpdateUI": true,
     "children": [
         "flxImage",
         "lblWinningmodelname",
-        "lbllocationanme",
         "lbllot",
-        "Button0e5f7819ec0104b",
-        "flxline",
+        "lblLotValue",
+        "lblLocationname",
+        "lblLocationValue",
         "lblApproval",
-        "lblPaymentstatus",
-        "lblWinningbid",
         "lblStatusApproved",
+        "lblPaymentstatus",
+        "lblpaymentstatusvalue",
+        "lblWinningbid",
         "lblwinningbidamt",
-        "lblpaymentstatusred",
+        "flxline",
         "flxRequestaccess",
         "flxDocuments",
+        "btnPayNow",
         "Image0f64cf40eed744e"
     ],
     "clipbounds": false,

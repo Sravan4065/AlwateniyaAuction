@@ -4,11 +4,11 @@
     "_base64_": null,
     "_height_": {
         "type": "string",
-        "value": "139dp"
+        "value": "100%"
     },
     "_left_": {
         "type": "string",
-        "value": "7dp"
+        "value": "0dp"
     },
     "_margin_": [
         0,
@@ -26,11 +26,11 @@
     "_src_": "imagedrag.png",
     "_top_": {
         "type": "string",
-        "value": "11dp"
+        "value": "0dp"
     },
     "_width_": {
         "type": "string",
-        "value": "333dp"
+        "value": "100%"
     },
     "canUpdateUI": true,
     "containerId": true,

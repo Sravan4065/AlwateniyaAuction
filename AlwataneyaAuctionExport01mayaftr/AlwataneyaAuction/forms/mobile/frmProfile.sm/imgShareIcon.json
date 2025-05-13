@@ -4,7 +4,7 @@
     "_base64_": null,
     "_height_": {
         "type": "string",
-        "value": "30dp"
+        "value": "24dp"
     },
     "_left_": {
         "type": "string",
@@ -23,14 +23,14 @@
         0
     ],
     "_skin_": "sa3f066fe71848a6af199e5c79491a2f",
-    "_src_": "switch_5.png",
+    "_src_": "sharenew.png",
     "_top_": {
         "type": "string",
         "value": "6dp"
     },
     "_width_": {
         "type": "string",
-        "value": "30dp"
+        "value": "24dp"
     },
     "canUpdateUI": true,
     "centery": {
@@ -41,6 +41,7 @@
     "id": "imgShareIcon",
     "imagescalemode": 1,
     "info": null,
+    "invokedProperty": "src",
     "iscustomlayout": false,
     "isvisible": true,
     "kuid": "d33eb461563c4f98866a665d204e7266",

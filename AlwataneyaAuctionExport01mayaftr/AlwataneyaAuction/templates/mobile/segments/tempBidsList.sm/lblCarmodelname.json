@@ -7,7 +7,7 @@
     },
     "_left_": {
         "type": "string",
-        "value": "7dp"
+        "value": "4%"
     },
     "_margin_": [
         1,
@@ -37,7 +37,7 @@
     "canUpdateUI": true,
     "centery": {
         "type": "string",
-        "value": "50%"
+        "value": "40%"
     },
     "containerId": true,
     "containerweight": 100,

@@ -7,7 +7,7 @@
     },
     "_left_": {
         "type": "string",
-        "value": "246dp"
+        "value": "4%"
     },
     "_margin_": [
         1,
@@ -21,11 +21,11 @@
         0,
         0
     ],
-    "_skin_": "sd234c9f41f44b72ba3223d171c45199",
+    "_skin_": "s2ed23433a4647d5a70db07fb56d921f",
     "_text_": "Current Bid",
     "_top_": {
         "type": "string",
-        "value": "73dp"
+        "value": "112dp"
     },
     "_width_": {
         "type": "ref",
@@ -42,7 +42,7 @@
     "containerId": true,
     "containerweight": 100,
     "contentalignment": 4,
-    "id": "lblCurrentbid",
+    "id": "lblCurrentBid",
     "info": null,
     "ipad": {
         "psp": {
@@ -56,7 +56,7 @@
     },
     "iscustomlayout": false,
     "isvisible": true,
-    "kuid": "cf3eacc7f7804004b9942328d1f69bab",
+    "kuid": "icc6cd33cc8e4b72983f42e32ef2bc77",
     "name": "kony.ui.Label",
     "parent": "flxCardata",
     "pf": "tempBidsList",

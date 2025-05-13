@@ -454,43 +454,54 @@ selectedFilters: {},
         if(this.view.imgCheck.isVisible){
          var self = this;
      voltmx.application.showLoadingScreen();
-    function invService(status, auction_bidding) {
-      voltmx.print(status);
-      voltmx.application.dismissLoadingScreen();
-      voltmx.print(auction_bidding);
-      if(auction_bidding &&
-         auction_bidding.auction_bidding &&
-         auction_bidding.auction_bidding[0] &&
-         auction_bidding.auction_bidding[0].records &&
-         auction_bidding.auction_bidding[0].records[0] &&
-         auction_bidding.auction_bidding[0].records[0].Success === "1")
-        {
-          self.view.lblSuccessMsg.text = "Your Bid Has Been Placed Successfully";
-          
-           self.closeBidAmountContainer();
-          self.view.flxBidSuccessPopup.setVisibility(true);
-          self.updateSegmentWithUpdatedBidRate();
+   function invService(status, auction_bidding) {
+        voltmx.application.dismissLoadingScreen();
+        voltmx.print("Status: " + status);
+        voltmx.print("Response: " + JSON.stringify(auction_bidding));
+
+        // Check for successful HTTP response and opstatus
+        if (
+            auction_bidding &&
+            auction_bidding.opstatus === 0 &&
+            auction_bidding.httpresponse &&
+            auction_bidding.httpresponse.responsecode === 200
+        ) {
+            var msg = auction_bidding.message;
+            
+            if (msg === "Your bid is valid and accepted.") {
+              if( self.view.lblSuccessMsg){
+                self.view.lblSuccessMsg.text = "Your Bid Has Been Placed Successfully";
+              }
+                self.closeBidAmountContainer();
+                self.view.flxBidSuccessPopup.setVisibility(true);
+                self.updateSegmentWithUpdatedBidRate();
+            } else if (msg) {
+                alert(msg);  // Show server-provided message
+            } else {
+                alert("Unknown response from server.");
+            }
+        } else {
+            alert("Failed to place bid. Please check your connection or try again.");
         }
-       else if(auction_bidding && auction_bidding.error_message === "No Security Deposit"){
-        new voltmx.mvc.Navigation("frmPaymentMethod").navigate();
-      }
     }
     if (auction_bidding_inputparam == undefined) {
         var auction_bidding_inputparam = {};
     }
      var userid = voltmx.store.getItem("userId");
-    auction_bidding_inputparam["serviceID"] = "fry_wf$auction-bidding";
+    auction_bidding_inputparam["serviceID"] = "fry_wf$manual-auction-bidding";
     auction_bidding_inputparam["user_id"] = userid;
-    auction_bidding_inputparam["vehicle_amount"] = String(this.currentAmount);
-    auction_bidding_inputparam["vehicle_hike"] = this.vehicleHike;
+    auction_bidding_inputparam["vehicle_amount"] = this.currentAmount;
+    auction_bidding_inputparam["bid_hike"] = Number(this.vehicleHike);
         auction_bidding_inputparam["auction_id"] = this.aucid;
-        auction_bidding_inputparam["bid_type"] = "";
+//         auction_bidding_inputparam["bid_type"] = "";
         auction_bidding_inputparam["object_id"] = this.objid;
-    var auction_bidding_httpheaders = {};
+    var auction_bidding_httpheaders = {
+      "user_token": ""
+    };
     auction_bidding_inputparam["httpheaders"] = auction_bidding_httpheaders;
     var auction_bidding_httpconfigs = {};
     auction_bidding_inputparam["httpconfig"] = auction_bidding_httpconfigs;
-    fry_wf$auction_bidding = mfintegrationsecureinvokerasync(auction_bidding_inputparam, "fry_wf", "auction-bidding", invService);
+    fry_wf$auction_bidding = mfintegrationsecureinvokerasync(auction_bidding_inputparam, "fry_wf", "manual-auction-bidding", invService);
       }
         
        else{
@@ -524,17 +535,19 @@ selectedFilters: {},
     }
     var userid = voltmx.store.getItem("userId");
     var maxBidAmount = self.view.tbxAutoBidAmount.text;
-    register_auto_bidding_inputparam["serviceID"] = "fry_int_auctions$register-auto-bidding";
+    register_auto_bidding_inputparam["serviceID"] = "fry_int_auctions$auction-register-auto-bid";
     register_auto_bidding_inputparam["auction_id"] = this.aucIdForAutoBid;
     register_auto_bidding_inputparam["bid_by"] = userid;
-    register_auto_bidding_inputparam["bid_max_amount"] = String(maxBidAmount);
-    register_auto_bidding_inputparam["bid_min_value"] = "200";
+    register_auto_bidding_inputparam["bid_max_amount"] = maxBidAmount;
+//     register_auto_bidding_inputparam["bid_min_value"] = "200";
     register_auto_bidding_inputparam["object_id"] = this.objIdForAutoBid;
-    var register_auto_bidding_httpheaders = {};
+    var register_auto_bidding_httpheaders = {
+      "user_token":""
+    };
     register_auto_bidding_inputparam["httpheaders"] = register_auto_bidding_httpheaders;
     var register_auto_bidding_httpconfigs = {};
     register_auto_bidding_inputparam["httpconfig"] = register_auto_bidding_httpconfigs;
-    fry_int_auctions$register_auto_bidding = mfintegrationsecureinvokerasync(register_auto_bidding_inputparam, "fry_int_auctions", "register-auto-bidding", invokeServiceCallBack);
+    fry_int_auctions$register_auto_bidding = mfintegrationsecureinvokerasync(register_auto_bidding_inputparam, "fry_int_auctions", "auction-register-auto-bid", invokeServiceCallBack);
        }
     else{
        alert('Enter Max. Bid Amount');

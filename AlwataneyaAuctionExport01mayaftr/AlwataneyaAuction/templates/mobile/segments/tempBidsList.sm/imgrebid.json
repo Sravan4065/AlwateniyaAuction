@@ -4,7 +4,7 @@
     "_base64_": null,
     "_height_": {
         "type": "string",
-        "value": "100%"
+        "value": "85%"
     },
     "_left_": {
         "type": "string",
@@ -23,14 +23,14 @@
         0
     ],
     "_skin_": "s489886ab3c7400b8469bd48d67c4717",
-    "_src_": "imagedrag.png",
+    "_src_": "imgautobidnew.png",
     "_top_": {
         "type": "string",
         "value": "0dp"
     },
     "_width_": {
         "type": "string",
-        "value": "100%"
+        "value": "85%"
     },
     "canUpdateUI": true,
     "containerId": true,
@@ -38,6 +38,7 @@
     "id": "imgrebid",
     "imagescalemode": 1,
     "info": null,
+    "invokedProperty": "src",
     "iscustomlayout": false,
     "isvisible": true,
     "kuid": "af50eddd89e64c54ad0f50481aa8bb1a",
