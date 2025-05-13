@@ -1,8 +1,8 @@
 {
     "DNDConfig": null,
     "_height_": {
-        "type": "ref",
-        "value": "preferred"
+        "type": "string",
+        "value": "44%"
     },
     "_left_": {
         "type": "string",
@@ -24,7 +24,7 @@
     "_percent_": true,
     "_skin_": "s5f6044abe194492b5e811af99858a26",
     "_top_": {
-        "type": "string",
+        "type": "number",
         "value": "0"
     },
     "_width_": {
@@ -32,12 +32,16 @@
         "value": "100%"
     },
     "allboxes": [],
-    "autogrowmode": 1,
+    "autogrowmode": 0,
     "canUpdateUI": true,
+    "centerx": {
+        "type": "string",
+        "value": "50%"
+    },
     "children": [
         "imgCardata"
     ],
-    "clipbounds": false,
+    "clipbounds": true,
     "containerId": true,
     "containerweight": 100,
     "enablescrolling": true,

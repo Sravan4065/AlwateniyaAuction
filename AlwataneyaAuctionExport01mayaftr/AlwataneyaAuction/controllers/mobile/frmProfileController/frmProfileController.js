@@ -4,11 +4,14 @@ define({
   
   onNavigate: function(){
     this.view.flxSellCar.onClick = this.flxSellCarOnClickAction;
-    this.view.preShow = this.preshowFunctions;
+    this.view.preShow = this.preshowFunctions.bind(this);
+    
 //     this.view.Footer2.flxSellCar.onClick = this.Footer2flxSellCarOnClickAction;
    this.view.flxLogout.onClick = this.logoutSession.bind(this);
 //    this.view.btnCompleteKYC.onClick = this.btnCompleteKYCOnClickAction;
     this.view.flxMyVehicles.onClick = this.navToMyVehicles.bind(this);
+    
+    this.view.flxToggleBar.onClick = this.toggleSwitchSellerBuyer.bind(this);
 //    this.view.flxLogout.onClick = this.flxLogoutOnClickAction;
   },
   
@@ -33,6 +36,16 @@ define({
   },
   
   preshowFunctions: function(){
+    this.mode = voltmx.store.getItem("mode") || "seller";
+     if(this.mode === "seller")
+      {
+        this.nextSwitch = "buyer";
+      }
+    else{
+      this.nextSwitch = "seller";
+    }
+    
+    this.getSwitchState();
     this.getFullName();
     this.loginConfirmation();
     this.toggleFooterIcons();
@@ -109,8 +122,73 @@ define({
   },
   
   navToMyVehicles: function(){
-    var x = new voltmx.mvc.Navigation("frmMyVehicles");
+    var x = new voltmx.mvc.Navigation("frmOpenMyVehicles");
     x.navigate();
+  },
+  
+  toggleSwitchSellerBuyer: function()
+  {
+    if(this.nextSwitch === "buyer"){
+      this.view.flxToggleBar.left = null; 
+    this.view.flxToggleBar.right = "4dp";
+    this.view.flxToggleBar.skin = "sknFlx61b35cRound100px";
+      this.view.flxToggleSwitch.skin = "sknFlxFFFFFFRound30px";
+      this.view.lblModeInfo1.text = "Add Security Deposit";
+      this.view.lblModeInfo2.text = "In order to bid you have to add a security deposit";
+      this.view.lblModeName.text = "Buyer Mode";
+      this.view.flxAdd.setVisibility(true);
+      this.view.flxView.setVisibility(false);
+      this.view.lblModeName.skin = "sknLblDubaiffffff20pxBold";
+      this.view.flxSwitchContainer.skin = "sknFlx61b35cRounded8px";
+     this.nextSwitch = "seller";
+      voltmx.store.setItem("mode","buyer");
+    }
+    else{
+       this.view.flxToggleBar.right = null; 
+    this.view.flxToggleBar.left = "4dp";
+      this.view.flxToggleBar.skin = "sknFlxWhiteRound100px";
+      this.view.flxToggleSwitch.skin = "sknFlx767676Round30px";
+     this.view.lblModeInfo1.text = "My Bank Account Details";
+     this.view.lblModeInfo2.text = "Payment from Emirates Transport will be credited to this account";
+      this.view.lblModeName.text = "Seller Mode";
+      this.view.flxAdd.setVisibility(false);
+      this.view.flxView.setVisibility(true);
+      this.view.lblModeName.skin = "sknLblDubai231f2020pxBold";
+      this.view.flxSwitchContainer.skin = "sknFlxf1f1f1Rounded8px";
+     this.nextSwitch = "buyer";
+      voltmx.store.setItem("mode","seller");
+    }
+  },
+  
+  getSwitchState: function()
+  {
+     if(this.mode === "buyer"){
+      this.view.flxToggleBar.left = null; 
+    this.view.flxToggleBar.right = "4dp";
+    this.view.flxToggleBar.skin = "sknFlx61b35cRound100px";
+      this.view.flxToggleSwitch.skin = "sknFlxFFFFFFRound30px";
+      this.view.lblModeInfo1.text = "Add Security Deposit";
+      this.view.lblModeInfo2.text = "In order to bid you have to add a security deposit";
+   
+      this.view.lblModeName.text = "Buyer Mode";
+      this.view.flxAdd.setVisibility(true);
+      this.view.flxView.setVisibility(false);
+      this.view.lblModeName.skin = "sknLblDubaiffffff20pxBold";
+      this.view.flxSwitchContainer.skin = "sknFlx61b35cRounded8px";
+     }
+     else{
+       this.view.flxToggleBar.right = null; 
+    this.view.flxToggleBar.left = "4dp";
+      this.view.flxToggleBar.skin = "sknFlxWhiteRound100px";
+      this.view.flxToggleSwitch.skin = "sknFlx767676Round30px";
+     this.view.lblModeInfo1.text = "My Bank Account Details";
+      this.view.lblModeInfo2.text = "Payment from Emirates Transport will be credited to this account";
+      this.view.lblModeName.text = "Seller Mode";
+      this.view.flxAdd.setVisibility(false);
+      this.view.flxView.setVisibility(true);
+      this.view.lblModeName.skin = "sknLblDubai231f2020pxBold";
+      this.view.flxSwitchContainer.skin = "sknFlxf1f1f1Rounded8px";
+     }
   }
 
  });

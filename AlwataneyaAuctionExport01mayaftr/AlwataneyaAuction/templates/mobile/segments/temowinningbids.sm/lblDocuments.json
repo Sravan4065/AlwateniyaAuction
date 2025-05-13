@@ -7,7 +7,7 @@
     },
     "_left_": {
         "type": "string",
-        "value": "9dp"
+        "value": "1dp"
     },
     "_margin_": [
         1,
@@ -21,12 +21,8 @@
         0,
         0
     ],
-    "_skin_": "s8b352d727c242c29cb0bbb3d725e628",
-    "_text_": "Documents",
-    "_top_": {
-        "type": "string",
-        "value": "3dp"
-    },
+    "_skin_": "s5ad9e21d097460ca57bc31392226257",
+    "_text_": "DOCUMENTS",
     "_width_": {
         "type": "ref",
         "value": "preferred"
@@ -39,8 +35,13 @@
         }
     },
     "canUpdateUI": true,
+    "centery": {
+        "type": "string",
+        "value": "50%"
+    },
+    "containerId": true,
     "containerweight": 100,
-    "contentalignment": 4,
+    "contentalignment": 5,
     "id": "lblDocuments",
     "info": null,
     "ipad": {

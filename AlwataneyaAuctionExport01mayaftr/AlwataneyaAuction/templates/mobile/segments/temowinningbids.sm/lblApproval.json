@@ -21,11 +21,11 @@
         0,
         0
     ],
-    "_skin_": "s6a873460ffa46e38e4e172e46911db8",
-    "_text_": "APPROVAL STATUS",
+    "_skin_": "s2ed23433a4647d5a70db07fb56d921f",
+    "_text_": "Approval Status",
     "_top_": {
         "type": "string",
-        "value": "251dp"
+        "value": "65%"
     },
     "_width_": {
         "type": "ref",

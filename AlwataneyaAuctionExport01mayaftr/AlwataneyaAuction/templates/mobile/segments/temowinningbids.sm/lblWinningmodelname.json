@@ -7,7 +7,7 @@
     },
     "_left_": {
         "type": "string",
-        "value": "22dp"
+        "value": "5%"
     },
     "_margin_": [
         1,
@@ -21,15 +21,15 @@
         0,
         0
     ],
-    "_skin_": "s730e351833c4d1e94ad4a4f2e173423",
-    "_text_": "Label",
+    "_skin_": "seaf25d56db642d4b3901fa55a68ad7d",
+    "_text_": "Kia Carnival 2019",
     "_top_": {
         "type": "string",
-        "value": "167dp"
+        "value": "48%"
     },
     "_width_": {
-        "type": "ref",
-        "value": "preferred"
+        "type": "string",
+        "value": "60%"
     },
     "_wrapping_": 2,
     "android": {

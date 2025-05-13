@@ -5,6 +5,10 @@
         "type": "ref",
         "value": "preferred"
     },
+    "_left_": {
+        "type": "string",
+        "value": "18%"
+    },
     "_margin_": [
         1,
         1,
@@ -17,8 +21,8 @@
         2,
         0
     ],
-    "_skin_": "sadfca79c87a4212951d1f5baa2f2a36",
-    "_text_": "Profile",
+    "_skin_": "s75af5f48fb247ba98b461453ad02881",
+    "_text_": "My Account",
     "_width_": {
         "type": "ref",
         "value": "preferred"

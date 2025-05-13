@@ -7,7 +7,7 @@
     },
     "_left_": {
         "type": "string",
-        "value": "14dp"
+        "value": "4%"
     },
     "_margin_": [
         1,
@@ -21,11 +21,11 @@
         0,
         0
     ],
-    "_skin_": "s730e351833c4d1e94ad4a4f2e173423",
-    "_text_": "Label",
+    "_skin_": "s2ed23433a4647d5a70db07fb56d921f",
+    "_text_": "Total Bids",
     "_top_": {
         "type": "string",
-        "value": "237dp"
+        "value": "68.50%"
     },
     "_width_": {
         "type": "ref",

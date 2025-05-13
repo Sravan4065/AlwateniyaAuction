@@ -23,7 +23,7 @@
         0
     ],
     "_skin_": "sa3f066fe71848a6af199e5c79491a2f",
-    "_src_": "dark_lght_toggle.png",
+    "_src_": "darkmodenew.png",
     "_top_": {
         "type": "string",
         "value": "6dp"
@@ -41,6 +41,7 @@
     "id": "imgDarkModeIcon",
     "imagescalemode": 1,
     "info": null,
+    "invokedProperty": "src",
     "iscustomlayout": false,
     "isvisible": true,
     "kuid": "b821241fcd9e4b4a9cf00420576601c2",

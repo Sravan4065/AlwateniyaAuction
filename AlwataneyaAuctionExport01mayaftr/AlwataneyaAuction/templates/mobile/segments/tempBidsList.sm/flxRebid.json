@@ -2,11 +2,11 @@
     "DNDConfig": null,
     "_height_": {
         "type": "string",
-        "value": "20dp"
+        "value": "63%"
     },
     "_left_": {
         "type": "string",
-        "value": "205dp"
+        "value": "56%"
     },
     "_margin_": [
         0,
@@ -24,16 +24,20 @@
     "_percent_": true,
     "_skin_": "s5f6044abe194492b5e811af99858a26",
     "_top_": {
-        "type": "string",
-        "value": "142dp"
+        "type": "number",
+        "value": "0"
     },
     "_width_": {
         "type": "string",
-        "value": "30dp"
+        "value": "10%"
     },
     "allboxes": [],
     "autogrowmode": 0,
     "canUpdateUI": true,
+    "centery": {
+        "type": "string",
+        "value": "50%"
+    },
     "children": [
         "imgrebid"
     ],
@@ -48,7 +52,7 @@
     "kuid": "e428e6a825bc4d1bb8c0632fca0a16d1",
     "layouttype": 2,
     "name": "kony.ui.FlexContainer",
-    "parent": "flxCardata",
+    "parent": "flxBottam",
     "pf": "tempBidsList",
     "retaincontentalignment": false,
     "retainflexpositionproperties": false,
@@ -56,5 +60,6 @@
     "snapgridsize": 10,
     "snaptogrid": true,
     "wType": "FlexContainer",
-    "widgetalignment": 1
+    "widgetalignment": 1,
+    "zindex": 4
 }

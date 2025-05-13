@@ -5,10 +5,6 @@
         "type": "ref",
         "value": "preferred"
     },
-    "_left_": {
-        "type": "string",
-        "value": "7%"
-    },
     "_margin_": [
         1,
         1,
@@ -21,11 +17,15 @@
         0,
         0
     ],
-    "_skin_": "s9d37a5819a548fca53476807673ea86",
-    "_text_": "Label",
+    "_right_": {
+        "type": "string",
+        "value": "5%"
+    },
+    "_skin_": "s23d87b8c879486ba699a6a239b1964e",
+    "_text_": "APPROVED",
     "_top_": {
         "type": "string",
-        "value": "274dp"
+        "value": "65%"
     },
     "_width_": {
         "type": "ref",
@@ -41,7 +41,7 @@
     "canUpdateUI": true,
     "containerId": true,
     "containerweight": 100,
-    "contentalignment": 4,
+    "contentalignment": 6,
     "id": "lblStatusApproved",
     "info": null,
     "ipad": {

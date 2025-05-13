@@ -2,7 +2,7 @@
     "DNDConfig": null,
     "_height_": {
         "type": "string",
-        "value": "102%"
+        "value": "105%"
     },
     "_left_": {
         "type": "string",
@@ -38,6 +38,7 @@
     "canUpdateUI": true,
     "children": [
         "flxMenuHeader",
+        "flxSwitchContainer",
         "flxMenuContent"
     ],
     "clipbounds": true,

@@ -35,15 +35,14 @@
     "autogrowmode": 0,
     "canUpdateUI": true,
     "children": [
+        "flxNameAndAddress",
         "lblTotalbids",
-        "lblCurrentbid",
+        "lblLocation",
+        "lblCurrentBid",
+        "lblTotalBidsCount",
+        "lblLocationVal",
         "lblCurrentbidamount",
-        "btnBidnow",
-        "flxfav",
-        "flxShare",
-        "flxline",
-        "flxRebid",
-        "flxNameAndAddress"
+        "flxBottam"
     ],
     "clipbounds": false,
     "containerId": true,

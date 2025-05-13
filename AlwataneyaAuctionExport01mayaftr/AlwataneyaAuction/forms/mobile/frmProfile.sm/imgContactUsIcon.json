@@ -4,7 +4,7 @@
     "_base64_": null,
     "_height_": {
         "type": "string",
-        "value": "30dp"
+        "value": "25dp"
     },
     "_left_": {
         "type": "string",
@@ -23,14 +23,14 @@
         0
     ],
     "_skin_": "sa3f066fe71848a6af199e5c79491a2f",
-    "_src_": "customer_support__1__1.png",
+    "_src_": "contactnew.png",
     "_top_": {
         "type": "string",
         "value": "6dp"
     },
     "_width_": {
         "type": "string",
-        "value": "30dp"
+        "value": "25dp"
     },
     "canUpdateUI": true,
     "centery": {
@@ -41,6 +41,7 @@
     "id": "imgContactUsIcon",
     "imagescalemode": 1,
     "info": null,
+    "invokedProperty": "src",
     "iscustomlayout": false,
     "isvisible": true,
     "kuid": "g9d07b8add7f4d2f94866e75372b7e36",

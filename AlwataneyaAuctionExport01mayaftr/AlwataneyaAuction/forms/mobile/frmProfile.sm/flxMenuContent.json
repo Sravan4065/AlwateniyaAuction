@@ -35,6 +35,7 @@
     "autogrowmode": 1,
     "canUpdateUI": true,
     "children": [
+        "flxSecurityDeposit",
         "flxMenuContent1",
         "flxMenuContent2"
     ],

@@ -5,6 +5,10 @@
         "type": "ref",
         "value": "preferred"
     },
+    "_left_": {
+        "type": "string",
+        "value": "18%"
+    },
     "_margin_": [
         1,
         1,
@@ -17,7 +21,7 @@
         2,
         0
     ],
-    "_skin_": "sadfca79c87a4212951d1f5baa2f2a36",
+    "_skin_": "s75af5f48fb247ba98b461453ad02881",
     "_text_": "Settings",
     "_width_": {
         "type": "ref",
@@ -40,7 +44,7 @@
         "value": "50%"
     },
     "containerweight": 100,
-    "contentalignment": 5,
+    "contentalignment": 4,
     "id": "lblSettings",
     "info": null,
     "ipad": {

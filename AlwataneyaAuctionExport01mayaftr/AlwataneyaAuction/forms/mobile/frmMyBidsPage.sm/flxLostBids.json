@@ -35,8 +35,8 @@
     "autogrowmode": 0,
     "canUpdateUI": true,
     "children": [
-        "flxH3",
-        "lblLostBids"
+        "lblLostBids",
+        "flxH3"
     ],
     "clipbounds": false,
     "containerweight": 100,

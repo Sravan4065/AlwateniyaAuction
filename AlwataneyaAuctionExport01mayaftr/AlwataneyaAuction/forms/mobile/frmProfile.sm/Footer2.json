@@ -81,6 +81,9 @@
                     "type": "string",
                     "value": ""
                 }
+            },
+            "zIndex": {
+                "Default": 10
             }
         },
         "flxAuctions": {
@@ -271,5 +274,5 @@
     "snaptogrid": true,
     "sourceUserWidget": "u593898bd31c4ef6bde1cd83728771b4",
     "wType": "UserWidgetInstance",
-    "zindex": 1
+    "zindex": 10
 }

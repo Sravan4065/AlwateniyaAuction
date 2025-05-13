@@ -37,6 +37,7 @@
     "id": "imgArrowToggle",
     "imagescalemode": 1,
     "info": null,
+    "invokedProperty": "src",
     "iscustomlayout": false,
     "isvisible": true,
     "kuid": "ee69d83b2a8f45baab19b6f4987d8aaf",

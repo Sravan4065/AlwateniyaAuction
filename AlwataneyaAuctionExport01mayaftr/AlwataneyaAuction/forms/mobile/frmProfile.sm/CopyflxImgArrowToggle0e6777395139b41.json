@@ -35,7 +35,7 @@
     "android": {
         "left": {
             "type": "string",
-            "value": "6%"
+            "value": "9%"
         }
     },
     "autogrowmode": 0,
