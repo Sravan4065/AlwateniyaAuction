@@ -359,6 +359,7 @@ selectedFilters: {},
         "lblAuctionID":aucid,
 
         "flxLikeHeart": {
+          "skin": "sknFlx231f20custom120pxround",
           "onClick": this.addToWishList.bind(this)
         },
         "imgHeart": "imgdislikenew.png",
@@ -563,7 +564,15 @@ selectedFilters: {},
     var rowData = selectedRow[0];
     var rowIndex = this.view.segCurrentAuctionList.selectedRowIndex[1];
 
-    rowData.imgHeart = rowData.imgHeart === "imgdislikenew.png" ? "heartlikerecommended.png" : "imgdislikenew.png";
+//     rowData.imgHeart = rowData.imgHeart === "imgdislikenew.png" ? "heartlikerecommended.png" : "imgdislikenew.png";
+    
+       if (rowData.imgHeart === "imgdislikenew.png") {
+  rowData.imgHeart = "heartlikerecommended.png";
+  rowData.flxLikeHeart.skin =  "sknFlxd32437custom120pxround";
+} else {
+  rowData.imgHeart = "imgdislikenew.png";
+  rowData.flxLikeHeart.skin =  "sknFlx231f20custom120pxround";
+}
 
     // Update only the selected row
     this.view.segCurrentAuctionList.setDataAt(rowData, rowIndex);
@@ -571,6 +580,7 @@ selectedFilters: {},
   enableAutoBid: function(objid,aucid){
     var isLogin = voltmx.store.getItem("isLogin");
     if(isLogin){
+    this.view.tbxAutoBidAmount.text = "";
     this.objIdForAutoBid = objid;
     this.aucIdForAutoBid = aucid;
    this.view.flxOverLay.setVisibility(true);

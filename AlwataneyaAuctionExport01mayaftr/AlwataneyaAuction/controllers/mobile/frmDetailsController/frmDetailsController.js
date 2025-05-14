@@ -2,6 +2,7 @@ define({
 
  onNavigate: function(context)
   {
+    this.userid = voltmx.store.getItem("userId");
     if(context){
    this.context = context;
     }
@@ -17,7 +18,7 @@ define({
   
   onPreShow: function()
   {
-    this.invokeGetImagesFilesById();
+    this.invokeFleetDetails();
     this.assignValuesToFieldsFromContext();
   },
   assignValuesToFieldsFromContext: function()
@@ -31,29 +32,28 @@ define({
     
   },
   
-  invokeGetImagesFilesById: function()
+  invokeFleetDetails: function()
   {
- var self = this;
+    var self = this;
 
-    function invokeFilesByIdCallback(status, get_images_files_by_id) {
-      voltmx.print(get_images_files_by_id);
+    function fleetDetailsCallBack(status, fleet_details) {
+      voltmx.print(fleet_details);
     }
-    if (get_images_files_by_id_inputparam == undefined) {
-        var get_images_files_by_id_inputparam = {};
+    if (fleet_details_inputparam == undefined) {
+        var fleet_details_inputparam = {};
     }
-    var objid;
-     if (this.context && this.context.selectedItem) {
-       objid =  this.context.selectedItem.lblObjID
-     }
-    get_images_files_by_id_inputparam["serviceID"] = "fry_int_fleet$get-images-files-by-id";
-     get_images_files_by_id_inputparam["object_id"] = objid;
-    var get_images_files_by_id_httpheaders = {
-        "user_token": ""
-    };
-    get_images_files_by_id_inputparam["httpheaders"] = get_images_files_by_id_httpheaders;
-    var get_images_files_by_id_httpconfigs = {};
-    get_images_files_by_id_inputparam["httpconfig"] = get_images_files_by_id_httpconfigs;
-    fry_int_fleet$get_images_files_by_id = mfintegrationsecureinvokerasync(get_images_files_by_id_inputparam, "fry_int_fleet", "get-images-files-by-id", invokeFilesByIdCallback);
+    fleet_details_inputparam["serviceID"] = "fry_wf$fleet-details";
+    fleet_details_inputparam["object_id"] = this.context.selectedItem.lblObjID;
+//     fleet_details_inputparam["job_title"] = 
+//     fleet_details_inputparam["operation_id"] = 
+//     fleet_details_inputparam["plaform"] = 
+    fleet_details_inputparam["user_id"] = this.userid;
+    
+    var fleet_details_httpheaders = {};
+    fleet_details_inputparam["httpheaders"] = fleet_details_httpheaders;
+    var fleet_details_httpconfigs = {};
+    fleet_details_inputparam["httpconfig"] = fleet_details_httpconfigs;
+    fry_wf$fleet_details = mfintegrationsecureinvokerasync(fleet_details_inputparam, "fry_wf", "fleet-details", fleetDetailsCallBack);
 
   },
   
