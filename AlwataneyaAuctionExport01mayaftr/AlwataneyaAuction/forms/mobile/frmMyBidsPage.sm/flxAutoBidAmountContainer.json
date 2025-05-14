@@ -2,7 +2,7 @@
     "DNDConfig": null,
     "_height_": {
         "type": "string",
-        "value": "100%"
+        "value": "140dp"
     },
     "_left_": {
         "type": "string",
@@ -22,38 +22,41 @@
         0
     ],
     "_percent_": true,
-    "_skin_": "s5f6044abe194492b5e811af99858a26",
+    "_skin_": "s259abc57701457499a1020b1ab2a553",
     "_top_": {
         "type": "string",
         "value": "0"
     },
     "_width_": {
         "type": "string",
-        "value": "100%"
+        "value": "90%"
     },
     "allboxes": [],
     "autogrowmode": 0,
     "canUpdateUI": true,
+    "centerx": {
+        "type": "string",
+        "value": "50%"
+    },
+    "centery": {
+        "type": "string",
+        "value": "50%"
+    },
     "children": [
-        "flxHeaderNew",
-        "flxScrollCarslist",
-        "flxOverLay",
-        "flxBidSuccessPopup",
-        "flxBidAmountSelectionContainer",
-        "flxAutoBidAmountContainer",
-        "Footer2"
+        "FlexContainer0j5bacec28fdf43",
+        "flxAmountAndButton"
     ],
-    "clipbounds": false,
+    "clipbounds": true,
     "containerweight": 100,
     "enablescrolling": true,
-    "id": "flxMain",
+    "id": "flxAutoBidAmountContainer",
     "info": null,
     "iscustomlayout": false,
-    "isvisible": true,
-    "kuid": "d25b87fb77644a57a80d9d45d990586e",
-    "layouttype": 2,
+    "isvisible": false,
+    "kuid": "ec711df9e7bc4f42b561175b0926f055",
+    "layouttype": 4,
     "name": "kony.ui.FlexContainer",
-    "parent": "frmMyBidsPage",
+    "parent": "flxMain",
     "pf": "frmMyBidsPage",
     "retaincontentalignment": false,
     "retainflexpositionproperties": false,
@@ -61,5 +64,6 @@
     "snapgridsize": 10,
     "snaptogrid": true,
     "wType": "FlexContainer",
-    "widgetalignment": 1
+    "widgetalignment": 1,
+    "zindex": 101
 }

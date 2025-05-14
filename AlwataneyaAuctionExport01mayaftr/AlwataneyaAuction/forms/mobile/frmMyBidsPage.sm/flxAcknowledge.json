@@ -2,7 +2,7 @@
     "DNDConfig": null,
     "_height_": {
         "type": "string",
-        "value": "100%"
+        "value": "70dp"
     },
     "_left_": {
         "type": "string",
@@ -25,7 +25,7 @@
     "_skin_": "s5f6044abe194492b5e811af99858a26",
     "_top_": {
         "type": "string",
-        "value": "0"
+        "value": "6dp"
     },
     "_width_": {
         "type": "string",
@@ -35,25 +35,20 @@
     "autogrowmode": 0,
     "canUpdateUI": true,
     "children": [
-        "flxHeaderNew",
-        "flxScrollCarslist",
-        "flxOverLay",
-        "flxBidSuccessPopup",
-        "flxBidAmountSelectionContainer",
-        "flxAutoBidAmountContainer",
-        "Footer2"
+        "flxCheckBox",
+        "Label0dd78b64d0e8140"
     ],
-    "clipbounds": false,
+    "clipbounds": true,
     "containerweight": 100,
     "enablescrolling": true,
-    "id": "flxMain",
+    "id": "flxAcknowledge",
     "info": null,
     "iscustomlayout": false,
     "isvisible": true,
-    "kuid": "d25b87fb77644a57a80d9d45d990586e",
-    "layouttype": 2,
+    "kuid": "b63885b54fad4094a4e9c5d53455dd6c",
+    "layouttype": 3,
     "name": "kony.ui.FlexContainer",
-    "parent": "frmMyBidsPage",
+    "parent": "flxBidAmountSelectionContainer",
     "pf": "frmMyBidsPage",
     "retaincontentalignment": false,
     "retainflexpositionproperties": false,
