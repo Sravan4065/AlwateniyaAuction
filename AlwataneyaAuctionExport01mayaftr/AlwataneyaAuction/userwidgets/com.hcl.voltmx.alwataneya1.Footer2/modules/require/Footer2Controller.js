@@ -31,9 +31,13 @@ define(function() {
       
      navigateToMyBidsPage: function()
       {
+        if(voltmx.store.getItem("isLogin")){
         var x = new voltmx.mvc.Navigation("frmMyBidsPage");
         x.navigate();
       }
+      else{
+      new voltmx.mvc.Navigation("frmLoginScreen").navigate();
+    }}
 //       flxProfileOnClickAction: function(){
 //          var ntf3= new voltmx.mvc.Navigation("frmMenuBar");
 //            ntf3.navigate();

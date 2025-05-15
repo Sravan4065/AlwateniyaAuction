@@ -232,6 +232,9 @@ define({
         var price = activebiditem.max_bid;
         var highestbidder = activebiditem.winning_bidder;
         
+        var isFavouriteskin = activebiditem.is_favourite ? "sknFlxd32437custom120pxround" : "sknFlx231f20custom120pxround";
+        var whichImage = activebiditem.is_favourite ? "heartlikerecommended.png" : "imgdislikenew.png";
+        
         var bidrateSkin;
        if(activebiditem.winning_bidder === this.userid){
              bidrateSkin = "sknLblCronosProd0290512Bold22px";
@@ -253,10 +256,10 @@ define({
                                   "skin": bidrateSkin
                                  },
           "flxfav": {
-            "skin": "sknFlx231f20custom120pxround",
+            "skin": isFavouriteskin,
             "onClick": this.addActiveToWishList.bind(this,objid,aucid)
           },
-          "imgfavicon" : "imgdislikenew.png",
+          "imgfavicon" : whichImage,
           
           "flxShare": {
             "skin": "sknflxBgFFFFFFBorder231F202px45"

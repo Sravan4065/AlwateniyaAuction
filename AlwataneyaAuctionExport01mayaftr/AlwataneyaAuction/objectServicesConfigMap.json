@@ -27,18 +27,18 @@
         "objectname": "fleet",
         "objectid": "2291"
     },
-    "SQLServerLocal_object_files": {
-        "servicename": "SQLServerLocal",
-        "serviceid": "26e61685-c4c2-45d2-a500-bf613688cce3",
-        "type": "objectsvcs",
-        "objectname": "object_files",
-        "objectid": "2292"
-    },
     "SQLServerLocal_object_images": {
         "servicename": "SQLServerLocal",
         "serviceid": "26e61685-c4c2-45d2-a500-bf613688cce3",
         "type": "objectsvcs",
         "objectname": "object_images",
         "objectid": "2293"
+    },
+    "SQLServerLocal_object_files": {
+        "servicename": "SQLServerLocal",
+        "serviceid": "26e61685-c4c2-45d2-a500-bf613688cce3",
+        "type": "objectsvcs",
+        "objectname": "object_files",
+        "objectid": "2854"
     }
 }
