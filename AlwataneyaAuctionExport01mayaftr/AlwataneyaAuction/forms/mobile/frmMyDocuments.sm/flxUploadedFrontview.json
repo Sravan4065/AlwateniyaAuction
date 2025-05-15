@@ -40,7 +40,8 @@
     },
     "children": [
         "lblFrontView",
-        "imgFrontView"
+        "imgFrontView",
+        "flxUploaded"
     ],
     "clipbounds": false,
     "containerweight": 100,

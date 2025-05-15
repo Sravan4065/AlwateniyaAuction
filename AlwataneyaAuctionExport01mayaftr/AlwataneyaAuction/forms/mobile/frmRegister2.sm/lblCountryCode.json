@@ -3,11 +3,7 @@
     "DNDConfig": null,
     "_height_": {
         "type": "string",
-        "value": "90%"
-    },
-    "_left_": {
-        "type": "string",
-        "value": "0"
+        "value": "85%"
     },
     "_margin_": [
         1,
@@ -21,11 +17,15 @@
         0,
         0
     ],
+    "_right_": {
+        "type": "number",
+        "value": "0"
+    },
     "_skin_": "sc9597a6ad6347268e881c6a393b0113",
     "_text_": "+971",
     "_width_": {
         "type": "string",
-        "value": "90%"
+        "value": "100%"
     },
     "_wrapping_": 2,
     "android": {
@@ -35,10 +35,6 @@
         }
     },
     "canUpdateUI": true,
-    "centerx": {
-        "type": "string",
-        "value": "50%"
-    },
     "centery": {
         "type": "string",
         "value": "50%"
@@ -61,7 +57,7 @@
     "isvisible": true,
     "kuid": "af8df4f83550464f8a2314823d48b7aa",
     "name": "kony.ui.Label",
-    "parent": "flxCountryCode",
+    "parent": "flxCountryCodeContainer",
     "pf": "frmRegister2",
     "retaincontentalignment": false,
     "retainflexpositionproperties": false,

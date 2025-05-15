@@ -22,6 +22,55 @@
                 "text": "Trade License",
                 "type": "Label"
             }
+        },
+        {
+            "lblType": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "VAT Certificates",
+                "type": "Label"
+            }
+        },
+        {
+            "lblType": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Passport",
+                "type": "Label"
+            }
+        },
+        {
+            "lblType": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Trade License",
+                "type": "Label"
+            }
+        },
+        {
+            "lblType": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Tax Registration Document",
+                "type": "Label"
+            }
+        },
+        {
+            "lblType": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Sale Letters",
+                "type": "Label"
+            }
+        },
+        {
+            "lblType": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Possession Letters",
+                "type": "Label"
+            }
+        },
+        {
+            "lblType": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Inspection Reports",
+                "type": "Label"
+            }
         }
     ],
     "_height_": {
@@ -107,7 +156,7 @@
     "selectedindex": null,
     "selectedindices": null,
     "selecteditems": null,
-    "selectedsectionindex": 0,
+    "selectedsectionindex": null,
     "selectionbehavior": "default",
     "separatorcolor": "aaaaaa00",
     "separatorrequired": true,

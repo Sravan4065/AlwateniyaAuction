@@ -42,7 +42,7 @@
         "focusSkin": "s3d87ba262864995afa373466fd12acb"
     },
     "displaytext": true,
-    "id": "btnOkay",
+    "id": "btnSaveAndContinueSeller",
     "ide_onClick": "AS_Button_f360137c76104beca92ecc7e21519f12",
     "info": null,
     "iscustomlayout": false,

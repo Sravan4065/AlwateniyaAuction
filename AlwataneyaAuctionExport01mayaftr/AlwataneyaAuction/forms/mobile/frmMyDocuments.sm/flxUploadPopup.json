@@ -39,7 +39,8 @@
     "autogrowmode": 0,
     "canUpdateUI": true,
     "children": [
-        "flxUploadInner"
+        "flxUploadInner",
+        "flxHowWouldYouLike"
     ],
     "clipbounds": true,
     "containerweight": 100,
