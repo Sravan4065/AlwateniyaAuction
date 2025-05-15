@@ -18,7 +18,7 @@
     "_pxMenuIndex": [
         0,
         1,
-        23
+        16
     ],
     "_skin_": "s6a46e7fd0754bf7b469d9ec1f378498",
     "_title_": null,
@@ -44,7 +44,7 @@
     "controllerInfo": {
         "default": {
             "channel": "mobile",
-            "name": "frmOpenMyVehiclesController"
+            "name": "frmMyVehicleNewController"
         }
     },
     "currentLocale": "default",
@@ -54,7 +54,7 @@
     "device": "Pixel6",
     "displayorientation": 1,
     "enabledforidletimeout": false,
-    "id": "frmOpenMyVehicles",
+    "id": "frmMyVehicleNew",
     "info": null,
     "initdone": false,
     "inputaccessoryviewtype": 4,
@@ -72,7 +72,7 @@
             "titleBarAttributes": {
                 "barStyle": 0,
                 "hidesBackButton": false,
-                "kuid": "cc0ec8ae248f49c187bcc2cc3652f37e",
+                "kuid": "b1a4ad883f2d4b17b27607684daab074",
                 "leftBarButtonItems": [],
                 "leftItemsSupplementBackButton": true,
                 "prompt": "",
@@ -83,7 +83,7 @@
                         "info": {
                             "title": "Edit"
                         },
-                        "kuid": "h4caa1fac2614f89813e5b8c2cab6aa6",
+                        "kuid": "c68b6c9ed29740718723c4aad171bea8",
                         "style": 0,
                         "tintColor": "4b88f100",
                         "type": 1
@@ -100,7 +100,7 @@
     "kiosk": {
         "needAppMenu": false
     },
-    "kuid": "f3702c93d5e3425a989a4257cf5d4a51",
+    "kuid": "c1733218fe8d43d6bb556b25bf2aa8ed",
     "layouttype": 2,
     "name": "kony.ui.Form2",
     "needappmenu": false,

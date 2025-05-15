@@ -123,7 +123,7 @@ define({
      var self = this;
 
     function invServiceCallBack(status, online_auction_list) {
-    var records = online_auction_list && online_auction_list.auction_list ? online_auction_list.auction_list : [];
+    var records = online_auction_list && online_auction_list.records ? online_auction_list.records : [];
     
     if (records.length > 0) {
       self.records = records;
@@ -140,12 +140,27 @@ define({
     if (online_auction_list_inputparam == undefined) {
         var online_auction_list_inputparam = {};
     }
-    online_auction_list_inputparam["serviceID"] = "fry_int_auctions$online-auction-list";
+    online_auction_list_inputparam["serviceID"] = "fry_int_auctions$get-buyer-all-auctions";
+    online_auction_list_inputparam["body_type"] = "";
+    online_auction_list_inputparam["transmission_type"] = "";
+    online_auction_list_inputparam["fuel_type"] = "";
+    online_auction_list_inputparam["body_condition"] = "";
+    online_auction_list_inputparam["brand"] = "";
+    online_auction_list_inputparam["model"] = "";
+    online_auction_list_inputparam["mileage_range"] = "";
+    online_auction_list_inputparam["asset_id"] = "";
+    
+     online_auction_list_inputparam["year_range"] = 0;
+     online_auction_list_inputparam["auction_type"] = 0;
+     online_auction_list_inputparam["yard_branch"] = 0;
+     online_auction_list_inputparam["price_range"] = 0;
+     online_auction_list_inputparam["page"] = 1;
+     online_auction_list_inputparam["pageSize"] = 10;
     var online_auction_list_httpheaders = {};
     online_auction_list_inputparam["httpheaders"] = online_auction_list_httpheaders;
     var online_auction_list_httpconfigs = {};
     online_auction_list_inputparam["httpconfig"] = online_auction_list_httpconfigs;
-    fry_int_auctions$online_auction_list = mfintegrationsecureinvokerasync(online_auction_list_inputparam, "fry_int_auctions", "online-auction-list", invServiceCallBack);
+    fry_int_auctions$online_auction_list = mfintegrationsecureinvokerasync(online_auction_list_inputparam, "fry_int_auctions", "get-buyer-all-auctions", invServiceCallBack);
     
     
     
