@@ -34,10 +34,6 @@
     "allboxes": [],
     "autogrowmode": 0,
     "canUpdateUI": true,
-    "centerx": {
-        "type": "string",
-        "value": "44%"
-    },
     "centery": {
         "type": "string",
         "value": "85%"

@@ -3,7 +3,7 @@
     "DNDConfig": null,
     "_height_": {
         "type": "string",
-        "value": "55%"
+        "value": "80%"
     },
     "_margin_": [
         0,
@@ -19,18 +19,18 @@
     ],
     "_placeholder_": "Your Mobile",
     "_right_": {
-        "type": "number",
-        "value": "35"
+        "type": "string",
+        "value": "0dp"
     },
     "_skin_": "s15d8a858e864dbcb9307357039ff0a6",
     "_text_": "",
     "_top_": {
-        "type": "string",
-        "value": "0"
+        "type": "number",
+        "value": "7"
     },
     "_width_": {
         "type": "string",
-        "value": "70%"
+        "value": "100%"
     },
     "android": {},
     "autocapitalize": "none",
@@ -51,7 +51,7 @@
     "kuid": "cc58c3bb9a2647c782170b65d0c18fed",
     "mode": "A",
     "name": "kony.ui.TextBox2",
-    "parent": "flxMobileTextBox",
+    "parent": "flxMobileNumberContainer",
     "pf": "frmRegister2",
     "placeholderskin": "sec23afc076740308478d3dfc7e34a26",
     "retaincontentalignment": false,

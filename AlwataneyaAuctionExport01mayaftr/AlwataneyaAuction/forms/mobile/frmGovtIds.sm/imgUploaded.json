@@ -46,7 +46,7 @@
     "imagescalemode": 1,
     "info": null,
     "iscustomlayout": false,
-    "isvisible": true,
+    "isvisible": false,
     "kuid": "e3d8f2badac84789ae7a5076901a84bc",
     "name": "kony.ui.Image2",
     "parent": "flxShowUploadedImg",

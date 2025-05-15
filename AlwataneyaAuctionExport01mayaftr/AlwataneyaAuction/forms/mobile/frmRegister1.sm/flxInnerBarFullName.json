@@ -41,7 +41,7 @@
     "id": "flxInnerBarFullName",
     "info": null,
     "iscustomlayout": false,
-    "isvisible": true,
+    "isvisible": false,
     "kuid": "j5b666a43dca4df9afad56227d54ce28",
     "layouttype": 2,
     "name": "kony.ui.FlexContainer",
