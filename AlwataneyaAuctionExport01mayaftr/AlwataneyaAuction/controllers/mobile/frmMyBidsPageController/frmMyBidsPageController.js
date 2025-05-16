@@ -159,44 +159,43 @@ define({
   },
   
   
-   invokeActiveBidsService: function()
-  {
-    var self = this;
+  invokeActiveBidsService: function() {
+  var self = this;
 
-    function serviceCallBack(status, get_buyer_my_active_bids) {
+  checkTokenValidatity(function() {
+    // Call service after token is valid or refreshed
+    var serviceCallBack = function(status, get_buyer_my_active_bids) {
       voltmx.print(get_buyer_my_active_bids);
-      
+
       if (
         get_buyer_my_active_bids &&
         get_buyer_my_active_bids.opstatus === 0 &&
         get_buyer_my_active_bids.httpresponse &&
         get_buyer_my_active_bids.httpresponse.responsecode === 200 &&
         Array.isArray(get_buyer_my_active_bids.records)
-    ) {
-        
+      ) {
         self.insertIntoActiveBidsSegment(get_buyer_my_active_bids.records);
-    } else {
-        alert("Failed to fetch bid data. Please try again.");
+      } else {
+        alert("Failed to fetch active bid data. Please try again.");
         voltmx.print("Invalid response structure or status.");
-    }
-    }
-//     if (get_buyer_my_active_bids_inputparam == undefined) {
-        var get_buyer_my_active_bids_inputparam = {};
-//     }
+      }
+    };
+
     var userid = voltmx.store.getItem("userId");
     var usertoken = voltmx.store.getItem("getUserAccesstoken");
-    get_buyer_my_active_bids_inputparam["serviceID"] = "fry_int_buyer$get-buyer-my-active-bids";
-    get_buyer_my_active_bids_inputparam["user_id"] = userid;
-    get_buyer_my_active_bids_inputparam["page"] = "1";
-    get_buyer_my_active_bids_inputparam["pageSize"] = "10";
-    var get_buyer_my_active_bids_httpheaders = {
-      "user_token": usertoken
+
+    var inputParam = {
+      serviceID: "fry_int_buyer$get-buyer-my-active-bids",
+      user_id: userid,
+      page: "1",
+      pageSize: "10",
+      httpheaders: { "user_token": usertoken },
+      httpconfig: {}
     };
-    get_buyer_my_active_bids_inputparam["httpheaders"] = get_buyer_my_active_bids_httpheaders;
-    var get_buyer_my_active_bids_httpconfigs = {};
-    get_buyer_my_active_bids_inputparam["httpconfig"] = get_buyer_my_active_bids_httpconfigs;
-    fry_int_buyer$get_buyer_my_active_bids = mfintegrationsecureinvokerasync(get_buyer_my_active_bids_inputparam, "fry_int_buyer", "get-buyer-my-active-bids", serviceCallBack);
-  },
+
+    mfintegrationsecureinvokerasync(inputParam, "fry_int_buyer", "get-buyer-my-active-bids", serviceCallBack);
+  });
+},
   
   insertIntoActiveBidsSegment: function(records)
   {
@@ -231,10 +230,15 @@ define({
         var aucid = activebiditem.auction_id;
         var price = activebiditem.max_bid;
         var highestbidder = activebiditem.winning_bidder;
-        
-        var isFavouriteskin = activebiditem.is_favourite ? "sknFlxd32437custom120pxround" : "sknFlx231f20custom120pxround";
-        var whichImage = activebiditem.is_favourite ? "heartlikerecommended.png" : "imgdislikenew.png";
-        
+
+        var isFavouriteskin = activebiditem.is_favourite === "true" 
+        ? "sknFlxd32437custom120pxround" 
+        : "sknFlx231f20custom120pxround";
+
+        var whichImage = activebiditem.is_favourite === "true" 
+        ? "heartlikerecommended.png" 
+        : "imgdislikenew.png";
+
         var bidrateSkin;
        if(activebiditem.winning_bidder === this.userid){
              bidrateSkin = "sknLblCronosProd0290512Bold22px";
@@ -599,7 +603,7 @@ define({
     voltmx.print("Segment not initialized or not visible yet.");
 }
     } else {
-        alert("Failed to fetch bid data. Please try again.");
+        alert("Failed to winning bid data. Please try again.");
         voltmx.print("Invalid response structure or status.");
     }
       
@@ -763,12 +767,18 @@ define({
         "lblmanymore": "MANY MORE TO CHOOSE FROM",
         "btnGoToAuction" :  {
           "skin" : "sknbtnBg61B35CBorder61B35CRadius8pxFont14pxDubai45",
-          "text" : "GO TO AUCTIONS"
+          "text" : "GO TO AUCTIONS",
+          "onClick": this.goToAuctions.bind(this)
         }
       }
         segData.push(data);
       }
        self.view.seglostbid.setData(segData);
+  },
+  
+  goToAuctions: function()
+  {
+    new voltmx.mvc.Navigation("frmAllAuctionsList").navigate();
   }
 
    

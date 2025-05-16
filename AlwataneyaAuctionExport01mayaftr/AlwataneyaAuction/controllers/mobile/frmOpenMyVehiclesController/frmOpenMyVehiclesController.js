@@ -39,16 +39,16 @@ define({
     var x;
     switch(selectedValue){
         case "Active Bids"      :   {
-                                         x = new voltmx.mvc.Navigation("frmMyBids");
+                                         x = new voltmx.mvc.Navigation("frmMyBidsPage");
                                            
                                        }
                                        break;
         case "Won Bids"      :   {
-                                      x = new voltmx.mvc.Navigation("frmMyBids");
+                                      x = new voltmx.mvc.Navigation("frmMyBidsPage");
                                        }
                                        break;
         case "Lost Bids"    :   {
-                                    x = new voltmx.mvc.Navigation("frmMyBids");
+                                    x = new voltmx.mvc.Navigation("frmMyBidsPage");
                                        }
                                        break; 
         case "Vehicle Payments"     : {

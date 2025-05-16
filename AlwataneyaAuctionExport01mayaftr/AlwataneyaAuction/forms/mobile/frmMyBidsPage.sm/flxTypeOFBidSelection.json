@@ -29,7 +29,7 @@
     },
     "_width_": {
         "type": "string",
-        "value": "95%"
+        "value": "90%"
     },
     "allboxes": [],
     "autogrowmode": 0,
@@ -43,7 +43,7 @@
         "flxWinningBids",
         "flxLostBids"
     ],
-    "clipbounds": false,
+    "clipbounds": true,
     "containerweight": 100,
     "enablescrolling": true,
     "id": "flxTypeOFBidSelection",
@@ -51,7 +51,7 @@
     "iscustomlayout": false,
     "isvisible": true,
     "kuid": "dc4ad522dbb940fc923ee9b0c97e5a03",
-    "layouttype": 3,
+    "layouttype": 2,
     "name": "kony.ui.FlexContainer",
     "parent": "flxScrollCarslist",
     "pf": "frmMyBidsPage",

@@ -3,7 +3,7 @@
     "DNDConfig": null,
     "_bottom_": {
         "type": "string",
-        "value": "20%"
+        "value": "15%"
     },
     "_children_": [],
     "_height_": {
@@ -50,7 +50,7 @@
             "bottom": {
                 "Default": {
                     "type": "string",
-                    "value": "20%"
+                    "value": "15%"
                 }
             },
             "left": {
