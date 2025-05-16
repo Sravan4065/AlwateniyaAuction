@@ -58,14 +58,19 @@ selectedFilters: {},
       this.view.flxAutoBidAmountContainer.setVisibility(false);
       this.view.flxOverLay.setVisibility(false);
     }.bind(this);
+    
+    this.view.btnLoadMore.onClick = this.loadNextRecords.bind(this);
   },
   
   
   
   onPreshow: function(){
 //    this.setDataToSeg();
-    
-   
+    this.allAuctionRecords = [];  // All records from service
+    this.currentOffset = 0;       // Current index
+    this.pageSize = 5;    
+    this.view.btnLoadMore.setVisibility(true);
+
     this.toggleFooterIcons();
     this.invokeOnlineAuctionList();
     this.closeBidAmountContainer();
@@ -169,7 +174,7 @@ selectedFilters: {},
      online_auction_list_inputparam["yard_branch"] = 0;
      online_auction_list_inputparam["price_range"] = 0;
      online_auction_list_inputparam["page"] = 1;
-     online_auction_list_inputparam["pageSize"] = 10;
+     online_auction_list_inputparam["pageSize"] = 15;
     var online_auction_list_httpheaders = {};
     online_auction_list_inputparam["httpheaders"] = online_auction_list_httpheaders;
     var online_auction_list_httpconfigs = {};
@@ -334,65 +339,132 @@ selectedFilters: {},
       "imgAutoBidicon":"imgAutoBidicon",
       "lblAutoBid":"lblAutoBid"
     }
-    
-    var data = [];
-    for(var i=0; i<records.length; i++){
-      
-      var item = records[i];
-      var carimage = item.thumbnail_url && item.thumbnail_url.trim() !== "" ? item.thumbnail_url : "car3.png";
-      var carname = item.sub_category_name && item.sub_category_name.trim()!== "" ? item.sub_category_name: "N/A";
-      var timercount = item.time_remaining;
-      var lotnum = item.ID ? item.ID : "N/A";
-      var totalbids = item.bids ? item.bids : "N/A";
-      var location = item.location ? item.location : "N/A";
-      var objid = item.object_id;
-      var aucid = item.auction_id;
-      var price = Number(item.max_bid_amount);
-      var highestbidder = item.highest_bidder;
-      var bidrateSkin;
-       if(item.highest_bidder === this.userid){
-             bidrateSkin = "sknLblCronosProd0290512Bold22px";
-          }
-          else{
-              bidrateSkin = "sknLblDubaid3243720pxbold";
-          }
-      data.push(
-      {
-        "imgCarPIcture" : carimage,
-        "lblCarname" : carname,
-        "lblObjID": objid,
-        "lblTimerCount": timercount,
-         "lblLot": "Lot #",
-         "lblLotNum": lotnum,
-         "lblTotalBids": "Total Bids",
-         "lblTotalBidsCount": totalbids,
-         "lblLocation":"Location",
-        "lblLocationName": location,
-        "lblAuctionID":aucid,
 
-        "flxLikeHeart": {
-          "skin": "sknFlx231f20custom120pxround",
-          "onClick": this.addToWishList.bind(this)
-        },
-        "imgHeart": "imgdislikenew.png",
-        "lblCurrentBid": "CURRENT BID",
-        "lblPrice":  {
-          "text": "AED " + price,
-          "skin": bidrateSkin
-        },
-        "flxAutoBid": {
-          "onClick": this.enableAutoBid.bind(this,objid,aucid)
-        },
-        "imgAutoBidicon": "autobidnewone.png",
-        "lblAutoBid": "AUTO BID",
-        "btnBidNow": {
-          "onClick": this.openBidAmountContainer.bind(this,objid,aucid,price,highestbidder)
-        }
-      });
-    }
-    self.view.segCurrentAuctionList.setData(data);
+    
+    self.allAuctionRecords = records;
+  self.currentOffset = 0;
+  self.view.segCurrentAuctionList.setData([]);  // Clear initially
+  self.loadNextRecords(); 
+//     var data = [];
+//     for(var i=0; i<records.length; i++){
+      
+//       var item = records[i];
+//       var carimage = item.thumbnail_url && item.thumbnail_url.trim() !== "" ? item.thumbnail_url : "car3.png";
+//       var carname = item.sub_category_name && item.sub_category_name.trim()!== "" ? item.sub_category_name: "N/A";
+//       var timercount = item.time_remaining;
+//       var lotnum = item.ID ? item.ID : "N/A";
+//       var totalbids = item.bids ? item.bids : "N/A";
+//       var location = item.location ? item.location : "N/A";
+//       var objid = item.object_id;
+//       var aucid = item.auction_id;
+//       var price = Number(item.max_bid_amount);
+//       var highestbidder = item.highest_bidder;
+//       var bidrateSkin;
+//        if(item.highest_bidder === this.userid){
+//              bidrateSkin = "sknLblCronosProd0290512Bold22px";
+//           }
+//           else{
+//               bidrateSkin = "sknLblDubaid3243720pxbold";
+//           }
+//       data.push(
+//       {
+//         "imgCarPIcture" : carimage,
+//         "lblCarname" : carname,
+//         "lblObjID": objid,
+//         "lblTimerCount": timercount,
+//          "lblLot": "Lot #",
+//          "lblLotNum": lotnum,
+//          "lblTotalBids": "Total Bids",
+//          "lblTotalBidsCount": totalbids,
+//          "lblLocation":"Location",
+//         "lblLocationName": location,
+//         "lblAuctionID":aucid,
+
+//         "flxLikeHeart": {
+//           "skin": "sknFlx231f20custom120pxround",
+//           "onClick": this.addToWishList.bind(this)
+//         },
+//         "imgHeart": "imgdislikenew.png",
+//         "lblCurrentBid": "CURRENT BID",
+//         "lblPrice":  {
+//           "text": "AED " + price,
+//           "skin": bidrateSkin
+//         },
+//         "flxAutoBid": {
+//           "onClick": this.enableAutoBid.bind(this,objid,aucid)
+//         },
+//         "imgAutoBidicon": "autobidnewone.png",
+//         "lblAutoBid": "AUTO BID",
+//         "btnBidNow": {
+//           "onClick": this.openBidAmountContainer.bind(this,objid,aucid,price,highestbidder)
+//         }
+//       });
+//     }
+//     self.view.segCurrentAuctionList.setData(data);
   },
   
+  loadNextRecords: function() {
+  var self = this;
+  var nextSet = self.allAuctionRecords.slice(self.currentOffset, self.currentOffset + self.pageSize);
+  var data = [];
+
+  for (var i = 0; i < nextSet.length; i++) {
+    var item = nextSet[i];
+    var carimage = item.thumbnail_url && item.thumbnail_url.trim() !== "" ? item.thumbnail_url : "car3.png";
+    var carname = item.sub_category_name && item.sub_category_name.trim() !== "" ? item.sub_category_name : "N/A";
+    var timercount = item.time_remaining;
+    var lotnum = item.ID || "N/A";
+    var totalbids = item.bids || "N/A";
+    var location = item.location || "N/A";
+    var objid = item.object_id;
+    var aucid = item.auction_id;
+    var price = Number(item.max_bid_amount);
+    var highestbidder = item.highest_bidder;
+    var bidrateSkin = (item.highest_bidder === this.userid) ?
+      "sknLblCronosProd0290512Bold22px" : "sknLblDubaid3243720pxbold";
+
+    data.push({
+      "imgCarPIcture": carimage,
+      "lblCarname": carname,
+      "lblObjID": objid,
+      "lblTimerCount": timercount,
+      "lblLot": "Lot #",
+      "lblLotNum": lotnum,
+      "lblTotalBids": "Total Bids",
+      "lblTotalBidsCount": totalbids,
+      "lblLocation": "Location",
+      "lblLocationName": location,
+      "lblAuctionID": aucid,
+      "flxLikeHeart": {
+        "skin": "sknFlx231f20custom120pxround",
+        "onClick": this.addToWishList.bind(this)
+      },
+      "imgHeart": "imgdislikenew.png",
+      "lblCurrentBid": "CURRENT BID",
+      "lblPrice": {
+        "text": "AED " + price,
+        "skin": bidrateSkin
+      },
+      "flxAutoBid": {
+        "onClick": this.enableAutoBid.bind(this, objid, aucid)
+      },
+      "imgAutoBidicon": "autobidnewone.png",
+      "lblAutoBid": "AUTO BID",
+      "btnBidNow": {
+        "onClick": this.openBidAmountContainer.bind(this, objid, aucid, price, highestbidder)
+      }
+    });
+  }
+
+  self.view.segCurrentAuctionList.addAll(data);
+  self.currentOffset += self.pageSize;
+
+  // Optional: hide button if all records are loaded
+  if (self.currentOffset >= self.allAuctionRecords.length) {
+    self.view.btnLoadMore.setVisibility(false);
+  }
+},
+
   openBidAmountContainer: function(objid,aucid,price,highestbidder){
     var isLogin = voltmx.store.getItem("isLogin");
     if(isLogin)

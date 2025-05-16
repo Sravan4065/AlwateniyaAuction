@@ -5,21 +5,37 @@
         {
             "imgChevronRight": {
                 "@class": "com.viz.ide.model.segment.ImageSegmentData",
-                "src": "rightchevronnew.png"
+                "src": "rightchevronnew.png",
+                "type": "Image"
             },
             "lblItemName": {
                 "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
-                "text": "Label"
+                "text": "Today's Auction",
+                "type": "Label"
             }
         },
         {
             "imgChevronRight": {
                 "@class": "com.viz.ide.model.segment.ImageSegmentData",
-                "src": "rightchevronnew.png"
+                "src": "rightchevronnew.png",
+                "type": "Image"
             },
             "lblItemName": {
                 "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
-                "text": "Label"
+                "text": "Auction Calendar",
+                "type": "Label"
+            }
+        },
+        {
+            "imgChevronRight": {
+                "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                "src": "rightchevronnew.png",
+                "type": "Image"
+            },
+            "lblItemName": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Saved Searches",
+                "type": "Label"
             }
         }
     ],
@@ -56,7 +72,7 @@
     "autogrowmode": 1,
     "canUpdateUI": true,
     "containerweight": 100,
-    "counter": "01",
+    "counter": "02",
     "focusedindex": null,
     "focuseditem": null,
     "generatedtemplate": null,
@@ -91,7 +107,7 @@
     "retainflexpositionproperties": false,
     "retainselection": false,
     "rowTemplateId": "c338e217dc7d430fb10b9da866fa240e",
-    "rowcounter": 1,
+    "rowcounter": 2,
     "rowfocusskin": "s961e586fe794e498e31c111fe40ef67",
     "rowskin": "s2d1a440627e4c3eb337995bf3931fdd",
     "rowtemplate": "flxMenuBarItems",
