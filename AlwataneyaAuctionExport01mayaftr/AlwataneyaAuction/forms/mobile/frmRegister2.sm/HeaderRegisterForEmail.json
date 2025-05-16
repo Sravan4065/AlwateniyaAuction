@@ -63,7 +63,8 @@
                 "kuid": "c7b91e309c0144fa93632ccd8384740d",
                 "srcKUID": "u751eaf063e4411baadbae2df75caad2",
                 "wType": "Button"
-            }
+            },
+            "text": "LOG IN"
         },
         "flxBack": {
             "__events__": {},
