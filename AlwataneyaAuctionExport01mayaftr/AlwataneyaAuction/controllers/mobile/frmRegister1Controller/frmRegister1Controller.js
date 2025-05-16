@@ -6,6 +6,16 @@ define({
     this.view.flxNext.onClick = this.NextPageOnClickAction;
     this.view.txtFirstNlastName.onTextChange = this.onTextChangeAction;
     this.view.HeaderRegister.imgBack.onTouchEnd = this.HeaderRegisterImgBackOnTouchEndAction;
+    this.view.preShow = this.onPreShow.bind(this);
+  },
+onPreShow: function (){
+    var previousForm = voltmx.application.getPreviousForm();
+    if(previousForm){
+      var id = previousForm.id;
+      if(id === "frmLoginScreen"){
+         this.view.txtFirstNlastName.text = "";3
+      }
+    }
   },
 
   NextPageOnClickAction: async function()

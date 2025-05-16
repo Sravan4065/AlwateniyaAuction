@@ -36,7 +36,7 @@
     "canUpdateUI": true,
     "centerx": {
         "type": "string",
-        "value": "75%"
+        "value": "76%"
     },
     "centery": {
         "type": "string",

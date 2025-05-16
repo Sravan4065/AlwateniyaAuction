@@ -21,7 +21,7 @@
         "type": "number",
         "value": "0"
     },
-    "_skin_": "sc9597a6ad6347268e881c6a393b0113",
+    "_skin_": "s58a4dffe9dc4955933ee79c70330c54",
     "_text_": "+971",
     "_width_": {
         "type": "string",
@@ -40,7 +40,7 @@
         "value": "50%"
     },
     "containerweight": 100,
-    "contentalignment": 5,
+    "contentalignment": 4,
     "id": "lblCountryCode",
     "info": null,
     "ipad": {
@@ -55,7 +55,7 @@
     },
     "iscustomlayout": false,
     "isvisible": true,
-    "kuid": "af8df4f83550464f8a2314823d48b7aa",
+    "kuid": "d4ae3bc3e6154db3be028894cc7f6d98",
     "name": "kony.ui.Label",
     "parent": "flxCountryCodeContainer",
     "pf": "frmRegister2",

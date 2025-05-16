@@ -129,6 +129,8 @@ define({
         break;
       case "emailVerificationCode": {
         this.view.flxEmailVerificationCode.setVisibility(false);
+this.view.flxEmail.setVisibility(true);
+this.view.HeaderRegisterForEmail.setVisibility(true);
         this.view.flxEmailContainer.setVisibility(true);
       }
         break;
@@ -136,7 +138,7 @@ define({
         if(this.view.tbxPhoneNumber.text === ""){
           this.view.flxEmailVerificationCode.setVisibility(true);
           this.view.flxMobileContainer.setVisibility(false);
-          this.startOTPTimerForMobile();
+//           this.startOTPTimerForMobile();
         }
         else{
           this.view.tbxPhoneNumber.text = "";
@@ -378,11 +380,13 @@ define({
       //With Trade!!!
       this.view.flxCompanyName.setVisibility(true);
       this.view.flxPopupTrade.setVisibility(false);
+      voltmx.store.setItem("isEmailVerified", false);
       this.view.flxSellerOrBuyerMain.setVisibility(false);
     }
     else{
       //Without Trade!!!!
       this.view.flxEmailContainer.setVisibility(true);
+      voltmx.store.setItem("isEmailVerified", false);
       this.view.flxEmailFooter.setVisibility(false);
       this.view.flxPopupTrade.setVisibility(false);
       this.view.flxSellerOrBuyerMain.setVisibility(false);
@@ -412,18 +416,18 @@ define({
 
   },
   //Continue action after Selectin vth/vthout trade radio btns navigate to email!!
-  flxWithoutUAEOnClickAction: function(){
-    this.view.flxEmailContainer.setVisibility(true);
-    this.view.HeaderRegister.imgBack.setVisibility(true);
-    this.view.flxSellerRegIndiFooterBody.setVisibility(false);
-    this.view.flxFooterPopupSellerRegistrationForIndividual.bottom ="-3";
-    //     this.view.flxPopupTradeForIndividual.setVisibility(false);
-    this.view.HeaderRegisterForEmail.setVisibility(true);
-    this.view.flxSellerOrBuyerMain.setVisibility(false);
-    this.view.flxFooter.setVisibility(false);
-    this.view.flxPopupRegister.bottom="=55%";
-    this.view.flxPopupTrade.setVisibility(false);
-  },
+//   flxWithoutUAEOnClickAction: function(){
+//     this.view.flxEmailContainer.setVisibility(true);
+//     this.view.HeaderRegister.imgBack.setVisibility(true);
+//     this.view.flxSellerRegIndiFooterBody.setVisibility(false);
+//     this.view.flxFooterPopupSellerRegistrationForIndividual.bottom ="-3";
+//     //     this.view.flxPopupTradeForIndividual.setVisibility(false);
+// //     this.view.HeaderRegisterForEmail.setVisibility(true);
+//     this.view.flxSellerOrBuyerMain.setVisibility(false);
+//     this.view.flxFooter.setVisibility(false);
+//     this.view.flxPopupRegister.bottom="=55%";
+//     this.view.flxPopupTrade.setVisibility(false);
+//   },
 
   flxCompanyFooterOnClickAction: function(){
     this.view.flxTradeLicense.setVisibility(true);
@@ -523,7 +527,8 @@ define({
   //Email validation Service call and calling sendEmail Otp Function !!!!!!!!
   imgNextInEmailonTouchEndAction: async function() {
     var self = this;
-
+    var isEmailVerified = voltmx.store.getItem("isEmailVerified");
+    if(isEmailVerified === false){
     voltmx.application.showLoadingScreen();
     var pattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
     if (self.view.tbxEmailAddress.text !== null && self.view.tbxEmailAddress.text.match(pattern)) {
@@ -558,6 +563,7 @@ define({
                     // Calling the async function to handle the OTP request
                     //                       self.view.lblEmailBackendError.setVisibility(false);
                     voltmx.store.setItem("email", self.view.tbxEmailAddress.text);
+                    voltmx.store.setItem("isEmailVerified", true);
                     await self.sendEmailOTPRequest(self.view.tbxEmailAddress.text, verification_type);
                   }
                   else{
@@ -601,6 +607,12 @@ define({
       self.view.lblEmailError.text = "Email Required!!";
       self.view.flxEmail.setVisibility(true);
       self.view.flxEmailVerificationCode.setVisibility(false);
+    }
+    }
+    else{
+            voltmx.application.dismissLoadingScreen();
+            self.view.flxEmailContainer.setVisibility(false);
+            self.view.flxEmailVerificationCode.setVisibility(true);
     }
   },
 
@@ -884,6 +896,7 @@ define({
                   self.view.flxEmailOtpVerified.setVisibility(true);
                   self.view.flxResendCode.setVisibility(false);
                   voltmx.store.setItem("isEmailOtpVerified", true);
+                  voltmx.store.setItem("isMobileVerified", false);
                   self.view.lblSignedEmail.text = email;
                   self.view.flxEmailVerificationCode.setVisibility(false);
                 } else {
@@ -929,8 +942,12 @@ define({
   },
   //function to call "mobile validation Service" as well as calling "sendMobileOtp" function!!!
   imgNextInMobileVerificationOnTouchEndAction: async function(){
-    voltmx.application.showLoadingScreen();
+   
     var self = this;
+    var isMobileVerified = voltmx.store.getItem("isMobileVerified");
+    if(isMobileVerified === false){
+           voltmx.application.showLoadingScreen();
+
     if(self.view.tbxPhoneNumber.text !== null ){
 
       var verification_type = "phone";
@@ -960,6 +977,7 @@ define({
               if (requestJSON.data && Object.keys(requestJSON.data).length > 0) {
 
                 if(requestJSON.data.message === "Phone Number is valid" && requestJSON.data.userExists === false){
+                  voltmx.store.setItem("isMobileVerified", true);
                   await self.sendMobileOTP();
                   voltmx.store.setItem("mobile", self.view.tbxPhoneNumber.text);
                 }
@@ -998,9 +1016,17 @@ define({
       request.send(jsonData);
     }
     else{
+        voltmx.application.dismissLoadingScreen();
       self.view.lblMobileError.text ="*Mobile Required!!";
       self.view.flxMobileVerifyAndOTPCode.setVisibility(false);
-      this.view.flxMobileContainer.setVisibility(true);
+      self.view.flxMobileContainer.setVisibility(true);
+    }
+    }
+    else{
+      voltmx.application.dismissLoadingScreen();
+
+      self.view.flxMobileVerifyAndOTPCode.setVisibility(true);
+      self.view.flxMobileContainer.setVisibility(false);
     }
   },
   //function to call "send mobile otp service" and navigate to verify mobile otp page!!!
@@ -1321,6 +1347,7 @@ tbxSearchCountryCodeOnTextChangeAction: function() {
               if(requestJSON.data.is_verified === true){
                 self.view.flxMobileVerifyAndOTPCode.setVisibility(false);
                 self.view.flxUserName.setVisibility(true);
+                voltmx.store.setItem("isMobileOtpVerified", true);
                 self.view.flxMobileOtpVerified.setVisibility(true);
                 self.view.flxResendOTPCode.setVisibility(false);
               }
