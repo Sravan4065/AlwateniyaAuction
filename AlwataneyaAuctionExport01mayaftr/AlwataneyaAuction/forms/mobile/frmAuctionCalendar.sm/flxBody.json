@@ -36,8 +36,8 @@
     "canUpdateUI": true,
     "children": [
         "flxAuctionCalendarDetails",
-        "flxAuctionsSegmentBody",
         "flxFilterBody",
+        "flxScrollAuctionSegmentBody",
         "flxCurrentandUpcomingAuctionBody"
     ],
     "clipbounds": true,

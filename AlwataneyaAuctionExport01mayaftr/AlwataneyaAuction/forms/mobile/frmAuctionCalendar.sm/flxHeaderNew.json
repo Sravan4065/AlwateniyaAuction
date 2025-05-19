@@ -62,7 +62,8 @@
                 "kuid": "cf20bda53d6349f3b2a587e50d321963",
                 "srcKUID": "u80c87a0e54e4a8eb912c43b9d169007",
                 "wType": "Image"
-            }
+            },
+            "src": "awaheaderlogo.png"
         }
     },
     "enablescrolling": true,

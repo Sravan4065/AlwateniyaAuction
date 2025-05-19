@@ -8,7 +8,7 @@ function currentEpochTime() {
   voltmx.print("=============================");
 }
 
-// Function to check token validity
+
 function checkTokenValidatity(onSuccessCallback) {
   var epochMillis = new Date().getTime();
   var expires_in = Number(voltmx.store.getItem("userAccessTokenExp")); // stored expiry time in ms
@@ -30,24 +30,22 @@ function calling_service(onRefreshComplete) {
   var refresh_token = voltmx.store.getItem("refreshtoken");
 
   var get_refresh_token_inputparam = {
-    "serviceID": "ms_user$get-refresh-token",
-    "httpheaders": { 
-      "refresh_token": refresh_token },
+    "serviceID": "ms_user_token$refresh-token",
+    "httpheaders": {},
     "httpconfig": {}
   };
 
   mfintegrationsecureinvokerasync(
     get_refresh_token_inputparam,
-    "ms_user",
-    "get-refresh-token",
+    "ms_user_token",
+    "refresh-token",
     function(status, response) {
       get_refresh_token_callback(status, response, onRefreshComplete);
     }
   );
 }
 
-
-// Callback function for token refresh
+// Properly defined callback function
 function get_refresh_token_callback(status, response, onRefreshComplete) {
   if (status === 400 || !response || !response.data || !response.data.access_token) {
     voltmx.print("Token refresh failed.");
@@ -55,7 +53,7 @@ function get_refresh_token_callback(status, response, onRefreshComplete) {
   }
 
   var newToken = response.data.access_token;
-  var newExpiry = new Date().getTime() + (response.data.expires_in * 1000); // Convert to epoch ms
+    var newExpiry = Number(response.data.expires_in); 
 
   voltmx.store.setItem("getUserAccesstoken", newToken);
   voltmx.store.setItem("userAccessTokenExp", newExpiry); // update stored expiry
@@ -63,6 +61,10 @@ function get_refresh_token_callback(status, response, onRefreshComplete) {
   voltmx.print("New token stored. Proceeding...");
   onRefreshComplete(); // continue the original request
 }
+
+
+// Callback function for token refresh
+
 
 
 function detectFileType(base64) {

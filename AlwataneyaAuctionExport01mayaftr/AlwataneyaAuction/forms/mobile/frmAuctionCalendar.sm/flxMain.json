@@ -40,7 +40,10 @@
         "Footer2",
         "flxVehicleTypeFilter",
         "flxBodyTypeFilter",
-        "flxOverLay"
+        "flxOverLay",
+        "flxBidSuccessPopup",
+        "flxBidAmountSelectionContainer",
+        "flxAutoBidAmountContainer"
     ],
     "clipbounds": true,
     "containerweight": 100,

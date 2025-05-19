@@ -37,7 +37,7 @@
     "children": [
         "flxHeadingAdditionalFeatures",
         "flxLanguageToggle",
-        "flxSettings",
+        "flxFavourites",
         "flxNotifications",
         "flxDarkMode",
         "flxShareApp",
