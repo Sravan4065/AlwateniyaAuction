@@ -4,11 +4,11 @@
     "_base64_": null,
     "_height_": {
         "type": "string",
-        "value": "50%"
+        "value": "45%"
     },
     "_left_": {
-        "type": "string",
-        "value": "0"
+        "type": "number",
+        "value": "10"
     },
     "_margin_": [
         0,
@@ -23,14 +23,14 @@
         0
     ],
     "_skin_": "sa05e4f50c3e43ad86fe42c8a2b358a5",
-    "_src_": "solar_user_outline_1.png",
+    "_src_": "userlogo1.png",
     "_top_": {
         "type": "string",
         "value": "0"
     },
     "_width_": {
         "type": "string",
-        "value": "60dp"
+        "value": "45dp"
     },
     "canUpdateUI": true,
     "containerweight": 100,

@@ -6,8 +6,8 @@
         "value": "90%"
     },
     "_left_": {
-        "type": "string",
-        "value": "0"
+        "type": "number",
+        "value": "3"
     },
     "_margin_": [
         1,
@@ -25,7 +25,7 @@
     "_text_": "We'll  send a verification code to this mail",
     "_width_": {
         "type": "string",
-        "value": "90%"
+        "value": "88%"
     },
     "_wrapping_": 2,
     "android": {

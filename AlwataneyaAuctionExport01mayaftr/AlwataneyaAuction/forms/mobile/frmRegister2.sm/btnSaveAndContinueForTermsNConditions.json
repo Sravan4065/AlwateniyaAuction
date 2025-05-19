@@ -25,7 +25,7 @@
     "_text_": "Save And Continue",
     "_top_": {
         "type": "number",
-        "value": "50"
+        "value": "60"
     },
     "_width_": {
         "type": "string",
@@ -35,6 +35,10 @@
     "centerx": {
         "type": "string",
         "value": "50%"
+    },
+    "centery": {
+        "type": "string",
+        "value": "62%"
     },
     "containerweight": 100,
     "contentalignment": 5,
@@ -46,9 +50,9 @@
     "info": null,
     "iscustomlayout": false,
     "isvisible": false,
-    "kuid": "de6bfcaab0d44b089db0c2c198f133aa",
+    "kuid": "bfb76e44a29642cb89b1a4c9b3c914e8",
     "name": "kony.ui.Button",
-    "parent": "flxPassWordAndConfirmPassWord",
+    "parent": "flxConfirmPasswordContainer",
     "pf": "frmRegister2",
     "retaincontentalignment": false,
     "retainflexpositionproperties": false,

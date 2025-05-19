@@ -40,7 +40,7 @@
     },
     "centery": {
         "type": "string",
-        "value": "70%"
+        "value": "95%"
     },
     "children": [
         "lblUserNameError"

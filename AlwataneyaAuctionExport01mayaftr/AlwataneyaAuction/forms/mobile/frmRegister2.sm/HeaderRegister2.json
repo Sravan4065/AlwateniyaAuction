@@ -78,7 +78,8 @@
                 "kuid": "a0ada2b846aa41869ca503b16c442e10",
                 "srcKUID": "u2bde0a079a04899b0716b3895c4f7b5",
                 "wType": "Image"
-            }
+            },
+            "src": "awa512h.png"
         },
         "imgBack": {
             "__events__": {},
@@ -87,7 +88,8 @@
                 "srcKUID": "ub6b4637a2a146edbbf7659a013ab74a",
                 "wType": "Image"
             },
-            "isVisible": true
+            "isVisible": true,
+            "src": "back512h.png"
         }
     },
     "enablescrolling": true,

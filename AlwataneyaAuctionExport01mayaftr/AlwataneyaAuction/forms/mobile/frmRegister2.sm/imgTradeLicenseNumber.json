@@ -4,11 +4,11 @@
     "_base64_": null,
     "_height_": {
         "type": "string",
-        "value": "40%"
+        "value": "30%"
     },
     "_left_": {
         "type": "string",
-        "value": "0"
+        "value": "10dp"
     },
     "_margin_": [
         0,
@@ -23,14 +23,14 @@
         0
     ],
     "_skin_": "sa05e4f50c3e43ad86fe42c8a2b358a5",
-    "_src_": "companylogo.png",
+    "_src_": "company512h.png",
     "_top_": {
         "type": "string",
-        "value": "0"
+        "value": "20dp"
     },
     "_width_": {
         "type": "string",
-        "value": "60dp"
+        "value": "30dp"
     },
     "canUpdateUI": true,
     "containerweight": 100,

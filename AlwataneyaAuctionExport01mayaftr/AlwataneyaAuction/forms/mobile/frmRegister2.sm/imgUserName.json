@@ -8,7 +8,7 @@
     },
     "_left_": {
         "type": "string",
-        "value": "0dp"
+        "value": "10dp"
     },
     "_margin_": [
         0,
@@ -23,14 +23,14 @@
         0
     ],
     "_skin_": "sa05e4f50c3e43ad86fe42c8a2b358a5",
-    "_src_": "solar_user_outline_1.png",
+    "_src_": "user512h.png",
     "_top_": {
         "type": "string",
         "value": "0"
     },
     "_width_": {
         "type": "string",
-        "value": "60dp"
+        "value": "40dp"
     },
     "canUpdateUI": true,
     "containerweight": 100,

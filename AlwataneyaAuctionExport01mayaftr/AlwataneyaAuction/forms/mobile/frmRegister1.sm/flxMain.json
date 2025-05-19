@@ -37,7 +37,8 @@
     "children": [
         "HeaderRegister",
         "flxBarContainerFullName",
-        "flxBody"
+        "flxBody",
+        "flxNext"
     ],
     "clipbounds": false,
     "containerweight": 100,

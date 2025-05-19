@@ -23,13 +23,14 @@ define({
     this.view.HeaderRegisterForCompany.imgBack.onTouchEnd = this.BackNavigation.bind(this, "companyBack");
     this.view.HeaderRegisterForTradeLicense.flxBack.onClick = this.BackNavigation.bind(this,"tradeLicense");
     this.view.HeaderRegisterForTradeLicenseExpiryDate.flxBack.onClick = this.BackNavigation(this,"tradeLicenseExpiryDate");
-    this.view.HeaderRegisterForTaxRegistrationNumber.flxBack.onClick = this.BackNavigation(this,"taxRegistrationNumber");
+   this.view.HeaderRegisterForTaxRegistrationNumber.flxBack.onClick = this.BackNavigation(this,"taxRegistrationNumber");
     this.view.HeaderRegisterForVerificationCode.imgBack.onTouchEnd = this.BackNavigation.bind(this,"emailVerificationCode");
     this.view.HeaderRegisterMobileContainer.imgBack.onTouchEnd = this.BackNavigation.bind(this,"mobileBack");
     this.view.HeaderRegisterMobileOTP.imgBack.onTouchEnd = this.BackNavigation.bind(this,"mobileotpback");
     this.view.HeaderRegister2.imgBack.onTouchEnd = this.BackNavigation.bind(this,"termsAndCondBack");
     this.view.HeaderRegister3.imgBack.onTouchEnd = this.BackNavigation.bind(this,"usernameBack");
     this.view.HeaderRegister1.imgBack.onTouchEnd = this.BackNavigation.bind(this,"passwordback");
+    this.view.HeaderRegisterConfirmPassword.flxBack.onClick = this.BackNavigation.bind(this,"confirmPassBack");
     this.view.radiobtnSeller.onSelection = this.radiobtnSellerOnSelectionAction;
     this.view.radiobtnBuyer.onSelection = this.radiobtnbuyerOnSelectionAction;
     this.view.radioBtnWithTrade.onSelection = this.radioBtnWithTradeOnSelectionAction;
@@ -62,6 +63,7 @@ define({
     this.view.flxEmailVerificationFooter.onClick= this.flxNextInEmailVerificationOnTouchEndAction;
     this.view.tbxPassWordName.onTextChange = this.tbxPassWordNameOnTextChangeAction;
     this.view.tbxConfirmPassWord.onTextChange = this.tbxConfirmPassWordOnTextChangeAction;
+    this.view.flxPasswordFooter.onClick = this.flxPasswordFooterOnClickAction;
     this.view.flxEyeIconPass.onClick = this.flxEyeIconPassOnClickAction;
     this.view.flxEyeIconConfirmPass.onClick = this.flxEyeIconConfirmPassOnClickAction;
     //     this.view.btnPassWordAndConfirmPassword.onClick = this.btnPassWordAndConfirmPasswordOnClickAction;
@@ -156,7 +158,7 @@ this.view.HeaderRegisterForEmail.setVisibility(true);
         break;
       case "termsAndCondBack"    : {
         this.view.flxTermsAndConditions.setVisibility(false);
-        this.view.flxPassWordAndConfirmPassWord.setVisibility(true);
+        this.view.flxPassWord.setVisibility(true);
       }
         break;
       case "usernameBack"        : {
@@ -172,26 +174,32 @@ this.view.HeaderRegisterForEmail.setVisibility(true);
       }
         break;
       case  "passwordback"        : {
-        if(this.view.tbxPassWordName.text === "" && this.view.tbxConfirmPassWord.text === ""){
-          this.view.flxPassWordAndConfirmPassWord.setVisibility(false);
+        if(this.view.tbxPassWordName.text === "" ){
+          this.view.flxPassWord.setVisibility(false);
           this.view.flxUserName.setVisibility(true);
         }
-        else if(this.view.tbxPassWordName.text === "" ||this.view.tbxConfirmPassWord.text === ""){
+        else {
           this.view.tbxPassWordName.text = "";
-          this.view.tbxConfirmPassWord.text = "";
-          this.view.chxIhaveReadTermsNConds.selectedKeys === null;
-          this.view.flxInnerBarPassConfo.width ="80%";
+          this.view.flxPasswordFooter.setVisibility(false);
+          this.view.flxPassWordError.setVisibility(false);
+        }
+  
+      }
+        break;
+      case "confirmPassBack"  :  {
+        if(this.view.tbxConfirmPassWord.text === ""){
+          this.view.flxPassWord.setVisibility(true);
+          this.view.flxConfirmPasswordContainer.setVisibility(false);
+//           this.view.flxUserName.setVisibility(false);
+//           this.view.flxSellerOrBuyerMain.setVisibility(false);
         }
         else{
-          this.view.tbxPassWordName.text = "";
           this.view.tbxConfirmPassWord.text = "";
-          this.view.flxInnerBarPassConfo.width ="80%";
           this.view.chxIhaveReadTermsNConds.selectedKeys === null;
-
+          this.view.flxConfirmPasswordError.setVisibility(false);
 
         }
       }
-        break;
       case "companyBack"        : {
         if(this.view.tbxCompanyAddress.text === ""){
           this.view.flxSellerOrBuyerMain.setVisibility(true);
@@ -378,18 +386,18 @@ this.view.HeaderRegisterForEmail.setVisibility(true);
     var trade = voltmx.store.getItem("trade");
     if(trade === "WithTrade"){
       //With Trade!!!
+      this.view.flxSellerOrBuyerMain.setVisibility(false);
       this.view.flxCompanyName.setVisibility(true);
       this.view.flxPopupTrade.setVisibility(false);
       voltmx.store.setItem("isEmailVerified", false);
-      this.view.flxSellerOrBuyerMain.setVisibility(false);
     }
     else{
       //Without Trade!!!!
-      this.view.flxEmailContainer.setVisibility(true);
       voltmx.store.setItem("isEmailVerified", false);
       this.view.flxEmailFooter.setVisibility(false);
       this.view.flxPopupTrade.setVisibility(false);
       this.view.flxSellerOrBuyerMain.setVisibility(false);
+      this.view.flxEmailContainer.setVisibility(true);
     }
     // Show next screen
 
@@ -1385,7 +1393,7 @@ tbxSearchCountryCodeOnTextChangeAction: function() {
 
   //Navigation from UserName to PassWord and Confirm Password Page!!!!!
   flxNextUserNameOnTouchEndAction: function(){
-    this.view.flxPassWordAndConfirmPassWord.setVisibility(true);
+    this.view.flxPassWord.setVisibility(true);
     this.view.flxUserName.setVisibility(false);
     //     this.view.btnSaveAndContinueForTermsNConditions.setEnabled(false);
     //     this.view.btnSaveAndContinueForTermsNConditions.skin ="sknbtnBGa3a3a3CstmBorder5pxFontCPReg70px"
@@ -1478,7 +1486,7 @@ tbxSearchCountryCodeOnTextChangeAction: function() {
               if (opstatusRes === 0 ){
                 if (requestJSON.data && Object.keys(requestJSON.data).length > 0) {
                   if(requestJSON.data.userExists === false && requestJSON.data.message === "User name is valid" ) {
-                    self.view.flxPassWordAndConfirmPassWord.setVisibility(true);
+                    self.view.flxPassWord.setVisibility(true);
                     self.view.flxUserName.setVisibility(false);
                   } else {
                     voltmx.application.dismissLoadingScreen();
@@ -1520,23 +1528,49 @@ tbxSearchCountryCodeOnTextChangeAction: function() {
     }
   },
   //Password OnText Change Action!!!!!!
-  tbxPassWordNameOnTextChangeAction: function(){
+//   tbxPassWordNameOnTextChangeAction: function(){
 
-    if (this.view.tbxPassWordName.text.length > 0) {
-      this.view.imgEyeOpenPass.setVisibility(true);  // Always show the eye icon when typing
+//     if (this.view.tbxPassWordName.text.length > 0) {
+//       this.view.imgEyeOpenPass.setVisibility(true);  // Always show the eye icon when typing
 
-      if (this.view.tbxPassWordName.secureTextEntry === true) {
-        this.view.imgEyeClosePass.setVisibility(true);   // Show cross if password is hidden
-      } else {
-        this.view.imgEyeClosePass.setVisibility(false);  // Hide cross if password is visible
-      }
+//       if (this.view.tbxPassWordName.secureTextEntry === true) {
+//         this.view.imgEyeClosePass.setVisibility(true);   // Show cross if password is hidden
+//       } else {
+//         this.view.imgEyeClosePass.setVisibility(false);  // Hide cross if password is visible
+//       }
+//     } else {
+//       // No text typed yet, hide both icons
+//       this.view.imgEyeOpenPass.setVisibility(false);
+//       this.view.imgEyeClosePass.setVisibility(false);
+//     }
+//     if(this.PasswordValidate()){
+//       this.view.flxPasswordFooter.setVisibility(true);
+//     }
+//     else{
+//      this.view.flxPasswordFooter.setVisibility(false);
+
+//     }
+
+//   },
+  tbxPassWordNameOnTextChangeAction: function() {
+    var passwordText = this.view.tbxPassWordName.text;
+    var isPasswordHidden = this.view.tbxPassWordName.secureTextEntry;
+
+    if (passwordText.length > 0) {
+        this.view.imgEyeOpenPass.setVisibility(true);
+
+        if (isPasswordHidden) {
+            this.view.imgEyeClosePass.setVisibility(true);
+        } else {
+            this.view.imgEyeClosePass.setVisibility(false);
+        }
     } else {
-      // No text typed yet, hide both icons
-      this.view.imgEyeOpenPass.setVisibility(false);
-      this.view.imgEyeClosePass.setVisibility(false);
+        this.view.imgEyeOpenPass.setVisibility(false);
+        this.view.imgEyeClosePass.setVisibility(false);
     }
 
-  },
+    this.view.flxPasswordFooter.setVisibility(this.PasswordValidate());
+},
   //Confirm PassWord OnTextChange Action!!!!
   tbxConfirmPassWordOnTextChangeAction: function(){
     // Show/hide eye icons based on text and secureTextEntry
@@ -1591,7 +1625,10 @@ tbxSearchCountryCodeOnTextChangeAction: function() {
     // No need to toggle imgEyeOpenConfirmPass – it stays visible while typing
 
   },
-
+flxPasswordFooterOnClickAction: function(){
+  this.view.flxPassWord.setVisibility(false);
+  this.view.flxConfirmPasswordContainer.setVisibility(true);
+},
   btnUploadYourDocOnClickAction: function(){
     //     this.view.flxPopupTradeForIndividual.setVisibility(true);
     this.view.flxFooterPopupSellerRegistrationForIndividual.bottom="-3%";
@@ -1605,7 +1642,7 @@ tbxSearchCountryCodeOnTextChangeAction: function() {
   btnPassWordAndConfirmPasswordOnClickAction:function(){
     if(this.PasswordValidate() && this.ConfirmPassValidate()){
       this.view.flxTermsAndConditions.setVisibility(true);
-      this.view.flxPassWordAndConfirmPassWord.setVisibility(false);
+      this.view.flxPassWord.setVisibility(false);
       this.view.btnSaveAndContinue.setEnabled(false);
       this.view.btnSaveAndContinueForTermsNConditions.skin="sknbtnCPReg767676CstmBorder5pxFont70px";
 
@@ -1639,7 +1676,7 @@ tbxSearchCountryCodeOnTextChangeAction: function() {
     var reg_id =voltmx.store.getItem("regId");
     var user_Type = "IND";
     var mobile = voltmx.store.getItem("mobile");
-    var  file_system_id =98;
+    var  file_system_id =4;
     var url = "https://dev-hcltx.et.ae:443/services/ms_user_reg/create-user";
     var request = new voltmx.net.HttpRequest();
     request.open("POST", url);
@@ -1740,7 +1777,7 @@ tbxSearchCountryCodeOnTextChangeAction: function() {
           "mobile_number": mobile,  
           "country_code": "+971", 
           "reg_id": reg_id,   
-          "file_system_id": 98, 
+          "file_system_id": 4, 
           "is_org":is_org , 
           "company_name":self.view.tbxCompanyAddress.text,
           "tax_registration_no": self.view.tbxTaxRegistrationNumber.text,  
