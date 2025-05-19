@@ -38,6 +38,10 @@
         "type": "string",
         "value": "50%"
     },
+    "centery": {
+        "type": "string",
+        "value": "55%"
+    },
     "children": [
         "chxIhaveReadTermsNConds",
         "flxTermsndConditions"
@@ -49,10 +53,10 @@
     "info": null,
     "iscustomlayout": false,
     "isvisible": true,
-    "kuid": "cab51366b93144d9b7f0b81f2cc7a71a",
+    "kuid": "f2237c917ab842efbd052ca76f82ced3",
     "layouttype": 2,
     "name": "kony.ui.FlexContainer",
-    "parent": "flxPassWordAndConfirmPassWord",
+    "parent": "flxConfirmPasswordContainer",
     "pf": "frmRegister2",
     "retaincontentalignment": false,
     "retainflexpositionproperties": false,

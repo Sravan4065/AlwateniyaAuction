@@ -25,7 +25,7 @@
     "_skin_": "s5f6044abe194492b5e811af99858a26",
     "_top_": {
         "type": "string",
-        "value": "5dp"
+        "value": "14dp"
     },
     "_width_": {
         "type": "string",
@@ -51,7 +51,7 @@
     "kuid": "efd6c35d9e9d46cb9d8d372d238fdafd",
     "layouttype": 2,
     "name": "kony.ui.FlexContainer",
-    "parent": "flxPassWordAndConfirmPassWord",
+    "parent": "flxPassWord",
     "pf": "frmRegister2",
     "retaincontentalignment": false,
     "retainflexpositionproperties": false,

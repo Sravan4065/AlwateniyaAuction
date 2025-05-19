@@ -48,7 +48,8 @@
         "flxMobileVerifyAndOTPCode",
         "flxPopupHowWouldYouUploadYourDoc",
         "flxUserName",
-        "flxPassWordAndConfirmPassWord",
+        "flxPassWord",
+        "flxConfirmPasswordContainer",
         "flxTermsAndConditions",
         "flxCongratulationsSeller",
         "flxCongratulationsBuyer"

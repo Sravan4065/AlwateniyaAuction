@@ -25,7 +25,7 @@
     "_skin_": "sab2455cceb64cb19117477ce829d054",
     "_top_": {
         "type": "string",
-        "value": "40dp"
+        "value": "150dp"
     },
     "_width_": {
         "type": "string",
@@ -37,10 +37,6 @@
     "centerx": {
         "type": "string",
         "value": "50%"
-    },
-    "centery": {
-        "type": "string",
-        "value": "45%"
     },
     "children": [
         "flxOTPHead",

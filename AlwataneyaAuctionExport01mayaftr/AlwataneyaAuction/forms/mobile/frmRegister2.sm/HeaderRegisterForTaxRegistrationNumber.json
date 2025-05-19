@@ -71,7 +71,8 @@
                 "kuid": "bfa93a21116040eab1b5b07479fa2492",
                 "srcKUID": "b61d12c065d341ff95a00920c327b554",
                 "wType": "FlexContainer"
-            }
+            },
+            "zIndex": {}
         },
         "flxLogin": {
             "__events__": {},
@@ -79,7 +80,8 @@
                 "kuid": "jce5248b906645c6b9c3dae4d8ab233d",
                 "srcKUID": "h89e7b4c5bf24f8698f7c6ce5b3a270a",
                 "wType": "FlexContainer"
-            }
+            },
+            "zIndex": {}
         },
         "imgAWA": {
             "__events__": {},
@@ -88,7 +90,8 @@
                 "srcKUID": "u2bde0a079a04899b0716b3895c4f7b5",
                 "wType": "Image"
             },
-            "src": "logo_1_4.png"
+            "src": "logo_1_4.png",
+            "zIndex": {}
         },
         "imgBack": {
             "__events__": {},

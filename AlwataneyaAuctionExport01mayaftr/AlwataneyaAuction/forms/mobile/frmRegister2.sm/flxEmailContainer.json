@@ -43,10 +43,10 @@
         "value": "50%"
     },
     "children": [
-        "flxEmail",
-        "flxEmailFooter",
         "HeaderRegisterForEmail",
-        "flxBarContainerEmail"
+        "flxBarContainerEmail",
+        "flxEmail",
+        "flxEmailFooter"
     ],
     "clipbounds": false,
     "containerweight": 100,

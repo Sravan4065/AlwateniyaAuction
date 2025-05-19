@@ -78,7 +78,8 @@
                 "kuid": "bcfd00e664fe4d39a6dbf0dc0fdf4bba",
                 "srcKUID": "u2bde0a079a04899b0716b3895c4f7b5",
                 "wType": "Image"
-            }
+            },
+            "src": "logo_1_4.png"
         },
         "imgBack": {
             "__events__": {},
@@ -86,7 +87,8 @@
                 "kuid": "h3370b5579ba420d820e472b5949c99f",
                 "srcKUID": "ub6b4637a2a146edbbf7659a013ab74a",
                 "wType": "Image"
-            }
+            },
+            "src": "vector__1_1.png"
         }
     },
     "enablescrolling": true,
