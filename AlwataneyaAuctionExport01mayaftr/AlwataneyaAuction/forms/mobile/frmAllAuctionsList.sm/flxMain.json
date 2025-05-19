@@ -39,11 +39,11 @@
         "flxBody",
         "flxVehicleTypeFilter",
         "flxBodyTypeFilter",
-        "flxBidSuccessPopup",
         "flxOverLay",
         "flxBidAmountSelectionContainer",
         "Footer2",
-        "flxAutoBidAmountContainer"
+        "flxAutoBidAmountContainer",
+        "flxBidSuccessPopup"
     ],
     "clipbounds": false,
     "containerweight": 100,

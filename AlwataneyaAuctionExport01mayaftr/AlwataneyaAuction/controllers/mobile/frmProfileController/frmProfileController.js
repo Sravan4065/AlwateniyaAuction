@@ -12,6 +12,7 @@ define({
     this.view.flxMyVehicles.onClick = this.navToMyVehicles.bind(this);
     
     this.view.flxToggleBar.onClick = this.toggleSwitchSellerBuyer.bind(this);
+    this.view.flxFavourites.onClick = this.navToFavourites.bind(this);
 //    this.view.flxLogout.onClick = this.flxLogoutOnClickAction;
   },
   
@@ -189,6 +190,11 @@ define({
       this.view.lblModeName.skin = "sknLblDubai231f2020pxBold";
       this.view.flxSwitchContainer.skin = "sknFlxf1f1f1Rounded8px";
      }
+  },
+  
+  navToFavourites: function()
+  {
+    new voltmx.mvc.Navigation("frmFavourites").navigate();
   }
 
  });

@@ -46,7 +46,7 @@
     "isvisible": true,
     "kuid": "a5709b36e0a44019b7177fd9a92f13fe",
     "name": "kony.ui.Image2",
-    "parent": "flxSettings",
+    "parent": "flxFavourites",
     "pf": "frmProfile",
     "retaincontentalignment": false,
     "retainflexpositionproperties": false,
