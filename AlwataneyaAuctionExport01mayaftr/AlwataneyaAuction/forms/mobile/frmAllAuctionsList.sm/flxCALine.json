@@ -1,8 +1,8 @@
 {
     "DNDConfig": null,
     "_bottom_": {
-        "type": "number",
-        "value": "0"
+        "type": "string",
+        "value": "0dp"
     },
     "_height_": {
         "type": "string",
@@ -10,7 +10,7 @@
     },
     "_left_": {
         "type": "string",
-        "value": "0"
+        "value": "0dp"
     },
     "_margin_": [
         0,
@@ -27,6 +27,10 @@
     ],
     "_percent_": true,
     "_skin_": "sddba23286aa426b9f7c5e48eaba8173",
+    "_top_": {
+        "type": "string",
+        "value": "10%"
+    },
     "_width_": {
         "type": "string",
         "value": "88%"
@@ -36,7 +40,7 @@
     "canUpdateUI": true,
     "centerx": {
         "type": "string",
-        "value": "52%"
+        "value": "50%"
     },
     "children": [],
     "clipbounds": false,

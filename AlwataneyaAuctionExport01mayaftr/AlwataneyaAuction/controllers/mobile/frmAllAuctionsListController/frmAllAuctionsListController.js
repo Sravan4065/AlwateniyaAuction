@@ -51,7 +51,7 @@ selectedFilters: {},
     this.pageSize = 10;
     this.currentOffset = 0;
     this.view.segCurrentAuctionList.setData([]);
-    this.view.btnLoadMore.setVisibility(true);
+//     this.view.btnLoadMore.setVisibility(true);
 
     this.toggleFooterIcons();
     this.invokeOnlineAuctionList();
@@ -515,16 +515,16 @@ selectedFilters: {},
   {
     this.view.flxUALine.setVisibility(false);
     this.view.flxCALine.setVisibility(true);
-    this.view.lblUpcomingAuctions.skin = "sknLblCronosPro8e8e8e18px49";
-    this.view.lblCurrentAuctions.skin = "sknLblCronosPro231f2018px49";
+    this.view.lblUpcomingAuctions.skin = "sknLblDubai8e8e8e18px49";
+    this.view.lblCurrentAuctions.skin = "sknLblDubai231f2018px49";
     this.view.segCurrentAuctionList.setVisibility(true);
   },
   
   showUpcomingAuctions: function(){
     this.view.flxUALine.setVisibility(true);
     this.view.flxCALine.setVisibility(false);
-    this.view.lblUpcomingAuctions.skin = "sknLblCronosPro231f2018px49";
-    this.view.lblCurrentAuctions.skin = "sknLblCronosPro8e8e8e18px49";
+    this.view.lblUpcomingAuctions.skin = "sknLblDubai231f2018px49";  
+    this.view.lblCurrentAuctions.skin = "sknLblDubai8e8e8e18px49";   
     this.view.segCurrentAuctionList.setVisibility(false);
     
   },

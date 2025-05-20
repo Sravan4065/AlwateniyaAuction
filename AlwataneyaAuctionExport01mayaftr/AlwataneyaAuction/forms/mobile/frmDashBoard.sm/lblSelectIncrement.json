@@ -26,7 +26,7 @@
         0
     ],
     "_skin_": "scf03312bc474b51928f08f2e68d96ec",
-    "_text_": "Select the Increment",
+    "_text_": "Select the Increment Amount",
     "_width_": {
         "type": "ref",
         "value": "preferred"

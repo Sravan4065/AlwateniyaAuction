@@ -42,8 +42,10 @@
     },
     "containerweight": 100,
     "contentalignment": 5,
+    "disabledSkins": {
+        "focusSkin": "sa87b3f55ce0476ea4dbfd006e2cf0b6"
+    },
     "displaytext": true,
-    "focusskin": "sa87b3f55ce0476ea4dbfd006e2cf0b6",
     "id": "btn1500AED",
     "info": null,
     "iscustomlayout": false,

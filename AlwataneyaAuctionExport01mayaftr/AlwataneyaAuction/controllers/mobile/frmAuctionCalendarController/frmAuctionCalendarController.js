@@ -36,7 +36,7 @@ define({
     this.pageSize = 10;
     this.currentOffset = 0;
     this.view.segCurrentAuctionList.setData([]);
-    this.view.btnLoadMore.setVisibility(true);
+//     this.view.btnLoadMore.setVisibility(true);
     
    this.toggleFooterIcons();
    this.invokeOnlineAuctionList();
