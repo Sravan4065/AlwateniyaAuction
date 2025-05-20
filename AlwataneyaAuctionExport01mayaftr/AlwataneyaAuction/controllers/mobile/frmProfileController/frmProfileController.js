@@ -13,6 +13,7 @@ define({
     
     this.view.flxToggleBar.onClick = this.toggleSwitchSellerBuyer.bind(this);
     this.view.flxFavourites.onClick = this.navToFavourites.bind(this);
+    this.view.flxMyBookings.onClick = this.navToMyBookings.bind(this);
 //    this.view.flxLogout.onClick = this.flxLogoutOnClickAction;
   },
   
@@ -195,6 +196,12 @@ define({
   navToFavourites: function()
   {
     new voltmx.mvc.Navigation("frmFavourites").navigate();
+  },
+  
+  navToMyBookings: function()
+  {
+    new voltmx.mvc.Navigation("frmMyBookings").navigate();
   }
+  
 
  });

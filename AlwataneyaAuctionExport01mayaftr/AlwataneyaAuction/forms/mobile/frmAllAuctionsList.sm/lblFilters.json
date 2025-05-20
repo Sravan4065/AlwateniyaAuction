@@ -7,7 +7,7 @@
     },
     "_left_": {
         "type": "string",
-        "value": "4%"
+        "value": "7%"
     },
     "_margin_": [
         1,
@@ -21,7 +21,7 @@
         0,
         0
     ],
-    "_skin_": "s7cf9a883bae4135894b341cccef0ca7",
+    "_skin_": "sd140c50b5f3451e89fa883e27d6b1d0",
     "_text_": "Filters",
     "_width_": {
         "type": "ref",

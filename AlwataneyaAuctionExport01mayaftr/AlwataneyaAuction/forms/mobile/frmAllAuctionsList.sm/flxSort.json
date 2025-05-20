@@ -2,11 +2,11 @@
     "DNDConfig": null,
     "_height_": {
         "type": "string",
-        "value": "68%"
+        "value": "66%"
     },
     "_left_": {
         "type": "string",
-        "value": "0"
+        "value": "20dp"
     },
     "_margin_": [
         0,

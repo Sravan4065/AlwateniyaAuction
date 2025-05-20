@@ -46,7 +46,7 @@
     "iscustomlayout": false,
     "isvisible": true,
     "kuid": "b61aef72ab8f4713a15dc75250a6cb7a",
-    "layouttype": 2,
+    "layouttype": 4,
     "name": "kony.ui.FlexContainer",
     "parent": "flxCurrentandUpcomingAuctionHeading",
     "pf": "frmAllAuctionsList",
