@@ -37,7 +37,7 @@
     "children": [
         "lblPaidVehicles",
         "CopylblSDAED0ab99b7eeb6534e",
-        "CopylblSDAmount0hf940c00309144"
+        "lblTotalPaidVehicles"
     ],
     "clipbounds": true,
     "containerweight": 100,

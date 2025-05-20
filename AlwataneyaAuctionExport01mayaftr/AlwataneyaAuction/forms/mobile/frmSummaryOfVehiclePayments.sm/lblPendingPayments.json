@@ -22,7 +22,7 @@
         0
     ],
     "_skin_": "s2771d3229804230a77099d4e829cc95",
-    "_text_": "Pending Payments",
+    "_text_": "Pending Vehicles",
     "_top_": {
         "type": "string",
         "value": "6dp"
@@ -39,8 +39,12 @@
         }
     },
     "canUpdateUI": true,
+    "centerx": {
+        "type": "string",
+        "value": "50%"
+    },
     "containerweight": 100,
-    "contentalignment": 4,
+    "contentalignment": 5,
     "id": "lblPendingPayments",
     "info": null,
     "ipad": {

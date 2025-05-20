@@ -35,8 +35,8 @@
     "autogrowmode": 0,
     "canUpdateUI": true,
     "children": [
-        "CopylblSDAmount0dcf2acc10c044e",
-        "CopylblSDAED0h30894b34da34b"
+        "lblSDCurrentAmount",
+        "lblSDAEDCurrentAmt"
     ],
     "clipbounds": true,
     "containerweight": 100,

@@ -5,10 +5,6 @@
         "type": "ref",
         "value": "preferred"
     },
-    "_left_": {
-        "type": "string",
-        "value": "0dp"
-    },
     "_margin_": [
         1,
         1,
@@ -23,13 +19,13 @@
     ],
     "_right_": {
         "type": "string",
-        "value": "0%"
+        "value": "1%"
     },
-    "_skin_": "s9873973827b413b8dcb79e33ebb7558",
-    "_text_": "AED",
+    "_skin_": "sd14611aec50432f84dbca37433acbb4",
+    "_text_": "48",
     "_top_": {
         "type": "string",
-        "value": "2dp"
+        "value": "3dp"
     },
     "_width_": {
         "type": "ref",
@@ -45,7 +41,7 @@
     "canUpdateUI": true,
     "containerweight": 100,
     "contentalignment": 4,
-    "id": "CopylblSDAED0ab99b7eeb6534e",
+    "id": "lblTotalApprovedVehiclesCount",
     "info": null,
     "ipad": {
         "psp": {
@@ -59,9 +55,9 @@
     },
     "iscustomlayout": false,
     "isvisible": true,
-    "kuid": "u8ed6d17e03c4036bacf23bac394c1f0",
+    "kuid": "ua6dfe8e12c848fba737ccb1ac7a31ab",
     "name": "kony.ui.Label",
-    "parent": "flxBidAmount",
+    "parent": "flxTotalApproved",
     "pf": "userwidgetmodel",
     "retaincontentalignment": false,
     "retainflexpositionproperties": false,

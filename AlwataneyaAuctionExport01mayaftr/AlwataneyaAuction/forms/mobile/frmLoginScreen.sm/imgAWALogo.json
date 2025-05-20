@@ -23,14 +23,14 @@
         0
     ],
     "_skin_": "sa05e4f50c3e43ad86fe42c8a2b358a5",
-    "_src_": "logo_1_4.png",
+    "_src_": "awa512h.png",
     "_top_": {
         "type": "string",
         "value": "0dp"
     },
     "_width_": {
         "type": "string",
-        "value": "150dp"
+        "value": "120dp"
     },
     "canUpdateUI": true,
     "centerx": {

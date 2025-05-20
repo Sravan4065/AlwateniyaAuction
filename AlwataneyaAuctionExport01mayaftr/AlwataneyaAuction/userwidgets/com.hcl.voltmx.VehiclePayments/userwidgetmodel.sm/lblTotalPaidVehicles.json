@@ -5,10 +5,6 @@
         "type": "ref",
         "value": "preferred"
     },
-    "_left_": {
-        "type": "string",
-        "value": "0dp"
-    },
     "_margin_": [
         1,
         1,
@@ -26,7 +22,7 @@
         "value": "1%"
     },
     "_skin_": "sd14611aec50432f84dbca37433acbb4",
-    "_text_": "200,000",
+    "_text_": "46",
     "_top_": {
         "type": "string",
         "value": "3dp"
@@ -45,7 +41,7 @@
     "canUpdateUI": true,
     "containerweight": 100,
     "contentalignment": 4,
-    "id": "CopylblSDAmount0hf940c00309144",
+    "id": "lblTotalPaidVehicles",
     "info": null,
     "ipad": {
         "psp": {
@@ -59,9 +55,9 @@
     },
     "iscustomlayout": false,
     "isvisible": true,
-    "kuid": "u1752c3c3983449ab8f11e0e5bcb0e82",
+    "kuid": "u09612780ab14caab9fb59fb860fab3f",
     "name": "kony.ui.Label",
-    "parent": "flxBidAmount",
+    "parent": "flxPaidVechiles",
     "pf": "userwidgetmodel",
     "retaincontentalignment": false,
     "retainflexpositionproperties": false,

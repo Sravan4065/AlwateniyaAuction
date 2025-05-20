@@ -23,6 +23,10 @@
     ],
     "_skin_": "sd14611aec50432f84dbca37433acbb4",
     "_text_": "20,000",
+    "_top_": {
+        "type": "string",
+        "value": "0"
+    },
     "_width_": {
         "type": "ref",
         "value": "preferred"
@@ -37,7 +41,7 @@
     "canUpdateUI": true,
     "containerweight": 100,
     "contentalignment": 4,
-    "id": "CopylblSDAmount0dcf2acc10c044e",
+    "id": "lblSDCurrentAmount",
     "info": null,
     "ipad": {
         "psp": {

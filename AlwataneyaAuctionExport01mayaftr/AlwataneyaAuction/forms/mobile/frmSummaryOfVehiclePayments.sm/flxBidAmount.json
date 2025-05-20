@@ -29,15 +29,19 @@
     "_skin_": "s5f6044abe194492b5e811af99858a26",
     "_top_": {
         "type": "string",
-        "value": "34.98%"
+        "value": "45%"
     },
     "_width_": {
         "type": "string",
-        "value": "50%"
+        "value": "60%"
     },
     "allboxes": [],
     "autogrowmode": 0,
     "canUpdateUI": true,
+    "centerx": {
+        "type": "string",
+        "value": "50%"
+    },
     "children": [
         "lblPendingAmount"
     ],
