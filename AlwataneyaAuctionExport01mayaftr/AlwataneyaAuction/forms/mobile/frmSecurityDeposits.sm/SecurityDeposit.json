@@ -47,38 +47,6 @@
                 "wType": "Label"
             }
         },
-        "CopylblSDAED0ab99b7eeb6534e": {
-            "__events__": {},
-            "__info__": {
-                "kuid": "g52c755cac9f47b7b3097531d52590b2",
-                "srcKUID": "u8ed6d17e03c4036bacf23bac394c1f0",
-                "wType": "Label"
-            }
-        },
-        "CopylblSDAED0h30894b34da34b": {
-            "__events__": {},
-            "__info__": {
-                "kuid": "ic6547a669f94ac292fcadc95a6a5b0c",
-                "srcKUID": "u49cc4efd0564c8fa9c73e8fd507aaba",
-                "wType": "Label"
-            }
-        },
-        "CopylblSDAmount0dcf2acc10c044e": {
-            "__events__": {},
-            "__info__": {
-                "kuid": "eb99987a4532457a83e498aa96644b96",
-                "srcKUID": "u370f804fa914016bcb9856d27ed19cb",
-                "wType": "Label"
-            }
-        },
-        "CopylblSDAmount0hf940c00309144": {
-            "__events__": {},
-            "__info__": {
-                "kuid": "bcef422924654bceb3a0e8a47c537c75",
-                "srcKUID": "u1752c3c3983449ab8f11e0e5bcb0e82",
-                "wType": "Label"
-            }
-        },
         "Image0d37052857e934e": {
             "__events__": {},
             "__info__": {
@@ -193,6 +161,12 @@
                 "kuid": "g6044a57051840a3b1b368f9395beed7",
                 "srcKUID": "ub9ead1ce75f4a459d3996076ec0bcd9",
                 "wType": "FlexContainer"
+            },
+            "width": {
+                "Default": {
+                    "type": "string",
+                    "value": "60%"
+                }
             }
         },
         "flxAvlAmount": {
@@ -209,6 +183,18 @@
                 "kuid": "j216bc0721fb480692de91b7e39f1735",
                 "srcKUID": "abdf622e922c49c8850c32237a788920",
                 "wType": "FlexContainer"
+            },
+            "left": {
+                "Default": {
+                    "type": "string",
+                    "value": "13dp"
+                }
+            },
+            "top": {
+                "Default": {
+                    "type": "string",
+                    "value": "4dp"
+                }
             }
         },
         "flxBidAmount": {
@@ -345,7 +331,14 @@
                 "kuid": "e847a030a6d84e7e8d9fc71e5e7180fe",
                 "srcKUID": "u2f478f6679c4169bf6e9d3fb44bf44c",
                 "wType": "Image"
-            }
+            },
+            "left": {
+                "Default": {
+                    "type": "string",
+                    "value": ""
+                }
+            },
+            "src": "back512h.png"
         },
         "imgRightArrow": {
             "__events__": {},
@@ -369,6 +362,18 @@
                 "kuid": "d7e1cf037f754046b0a893312e81a260",
                 "srcKUID": "u021f008feca40eba769c7b82f0d8d00",
                 "wType": "Label"
+            },
+            "height": {
+                "Default": {
+                    "type": "string",
+                    "value": "100%"
+                }
+            },
+            "width": {
+                "Default": {
+                    "type": "string",
+                    "value": "100%"
+                }
             }
         },
         "lblIncreaseLimit": {
@@ -395,13 +400,60 @@
                 "wType": "Label"
             }
         },
+        "lblSDAEDBidAmount": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "g52c755cac9f47b7b3097531d52590b2",
+                "srcKUID": "u8ed6d17e03c4036bacf23bac394c1f0",
+                "wType": "Label"
+            }
+        },
+        "lblSDAEDCurrentAmt": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "ic6547a669f94ac292fcadc95a6a5b0c",
+                "srcKUID": "u49cc4efd0564c8fa9c73e8fd507aaba",
+                "wType": "Label"
+            }
+        },
         "lblSDAmount": {
             "__events__": {},
             "__info__": {
                 "kuid": "b30009c951aa49b8a26be25285ba21c1",
                 "srcKUID": "u7196f1dc61542a097f2c9aeb21e9bb3",
                 "wType": "Label"
+            },
+            "text": ""
+        },
+        "lblSDBidAmount": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "bcef422924654bceb3a0e8a47c537c75",
+                "srcKUID": "u1752c3c3983449ab8f11e0e5bcb0e82",
+                "wType": "Label"
+            },
+            "height": {
+                "Default": {
+                    "type": "ref",
+                    "value": "preferred"
+                }
+            },
+            "text": "",
+            "width": {
+                "Default": {
+                    "type": "ref",
+                    "value": "preferred"
+                }
             }
+        },
+        "lblSDCurrentAmount": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "eb99987a4532457a83e498aa96644b96",
+                "srcKUID": "u370f804fa914016bcb9856d27ed19cb",
+                "wType": "Label"
+            },
+            "text": ""
         },
         "lblSecurityDepositDetails": {
             "__events__": {},

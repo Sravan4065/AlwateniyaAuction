@@ -71,14 +71,6 @@
                 "wType": "Label"
             }
         },
-        "CopylblSDAmount0hf940c00309144": {
-            "__events__": {},
-            "__info__": {
-                "kuid": "h4acda9568214038b1d9f9fc31a0c8bd",
-                "srcKUID": "u09612780ab14caab9fb59fb860fab3f",
-                "wType": "Label"
-            }
-        },
         "Image0d37052857e934e": {
             "__events__": {},
             "__info__": {
@@ -119,6 +111,18 @@
                 "kuid": "f8f3d13d9ec84806aeefa2ea04c10770",
                 "srcKUID": "cf359f75983945059a86c0bbf14ca1fa",
                 "wType": "FlexContainer"
+            },
+            "left": {
+                "Default": {
+                    "type": "string",
+                    "value": "13dp"
+                }
+            },
+            "width": {
+                "Default": {
+                    "type": "string",
+                    "value": "35dp"
+                }
             },
             "zIndex": {
                 "Default": 2
@@ -293,14 +297,6 @@
                 "wType": "Label"
             }
         },
-        "lblSDAmount": {
-            "__events__": {},
-            "__info__": {
-                "kuid": "j4a6a4ab6099450caad05f6ec6f6f7ed",
-                "srcKUID": "ua6dfe8e12c848fba737ccb1ac7a31ab",
-                "wType": "Label"
-            }
-        },
         "lblSummaryofVehiclePayments": {
             "__events__": {},
             "__info__": {
@@ -314,6 +310,22 @@
             "__info__": {
                 "kuid": "bb14dfe36f5f4cd2891e3a205fe69cb9",
                 "srcKUID": "u9abd9f65c4c4b8aaeb265825d060f9f",
+                "wType": "Label"
+            }
+        },
+        "lblTotalApprovedVehiclesCount": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "j4a6a4ab6099450caad05f6ec6f6f7ed",
+                "srcKUID": "ua6dfe8e12c848fba737ccb1ac7a31ab",
+                "wType": "Label"
+            }
+        },
+        "lblTotalPaidVehicles": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "h4acda9568214038b1d9f9fc31a0c8bd",
+                "srcKUID": "u09612780ab14caab9fb59fb860fab3f",
                 "wType": "Label"
             }
         }
