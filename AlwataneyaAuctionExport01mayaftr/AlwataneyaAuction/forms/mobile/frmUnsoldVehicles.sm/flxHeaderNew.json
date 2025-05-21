@@ -1,0 +1,97 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizUserWidget",
+    "DNDConfig": null,
+    "_children_": [],
+    "_height_": {
+        "type": "string",
+        "value": "100%"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_orientation_": 1,
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_percent_": true,
+    "_skin_": "s5f6044abe194492b5e811af99858a26",
+    "_top_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "100%"
+    },
+    "areflexpropsreferenced": false,
+    "autogrowmode": 0,
+    "canUpdateUI": true,
+    "clipbounds": false,
+    "containerweight": 0,
+    "dataDiffs": {
+        "btnChangeLang": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "e0e38e11a2b24835a4f18097581f07a2",
+                "srcKUID": "u05eacb522bc42e6b581d68b6c0316a0",
+                "wType": "Button"
+            }
+        },
+        "flxHeaderNew": {
+            "__events__": {},
+            "__info__": {
+                "isRoot": true,
+                "kuid": "a7fda17fc5be41389f54c14cb87bab6f",
+                "srcKUID": "u3b52c6266c1464393dd34c4c802b658",
+                "wType": "FlexContainer"
+            },
+            "autogrowMode": {
+                "Default": 0
+            },
+            "height": {
+                "Default": {
+                    "type": "string",
+                    "value": "100%"
+                }
+            }
+        },
+        "imgLogo": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "d35b974fd41545b29ca99e3e426b9970",
+                "srcKUID": "ufab5956ff3849468fb84cb5fecf230d",
+                "wType": "Image"
+            }
+        }
+    },
+    "enablescrolling": true,
+    "id": "flxHeaderNew",
+    "info": null,
+    "iscustomlayout": false,
+    "isdatareferenced": false,
+    "isvisible": true,
+    "kuid": "a7fda17fc5be41389f54c14cb87bab6f",
+    "layouttype": 2,
+    "masterType": 0,
+    "name": "kony.ui.UserWidgetInstance",
+    "parent": "flxHeader",
+    "pf": "frmUnsoldVehicles",
+    "retaincontentalignment": false,
+    "retainflexpositionproperties": false,
+    "retainflowhorizontalalignment": false,
+    "snapgridsize": 10,
+    "snaptogrid": true,
+    "sourceUserWidget": "u3b52c6266c1464393dd34c4c802b658",
+    "wType": "UserWidgetInstance",
+    "zindex": 1
+}

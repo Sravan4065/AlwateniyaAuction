@@ -1,0 +1,325 @@
+{
+    "@class": "com.kony.gen.viz.model.container.KVizSegment2",
+    "DNDConfig": null,
+    "_data_": [
+        {
+            "btnArchive": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "EDIT"
+            },
+            "btnEdit": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "REQUEST DELIVERY"
+            },
+            "btnReCall": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "EDIT"
+            },
+            "btnReList": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "PAY NOW"
+            },
+            "imgCardata": {
+                "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                "src": "imagedrag.png"
+            },
+            "imgContactSupport": {
+                "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                "src": "reqestservices.png"
+            },
+            "imgDocument": {
+                "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                "src": "ep_document.png"
+            },
+            "lblCarmodelname": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Kia Carnival 2019"
+            },
+            "lblContactSupport": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "REQUEST SERVICES"
+            },
+            "lblDocuments": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "DOCUMENTS"
+            },
+            "lblHighestBid": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "APPROVAL STATUS"
+            },
+            "lblHighestBidVal": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "10,000"
+            },
+            "lblLocation": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Location"
+            },
+            "lblLocationVal": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Abu Dhabi"
+            },
+            "lblLot": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Lot#"
+            },
+            "lblLotNum": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "121314"
+            }
+        },
+        {
+            "btnArchive": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "EDIT"
+            },
+            "btnEdit": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "REQUEST DELIVERY"
+            },
+            "btnReCall": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "EDIT"
+            },
+            "btnReList": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "PAY NOW"
+            },
+            "imgCardata": {
+                "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                "src": "imagedrag.png"
+            },
+            "imgContactSupport": {
+                "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                "src": "reqestservices.png"
+            },
+            "imgDocument": {
+                "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                "src": "ep_document.png"
+            },
+            "lblCarmodelname": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Kia Carnival 2019"
+            },
+            "lblContactSupport": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "REQUEST SERVICES"
+            },
+            "lblDocuments": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "DOCUMENTS"
+            },
+            "lblHighestBid": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "APPROVAL STATUS"
+            },
+            "lblHighestBidVal": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "10,000"
+            },
+            "lblLocation": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Location"
+            },
+            "lblLocationVal": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Abu Dhabi"
+            },
+            "lblLot": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Lot#"
+            },
+            "lblLotNum": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "121314"
+            }
+        },
+        {
+            "btnArchive": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "EDIT"
+            },
+            "btnEdit": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "REQUEST DELIVERY"
+            },
+            "btnReCall": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "EDIT"
+            },
+            "btnReList": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "PAY NOW"
+            },
+            "imgCardata": {
+                "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                "src": "imagedrag.png"
+            },
+            "imgContactSupport": {
+                "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                "src": "reqestservices.png"
+            },
+            "imgDocument": {
+                "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                "src": "ep_document.png"
+            },
+            "lblCarmodelname": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Kia Carnival 2019"
+            },
+            "lblContactSupport": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "REQUEST SERVICES"
+            },
+            "lblDocuments": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "DOCUMENTS"
+            },
+            "lblHighestBid": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "APPROVAL STATUS"
+            },
+            "lblHighestBidVal": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "10,000"
+            },
+            "lblLocation": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Location"
+            },
+            "lblLocationVal": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Abu Dhabi"
+            },
+            "lblLot": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Lot#"
+            },
+            "lblLotNum": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "121314"
+            }
+        }
+    ],
+    "_height_": {
+        "type": "string",
+        "value": "100%"
+    },
+    "_indicator_": "none",
+    "_left_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_orientation_": 2,
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_top_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "100%"
+    },
+    "autogrowmode": 0,
+    "canUpdateUI": true,
+    "containerweight": 100,
+    "counter": "02",
+    "focusedindex": null,
+    "focuseditem": null,
+    "generatedtemplate": null,
+    "groupcells": false,
+    "hasSections": false,
+    "id": "segUnsoldVehicles",
+    "info": null,
+    "ipad": {
+        "psp": {
+            "indicator": "rowselect"
+        }
+    },
+    "iphone": {
+        "psp": {
+            "indicator": "none"
+        }
+    },
+    "iscustomlayout": false,
+    "isvisible": true,
+    "kuid": "d041ff6c211240f1a97ff4fa9e55d1fe",
+    "masterdata": {},
+    "name": "kony.ui.SegmentedUI2",
+    "needpageindicator": true,
+    "pageoffdotimage": "pageoffdot.png",
+    "pageondotimage": "pageondot.png",
+    "paginationconfig": {
+        "position": "bottom"
+    },
+    "parent": "flxSegment",
+    "pf": "frmUnsoldVehicles",
+    "retaincontentalignment": false,
+    "retainflexpositionproperties": false,
+    "retainselection": false,
+    "rowTemplateId": "e9e4a196f0794d9fb02239ace18cc85c",
+    "rowcounter": 2,
+    "rowfocusskin": "s961e586fe794e498e31c111fe40ef67",
+    "rowskin": "s2d1a440627e4c3eb337995bf3931fdd",
+    "rowtemplate": "Flex0bbed68b3d77d4a",
+    "screenlevelwidget": false,
+    "seccounter": 0,
+    "sectionHeaderTemplateId": null,
+    "sectionheaderskin": "s394e25221a84c198a12829462d278f1",
+    "selectedRows": null,
+    "selectedState": false,
+    "selectedindex": null,
+    "selectedindices": null,
+    "selecteditems": null,
+    "selectedsectionindex": 0,
+    "selectionbehavior": "default",
+    "separatorcolor": "ffffff00",
+    "separatorrequired": true,
+    "separatorthickness": 10,
+    "showscrollbars": false,
+    "viewtype": "tableview",
+    "vizProps": {},
+    "wType": "Segment",
+    "widgetalignment": 5,
+    "widgetdatamap": {
+        "CopyflxLine0a128c9f1790f45": "CopyflxLine0a128c9f1790f45",
+        "btnArchive": "btnArchive",
+        "btnEdit": "btnEdit",
+        "btnReCall": "btnReCall",
+        "btnReList": "btnReList",
+        "flxBottam": "flxBottam",
+        "flxCardata": "flxCardata",
+        "flxContactSupport": "flxContactSupport",
+        "flxDetails": "flxDetails",
+        "flxDocuments": "flxDocuments",
+        "flxImage": "flxImage",
+        "flxImgContactSupport": "flxImgContactSupport",
+        "flxLine2": "flxLine2",
+        "flxNameAndAddress": "flxNameAndAddress",
+        "flxUnsoldVehicles": "flxUnsoldVehicles",
+        "flximgDocument": "flximgDocument",
+        "imgCardata": "imgCardata",
+        "imgContactSupport": "imgContactSupport",
+        "imgDocument": "imgDocument",
+        "lblCarmodelname": "lblCarmodelname",
+        "lblContactSupport": "lblContactSupport",
+        "lblDocuments": "lblDocuments",
+        "lblHighestBid": "lblHighestBid",
+        "lblHighestBidVal": "lblHighestBidVal",
+        "lblLocation": "lblLocation",
+        "lblLocationVal": "lblLocationVal",
+        "lblLot": "lblLot",
+        "lblLotNum": "lblLotNum"
+    }
+}
