@@ -154,6 +154,7 @@ define({
      online_auction_list_inputparam["auction_type"] = 0;
      online_auction_list_inputparam["yard_branch"] = 0;
      online_auction_list_inputparam["price_range"] = 0;
+      online_auction_list_inputparam["lot_no"] = 72196;
      online_auction_list_inputparam["page"] = 1;
      online_auction_list_inputparam["pageSize"] = 10;
     var online_auction_list_httpheaders = {};
@@ -263,7 +264,8 @@ define({
           var imgFeaturedAuctions = new voltmx.ui.Image2({
                 id: "imgFeaturedAuctions" + i,
                 isVisible: true,
-               src : records[i].thumbnail_url ? records[i].thumbnail_url : "car3.png",
+//                src : records[i].thumbnail_url ? records[i].thumbnail_url : "car3.png",
+              src: "car3.png",
               width: "100%", 
                 height: "100%", 
                 imageScaleMode: constants.IMAGE_SCALE_MODE_FIT_TO_DIMENSIONS,
@@ -636,6 +638,14 @@ flxLikeBid.add(flxLikeFromRecommendedFilter, flxBidEnable, btnBidNow);
      
 
           flxFeaturedAuctionsItemTop.add(imgFeaturedAuctions);
+          if (records[i].thumbnail_url) {
+            this.checkSessionAndAssignImage(
+              imgFeaturedAuctions,
+              records[i].thumbnail_url   // password
+            );
+          }
+          
+
           flexFeaturedAuctionsItem.add(flxFeaturedAuctionsItemTop); 
           flxFeaturedAuctionsItemBottom.add(lblCarname);
           
@@ -658,6 +668,50 @@ flxLikeBid.add(flxLikeFromRecommendedFilter, flxBidEnable, btnBidNow);
         voltmx.print("exit from function");
     },
   
+checkSessionAndAssignImage: function(imgWidget, imageUrl) {
+    var request = new voltmx.net.HttpRequest();
+    request.open("GET", imageUrl, false);
+    request.setRequestHeader("Cookie", this.sessionCookie || "");
+    request.send();
+
+    if (request.status === 200) {
+        imgWidget.src = imageUrl;
+    } else if (request.status === 401 || request.status === 403) {
+        this.loginToDam((newCookie) => {
+            this.sessionCookie = newCookie;
+            imgWidget.src = imageUrl;
+        });
+    } else {
+        voltmx.print("Session check failed with status: " + request.status);
+    }
+},
+
+loginToDam: function(callback) {
+    var httpClient = new voltmx.net.HttpRequest();
+    httpClient.open("POST", "https://dev-hcltx.et.ae/dx/api/core/v1/auth/login", false);
+
+    var payload = {
+        username: "sai.k",
+        password: "etsai191"
+    };
+
+    httpClient.setRequestHeader("Content-Type", "application/json");
+    httpClient.send(JSON.stringify(payload));
+
+    if (httpClient.status === 200) {
+        var allHeaders = httpClient.getAllResponseHeaders();
+        var cookie = allHeaders["Set-Cookie"] || allHeaders["set-cookie"];
+        if (cookie) {
+            voltmx.print("Login successful, new cookie set.");
+            callback(cookie);
+        } else {
+            voltmx.print("Login succeeded but no cookie returned.");
+        }
+    } else {
+        voltmx.print("Login failed with status: " + httpClient.status);
+    }
+},
+
   openBidAmountContainer: function(params){
     
     var isLogin = voltmx.store.getItem("isLogin");

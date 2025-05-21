@@ -80,16 +80,20 @@ define({
         
                                        }
                                        break;
-        case "Security Deposits"    :   {
-                                     x = new voltmx.mvc.Navigation("frmSecurityDeposits");
+        case "Pending Sale Confirmation"    :   {
+                                     x = new voltmx.mvc.Navigation("frmPendingDelivery");
                                        }
                                        break; 
-        case "Vehicle Payments"     : {
-                                  x = new voltmx.mvc.Navigation("frmSummaryOfVehiclePayments");
+        case "Sold"     : {
+                                  x = new voltmx.mvc.Navigation("frmSoldVehicles");
                                       }
                                       break;
-        case "Other Services Payments"        :  {
-                                  x = new voltmx.mvc.Navigation("frmSummaryOfOtherServicePayments");
+        case "Delivered Vehicles"     : {
+                                  x = new voltmx.mvc.Navigation("frmDeliveredVehicles");
+                                      }
+                                      break;
+        case "Unsold"        :  {
+                                  x = new voltmx.mvc.Navigation("frmUnsoldVehicles");
                                       }
                                       break;
     }
