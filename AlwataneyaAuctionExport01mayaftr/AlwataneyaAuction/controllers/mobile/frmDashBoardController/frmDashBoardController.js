@@ -8,7 +8,8 @@ define({
         this.createSegmentDynamically();
         this.isUIInitialized = true;
          }
-   this.invokeOnlineAuctionList();
+   
+   
    this.view.postShow = this.onPostShow.bind(this);
     this.view.btnRecommended.onClick = this.showRecommendedFilterFlex.bind(this,"recommended");
    this.view.btnEndingSoon.onClick = this.showRecommendedFilterFlex.bind(this,"endingsoon");
@@ -47,9 +48,13 @@ define({
  },
   
   onPreshow: function(){
-
+var self = this;
     this.toggleFooterIcons();
-    
+     this.checkSession(function() {
+        
+        voltmx.print("Session is valid. Proceeding with data load.");
+       self.invokeOnlineAuctionList(); 
+    });
     this.view.btnRecommended.skin = "sknBtnRecommendedFilter";
     this.view.btnEndingSoon.skin = "sknBtnRecommendedFilterNormal";
     this.view.btnRecentlyViewed.skin = "sknBtnRecommendedFilterNormal";
@@ -140,21 +145,28 @@ define({
     if (online_auction_list_inputparam == undefined) {
         var online_auction_list_inputparam = {};
     }
+     var userid = voltmx.store.getItem("userId");
     online_auction_list_inputparam["serviceID"] = "fry_int_auctions$get-buyer-all-auctions";
-    online_auction_list_inputparam["body_type"] = "";
+     online_auction_list_inputparam["body_type"] = "";
     online_auction_list_inputparam["transmission_type"] = "";
     online_auction_list_inputparam["fuel_type"] = "";
     online_auction_list_inputparam["body_condition"] = "";
     online_auction_list_inputparam["brand"] = "";
     online_auction_list_inputparam["model"] = "";
-    online_auction_list_inputparam["mileage_range"] = "";
+    online_auction_list_inputparam["mileage_range_from"] = "";
+    online_auction_list_inputparam["mileage_range_to"] = "";
     online_auction_list_inputparam["asset_id"] = "";
-    
-     online_auction_list_inputparam["year_range"] = 0;
+    online_auction_list_inputparam["user_id"] = userid ? userid : "";
+//      online_auction_list_inputparam["lot_no"] = 0
+     online_auction_list_inputparam["year_range_from"] = 0;
+     online_auction_list_inputparam["year_range_to"] = 0;
      online_auction_list_inputparam["auction_type"] = 0;
      online_auction_list_inputparam["yard_branch"] = 0;
-     online_auction_list_inputparam["price_range"] = 0;
-      online_auction_list_inputparam["lot_no"] = 72196;
+     online_auction_list_inputparam["price_range_from"] = 0;
+     online_auction_list_inputparam["price_range_to"] = 0;
+    online_auction_list_inputparam["priceSort"] = 0;
+    online_auction_list_inputparam["milageSort"] = 0;
+    online_auction_list_inputparam["yearSort"] = 0;
      online_auction_list_inputparam["page"] = 1;
      online_auction_list_inputparam["pageSize"] = 10;
     var online_auction_list_httpheaders = {};
@@ -182,7 +194,9 @@ define({
             "imgCarousel":"dashboardcarouselnew1.jpg",
             "lblCarouselSlideHeading": "ONLINE AUCTIONS",
             "lblCarouselSlideSubheading": "180 Vehicles available",
-            "btnAction": { "text": "VIEW ALL"}
+            "btnAction": { "text": "VIEW ALL",
+                          "onClick": this.navToAuctionCalendar.bind(this)
+                         }
         },
         {
              "imgCarousel":"dashboardcarouselimg2.jpg",
@@ -264,8 +278,8 @@ define({
           var imgFeaturedAuctions = new voltmx.ui.Image2({
                 id: "imgFeaturedAuctions" + i,
                 isVisible: true,
-//                src : records[i].thumbnail_url ? records[i].thumbnail_url : "car3.png",
-              src: "car3.png",
+               src : records[i].thumbnail_url ? records[i].thumbnail_url : "car3.png",
+//               src: "car3.png",
               width: "100%", 
                 height: "100%", 
                 imageScaleMode: constants.IMAGE_SCALE_MODE_FIT_TO_DIMENSIONS,
@@ -594,7 +608,7 @@ flxLikeFromRecommendedFilter.add(imgHeartIconFromRecommended);
 //             });
           
           var btnBidNow = new voltmx.ui.Button({
-    id: "btnBidNow",
+    id: "btnBidNow"+i,
     isVisible: true,
     height:"40dp",
     width: "35%",
@@ -638,12 +652,12 @@ flxLikeBid.add(flxLikeFromRecommendedFilter, flxBidEnable, btnBidNow);
      
 
           flxFeaturedAuctionsItemTop.add(imgFeaturedAuctions);
-          if (records[i].thumbnail_url) {
-            this.checkSessionAndAssignImage(
-              imgFeaturedAuctions,
-              records[i].thumbnail_url   // password
-            );
-          }
+//           if (records[i].thumbnail_url) {
+//             this.checkSessionAndAssignImage(
+//               imgFeaturedAuctions,
+//               records[i].thumbnail_url   // password
+//             );
+//           }
           
 
           flexFeaturedAuctionsItem.add(flxFeaturedAuctionsItemTop); 
@@ -668,25 +682,68 @@ flxLikeBid.add(flxLikeFromRecommendedFilter, flxBidEnable, btnBidNow);
         voltmx.print("exit from function");
     },
   
-checkSessionAndAssignImage: function(imgWidget, imageUrl) {
-    var request = new voltmx.net.HttpRequest();
-    request.open("GET", imageUrl, false);
-    request.setRequestHeader("Cookie", this.sessionCookie || "");
-    request.send();
+// checkSessionAndAssignImage: function(imgWidget, imageUrl) {
+//     var request = new voltmx.net.HttpRequest();
+//     request.open("GET", imageUrl, false);
+//     request.setRequestHeader("Cookie", this.sessionCookie || "");
+//     request.send();
 
-    if (request.status === 200) {
-        imgWidget.src = imageUrl;
-    } else if (request.status === 401 || request.status === 403) {
-        this.loginToDam((newCookie) => {
-            this.sessionCookie = newCookie;
-            imgWidget.src = imageUrl;
-        });
+//     if (request.status === 200) {
+//         imgWidget.src = imageUrl;
+//     } else if (request.status === 401 || request.status === 403) {
+//         this.loginToDam((newCookie) => {
+//             this.sessionCookie = newCookie;
+//             imgWidget.src = imageUrl;
+//         });
+//     } else {
+//         voltmx.print("Session check failed with status: " + request.status);
+//     }
+// },
+
+// loginToDam: function(callback) {
+//     var httpClient = new voltmx.net.HttpRequest();
+//     httpClient.open("POST", "https://dev-hcltx.et.ae/dx/api/core/v1/auth/login", false);
+
+//     var payload = {
+//         username: "sai.k",
+//         password: "etsai191"
+//     };
+
+//     httpClient.setRequestHeader("Content-Type", "application/json");
+//     httpClient.send(JSON.stringify(payload));
+
+//     if (httpClient.status === 200) {
+//         var allHeaders = httpClient.getAllResponseHeaders();
+//         var cookie = allHeaders["Set-Cookie"] || allHeaders["set-cookie"];
+//         if (cookie) {
+//             voltmx.print("Login successful, new cookie set.");
+//             callback(cookie);
+//         } else {
+//             voltmx.print("Login succeeded but no cookie returned.");
+//         }
+//     } else {
+//         voltmx.print("Login failed with status: " + httpClient.status);
+//     }
+// },
+  
+  checkSession: function(callback) {
+    if (this.sessionCookie) {
+        voltmx.print("Session already available.");
+        callback(); // Proceed if session exists
     } else {
-        voltmx.print("Session check failed with status: " + request.status);
+        voltmx.print("No session. Logging in...");
+        this.loginToDam((newCookie) => {
+            if (newCookie) {
+                this.sessionCookie = newCookie;
+                callback();
+            } else {
+                voltmx.print("Login failed. Cannot proceed.");
+            }
+        });
     }
 },
-
-loginToDam: function(callback) {
+  
+ loginToDam: function(callback) {
     var httpClient = new voltmx.net.HttpRequest();
     httpClient.open("POST", "https://dev-hcltx.et.ae/dx/api/core/v1/auth/login", false);
 
@@ -706,9 +763,11 @@ loginToDam: function(callback) {
             callback(cookie);
         } else {
             voltmx.print("Login succeeded but no cookie returned.");
+            callback(null);
         }
     } else {
         voltmx.print("Login failed with status: " + httpClient.status);
+        callback(null);
     }
 },
 
@@ -995,6 +1054,7 @@ loginToDam: function(callback) {
         this.view.btnRecentlyViewed.skin = "sknBtnRecommendedFilterNormal";
         this.view.btnYourFavourites.skin = "sknBtnRecommendedFilterNormal";
         this.view.btnNewlyListedVehicles.skin = "sknBtnRecommendedFilterNormal";
+        this.invokeOnlineAuctionList();
         break;
       case "endingsoon":
         this.view.btnRecommended.skin = "sknBtnRecommendedFilterNormal";
@@ -1002,6 +1062,7 @@ loginToDam: function(callback) {
         this.view.btnRecentlyViewed.skin = "sknBtnRecommendedFilterNormal";
         this.view.btnYourFavourites.skin = "sknBtnRecommendedFilterNormal";
         this.view.btnNewlyListedVehicles.skin = "sknBtnRecommendedFilterNormal";
+        this.invokeEndingSoonList();
         break;
       case "recentlyviewed":
 
@@ -1010,7 +1071,7 @@ loginToDam: function(callback) {
         this.view.btnRecentlyViewed.skin = "sknBtnRecommendedFilter";
         this.view.btnYourFavourites.skin = "sknBtnRecommendedFilterNormal";
         this.view.btnNewlyListedVehicles.skin = "sknBtnRecommendedFilterNormal";
-
+        this.invokeRecentlyList();
         break;
 
       case "yourfavourites":
@@ -1033,6 +1094,85 @@ loginToDam: function(callback) {
 
     }
   },
+  
+  invokeEndingSoonList: function()
+  {
+        var self = this;
+    var usertoken = voltmx.store.getItem("getUserAccesstoken");
+    var userid = voltmx.store.getItem("userId");
+    function invokeEndingList(status, get_buyer_ending_soon) {
+      var records = get_buyer_ending_soon && get_buyer_ending_soon.records ? get_buyer_ending_soon.records : [];
+      if (records.length > 0) {
+      self.records = records;
+      self.isRecords = true;
+    } else {
+      self.records = [];  // fallback to empty
+      self.isRecords = false;
+    }
+
+    // Always call create function after response
+    self.view.flxScrollFilteredItems.removeAll(); 
+    self.createsIntoFeaturedAuctions();
+    }
+    if (get_buyer_ending_soon_inputparam == undefined) {
+        var get_buyer_ending_soon_inputparam = {};
+    }
+    
+    
+    get_buyer_ending_soon_inputparam["serviceID"] = "fry_int_buyer$get-buyer-ending-soon";
+     get_buyer_ending_soon_inputparam["user_id"] = userid;
+     get_buyer_ending_soon_inputparam["page"] = "1";
+     get_buyer_ending_soon_inputparam["pageSize"] = "10";
+    
+    
+    var get_buyer_ending_soon_httpheaders = {
+      "user_token": usertoken
+    };
+    get_buyer_ending_soon_inputparam["httpheaders"] = get_buyer_ending_soon_httpheaders;
+    var get_buyer_ending_soon_httpconfigs = {};
+    get_buyer_ending_soon_inputparam["httpconfig"] = get_buyer_ending_soon_httpconfigs;
+    fry_int_buyer$get_buyer_ending_soon = mfintegrationsecureinvokerasync(get_buyer_ending_soon_inputparam, "fry_int_buyer", "get-buyer-ending-soon", invokeEndingList);
+  },
+  
+  invokeRecentlyList: function()
+  {
+    
+      var self = this;
+     var usertoken = voltmx.store.getItem("getUserAccesstoken");
+    var userid = voltmx.store.getItem("userId");
+
+    function invokeRecentlyViewList(status, get_buyer_recently_viewed_vehicles) {
+      var records = get_buyer_recently_viewed_vehicles && get_buyer_recently_viewed_vehicles.records ? get_buyer_recently_viewed_vehicles.records : [];
+      if (records.length > 0) {
+      self.records = records;
+      self.isRecords = true;
+    } else {
+      self.records = [];  // fallback to empty
+      self.isRecords = false;
+    }
+
+    // Always call create function after response
+    self.view.flxScrollFilteredItems.removeAll(); 
+    self.createsIntoFeaturedAuctions();
+    }
+    if (get_buyer_recently_viewed_vehicles_inputparam == undefined) {
+        var get_buyer_recently_viewed_vehicles_inputparam = {};
+    }
+    get_buyer_recently_viewed_vehicles_inputparam["serviceID"] = "fry_int_buyer$get-buyer-recently-viewed-vehicles";
+     get_buyer_recently_viewed_vehicles_inputparam["user_id"] = userid;
+     get_buyer_recently_viewed_vehicles_inputparam["page"] = "1";
+     get_buyer_recently_viewed_vehicles_inputparam["pageSize"] = "10";
+    var get_buyer_recently_viewed_vehicles_httpheaders = {
+      "user_token": usertoken
+    };
+    get_buyer_recently_viewed_vehicles_inputparam["httpheaders"] = get_buyer_recently_viewed_vehicles_httpheaders;
+    var get_buyer_recently_viewed_vehicles_httpconfigs = {};
+    get_buyer_recently_viewed_vehicles_inputparam["httpconfig"] = get_buyer_recently_viewed_vehicles_httpconfigs;
+    fry_int_buyer$get_buyer_recently_viewed_vehicles = mfintegrationsecureinvokerasync(get_buyer_recently_viewed_vehicles_inputparam, "fry_int_buyer", "get-buyer-recently-viewed-vehicles", invokeRecentlyViewList);
+    
+    
+  },
+  
   
   navToVehicleInspection: function(){
     var x = new voltmx.mvc.Navigation("frmVehicleInspection");

@@ -23,16 +23,26 @@
         "value": "0dp"
     },
     "_skin_": "sf4b9ed83d0244a5bfc52dd83e12816d",
-    "_src_": "group_1321315125.png",
+    "_src_": "bi1.png",
     "_top_": {
         "type": "string",
         "value": "0"
     },
     "_width_": {
         "type": "string",
-        "value": "30%"
+        "value": "35%"
+    },
+    "android": {
+        "top": {
+            "type": "string",
+            "value": "0"
+        }
     },
     "canUpdateUI": true,
+    "centery": {
+        "type": "string",
+        "value": "50.00%"
+    },
     "containerweight": 100,
     "id": "imgCarBodyStyle",
     "imagescalemode": 1,

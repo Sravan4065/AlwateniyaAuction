@@ -129,9 +129,9 @@ define({
     this.view.flxH1.setVisibility(true);
     this.view.flxH2.setVisibility(false);
     this.view.flxH3.setVisibility(false);
-    this.view.lblActiveBids.skin="sknLblCronosPro231f2018px49";
-   this.view.lblWinningBids.skin="sknLblCronosPro8e8e8e18px49";
-    this.view.lblLostBids.skin="sknLblCronosPro8e8e8e18px49"
+    this.view.lblActiveBids.skin="sknLblDubai231f2018px49";
+   this.view.lblWinningBids.skin="sknLblDubai8e8e8e18px49";
+    this.view.lblLostBids.skin="sknLblDubai8e8e8e18px49"
   },
   
     winningBidsToggle: function(){
@@ -141,9 +141,9 @@ define({
     this.view.flxH1.setVisibility(false);
     this.view.flxH2.setVisibility(true);
     this.view.flxH3.setVisibility(false);
-       this.view.lblActiveBids.skin="sknLblCronosPro8e8e8e18px49";
-   this.view.lblWinningBids.skin="sknLblCronosPro231f2018px49";
-    this.view.lblLostBids.skin="sknLblCronosPro8e8e8e18px49"
+       this.view.lblActiveBids.skin="sknLblDubai8e8e8e18px49";
+   this.view.lblWinningBids.skin="sknLblDubai231f2018px49";
+    this.view.lblLostBids.skin="sknLblDubai8e8e8e18px49"
   },
   
     lostBidToggle: function(){
@@ -153,9 +153,9 @@ define({
     this.view.flxH1.setVisibility(false);
     this.view.flxH2.setVisibility(false);
     this.view.flxH3.setVisibility(true);
-        this.view.lblActiveBids.skin="sknLblCronosPro8e8e8e18px49";
-   this.view.lblWinningBids.skin="sknLblCronosPro8e8e8e18px49";
-    this.view.lblLostBids.skin="sknLblCronosPro231f2018px49"
+        this.view.lblActiveBids.skin="sknLblDubai8e8e8e18px49";
+   this.view.lblWinningBids.skin="sknLblDubai8e8e8e18px49";
+    this.view.lblLostBids.skin="sknLblDubai231f2018px49"
   },
   
   
@@ -410,18 +410,6 @@ define({
 
   mfintegrationsecureinvokerasync(inputParam, "ms_buyer", "add-tracked-object", addCallBack);
 
-//       var self = this;
-
-//     function removeCallBack(status, remove_tracked_object) {}
-//     if (remove_tracked_object_inputparam == undefined) {
-//         var remove_tracked_object_inputparam = {};
-//     }
-//     remove_tracked_object_inputparam["serviceID"] = "ms_buyer$remove-tracked-object";
-//     var remove_tracked_object_httpheaders = {};
-//     remove_tracked_object_inputparam["httpheaders"] = remove_tracked_object_httpheaders;
-//     var remove_tracked_object_httpconfigs = {};
-//     remove_tracked_object_inputparam["httpconfig"] = remove_tracked_object_httpconfigs;
-//     ms_buyer$remove_tracked_object = mfintegrationsecureinvokerasync(remove_tracked_object_inputparam, "ms_buyer", "remove-tracked-object", removeCallBack);
 
     
   },

@@ -3,7 +3,11 @@
     "DNDConfig": null,
     "_height_": {
         "type": "string",
-        "value": "45%"
+        "value": "90%"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "-3%"
     },
     "_margin_": [
         6,
@@ -17,14 +21,10 @@
         0,
         0
     ],
-    "_right_": {
-        "type": "string",
-        "value": "20dp"
-    },
-    "_skin_": "s1064ab6cea14d7a8e8af05636981ae7",
-    "_text_": "Bid Now",
+    "_skin_": "s93486371d32463d838ab1d0bd2de50b",
+    "_text_": "BID NOW",
     "_top_": {
-        "type": "string",
+        "type": "number",
         "value": "0"
     },
     "_width_": {
@@ -38,17 +38,20 @@
     },
     "containerweight": 100,
     "contentalignment": 5,
+    "disabledSkins": {
+        "focusSkin": "sa87b3f55ce0476ea4dbfd006e2cf0b6"
+    },
     "displaytext": true,
-    "focusskin": "s84277efe91b44ad9bdc5f7467d5c17b",
     "id": "btnBidNow",
     "info": null,
     "iscustomlayout": false,
     "isvisible": true,
-    "kuid": "f48113cad4ca4b7b94c3deb00d6aa85a",
+    "kuid": "d83d4feed261426c811acc20d04cab09",
     "name": "kony.ui.Button",
-    "parent": "flxBidNow",
+    "parent": "flxBidAmountEnterBox",
     "pf": "frmDetails",
     "retaincontentalignment": false,
     "retainflexpositionproperties": false,
-    "wType": "Button"
+    "wType": "Button",
+    "zindex": 1
 }

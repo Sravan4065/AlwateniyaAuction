@@ -132,7 +132,7 @@
     },
     "iphone": {
         "psp": {
-            "indicator": "rowselect"
+            "indicator": "none"
         }
     },
     "iscustomlayout": false,
@@ -165,7 +165,7 @@
     "selectedindex": null,
     "selectedindices": null,
     "selecteditems": null,
-    "selectedsectionindex": null,
+    "selectedsectionindex": 0,
     "selectionbehavior": "default",
     "separatorcolor": "eae9e900",
     "separatorrequired": true,

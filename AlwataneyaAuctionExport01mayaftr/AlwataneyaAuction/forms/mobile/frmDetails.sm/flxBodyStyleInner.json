@@ -44,7 +44,7 @@
     },
     "children": [
         "lblBodyStyle",
-        "lblSUV",
+        "lblBodyStyleName",
         "imgCarBodyStyle"
     ],
     "clipbounds": false,

@@ -44,7 +44,7 @@
     },
     "children": [
         "lblDriveType",
-        "lbl4WD",
+        "lblDriveTypeValue",
         "imgDriveType"
     ],
     "clipbounds": false,

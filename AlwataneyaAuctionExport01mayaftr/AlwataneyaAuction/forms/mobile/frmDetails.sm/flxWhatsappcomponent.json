@@ -72,7 +72,7 @@
                 }
             },
             "zIndex": {
-                "Default": 3
+                "Default": 4
             }
         },
         "imgWhatsapp": {
@@ -104,5 +104,5 @@
     "snaptogrid": true,
     "sourceUserWidget": "gd5ec93c0a9641dfba68ab264675d08b",
     "wType": "UserWidgetInstance",
-    "zindex": 3
+    "zindex": 4
 }

@@ -34,10 +34,15 @@
     "allboxes": [],
     "canUpdateUI": true,
     "children": [
+        "flxHeaderNew",
         "flxScrollMain",
         "flxMultipleImages",
         "flxWhatsappcomponent",
-        "flxBidNowButton"
+        "flxBidNowButton",
+        "flxBidAmountSelectionContainer",
+        "flxOverLay",
+        "flxBidSuccessPopup",
+        "flxAutoBidAmountContainer"
     ],
     "clipbounds": false,
     "containerweight": 100,

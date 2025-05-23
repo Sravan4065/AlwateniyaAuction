@@ -22,7 +22,7 @@
         0
     ],
     "_percent_": true,
-    "_skin_": "s21d441f28124998a376a17103733ae7",
+    "_skin_": "se512f4afc464aa7a27472e3b79ffcd9",
     "_top_": {
         "type": "string",
         "value": "0"
@@ -56,5 +56,6 @@
     "snapgridsize": 10,
     "snaptogrid": true,
     "wType": "FlexContainer",
-    "widgetalignment": 1
+    "widgetalignment": 1,
+    "zindex": 5
 }

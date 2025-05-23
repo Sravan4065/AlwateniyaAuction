@@ -44,7 +44,7 @@
     },
     "children": [
         "lblEngine",
-        "lblCylinder",
+        "lblEngineType",
         "imgEngine"
     ],
     "clipbounds": false,

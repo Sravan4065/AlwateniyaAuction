@@ -48,13 +48,20 @@ selectedFilters: {},
   
   onPreshow: function(){
     //    this.setDataToSeg();
+    var self = this;
     this.pageSize = 10;
     this.currentOffset = 0;
     this.view.segCurrentAuctionList.setData([]);
 //     this.view.btnLoadMore.setVisibility(true);
 
     this.toggleFooterIcons();
-    this.invokeOnlineAuctionList();
+    
+      this.checkSession(function() {
+        
+        voltmx.print("Session is valid. Proceeding with data load.");
+       self.invokeOnlineAuctionList(); 
+    });
+   
     this.closeBidAmountContainer();
     
    this.view.flxCommercialVehiclesSelected.setVisibility(false);
@@ -72,6 +79,50 @@ selectedFilters: {},
      this.view.flxLightVehiclesBodyTypeSelected.setVisibility(false);
   },
   
+  checkSession: function(callback) {
+    if (this.sessionCookie) {
+        voltmx.print("Session already available.");
+        callback(); // Proceed if session exists
+    } else {
+        voltmx.print("No session. Logging in...");
+        this.loginToDam((newCookie) => {
+            if (newCookie) {
+                this.sessionCookie = newCookie;
+                callback();
+            } else {
+                voltmx.print("Login failed. Cannot proceed.");
+            }
+        });
+    }
+},
+  
+ loginToDam: function(callback) {
+    var httpClient = new voltmx.net.HttpRequest();
+    httpClient.open("POST", "https://dev-hcltx.et.ae/dx/api/core/v1/auth/login", false);
+
+    var payload = {
+        username: "sai.k",
+        password: "etsai191"
+    };
+
+    httpClient.setRequestHeader("Content-Type", "application/json");
+    httpClient.send(JSON.stringify(payload));
+
+    if (httpClient.status === 200) {
+        var allHeaders = httpClient.getAllResponseHeaders();
+        var cookie = allHeaders["Set-Cookie"] || allHeaders["set-cookie"];
+        if (cookie) {
+            voltmx.print("Login successful, new cookie set.");
+            callback(cookie);
+        } else {
+            voltmx.print("Login succeeded but no cookie returned.");
+            callback(null);
+        }
+    } else {
+        voltmx.print("Login failed with status: " + httpClient.status);
+        callback(null);
+    }
+},
   onPostShow: function()
   {
     this.view.btn500AED.onClick = this.selectBidAmountAddIntoTextBox.bind(this,"500");
@@ -174,13 +225,21 @@ selectedFilters: {},
     online_auction_list_inputparam["body_condition"] = "";
     online_auction_list_inputparam["brand"] = "";
     online_auction_list_inputparam["model"] = "";
-    online_auction_list_inputparam["mileage_range"] = "";
+    online_auction_list_inputparam["mileage_range_from"] = "";
+    online_auction_list_inputparam["mileage_range_to"] = "";
     online_auction_list_inputparam["asset_id"] = "";
-    
-     online_auction_list_inputparam["year_range"] = 0;
+//      online_auction_list_inputparam["lot_no"] = 0
+    online_auction_list_inputparam["user_id"] = this.userid ? this.userid : "";
+     online_auction_list_inputparam["year_range_from"] = 0;
+     online_auction_list_inputparam["year_range_to"] = 0;
      online_auction_list_inputparam["auction_type"] = 0;
      online_auction_list_inputparam["yard_branch"] = 0;
-     online_auction_list_inputparam["price_range"] = 0;
+//      online_auction_list_inputparam["lot_no"] = 0;
+     online_auction_list_inputparam["price_range_from"] = 0;
+     online_auction_list_inputparam["price_range_to"] = 0;
+    online_auction_list_inputparam["priceSort"] = 0;
+    online_auction_list_inputparam["milageSort"] = 0;
+    online_auction_list_inputparam["yearSort"] = 0;
      online_auction_list_inputparam["page"] = 1;
      online_auction_list_inputparam["pageSize"] = self.pageSize;
     var online_auction_list_httpheaders = {};
@@ -227,7 +286,11 @@ selectedFilters: {},
 
   for (var i = 0; i < newRecords.length; i++) {
     var item = newRecords[i];
+    var imageUrl = item.thumbnail_url;
+    
+   
     var carimage = item.thumbnail_url && item.thumbnail_url.trim() !== "" ? item.thumbnail_url : "car3.png";
+    
     var carname = item.sub_category_name && item.sub_category_name.trim() !== "" ? item.sub_category_name : "N/A";
     var timercount = item.time_remaining;
     var lotnum = item.ID || "N/A";
@@ -238,7 +301,8 @@ selectedFilters: {},
     var price = Number(item.max_bid_amount);
     var highestbidder = item.highest_bidder;
     var bidrateSkin = (item.highest_bidder === this.userid) ? "sknLblCronosProd0290512Bold22px" : "sknLblDubaid3243720pxbold";
-
+    var favFlexSkin = (item.is_favourite === "true") ? "sknFlxd32437custom120pxround" : "sknFlx231f20custom120pxround";
+    var imgheartset = (item.is_favourite === "true") ? "heartlikerecommended.png" : "imgdislikenew.png";
     data.push({
       "imgCarPIcture": carimage,
       "lblCarname": carname,
@@ -252,10 +316,10 @@ selectedFilters: {},
       "lblLocationName": location,
       "lblAuctionID": aucid,
       "flxLikeHeart": {
-        "skin": "sknFlx231f20custom120pxround",
-        "onClick": this.addToWishList.bind(this)
+        "skin": favFlexSkin,
+        "onClick": this.addActiveToWishList.bind(this,objid,aucid)
       },
-      "imgHeart": "imgdislikenew.png",
+      "imgHeart": imgheartset,
       "lblCurrentBid": "CURRENT BID",
       "lblPrice": {
         "text": "AED " + price,
@@ -270,8 +334,9 @@ selectedFilters: {},
         "onClick": this.openBidAmountContainer.bind(this, objid, aucid, price, highestbidder)
       }
     });
-  }
-
+  
+   }
+  
   self.view.segCurrentAuctionList.addAll(data);
   voltmx.application.dismissLoadingScreen();
     
@@ -349,6 +414,113 @@ selectedFilters: {},
     this.vehicleHike = amount;
     
   },
+  
+   addActiveToWishList: function(objid,aucid)
+  {
+    
+     var isLogin = voltmx.store.getItem("isLogin");
+    if(isLogin)
+      {
+    var self = this;
+  var selectedRow = self.view.segCurrentAuctionList.selectedRowItems;
+  if (!selectedRow || selectedRow.length === 0) {
+    voltmx.print("No row is selected");
+    return;
+  }
+
+  var rowData = selectedRow[0];
+  var rowIndex = self.view.segCurrentAuctionList.selectedRowIndex[1];
+
+  var isAlreadyLiked = rowData.imgHeart === "heartlikerecommended.png";
+
+  var callback = function(success, message) {
+    if (success) {
+      // Update UI based on action
+      if (isAlreadyLiked) {
+        rowData.imgHeart = "imgdislikenew.png";
+        rowData.flxLikeHeart.skin = "sknFlx231f20custom120pxround";
+      } else {
+        rowData.imgHeart = "heartlikerecommended.png";
+        rowData.flxLikeHeart.skin = "sknFlxd32437custom120pxround";
+      }
+
+     self.view.segCurrentAuctionList.setDataAt(rowData, rowIndex);
+    } else {
+      alert("Favorite toggle failed: " + message);
+    }
+  };
+
+  if (isAlreadyLiked) {
+    self.invokeRemoveTrackedObject(objid, aucid, callback);
+  } else {
+    self.invokeAddTrackedObject(objid, aucid, callback);
+  }
+      }
+    else
+      {
+        new voltmx.mvc.Navigation("frmLoginScreen").navigate();
+      }
+    
+  },
+    
+   invokeAddTrackedObject: function(objid,aucid,callback)
+  {
+    
+    var usertoken = voltmx.store.getItem("getUserAccesstoken");
+
+  var inputParam = {
+    serviceID: "ms_buyer$add-tracked-object",
+    auction_id: aucid,
+    object_id: objid,
+    type: "favorites",
+    httpheaders: {
+      user_token: usertoken
+    },
+    httpconfig: {}
+  };
+
+  function addCallBack(status, response) {
+    voltmx.print("Add Favorite Response: " + JSON.stringify(response));
+
+    if (response.opstatus === 0 && response.message === "Asset added to favorites list") {
+      callback(true, response.message);
+    } else {
+      callback(false, response.message || "Unknown error");
+    }
+  }
+
+  mfintegrationsecureinvokerasync(inputParam, "ms_buyer", "add-tracked-object", addCallBack);
+
+
+    
+  },
+  
+  invokeRemoveTrackedObject: function(objid, aucid, callback) {
+  var usertoken = voltmx.store.getItem("getUserAccesstoken");
+
+  var inputParam = {
+    serviceID: "ms_buyer$remove-tracked-object",
+    auction_id: aucid,
+    object_id: objid,
+    type: "favorites",
+    httpheaders: {
+      user_token: usertoken
+    },
+    httpconfig: {}
+  };
+
+  function removeCallBack(status, response) {
+    voltmx.print("Remove Favorite Response: " + JSON.stringify(response));
+
+    if (response.opstatus === 0 && response.message === "Asset removed to favorites list") {
+      callback(true, response.message);
+    } else {
+      callback(false, response.message || "Unknown error");
+    }
+  }
+
+  mfintegrationsecureinvokerasync(inputParam, "ms_buyer", "remove-tracked-object", removeCallBack);
+},
   
   invokeFryWfAuctionBidding: function()
   {
@@ -460,28 +632,28 @@ selectedFilters: {},
     }
   },
   
-  addToWishList: function(widgetRef, sectionIndex, rowIndex){
-    var selectedRow  = this.view.segCurrentAuctionList.selectedRowItems;
-    if (!selectedRow || selectedRow.length === 0) {
-      voltmx.print("No row is selected");
-      return;
-    }
-    var rowData = selectedRow[0];
-    var rowIndex = this.view.segCurrentAuctionList.selectedRowIndex[1];
+//   addToWishList: function(widgetRef, sectionIndex, rowIndex){
+//     var selectedRow  = this.view.segCurrentAuctionList.selectedRowItems;
+//     if (!selectedRow || selectedRow.length === 0) {
+//       voltmx.print("No row is selected");
+//       return;
+//     }
+//     var rowData = selectedRow[0];
+//     var rowIndex = this.view.segCurrentAuctionList.selectedRowIndex[1];
 
-//     rowData.imgHeart = rowData.imgHeart === "imgdislikenew.png" ? "heartlikerecommended.png" : "imgdislikenew.png";
+// //     rowData.imgHeart = rowData.imgHeart === "imgdislikenew.png" ? "heartlikerecommended.png" : "imgdislikenew.png";
     
-       if (rowData.imgHeart === "imgdislikenew.png") {
-  rowData.imgHeart = "heartlikerecommended.png";
-  rowData.flxLikeHeart.skin =  "sknFlxd32437custom120pxround";
-} else {
-  rowData.imgHeart = "imgdislikenew.png";
-  rowData.flxLikeHeart.skin =  "sknFlx231f20custom120pxround";
-}
+//        if (rowData.imgHeart === "imgdislikenew.png") {
+//   rowData.imgHeart = "heartlikerecommended.png";
+//   rowData.flxLikeHeart.skin =  "sknFlxd32437custom120pxround";
+// } else {
+//   rowData.imgHeart = "imgdislikenew.png";
+//   rowData.flxLikeHeart.skin =  "sknFlx231f20custom120pxround";
+// }
 
-    // Update only the selected row
-    this.view.segCurrentAuctionList.setDataAt(rowData, rowIndex);
-  },
+//     // Update only the selected row
+//     this.view.segCurrentAuctionList.setDataAt(rowData, rowIndex);
+//   },
   enableAutoBid: function(objid,aucid){
     var isLogin = voltmx.store.getItem("isLogin");
     if(isLogin){

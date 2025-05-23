@@ -36,7 +36,7 @@
     "canUpdateUI": true,
     "children": [
         "flxTimer",
-        "btnBidNow"
+        "btnBidNow1"
     ],
     "clipbounds": false,
     "containerweight": 100,
