@@ -71,7 +71,8 @@
                 "kuid": "e180c1a8b3e4442fb4c1befb10520f8f",
                 "srcKUID": "u80c87a0e54e4a8eb912c43b9d169007",
                 "wType": "Image"
-            }
+            },
+            "src": "awa512h.png"
         }
     },
     "enablescrolling": true,

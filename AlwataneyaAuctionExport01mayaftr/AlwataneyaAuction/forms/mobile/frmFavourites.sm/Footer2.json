@@ -156,7 +156,8 @@
                 "kuid": "f0fd9917ea9e4cb8acd9224b115c0a65",
                 "srcKUID": "ub7e8e5e1cc94499859ddc9a185a24f8",
                 "wType": "Image"
-            }
+            },
+            "src": "homefooteractive.png"
         },
         "imgMegaPhone": {
             "__events__": {},
@@ -164,7 +165,8 @@
                 "kuid": "aa917d8bc1734bd0a471e0313145eecb",
                 "srcKUID": "u0d23a853d4b41b488bc5f07ad529ba4",
                 "wType": "Image"
-            }
+            },
+            "src": "auctionsfooter.png"
         },
         "imgMyBids": {
             "__events__": {},
@@ -172,7 +174,8 @@
                 "kuid": "e479efbff6524d18b5aeb0ab00f71bdf",
                 "srcKUID": "u3ccf12b44c64d4d8ff235aa62a9a687",
                 "wType": "Image"
-            }
+            },
+            "src": "mybidsfooter.png"
         },
         "imgSearch": {
             "__events__": {},
@@ -180,7 +183,8 @@
                 "kuid": "d1c6b6784a9148b8b621ec9e058f3497",
                 "srcKUID": "u540d55b17f84d45891d68337ea5065e",
                 "wType": "Image"
-            }
+            },
+            "src": "ssearchfooter.png"
         },
         "imgSellCar": {
             "__events__": {},
@@ -188,7 +192,8 @@
                 "kuid": "a28120b7acaa416db563da2cc5a938e0",
                 "srcKUID": "uda05f29000b4e7e90ea7cb202b4e8df",
                 "wType": "Image"
-            }
+            },
+            "src": "group__2_.png"
         },
         "lblAuctions": {
             "__events__": {},

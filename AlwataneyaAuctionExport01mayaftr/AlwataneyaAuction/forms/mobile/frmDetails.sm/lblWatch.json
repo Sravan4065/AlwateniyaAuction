@@ -21,8 +21,8 @@
         "type": "number",
         "value": "2"
     },
-    "_skin_": "sd40725b40b24b74ae6ad4ead805a9a1",
-    "_text_": "Watch",
+    "_skin_": "s989fcb0be3c40ab9296d0a6fde48566",
+    "_text_": "Favourite",
     "_width_": {
         "type": "string",
         "value": "50%"
@@ -37,7 +37,7 @@
     "canUpdateUI": true,
     "centerx": {
         "type": "string",
-        "value": "50%"
+        "value": "54%"
     },
     "centery": {
         "type": "string",

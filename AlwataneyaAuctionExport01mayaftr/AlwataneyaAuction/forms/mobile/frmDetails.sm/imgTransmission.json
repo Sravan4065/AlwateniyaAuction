@@ -6,6 +6,10 @@
         "type": "string",
         "value": "95%"
     },
+    "_left_": {
+        "type": "string",
+        "value": ""
+    },
     "_margin_": [
         0,
         0,
@@ -20,17 +24,23 @@
     ],
     "_right_": {
         "type": "string",
-        "value": "0dp"
+        "value": "-4dp"
     },
     "_skin_": "sf4b9ed83d0244a5bfc52dd83e12816d",
-    "_src_": "group_1321315125__4_.png",
+    "_src_": "bi6.png",
     "_top_": {
         "type": "string",
         "value": "0"
     },
     "_width_": {
         "type": "string",
-        "value": "30%"
+        "value": "35%"
+    },
+    "android": {
+        "left": {
+            "type": "string",
+            "value": ""
+        }
     },
     "canUpdateUI": true,
     "containerweight": 100,

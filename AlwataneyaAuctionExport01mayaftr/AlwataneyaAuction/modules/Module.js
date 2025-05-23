@@ -86,3 +86,111 @@ function detectFileType(base64) {
   }
 }
 
+var PaymentModule = {
+  
+ getAccessToken: function(successCallback, errorCallback) {
+  var ev = "NjM0MWJkYzktMjQ4NS00OTU3LWEwZmYtZmQxZmI1M2NjZTI5OjkwMzUwODY5LTZkODgtNGExYi1hMDI3LWZkYWU3NGRiMDk1Mw==";
+  var url = "https://api-gateway.sandbox.ngenius-payments.com/identity/auth/access-token";
+
+  try {
+    var request = new voltmx.net.HttpRequest();
+    request.open("POST", url);
+
+    request.setRequestHeader("Authorization", "Basic " + ev);
+    request.setRequestHeader("Content-Type", "application/vnd.ni-identity.v1+json");
+    request.setRequestHeader("Accept", "application/vnd.ni-identity.v1+json");
+
+    request.onReadyStateChange = function() {
+      try {
+        if (request.readyState === 4) {
+          voltmx.print("Request status: " + request.status);
+          voltmx.print("Response: " + request.responseText);
+
+          if (request.status === 200) {
+            var token = JSON.parse(request.responseText).access_token;
+            successCallback(token);
+          } else {
+            errorCallback("Auth failed. Status: " + request.status + " Response: " + request.responseText);
+          }
+        }
+      } catch (e) {
+        errorCallback("Error in onReadyStateChange: " + e.message);
+      }
+    };
+
+    request.send(); // Make sure send is AFTER onReadyStateChange
+  } catch (e) {
+    errorCallback("Exception in getAccessToken outer try: " + e.message);
+  }
+},
+
+  createOrder: function(token, amountValue,successCallback, errorCallback) {
+    var url = "https://api-gateway.sandbox.ngenius-payments.com/transactions/outlets/c054376c-125e-4f54-917d-0cf68fce1283/orders";
+
+    var body = {
+      "action": "PURCHASE",
+      "amount": {
+        "currencyCode": "AED",
+        "value": amountValue
+      },
+      merchantAttributes: {
+        redirectUrl: "https://yourdomain.com/success"
+      }
+    };
+
+    try {
+      var request = new voltmx.net.HttpRequest();
+      request.open("POST", url);
+      request.setRequestHeader("Authorization", "Bearer " + token);
+      request.setRequestHeader("Content-Type", "application/vnd.ni-payment.v2+json");
+      request.setRequestHeader("Accept", "application/vnd.ni-payment.v2+json");
+
+      request.onReadyStateChange = function() {
+        if (request.readyState === 4) {
+          if (request.status === 201 || request.status === 200) {
+            var response = JSON.parse(request.responseText);
+            var href = response._links.payment.href;
+            successCallback(href);
+          } else {
+            errorCallback(" Order failed. Status: " + request.status);
+          }
+        }
+      };
+
+      request.send(JSON.stringify(body));
+    } catch (e) {
+      errorCallback(" Exception in createOrder: " + e.message);
+    }
+  },
+
+launchBrowser: function(url, overlayFlex) {
+  var config = {
+    URL: url,
+    requestMethod: constants.BROWSER_REQUEST_METHOD_GET
+  };
+
+  var basic = {
+    id: "browserID",
+    isVisible: true,
+    requestURLConfig: config,
+    height: "100%",
+    width: "100%"
+  };
+
+  var layout = {
+    height: "100%",
+    width: "100%",
+    top: "0dp",
+    left: "0dp"
+  };
+
+  var psp = {};
+
+  var browserWidget = new voltmx.ui.Browser(basic, layout, psp);
+  overlayFlex.removeAll();
+  overlayFlex.add(browserWidget);
+  overlayFlex.isVisible = true; // Show overlay
+}
+};
+
+

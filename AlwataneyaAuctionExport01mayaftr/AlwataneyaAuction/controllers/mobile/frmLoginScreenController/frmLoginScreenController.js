@@ -49,8 +49,7 @@ define({
 
       voltmx.store.setItem("isLogin",true);
       voltmx.store.setItem("isUserCreated",true);
-      var x = new voltmx.mvc.Navigation("frmDashBoard");
-      x.navigate();
+      
       self.getUserObject();
       
     }
@@ -116,10 +115,15 @@ define({
      var getUserAccesstoken =  get_user_object.rawResponse.access_token;
       var userId = get_user_object.rawResponse.user_id;
       var userAccessTokenExp = get_user_object.rawResponse.expires_in;
+      var jobtitle = get_user_object.rawResponse.job_title;
       voltmx.store.setItem("userObject",get_user_object);
       voltmx.store.setItem("userId",userId);
-      voltmx.store.setItem("getUserAccesstoken",getUserAccesstoken);
+      voltmx.store.setItem("getUserAccesstoken",getUserAccesstoken); //getUserAccessToken
       voltmx.store.setItem("userAccessTokenExp",userAccessTokenExp);
+      voltmx.store.setItem("jobTitle",jobtitle);
+      
+      var x = new voltmx.mvc.Navigation("frmDashBoard");
+      x.navigate();
       
       voltmx.store.setItem("username",get_user_object.rawResponse.nick);
     }
@@ -135,4 +139,6 @@ define({
     get_user_object_inputparam["httpconfig"] = get_user_object_httpconfigs;
     ms_user$get_user_object = mfintegrationsecureinvokerasync(get_user_object_inputparam, "ms_user", "get-user-object", invoke_service_callback);
 }
+  
+  
 });

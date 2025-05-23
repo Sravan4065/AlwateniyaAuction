@@ -119,19 +119,25 @@ updateDates: function() {
         var online_auction_list_inputparam = {};
     }
     online_auction_list_inputparam["serviceID"] = "fry_int_auctions$get-buyer-all-auctions";
-    online_auction_list_inputparam["body_type"] = "";
+     online_auction_list_inputparam["body_type"] = "";
     online_auction_list_inputparam["transmission_type"] = "";
     online_auction_list_inputparam["fuel_type"] = "";
     online_auction_list_inputparam["body_condition"] = "";
     online_auction_list_inputparam["brand"] = "";
     online_auction_list_inputparam["model"] = "";
-    online_auction_list_inputparam["mileage_range"] = "";
+    online_auction_list_inputparam["mileage_range_from"] = "";
+    online_auction_list_inputparam["mileage_range_to"] = "";
     online_auction_list_inputparam["asset_id"] = "";
-    
-     online_auction_list_inputparam["year_range"] = 0;
+//      online_auction_list_inputparam["lot_no"] = 0
+     online_auction_list_inputparam["year_range_from"] = 0;
+     online_auction_list_inputparam["year_range_to"] = 0;
      online_auction_list_inputparam["auction_type"] = 0;
      online_auction_list_inputparam["yard_branch"] = 0;
-     online_auction_list_inputparam["price_range"] = 0;
+     online_auction_list_inputparam["price_range_from"] = 0;
+     online_auction_list_inputparam["price_range_to"] = 0;
+    online_auction_list_inputparam["priceSort"] = 0;
+    online_auction_list_inputparam["milageSort"] = 0;
+    online_auction_list_inputparam["yearSort"] = 0;
      online_auction_list_inputparam["page"] = 1;
      online_auction_list_inputparam["pageSize"] = self.pageSize;
     var online_auction_list_httpheaders = {};

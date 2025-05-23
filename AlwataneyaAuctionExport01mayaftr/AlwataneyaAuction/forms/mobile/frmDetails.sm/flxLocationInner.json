@@ -44,7 +44,7 @@
     },
     "children": [
         "lblLocationBasicInfo",
-        "lblSharjah",
+        "lblLocationName",
         "imgLoc"
     ],
     "clipbounds": false,

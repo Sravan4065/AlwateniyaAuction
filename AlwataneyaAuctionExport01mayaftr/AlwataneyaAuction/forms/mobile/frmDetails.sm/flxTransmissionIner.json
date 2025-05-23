@@ -44,7 +44,7 @@
     },
     "children": [
         "lblTransmission",
-        "lblAautomaticBasicInfo",
+        "lblTransmissionValue",
         "imgTransmission"
     ],
     "clipbounds": false,
