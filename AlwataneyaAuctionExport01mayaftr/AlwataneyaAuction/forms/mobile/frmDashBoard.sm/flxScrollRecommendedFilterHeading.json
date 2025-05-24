@@ -41,7 +41,8 @@
         "btnEndingSoon",
         "btnRecentlyViewed",
         "btnYourFavourites",
-        "btnNewlyListedVehicles"
+        "btnNewlyListedVehicles",
+        "btnHotItems"
     ],
     "clipbounds": true,
     "containerweight": 100,

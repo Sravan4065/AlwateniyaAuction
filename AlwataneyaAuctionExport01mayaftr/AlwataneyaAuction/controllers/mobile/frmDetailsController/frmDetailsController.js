@@ -55,6 +55,14 @@ define({
   
   onPreShow: function()
   {
+    
+    if(voltmx.application.getPreviousForm().id === "frmDashBoard")
+      {
+        this.objid = this.context.objid;
+      }
+        else{
+         this.objid = this.context.selectedItem.lblObjID;
+        }
     var self = this;
      this.checkSession(function() {
         
@@ -200,7 +208,7 @@ define({
     }
     var jobtitle = voltmx.store.getItem("jobTitle");
     fleet_details_inputparam["serviceID"] = "fry_wf$fleet-details";
-    fleet_details_inputparam["object_id"] = this.context.selectedItem.lblObjID;
+    fleet_details_inputparam["object_id"] = this.objid;
     fleet_details_inputparam["job_title"] = jobtitle;
 //     fleet_details_inputparam["operation_id"] = 
 //     fleet_details_inputparam["plaform"] = 

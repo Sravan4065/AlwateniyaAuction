@@ -39,12 +39,12 @@ define({
     var x;
     switch(selectedValue){
         case "Active Bids"      :   {
-                                         x = new voltmx.mvc.Navigation("frmMyBidsPage");
+                                         x = new voltmx.mvc.Navigation("frmActiveBids");
                                            
                                        }
                                        break;
         case "Won Bids"      :   {
-                                      x = new voltmx.mvc.Navigation("frmMyBidsPage");
+                                      x = new voltmx.mvc.Navigation("frmWonBids");
                                        }
                                        break;
         case "Lost Bids"    :   {

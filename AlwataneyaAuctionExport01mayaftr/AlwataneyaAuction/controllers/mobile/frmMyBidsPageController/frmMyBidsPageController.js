@@ -603,6 +603,7 @@ define({
     var usertoken = voltmx.store.getItem("getUserAccesstoken");
     get_buyer_my_winning_bids_inputparam["serviceID"] = "fry_int_buyer$get-buyer-my-winning-bids";
      get_buyer_my_winning_bids_inputparam["user_id"] = userid;
+    get_buyer_my_winning_bids_inputparam["status"] = "";
      get_buyer_my_winning_bids_inputparam["page"] = "1";
      get_buyer_my_winning_bids_inputparam["pageSize"] = "10";
     var get_buyer_my_winning_bids_httpheaders = {
@@ -633,6 +634,7 @@ define({
         "lblWinningbid": "lblWinningbid",
         "lblwinningbidamt": "lblwinningbidamt",
         "imgRequestServices": "imgRequestServices",
+        "flxRequestaccess": "flxRequestaccess",
         "lblrequestaccess": "lblrequestaccess",
         "imgdoc": "imgdoc",
         "lblDocuments": "lblDocuments",
@@ -657,6 +659,9 @@ define({
           "lblpaymentstatusvalue": winningbiditem.payment_status || "N/A",
           "lblWinningbid": "Winning Bid",
           "lblwinningbidamt": winningbiditem.max_bid || "N/A",
+          "flxRequestaccess": {
+            "onClick": this.navToServices.bind(this)
+          },
           "imgRequestServices": "reqestservices.png",
           "lblrequestaccess": "REQUEST SERVICES",
           "imgdoc": "ep_document.png",
@@ -706,6 +711,7 @@ define({
     var usertoken = voltmx.store.getItem("getUserAccesstoken");
     get_buyer_my_lost_bids_inputparam["serviceID"] = "fry_int_buyer$get-buyer-my-lost-bids";
     get_buyer_my_lost_bids_inputparam["user_id"] = userid;
+     
     get_buyer_my_lost_bids_inputparam["page"] = "1";
     get_buyer_my_lost_bids_inputparam["pageSize"] = "10";
     var get_buyer_my_lost_bids_httpheaders = {
@@ -767,6 +773,11 @@ define({
   goToAuctions: function()
   {
     new voltmx.mvc.Navigation("frmAllAuctionsList").navigate();
+  },
+  
+  navToServices: function()
+  {
+    new voltmx.mvc.Navigation("frmServices").navigate();
   }
 
    

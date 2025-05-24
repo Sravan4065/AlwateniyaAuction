@@ -18,7 +18,7 @@
     "_pxMenuIndex": [
         0,
         1,
-        42
+        64
     ],
     "_skin_": "s6a46e7fd0754bf7b469d9ec1f378498",
     "_title_": null,
@@ -51,7 +51,7 @@
     "desktopweb": {
         "needAppMenu": false
     },
-    "device": "Pixel6",
+    "device": "iPhone14",
     "displayorientation": 1,
     "enabledforidletimeout": false,
     "id": "frmVehicleInspection",
@@ -72,7 +72,7 @@
             "titleBarAttributes": {
                 "barStyle": 0,
                 "hidesBackButton": false,
-                "kuid": "beb861926a684166bdc0ee949c56889f",
+                "kuid": "c593eb60a7134e0fbdb78e79334bd2d6",
                 "leftBarButtonItems": [],
                 "leftItemsSupplementBackButton": true,
                 "prompt": "",
@@ -83,7 +83,7 @@
                         "info": {
                             "title": "Edit"
                         },
-                        "kuid": "cd5581d4dc864e008e7de384998d27ca",
+                        "kuid": "cee76fd549b1482f968811968536d41d",
                         "style": 0,
                         "tintColor": "4b88f100",
                         "type": 1
@@ -105,7 +105,7 @@
     "name": "kony.ui.Form2",
     "needappmenu": false,
     "paddinginpixel": false,
-    "platform": "android",
+    "platform": "iphone",
     "prevDevice": "iPhone14",
     "prevPlatform": "iphone",
     "retaincontentalignment": false,

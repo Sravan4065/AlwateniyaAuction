@@ -39,7 +39,8 @@
     "children": [
         "flxHeading",
         "flxBody",
-        "flxWhatsappcomponent"
+        "flxWhatsappcomponent",
+        "flxBrowserOverlay"
     ],
     "clipbounds": false,
     "containerweight": 100,

@@ -37,7 +37,11 @@
     "children": [
         "flxHeader",
         "flxBody",
-        "Footer2"
+        "Footer2",
+        "flxOverLay",
+        "flxBidAmountSelectionContainer",
+        "flxAutoBidAmountContainer",
+        "flxBidSuccessPopup"
     ],
     "clipbounds": true,
     "containerweight": 100,

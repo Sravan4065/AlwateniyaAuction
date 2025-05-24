@@ -16,7 +16,9 @@ define({
     this.view.btnRecentlyViewed.onClick = this.showRecommendedFilterFlex.bind(this,"recentlyviewed");
    this.view.btnYourFavourites.onClick = this.showRecommendedFilterFlex.bind(this,"yourfavourites");
    this.view.btnNewlyListedVehicles.onClick =  this.showRecommendedFilterFlex.bind(this,"newlylisted");
+   this.view.btnHotItems.onClick = this.showRecommendedFilterFlex.bind(this,"hotitems");
    this.view.flxServiceItem1.onClick = this.navToVehicleInspection.bind(this);
+   this.view.flxServiceItem2.onClick = this.navToRoadSideAsst.bind(this);
    this.view.flxAuctionCalendarItem1.onClick = this.navToAuctionCalendar.bind(this);
    this.view.flxAuctionCalendarItem2.onClick = this.navToComingSoon.bind(this);
    this.view.flxAuctionCalendarItem3.onClick = this.navToComingSoon.bind(this);
@@ -53,13 +55,15 @@ var self = this;
      this.checkSession(function() {
         
         voltmx.print("Session is valid. Proceeding with data load.");
-       self.invokeOnlineAuctionList(); 
+//        self.invokeOnlineAuctionList(); 
+       self.invokeRecommendedList();
     });
     this.view.btnRecommended.skin = "sknBtnRecommendedFilter";
     this.view.btnEndingSoon.skin = "sknBtnRecommendedFilterNormal";
     this.view.btnRecentlyViewed.skin = "sknBtnRecommendedFilterNormal";
     this.view.btnYourFavourites.skin = "sknBtnRecommendedFilterNormal";
     this.view.btnNewlyListedVehicles.skin = "sknBtnRecommendedFilterNormal";
+    this.view.btnHotItems.skin = "sknBtnRecommendedFilterNormal";
   },
   
   onPostShow: function(){
@@ -195,26 +199,32 @@ var self = this;
             "lblCarouselSlideHeading": "ONLINE AUCTIONS",
             "lblCarouselSlideSubheading": "180 Vehicles available",
             "btnAction": { "text": "VIEW ALL",
-                          "onClick": this.navToAuctionCalendar.bind(this)
+                          "onClick": this.navToAuctionList.bind(this)
                          }
         },
         {
              "imgCarousel":"dashboardcarouselimg2.jpg",
             "lblCarouselSlideHeading": "OUR OTHER SERVICES",
             "lblCarouselSlideSubheading": "Professional servicing, repairs and diagnostics",
-            "btnAction": { "text": "VIEW ALL"}
+            "btnAction": { "text": "VIEW ALL",
+                           "onClick": this.navToServices.bind(this)
+                         }
         },
        {
              "imgCarousel":"dashboardcarouselnew2.png",
             "lblCarouselSlideHeading": "FLASH AUCTIONS",
             "lblCarouselSlideSubheading": "Bid Fast, Win Big - Time's Ticking",
-            "btnAction": { "text": "VIEW ALL"}
+            "btnAction": { "text": "VIEW ALL",
+                           "onClick": this.navToAuctionCalendar.bind(this)
+                         }
         },
       {
              "imgCarousel":"dashboardphysicalauctions.jpg",   //dashboardcarouselnew3.png
             "lblCarouselSlideHeading": "PHYSICAL AUCTIONS",
             "lblCarouselSlideSubheading": "From the Floor to Your Hands - Secure Your Asset",
-            "btnAction": { "text": "VIEW ALL"}
+            "btnAction": { "text": "VIEW ALL",
+                           "onClick": this.navToAuctionCalendar.bind(this) 
+                         }
         }
       
       
@@ -226,6 +236,11 @@ var self = this;
      
     this.view.segCarouselView.pageOnDotImage = "segmentpageonimg.png"; 
     this.view.segCarouselView.pageOffDotImage = "segmentpageoffimg.png";
+  },
+  
+  navToServices: function()
+  {
+    new voltmx.mvc.Navigation("frmServices").navigate();
   },
 
    createsIntoFeaturedAuctions: function() {
@@ -410,19 +425,7 @@ var lblTotalBids = new voltmx.ui.Label({
 }, {}, {});
 flxTotalBids.add(lblTotalBidsText,lblTotalBids);
           
-          
-        
-          
-//           var lblCountDown = new voltmx.ui.Label({
-//                 id: "lblCountDown" + i,
-//                 text: records[i].time_remaining ? records[i].time_remaining : "N/A", 
-//                 isVisible: true,
-//                 width: "preferred",
-//                 height: "15%",
-//                 right: "5%",
-//                 top: "10%",
-//                 skin: "sknLblCronosProd3243716px"
-//           });
+
           
           var flxLocation = new voltmx.ui.FlexContainer({
     id: "flxLocation" + i,
@@ -454,20 +457,7 @@ var lblLocationName = new voltmx.ui.Label({
 }, {}, {});
 flxLocation.add(lblLocation, lblLocationName);
           
-//           var lblLocation = new voltmx.ui.Label({
-            
-            
-//                 id: "lblLocation" + i,
-//                 text: records[i].location ? records[i].location : "N/A", 
-//                 isVisible: true,
-//                 width: "preferred",
-//                 height: "15%",
-//                 right: "5%",
-//                 top: "30%",
-//                 skin: "sknLblCronosPro231f2016px"
-            
-            
-//           });
+
           
           var lblBidRate = new voltmx.ui.Label({
     id: "lblBidRate" + i,
@@ -477,19 +467,7 @@ flxLocation.add(lblLocation, lblLocationName);
     skin: bidrateSkin, // sknLblCronosProd0290512Bold22px
     text: "AED "+ (records[i].max_bid_amount ? records[i].max_bid_amount : "N/A")
 }, { contentAlignment: constants.CONTENT_ALIGN_MIDDLE_RIGHT }, {});
-          
-//           var lblBidRate = new voltmx.ui.Label({
-            
-//                 id: "lblBidRate" + i,
-//                 text: "AED "+ (records[i].max_bid_amount ? records[i].max_bid_amount : "N/A"), 
-//                 isVisible: true,
-//                 width: "preferred",
-//                 height: "15%",
-//                 right: "5%",
-//                 top: "50%",
-//                 skin: "sknLblCronosProd32437Bold22px"
-//           });
-          
+
           
           var flxLikeBid = new voltmx.ui.FlexContainer({
     id: "flxLikeBid" + i,
@@ -525,32 +503,7 @@ flxLikeBid.setDefaultUnit(voltmx.flex.DP);
 }, { imageScaleMode: constants.IMAGE_SCALE_MODE_MAINTAIN_ASPECT_RATIO }, {});
 flxLikeFromRecommendedFilter.add(imgHeartIconFromRecommended); 
           
-//           var flxLikeFromRecommendedFilter = new voltmx.ui.FlexContainer({
-//               id: "flxLikeFromRecommendedFilter"+i,
-//             isVisible: true,
-//             clipBounds: false,
-//             left: "5%",
-//             bottom: "10%",
-//             top: "70%",
-//             skin: "sknFlx231f20custom120pxround",
-//             width: "25dp",
-//             height: "25dp",
-//             zIndex: 2,
-//             onClick: this.toggleHeartStatusFromRecommended.bind(this,i)
-//           },{},{});
-          
-//               var imgHeartIconFromRecommended = new voltmx.ui.Image2({
-//                 id: "imgHeartIconFromRecommended" + i,
-//                 isVisible: true,
-//                src : "imgdislikenew.png",
-//                centerY: "50%",
-//                centerX: "50%",
-//               width: "55%", 
-//                 height: "55%", 
-//                 imageScaleMode: constants.IMAGE_SCALE_MODE_FIT_TO_DIMENSIONS,
-//                 clipBounds: true
-//             });
-          
+
           
           var flxBidEnable = new voltmx.ui.FlexContainer({
             id: "flxBidEnable" + i,
@@ -578,34 +531,7 @@ flxLikeFromRecommendedFilter.add(imgHeartIconFromRecommended);
           }, { imageScaleMode: constants.IMAGE_SCALE_MODE_MAINTAIN_ASPECT_RATIO }, {});
           flxBidEnable.add(imgAutoBid);
 
-//           var flxBidEnable = new voltmx.ui.FlexContainer({
-//               id: "flxBidEnable"+i,
-//             isVisible: true,
-//             clipBounds: false,
-//             right: "44%",
-//             bottom: "10%",
-//             top: "70%",
-//             skin: "sknFlxBasic",
-//             width: "25dp",
-//             height: "25dp",
-//             zIndex: 2,
-//             onClick: this.enableAutoBid.bind(this,{
-//               auction_id: records[i].auction_id,
-//               object_id: records[i].object_id
-//             })
-//           },{},{});
-          
-//             var imgAutoBid = new voltmx.ui.Image2({
-//                 id: "imgAutoBid" + i,
-//                 isVisible: true,
-//                src : "imgautobidnew.png",
-//                centerY: "50%",
-//                centerX: "50%",
-//               width: "100%", 
-//                 height: "100%", 
-//                 imageScaleMode: constants.IMAGE_SCALE_MODE_FIT_TO_DIMENSIONS,
-//                 clipBounds: true
-//             });
+
           
           var btnBidNow = new voltmx.ui.Button({
     id: "btnBidNow"+i,
@@ -682,50 +608,383 @@ flxLikeBid.add(flxLikeFromRecommendedFilter, flxBidEnable, btnBidNow);
         voltmx.print("exit from function");
     },
   
-// checkSessionAndAssignImage: function(imgWidget, imageUrl) {
-//     var request = new voltmx.net.HttpRequest();
-//     request.open("GET", imageUrl, false);
-//     request.setRequestHeader("Cookie", this.sessionCookie || "");
-//     request.send();
+ createsIntoFeaturedAuctions1: function() {
+        voltmx.print("entered into function");
 
-//     if (request.status === 200) {
-//         imgWidget.src = imageUrl;
-//     } else if (request.status === 401 || request.status === 403) {
-//         this.loginToDam((newCookie) => {
-//             this.sessionCookie = newCookie;
-//             imgWidget.src = imageUrl;
-//         });
-//     } else {
-//         voltmx.print("Session check failed with status: " + request.status);
-//     }
-// },
+        var parentFlex = this.view.flxScrollFilteredItems;
+//           parentFlex.removeAll();
+        var records = this.isRecords ? this.records : this.getStaticCarRecords();
+        
+        for (var i = 0; i < 5; i++) {
+          var leftval = (i === 0) ? "20dp" : "10dp";
+          var bidrateSkin;
+          if(records[i].highest_bidder === this.userid){
+             bidrateSkin = "sknLblCronosProd0290512Bold22px";
+          }
+          else{
+              bidrateSkin = "sknLblDubaid3243720pxbold";
+          }
+          var objid = records[i].object_id;
+          var aucid = records[i].auction_id;
+          var flexskin;
+          var imgheartset;
+          if(records[i].is_favourite === "true"){
+            flexskin = "sknFlxd32437custom120pxround";
+            imgheartset = "heartlikerecommended.png";
+          }
+          else{
+            flexskin = "sknFlx231f20custom120pxround";
+            imgheartset = "imgdislikenew.png";
+          }
+            // Creating the main flex container for each widget
+            
+            var flexFeaturedAuctionsItem = new voltmx.ui.FlexContainer({
+                id: "flexFeaturedAuctionsItem" + i,
+                left: leftval,
+               right: (i === 4) ? "15dp" : "", 
+                width: "275dp", 
+                height: "95%",
+                zIndex: 1,
+                isVisible: true,
+//                 skin: "flxContainer45",
+//                 top: (i * 330) + "dp",
+                skin: "sknFlxFFFFFFBorderCCCCCC2px",
+                clipBounds: true
+                
+            }, {}, {});
+          
+          
+            var flxFeaturedAuctionsItemTop = new voltmx.ui.FlexContainer({
+              
+             id: "flxFeaturedAuctionsItemTop" + i,
+             centerX: "50%",
+             height: "45%",
+             width: "100%",
+             zIndex:1,
+             isVisible: true,
+             top: "0%",
+             skin: "sknFlxWhiteRoundedCorner",
+             onClick : this.navToFleetPage.bind(this,objid,aucid),
+             clipBounds: true  
+            },{},{});
+          
+          var imgFeaturedAuctions = new voltmx.ui.Image2({
+                id: "imgFeaturedAuctions" + i,
+                isVisible: true,
+               src : records[i].file_url ? records[i].file_url : "car3.png",
+//               src: "car3.png",
+              width: "100%", 
+                height: "100%", 
+                imageScaleMode: constants.IMAGE_SCALE_MODE_FIT_TO_DIMENSIONS,
+                clipBounds: true
+            });
 
-// loginToDam: function(callback) {
-//     var httpClient = new voltmx.net.HttpRequest();
-//     httpClient.open("POST", "https://dev-hcltx.et.ae/dx/api/core/v1/auth/login", false);
 
-//     var payload = {
-//         username: "sai.k",
-//         password: "etsai191"
-//     };
+          var flxFeaturedAuctionsItemBottom  = new voltmx.ui.FlexContainer({
+            
+              id: "flxFeaturedAuctionsItemBottom" + i,
+             centerX: "50%",
+             height: "55%",
+             width: "100%",
+             zIndex: 2,
+             isVisible: true,
+             top: "45%",
+             skin: "sknFlxBasic",
+             clipBounds: true,
+             layoutType: voltmx.flex.FLOW_VERTICAL
+            
+            
+          },{},{});
+          
+//           var lblCarname = new voltmx.ui.Label(
+//            {
+//                 id: "lblCarname" + i,
+//                 text: records[i].sub_category_name ? records[i].sub_category_name : "N/A", 
+//                 isVisible: true,
+//                 width: "preferred",
+//                 left: "5%",
+//                 top: "10%",
+//                 height: "15%",
+//                 skin: "sknLblCronosPro231f2022pxbold"
+//           }
+//           );
+          
+          var lblCarname = new voltmx.ui.Label({
+    id: "lblCarname" + i,
+    isVisible: true,
+    left: "4%",
+    top: "2%",
+    height: "14%",
+    width: voltmx.flex.USE_PREFERRED_SIZE,
+    skin: "sknLblDubai00000020pxBold",
+    text: records[i].title ? records[i].title : "N/A",
+}, { contentAlignment: constants.CONTENT_ALIGN_MIDDLE_LEFT }, {});
+          
+   var lblCountDown = new voltmx.ui.Label({
+    id: "lblCountDown" + i,
+    isVisible: true,
+    left: "4%",
+    top: "2dp",
+    width: voltmx.flex.USE_PREFERRED_SIZE,
+    skin: "sknLblDubaid3243714px",
+    text: records[i].bid_close_date ? records[i].bid_close_date : "N/A", 
+}, { contentAlignment: constants.CONTENT_ALIGN_MIDDLE_LEFT }, {});
+          
+  var flxLot = new voltmx.ui.FlexContainer({
+    id: "flxLot" +  i,
+    isVisible: true,
+    top: "2dp",
+    height: "22dp",
+    width: "100%",
+    layoutType: voltmx.flex.FREE_FORM,
+    skin: "slFbox"
+}, {}, {});
+flxLot.setDefaultUnit(voltmx.flex.DP);
+          
+var lblLot = new voltmx.ui.Label({
+    id: "lblLot" + i,
+    isVisible: true,
+    left: "4%",
+    centerY: "50%",
+    skin: "sknLblDubai231f20",
+    text: "Lot #"
+}, { contentAlignment: constants.CONTENT_ALIGN_MIDDLE_LEFT }, {});
+          
+  var lblLotNum = new voltmx.ui.Label({
+    id: "lblLotNum" + i,
+    isVisible: true,
+    right: "8%",
+    centerY: "50%",
+    skin: "sknLblDubai231f20",
+    text: records[i].lot_no ? records[i].lot_no : "N/A"
+}, { contentAlignment: constants.CONTENT_ALIGN_MIDDLE_RIGHT }, {});
+          
+//           var lblLot = new voltmx.ui.Label({
+            
+//                 id: "lblLot" + i,
+//                 text: "Lot #:"+(records[i].ID ? records[i].ID : "N/A"),
+//                 isVisible: true,
+//                 width: "preferred",
+//                 left: "5%",
+//                 top: "30%",
+//                 height: "15%",
+//                 skin: "sknLblCronosPro231f2016px"
+            
+//           });
+          flxLot.add(lblLot, lblLotNum);
+          
+          var flxTotalBids = new voltmx.ui.FlexContainer({
+    id: "flxTotalBids" + i,
+    isVisible: true,
+    top: "2dp",
+    height: "22dp",
+    width: "100%",
+    layoutType: voltmx.flex.FREE_FORM,
+    skin: "slFbox"
+}, {}, {});
+          
+          
+var lblTotalBidsText = new voltmx.ui.Label({
+    id: "lblTotalBidsText" + i,
+    isVisible: true,
+    left: "4%",
+    centerY: "50%",
+    skin: "sknLblDubai231f20",
+    text: "Total Bids"
+}, {}, {});
 
-//     httpClient.setRequestHeader("Content-Type", "application/json");
-//     httpClient.send(JSON.stringify(payload));
+var lblTotalBids = new voltmx.ui.Label({
+    id: "lblTotalBids" + i,
+    isVisible: true,
+    right: "8%",
+    centerY: "50%",
+    skin: "sknLblDubai231f20",
+    text: records[i].no_of_bids ? records[i].no_of_bids : "N/A"
+}, {}, {});
+flxTotalBids.add(lblTotalBidsText,lblTotalBids);
+          
 
-//     if (httpClient.status === 200) {
-//         var allHeaders = httpClient.getAllResponseHeaders();
-//         var cookie = allHeaders["Set-Cookie"] || allHeaders["set-cookie"];
-//         if (cookie) {
-//             voltmx.print("Login successful, new cookie set.");
-//             callback(cookie);
-//         } else {
-//             voltmx.print("Login succeeded but no cookie returned.");
-//         }
-//     } else {
-//         voltmx.print("Login failed with status: " + httpClient.status);
-//     }
-// },
-  
+          
+          var flxLocation = new voltmx.ui.FlexContainer({
+    id: "flxLocation" + i,
+    isVisible: true,
+    top: "2dp",
+    height: "22dp",
+    width: "100%",
+    layoutType: voltmx.flex.FREE_FORM,
+    skin: "slFbox"
+}, {}, {});
+flxLocation.setDefaultUnit(voltmx.flex.DP);
+
+var lblLocation = new voltmx.ui.Label({
+    id: "lblLocation" + i,
+    isVisible: true,
+    left: "4%",
+    centerY: "50%",
+    skin: "sknLblDubai231f20",
+    text: "Location"
+}, {}, {});
+
+var lblLocationName = new voltmx.ui.Label({
+    id: "lblLocationName" + i,
+    isVisible: true,
+    right: "8%",
+    centerY: "50%",
+    skin: "sknLblDubai231f20",
+    text: records[i].location ? records[i].location : "N/A"
+}, {}, {});
+flxLocation.add(lblLocation, lblLocationName);
+          
+
+          
+          var lblBidRate = new voltmx.ui.Label({
+    id: "lblBidRate" + i,
+    isVisible: true,
+    right: "8%",
+    top: "2dp",
+    skin: bidrateSkin, // sknLblCronosProd0290512Bold22px
+    text: "AED "+ (records[i].max_bid_amount ? records[i].max_bid_amount : "N/A")
+}, { contentAlignment: constants.CONTENT_ALIGN_MIDDLE_RIGHT }, {});
+
+          
+          var flxLikeBid = new voltmx.ui.FlexContainer({
+    id: "flxLikeBid" + i,
+    isVisible: true,
+    top: "2dp",
+    height: "45dp",
+    width: "100%",
+    layoutType: voltmx.flex.FREE_FORM,
+    skin: "slFbox"
+}, {}, {});
+flxLikeBid.setDefaultUnit(voltmx.flex.DP);
+          
+     var flxLikeFromRecommendedFilter = new voltmx.ui.FlexContainer({
+    id: "flxLikeFromRecommendedFilter" + i,
+    isVisible: true,
+    height: "34dp",
+    width: "34dp",
+    left: "4%",
+    centerY: "50%",
+    skin: flexskin,
+    onClick: this.toggleHeartStatusFromRecommended.bind(this,objid,aucid,i),
+    layoutType: voltmx.flex.FREE_FORM
+}, {}, {});
+          
+         var imgHeartIconFromRecommended = new voltmx.ui.Image2({
+    id: "imgHeartIconFromRecommended" + i,
+    isVisible: true,
+    centerX: "50%",
+    centerY: "50%",
+    height: "55%",
+    width: "55%",
+    src: imgheartset
+}, { imageScaleMode: constants.IMAGE_SCALE_MODE_MAINTAIN_ASPECT_RATIO }, {});
+flxLikeFromRecommendedFilter.add(imgHeartIconFromRecommended); 
+          
+
+          
+          var flxBidEnable = new voltmx.ui.FlexContainer({
+            id: "flxBidEnable" + i,
+            isVisible: true,
+            height: "35dp",
+            width: "42dp",
+            centerY: "50%",
+            right: "45%",
+            skin: "sknFlxBasic",
+            layoutType: voltmx.flex.FREE_FORM,
+            zIndex: 2,
+            onClick: this.enableAutoBid.bind(this,{
+              auction_id: records[i].auction_id,
+              object_id: records[i].object_id})
+          }, {}, {});
+
+          var imgAutoBid = new voltmx.ui.Image2({
+            id: "imgAutoBid" + i,
+            isVisible: true,
+            centerX: "50%",
+            centerY: "50%",
+            height: "75%",
+            width: "75%",
+            src: "autobidnewone.png"
+          }, { imageScaleMode: constants.IMAGE_SCALE_MODE_MAINTAIN_ASPECT_RATIO }, {});
+          flxBidEnable.add(imgAutoBid);
+
+
+          
+          var btnBidNow = new voltmx.ui.Button({
+    id: "btnBidNow"+i,
+    isVisible: true,
+    height:"40dp",
+    width: "35%",
+    centerY: "50%",
+    right: "8%",
+    skin: "sknBtn61b35c20pxbold",
+    text: "BID NOW",
+     onClick: this.openBidAmountContainer.bind(this, {
+              auction_id: records[i].auction_id,
+              object_id: records[i].object_id,
+              max_bid_amount: records[i].max_bid_amount,
+              highest_bidder: records[i].highest_bidder,
+              ID: records[i].lot_no,
+              currentIndex: i
+            })  
+}, { contentAlignment: constants.CONTENT_ALIGN_CENTER }, {});
+flxLikeBid.add(flxLikeFromRecommendedFilter, flxBidEnable, btnBidNow);
+
+       
+          
+             
+//           var btnTest = new voltmx.ui.Button({
+//              id: "btnTest"+ i,
+//              right: "5%",
+//             top: "69%",
+//             text: "BID NOW",
+//             height: "preferred",
+//             width: "30%",
+//             skin: "sknBtnBidNow",
+           
+//             onClick: this.openBidAmountContainer.bind(this, {
+//               auction_id: records[i].auction_id,
+//               object_id: records[i].object_id,
+//               max_bid_amount: records[i].max_bid_amount,
+//               ID: records[i].ID,
+//               currentIndex: i
+//             })  
+            
+//           })
+          
+     
+
+          flxFeaturedAuctionsItemTop.add(imgFeaturedAuctions);
+//           if (records[i].thumbnail_url) {
+//             this.checkSessionAndAssignImage(
+//               imgFeaturedAuctions,
+//               records[i].thumbnail_url   // password
+//             );
+//           }
+          
+
+          flexFeaturedAuctionsItem.add(flxFeaturedAuctionsItemTop); 
+          flxFeaturedAuctionsItemBottom.add(lblCarname);
+          
+           flxFeaturedAuctionsItemBottom.add(lblCountDown);
+          flxFeaturedAuctionsItemBottom.add(flxLot);
+          flxFeaturedAuctionsItemBottom.add(flxTotalBids);
+         
+          flxFeaturedAuctionsItemBottom.add(flxLocation);
+          flxFeaturedAuctionsItemBottom.add(lblBidRate);
+          flxFeaturedAuctionsItemBottom.add(flxLikeBid);
+         
+          
+         
+//           flxFeaturedAuctionsItemBottom.add(btnBidNow);
+          
+          flexFeaturedAuctionsItem.add(flxFeaturedAuctionsItemBottom);
+          parentFlex.add(flexFeaturedAuctionsItem);
+        }
+
+        voltmx.print("exit from function");
+    },
   checkSession: function(callback) {
     if (this.sessionCookie) {
         voltmx.print("Session already available.");
@@ -770,6 +1029,16 @@ flxLikeBid.add(flxLikeFromRecommendedFilter, flxBidEnable, btnBidNow);
         callback(null);
     }
 },
+  
+  navToFleetPage: function(objid,aucid)
+  {
+    var context = {
+      "objid":objid,
+      "aucid":aucid
+    }
+    new voltmx.mvc.Navigation("frmDetails").navigate(context);
+    
+  },
 
   openBidAmountContainer: function(params){
     
@@ -1018,18 +1287,116 @@ flxLikeBid.add(flxLikeFromRecommendedFilter, flxBidEnable, btnBidNow);
     }
   },
   
-  toggleHeartStatusFromRecommended: function(index){
+//   toggleHeartStatusFromRecommended: function(objid,aucid,index){
     
-     var imgHeart = this.view["imgHeartIconFromRecommended" + index]; // Get the image by ID
-     var flxHeart = this.view["flxLikeFromRecommendedFilter" + index];
-    if (imgHeart.src === "imgdislikenew.png") {
-        flxHeart.skin = "sknFlxd32437custom120pxround";
-        imgHeart.src = "heartlikerecommended.png"; // Change to liked state
-    } else {
+//      var imgHeart = this.view["imgHeartIconFromRecommended" + index]; // Get the image by ID
+//      var flxHeart = this.view["flxLikeFromRecommendedFilter" + index];
+//     if (imgHeart.src === "imgdislikenew.png") {
+//         flxHeart.skin = "sknFlxd32437custom120pxround";
+//         imgHeart.src = "heartlikerecommended.png"; // Change to liked state
+//     } else {
+//         flxHeart.skin = "sknFlx231f20custom120pxround";
+//         imgHeart.src = "imgdislikenew.png"; // Change back to unliked state
+//     }
+//   },
+  
+  toggleHeartStatusFromRecommended: function(objid, aucid, index) {
+  var self = this;
+
+  var isLogin = voltmx.store.getItem("isLogin");
+  if (!isLogin) {
+    new voltmx.mvc.Navigation("frmLoginScreen").navigate();
+    return;
+  }
+
+  var imgHeart = self.view["imgHeartIconFromRecommended" + index];
+  var flxHeart = self.view["flxLikeFromRecommendedFilter" + index];
+
+  // Determine current status
+  var isAlreadyLiked = imgHeart.src === "heartlikerecommended.png";
+
+  // Define callback to update UI after API response
+  var callback = function(success, message) {
+    if (success) {
+      if (isAlreadyLiked) {
         flxHeart.skin = "sknFlx231f20custom120pxround";
-        imgHeart.src = "imgdislikenew.png"; // Change back to unliked state
+        imgHeart.src = "imgdislikenew.png";
+      } else {
+        flxHeart.skin = "sknFlxd32437custom120pxround";
+        imgHeart.src = "heartlikerecommended.png";
+      }
+    } else {
+      alert("Favorite toggle failed: " + message);
     }
+  };
+
+  // Call backend to add/remove
+  if (isAlreadyLiked) {
+    self.invokeRemoveTrackedObject(objid, aucid, callback);
+  } else {
+    self.invokeAddTrackedObject(objid, aucid, callback);
+  }
+},
+
+   invokeAddTrackedObject: function(objid,aucid,callback)
+  {
+    
+    var usertoken = voltmx.store.getItem("getUserAccesstoken");
+
+  var inputParam = {
+    serviceID: "ms_buyer$add-tracked-object",
+    auction_id: aucid,
+    object_id: objid,
+    type: "favorites",
+    httpheaders: {
+      user_token: usertoken
+    },
+    httpconfig: {}
+  };
+
+  function addCallBack(status, response) {
+    voltmx.print("Add Favorite Response: " + JSON.stringify(response));
+
+    if (response.opstatus === 0 && response.message === "Asset added to favorites list") {
+      callback(true, response.message);
+    } else {
+      callback(false, response.message || "Unknown error");
+    }
+  }
+
+  mfintegrationsecureinvokerasync(inputParam, "ms_buyer", "add-tracked-object", addCallBack);
+
+
+    
   },
+  
+  invokeRemoveTrackedObject: function(objid, aucid, callback) {
+  var usertoken = voltmx.store.getItem("getUserAccesstoken");
+
+  var inputParam = {
+    serviceID: "ms_buyer$remove-tracked-object",
+    auction_id: aucid,
+    object_id: objid,
+    type: "favorites",
+    httpheaders: {
+      user_token: usertoken
+    },
+    httpconfig: {}
+  };
+
+  function removeCallBack(status, response) {
+    voltmx.print("Remove Favorite Response: " + JSON.stringify(response));
+
+    if (response.opstatus === 0 && response.message === "Asset removed to favorites list") {
+      callback(true, response.message);
+    } else {
+      callback(false, response.message || "Unknown error");
+    }
+  }
+
+  mfintegrationsecureinvokerasync(inputParam, "ms_buyer", "remove-tracked-object", removeCallBack);
+},
+  
   
   enableAutoBid: function(params){
     var isLogin = voltmx.store.getItem("isLogin");
@@ -1054,7 +1421,8 @@ flxLikeBid.add(flxLikeFromRecommendedFilter, flxBidEnable, btnBidNow);
         this.view.btnRecentlyViewed.skin = "sknBtnRecommendedFilterNormal";
         this.view.btnYourFavourites.skin = "sknBtnRecommendedFilterNormal";
         this.view.btnNewlyListedVehicles.skin = "sknBtnRecommendedFilterNormal";
-        this.invokeOnlineAuctionList();
+        this.view.btnHotItems.skin = "sknBtnRecommendedFilterNormal";
+        this.invokeRecommendedList();
         break;
       case "endingsoon":
         this.view.btnRecommended.skin = "sknBtnRecommendedFilterNormal";
@@ -1062,6 +1430,7 @@ flxLikeBid.add(flxLikeFromRecommendedFilter, flxBidEnable, btnBidNow);
         this.view.btnRecentlyViewed.skin = "sknBtnRecommendedFilterNormal";
         this.view.btnYourFavourites.skin = "sknBtnRecommendedFilterNormal";
         this.view.btnNewlyListedVehicles.skin = "sknBtnRecommendedFilterNormal";
+        this.view.btnHotItems.skin = "sknBtnRecommendedFilterNormal";
         this.invokeEndingSoonList();
         break;
       case "recentlyviewed":
@@ -1071,6 +1440,7 @@ flxLikeBid.add(flxLikeFromRecommendedFilter, flxBidEnable, btnBidNow);
         this.view.btnRecentlyViewed.skin = "sknBtnRecommendedFilter";
         this.view.btnYourFavourites.skin = "sknBtnRecommendedFilterNormal";
         this.view.btnNewlyListedVehicles.skin = "sknBtnRecommendedFilterNormal";
+        this.view.btnHotItems.skin = "sknBtnRecommendedFilterNormal";
         this.invokeRecentlyList();
         break;
 
@@ -1081,6 +1451,7 @@ flxLikeBid.add(flxLikeFromRecommendedFilter, flxBidEnable, btnBidNow);
         this.view.btnRecentlyViewed.skin = "sknBtnRecommendedFilterNormal";
         this.view.btnYourFavourites.skin = "sknBtnRecommendedFilter";
         this.view.btnNewlyListedVehicles.skin = "sknBtnRecommendedFilterNormal";
+        this.view.btnHotItems.skin = "sknBtnRecommendedFilterNormal";
         break;
 
       case "newlylisted":
@@ -1090,6 +1461,19 @@ flxLikeBid.add(flxLikeFromRecommendedFilter, flxBidEnable, btnBidNow);
         this.view.btnRecentlyViewed.skin = "sknBtnRecommendedFilterNormal";
         this.view.btnYourFavourites.skin = "sknBtnRecommendedFilterNormal";
         this.view.btnNewlyListedVehicles.skin = "sknBtnRecommendedFilter";
+        this.view.btnHotItems.skin = "sknBtnRecommendedFilterNormal";
+        this.invokeNewlyList();
+        break;
+        
+         case "hotitems":
+
+        this.view.btnRecommended.skin = "sknBtnRecommendedFilterNormal";
+        this.view.btnEndingSoon.skin = "sknBtnRecommendedFilterNormal";
+        this.view.btnRecentlyViewed.skin = "sknBtnRecommendedFilterNormal";
+        this.view.btnYourFavourites.skin = "sknBtnRecommendedFilterNormal";
+        this.view.btnNewlyListedVehicles.skin = "sknBtnRecommendedFilterNormal";
+        this.view.btnHotItems.skin = "sknBtnRecommendedFilter";
+        this.invokeHotItems();
         break;
 
     }
@@ -1098,9 +1482,11 @@ flxLikeBid.add(flxLikeFromRecommendedFilter, flxBidEnable, btnBidNow);
   invokeEndingSoonList: function()
   {
         var self = this;
+    voltmx.application.showLoadingScreen();
     var usertoken = voltmx.store.getItem("getUserAccesstoken");
     var userid = voltmx.store.getItem("userId");
     function invokeEndingList(status, get_buyer_ending_soon) {
+      voltmx.application.dismissLoadingScreen();
       var records = get_buyer_ending_soon && get_buyer_ending_soon.records ? get_buyer_ending_soon.records : [];
       if (records.length > 0) {
       self.records = records;
@@ -1112,7 +1498,7 @@ flxLikeBid.add(flxLikeFromRecommendedFilter, flxBidEnable, btnBidNow);
 
     // Always call create function after response
     self.view.flxScrollFilteredItems.removeAll(); 
-    self.createsIntoFeaturedAuctions();
+    self.createsIntoFeaturedAuctions1();
     }
     if (get_buyer_ending_soon_inputparam == undefined) {
         var get_buyer_ending_soon_inputparam = {};
@@ -1138,10 +1524,12 @@ flxLikeBid.add(flxLikeFromRecommendedFilter, flxBidEnable, btnBidNow);
   {
     
       var self = this;
+    voltmx.application.showLoadingScreen();
      var usertoken = voltmx.store.getItem("getUserAccesstoken");
     var userid = voltmx.store.getItem("userId");
 
     function invokeRecentlyViewList(status, get_buyer_recently_viewed_vehicles) {
+      voltmx.application.dismissLoadingScreen();
       var records = get_buyer_recently_viewed_vehicles && get_buyer_recently_viewed_vehicles.records ? get_buyer_recently_viewed_vehicles.records : [];
       if (records.length > 0) {
       self.records = records;
@@ -1153,7 +1541,7 @@ flxLikeBid.add(flxLikeFromRecommendedFilter, flxBidEnable, btnBidNow);
 
     // Always call create function after response
     self.view.flxScrollFilteredItems.removeAll(); 
-    self.createsIntoFeaturedAuctions();
+    self.createsIntoFeaturedAuctions1();
     }
     if (get_buyer_recently_viewed_vehicles_inputparam == undefined) {
         var get_buyer_recently_viewed_vehicles_inputparam = {};
@@ -1173,10 +1561,128 @@ flxLikeBid.add(flxLikeFromRecommendedFilter, flxBidEnable, btnBidNow);
     
   },
   
+  invokeRecommendedList: function()
+  {
+     var self = this;
+    voltmx.application.showLoadingScreen();
+    var usertoken = voltmx.store.getItem("getUserAccesstoken");
+    var userid = voltmx.store.getItem("userId");
+    function invokeRecommendListCallBack(status, get_buyer_recommended_vehicles) {
+      voltmx.application.dismissLoadingScreen();
+      var records = get_buyer_recommended_vehicles && get_buyer_recommended_vehicles.records ? get_buyer_recommended_vehicles.records : [];
+      if (records.length > 0) {
+      self.records = records;
+      self.isRecords = true;
+    } else {
+      self.records = [];  // fallback to empty
+      self.isRecords = false;
+    }
+
+    // Always call create function after response
+    self.view.flxScrollFilteredItems.removeAll(); 
+    self.createsIntoFeaturedAuctions1();
+    }
+    if (get_buyer_recommended_vehicles_inputparam == undefined) {
+        var get_buyer_recommended_vehicles_inputparam = {};
+    }
+    get_buyer_recommended_vehicles_inputparam["serviceID"] = "fry_int_buyer$get-buyer-recommended-vehicles";
+    get_buyer_recommended_vehicles_inputparam["user_id"] = userid;
+     get_buyer_recommended_vehicles_inputparam["page"] = "1";
+     get_buyer_recommended_vehicles_inputparam["pageSize"] = "10";
+    var get_buyer_recommended_vehicles_httpheaders = {
+      "user_token": usertoken
+    };
+    get_buyer_recommended_vehicles_inputparam["httpheaders"] = get_buyer_recommended_vehicles_httpheaders;
+    var get_buyer_recommended_vehicles_httpconfigs = {};
+    get_buyer_recommended_vehicles_inputparam["httpconfig"] = get_buyer_recommended_vehicles_httpconfigs;
+    fry_int_buyer$get_buyer_recommended_vehicles = mfintegrationsecureinvokerasync(get_buyer_recommended_vehicles_inputparam, "fry_int_buyer", "get-buyer-recommended-vehicles", invokeRecommendListCallBack);
+  },
+  
+  invokeNewlyList: function()
+  {
+       var self = this;
+    voltmx.application.showLoadingScreen();
+    var usertoken = voltmx.store.getItem("getUserAccesstoken");
+    var userid = voltmx.store.getItem("userId");
+    function newlyListedCallBack(status, get_buyer_newly_listed_fleets) {
+      voltmx.application.dismissLoadingScreen();
+      var records = get_buyer_newly_listed_fleets && get_buyer_newly_listed_fleets.records ? get_buyer_newly_listed_fleets.records : [];
+      if (records.length > 0) {
+      self.records = records;
+      self.isRecords = true;
+    } else {
+      self.records = [];  // fallback to empty
+      self.isRecords = false;
+    }
+
+    // Always call create function after response
+    self.view.flxScrollFilteredItems.removeAll(); 
+    self.createsIntoFeaturedAuctions1();
+    }
+    if (get_buyer_newly_listed_fleets_inputparam == undefined) {
+        var get_buyer_newly_listed_fleets_inputparam = {};
+    }
+    get_buyer_newly_listed_fleets_inputparam["serviceID"] = "fry_int_buyer$get-buyer-newly-listed-fleets";
+    get_buyer_newly_listed_fleets_inputparam["user_id"] = userid;
+     get_buyer_newly_listed_fleets_inputparam["page"] = "1";
+     get_buyer_newly_listed_fleets_inputparam["pageSize"] = "10";
+    var get_buyer_newly_listed_fleets_httpheaders = {
+      "user_token": usertoken
+    };
+    get_buyer_newly_listed_fleets_inputparam["httpheaders"] = get_buyer_newly_listed_fleets_httpheaders;
+    var get_buyer_newly_listed_fleets_httpconfigs = {};
+    get_buyer_newly_listed_fleets_inputparam["httpconfig"] = get_buyer_newly_listed_fleets_httpconfigs;
+    fry_int_buyer$get_buyer_newly_listed_fleets = mfintegrationsecureinvokerasync(get_buyer_newly_listed_fleets_inputparam, "fry_int_buyer", "get-buyer-newly-listed-fleets", newlyListedCallBack);
+
+  },
+  
+  invokeHotItems: function()
+  {
+    var self = this;
+    voltmx.application.showLoadingScreen();
+    var usertoken = voltmx.store.getItem("getUserAccesstoken");
+    var userid = voltmx.store.getItem("userId");
+    function invokeHotItemsCallBack(status, get_buyer_hot_items) {
+      voltmx.application.dismissLoadingScreen();
+       var records = get_buyer_hot_items && get_buyer_hot_items.records ? get_buyer_hot_items.records : [];
+      if (records.length > 0) {
+      self.records = records;
+      self.isRecords = true;
+    } else {
+      self.records = [];  // fallback to empty
+      self.isRecords = false;
+    }
+
+    // Always call create function after response
+    self.view.flxScrollFilteredItems.removeAll(); 
+    self.createsIntoFeaturedAuctions1();
+    }
+    if (get_buyer_hot_items_inputparam == undefined) {
+        var get_buyer_hot_items_inputparam = {};
+    }
+    get_buyer_hot_items_inputparam["serviceID"] = "fry_int_buyer$get-buyer-hot-items";
+    get_buyer_hot_items_inputparam["user_id"] = userid;
+     get_buyer_hot_items_inputparam["page"] = "1";
+     get_buyer_hot_items_inputparam["pageSize"] = "10";
+    var get_buyer_hot_items_httpheaders = {
+      "user_token": usertoken
+    };
+    get_buyer_hot_items_inputparam["httpheaders"] = get_buyer_hot_items_httpheaders;
+    var get_buyer_hot_items_httpconfigs = {};
+    get_buyer_hot_items_inputparam["httpconfig"] = get_buyer_hot_items_httpconfigs;
+    fry_int_buyer$get_buyer_hot_items = mfintegrationsecureinvokerasync(get_buyer_hot_items_inputparam, "fry_int_buyer", "get-buyer-hot-items", invokeHotItemsCallBack);
+
+  },
+  
   
   navToVehicleInspection: function(){
     var x = new voltmx.mvc.Navigation("frmVehicleInspection");
     x.navigate();
+  },
+  
+  navToRoadSideAsst: function()
+  {
+   new voltmx.mvc.Navigation("frmRoadSideAssistance").navigate();
   },
   
   navToAuctionCalendar: function(){
