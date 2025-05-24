@@ -54,7 +54,8 @@
                 "kuid": "g5bf217a07b74c8eafeb3a93648c1b37",
                 "srcKUID": "i2a60dc49b0e401091f4352c71c1b670",
                 "wType": "Image"
-            }
+            },
+            "src": "whatsappicon.png"
         }
     },
     "enablescrolling": true,

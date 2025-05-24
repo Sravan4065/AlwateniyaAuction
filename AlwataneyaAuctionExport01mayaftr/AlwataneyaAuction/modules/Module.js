@@ -27,11 +27,13 @@ function checkTokenValidatity(onSuccessCallback) {
 
 // Function to call the token refresh service
 function calling_service(onRefreshComplete) {
-  var refresh_token = voltmx.store.getItem("refreshtoken");
+  var refreshtoken = voltmx.store.getItem("refreshtoken");
 
   var get_refresh_token_inputparam = {
     "serviceID": "ms_user_token$refresh-token",
-    "httpheaders": {},
+    "httpheaders": {
+      "refresh_token": refreshtoken
+    },
     "httpconfig": {}
   };
 

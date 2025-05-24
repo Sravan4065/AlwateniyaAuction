@@ -60,19 +60,19 @@
     "kuid": "e093c159e40f459fbbea927609ef94a1",
     "masterdata": [
         [
-            "rbg1",
+            "5000",
             "AED 5,000 for a buying limit of AED 100,000"
         ],
         [
-            "Key2520303046",
+            "7500",
             "AED 7,500 for a buying limit of AED 150,000"
         ],
         [
-            "Key2932335648",
+            "10000",
             "AED 10,000 for a buying limit of AED 200,000"
         ],
         [
-            "Key1708560043",
+            "50000",
             "AED 50,000 for unlimited buying"
         ]
     ],
@@ -81,8 +81,11 @@
     "pf": "frmPaymentMethod",
     "retaincontentalignment": false,
     "retainflexpositionproperties": false,
-    "selectedkey": null,
-    "selectedkeyvalue": null,
+    "selectedkey": "7500",
+    "selectedkeyvalue": [
+        "7500",
+        "AED 7,500 for a buying limit of AED 150,000"
+    ],
     "size": 18,
     "tickedimage": "radio_button_2.png",
     "untickedimage": "radio_button__2__2.png",
